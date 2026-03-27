@@ -1,0 +1,107 @@
+{
+    "id": "91978f30-27f8-427f-bad5-79da7f4f925a",
+    "task_name": "model-extraction-relu-logits",
+    "trial_name": "model-extraction-relu-logits__N8TDd2v",
+    "trial_uri": "file:///home/scout/jobs/eval-terminal-bench-2-0-anthropic-claude-opus-4-6-f67d7dea-1773208226179/model-extraction-relu-logits__N8TDd2v",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "model-extraction-relu-logits"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "d0dd8f420350bee97f2d47a2b0c74996be0146aa7bd6f8a1871d9629200dc359",
+    "config": {
+        "task": {
+            "path": "model-extraction-relu-logits",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "model-extraction-relu-logits__N8TDd2v",
+        "trials_dir": "/home/scout/jobs/eval-terminal-bench-2-0-anthropic-claude-opus-4-6-f67d7dea-1773208226179",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "adapter:CapyBuildAgent",
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "30122a7f-886c-4b66-988c-8b0b11285863"
+    },
+    "agent_info": {
+        "name": "capy-build",
+        "version": "unknown",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "mode": "build",
+            "model": "claude-opus-4-6"
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/codespace/.python/current/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/scout/packages/evals/harbor/adapter.py\", line 269, in run\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/scout/packages/evals/.venv/lib/python3.12/site-packages/harbor/environments/daytona.py\", line 1058, in exec\n    return await self._strategy.exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/scout/packages/evals/.venv/lib/python3.12/site-packages/harbor/environments/daytona.py\", line 255, in exec\n    return await self._env._sandbox_exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/scout/packages/evals/.venv/lib/python3.12/site-packages/harbor/environments/daytona.py\", line 939, in _sandbox_exec\n    result = await self._poll_response(session_id, response.cmd_id)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/scout/packages/evals/.venv/lib/python3.12/site-packages/harbor/environments/daytona.py\", line 880, in _poll_response\n    await asyncio.sleep(1)\n  File \"/home/codespace/.python/current/lib/python3.12/asyncio/tasks.py\", line 665, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/scout/packages/evals/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 259, in _execute_agent\n    await asyncio.wait_for(\n  File \"/home/codespace/.python/current/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n  File \"/home/codespace/.python/current/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/scout/packages/evals/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 483, in run\n    await self._execute_agent()\n  File \"/home/scout/packages/evals/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 268, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-03-11T06:35:17.792116"
+    },
+    "started_at": "2026-03-11T06:19:42.005697Z",
+    "finished_at": "2026-03-11T06:35:26.702059Z",
+    "environment_setup": {
+        "started_at": "2026-03-11T06:19:42.007199Z",
+        "finished_at": "2026-03-11T06:19:42.718387Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-11T06:19:42.718399Z",
+        "finished_at": "2026-03-11T06:20:17.568442Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-11T06:20:17.568494Z",
+        "finished_at": "2026-03-11T06:35:17.790965Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-11T06:35:17.869712Z",
+        "finished_at": "2026-03-11T06:35:25.558799Z"
+    }
+}

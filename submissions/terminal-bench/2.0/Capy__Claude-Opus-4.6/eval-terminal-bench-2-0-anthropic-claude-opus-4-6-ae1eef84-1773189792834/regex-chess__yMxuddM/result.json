@@ -1,0 +1,107 @@
+{
+  "id": "3e304482-1a22-498e-aa4e-1282eb0250c6",
+  "task_name": "regex-chess",
+  "trial_name": "regex-chess__yMxuddM",
+  "trial_uri": "file:///home/scout/jobs/eval-terminal-bench-2-0-anthropic-claude-opus-4-6-ae1eef84-1773189792834/regex-chess__yMxuddM",
+  "task_id": {
+    "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+    "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+    "path": "regex-chess"
+  },
+  "source": "terminal-bench",
+  "task_checksum": "166af5ebdc4a297de26bf4390f3c9a222238ac47218a665fcb1fb3110a1ac0f1",
+  "config": {
+    "task": {
+      "path": "regex-chess",
+      "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+      "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+      "overwrite": false,
+      "download_dir": null,
+      "source": "terminal-bench"
+    },
+    "trial_name": "regex-chess__yMxuddM",
+    "trials_dir": "/home/scout/jobs/eval-terminal-bench-2-0-anthropic-claude-opus-4-6-ae1eef84-1773189792834",
+    "timeout_multiplier": 1.0,
+    "agent_timeout_multiplier": null,
+    "verifier_timeout_multiplier": null,
+    "agent_setup_timeout_multiplier": null,
+    "environment_build_timeout_multiplier": null,
+    "agent": {
+      "name": null,
+      "import_path": "adapter:CapyBuildAgent",
+      "model_name": "anthropic/claude-opus-4-6",
+      "override_timeout_sec": null,
+      "override_setup_timeout_sec": null,
+      "max_timeout_sec": null,
+      "kwargs": {},
+      "env": {}
+    },
+    "environment": {
+      "type": "daytona",
+      "import_path": null,
+      "force_build": false,
+      "delete": true,
+      "override_cpus": null,
+      "override_memory_mb": null,
+      "override_storage_mb": null,
+      "override_gpus": null,
+      "suppress_override_warnings": false,
+      "kwargs": {}
+    },
+    "verifier": {
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "disable": false
+    },
+    "artifacts": [],
+    "job_id": "12f24b30-6591-4b53-92ca-5397fc5fde08"
+  },
+  "agent_info": {
+    "name": "capy-build",
+    "version": "unknown",
+    "model_info": {
+      "name": "claude-opus-4-6",
+      "provider": "anthropic"
+    }
+  },
+  "agent_result": {
+    "n_input_tokens": null,
+    "n_cache_tokens": null,
+    "n_output_tokens": null,
+    "cost_usd": null,
+    "rollout_details": null,
+    "metadata": {
+      "mode": "build",
+      "model": "claude-opus-4-6"
+    }
+  },
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.0
+    }
+  },
+  "exception_info": {
+    "exception_type": "AgentTimeoutError",
+    "exception_message": "Agent execution timed out after 3600.0 seconds",
+    "exception_traceback": "Traceback (most recent call last):\n  File \"/home/codespace/.python/current/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/scout/packages/evals/harbor/adapter.py\", line 269, in run\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/scout/packages/evals/.venv/lib/python3.12/site-packages/harbor/environments/daytona.py\", line 1058, in exec\n    return await self._strategy.exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/scout/packages/evals/.venv/lib/python3.12/site-packages/harbor/environments/daytona.py\", line 255, in exec\n    return await self._env._sandbox_exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/scout/packages/evals/.venv/lib/python3.12/site-packages/harbor/environments/daytona.py\", line 939, in _sandbox_exec\n    result = await self._poll_response(session_id, response.cmd_id)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/scout/packages/evals/.venv/lib/python3.12/site-packages/harbor/environments/daytona.py\", line 880, in _poll_response\n    await asyncio.sleep(1)\n  File \"/home/codespace/.python/current/lib/python3.12/asyncio/tasks.py\", line 665, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/scout/packages/evals/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 259, in _execute_agent\n    await asyncio.wait_for(\n  File \"/home/codespace/.python/current/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n  File \"/home/codespace/.python/current/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/scout/packages/evals/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 483, in run\n    await self._execute_agent()\n  File \"/home/scout/packages/evals/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 268, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 3600.0 seconds\n",
+    "occurred_at": "2026-03-11T01:45:10.562270"
+  },
+  "started_at": "2026-03-11T00:45:03.869287Z",
+  "finished_at": "2026-03-11T01:45:17.452421Z",
+  "environment_setup": {
+    "started_at": "2026-03-11T00:45:03.869859Z",
+    "finished_at": "2026-03-11T00:45:04.622967Z"
+  },
+  "agent_setup": {
+    "started_at": "2026-03-11T00:45:04.622976Z",
+    "finished_at": "2026-03-11T00:45:10.381064Z"
+  },
+  "agent_execution": {
+    "started_at": "2026-03-11T00:45:10.381093Z",
+    "finished_at": "2026-03-11T01:45:10.561666Z"
+  },
+  "verifier": {
+    "started_at": "2026-03-11T01:45:10.596678Z",
+    "finished_at": "2026-03-11T01:45:16.337941Z"
+  }
+}
