@@ -1,0 +1,94 @@
+{
+    "id": "0803bc0c-533c-4a18-992a-68b5cbc6169b",
+    "task_name": "make-doom-for-mips",
+    "trial_name": "make-doom-for-mips__EXTQshA",
+    "trial_uri": "file:///home/yunfan-cui/tb-strike/jobs/2026-02-05__11-19-55/make-doom-for-mips__EXTQshA",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "make-doom-for-mips"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "48c24358a58435a97de86cc88255b6faf1cd3cb28bd27ff6a918e01655095981",
+    "config": {
+        "task": {
+            "path": "make-doom-for-mips",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "make-doom-for-mips__EXTQshA",
+        "trials_dir": "jobs/2026-02-05__11-19-55",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "ruley.lib.harbor.installed_agent:RuleyAgent",
+            "model_name": "vertex_ai/gemini-3-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "f25a821f-5c2b-4db3-93a0-0ce545dfd501"
+    },
+    "agent_info": {
+        "name": "ruley",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {}
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/yunfan-cui/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/yunfan-cui/tb-strike/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 150, in run\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/yunfan-cui/tb-strike/.venv/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 295, in exec\n    return await self._run_docker_compose_command(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/yunfan-cui/tb-strike/.venv/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 162, in _run_docker_compose_command\n    stdout_bytes, stderr_bytes = await process.communicate()\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/yunfan-cui/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/subprocess.py\", line 201, in communicate\n    stdin, stdout, stderr = await tasks.gather(stdin, stdout, stderr)\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/yunfan-cui/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/subprocess.py\", line 181, in _read_stream\n    output = await stream.read()\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/home/yunfan-cui/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/streams.py\", line 706, in read\n    block = await self.read(self._limit)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/yunfan-cui/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/streams.py\", line 713, in read\n    await self._wait_for_data('read')\n  File \"/home/yunfan-cui/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/streams.py\", line 545, in _wait_for_data\n    await self._waiter\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/yunfan-cui/tb-strike/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 251, in _execute_agent\n    await asyncio.wait_for(\n  File \"/home/yunfan-cui/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/yunfan-cui/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/yunfan-cui/tb-strike/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 362, in run\n    await self._execute_agent()\n  File \"/home/yunfan-cui/tb-strike/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 260, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-02-05T13:29:39.437845"
+    },
+    "started_at": "2026-02-05T05:13:18.232892Z",
+    "finished_at": "2026-02-05T05:30:28.281208Z",
+    "environment_setup": {
+        "started_at": "2026-02-05T05:13:18.242991Z",
+        "finished_at": "2026-02-05T05:13:18.583361Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-05T05:13:18.583371Z",
+        "finished_at": "2026-02-05T05:14:39.430518Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-05T05:14:39.430563Z",
+        "finished_at": "2026-02-05T05:29:39.435777Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-05T05:29:39.438800Z",
+        "finished_at": "2026-02-05T05:30:17.175596Z"
+    }
+}

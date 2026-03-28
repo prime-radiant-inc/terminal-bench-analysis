@@ -1,0 +1,136 @@
+{
+    "id": "0413746f-7b19-4120-907b-68040279c525",
+    "task_name": "gpt2-codegolf",
+    "trial_name": "gpt2-codegolf__2tn5Njm",
+    "trial_uri": "file:///workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51/gpt2-codegolf__2tn5Njm",
+    "task_id": {
+        "path": "/workspace/terminal/terminal-bench-2/gpt2-codegolf"
+    },
+    "source": "terminal-bench-2",
+    "task_checksum": "c3dfea370953fe9b6cb53d368f1f242af2833cf1af623849bdaee8fe026b1cf1",
+    "config": {
+        "task": {
+            "path": "/workspace/terminal/terminal-bench-2/gpt2-codegolf",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench-2"
+        },
+        "trial_name": "gpt2-codegolf__2tn5Njm",
+        "trials_dir": "/workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "parser_name": "xml",
+                "remove_main_key": true,
+                "api_base": "http://100.113.75.1:8080",
+                "temperature": 0.7,
+                "top_p": 1.0,
+                "max_new_tokens": 8192,
+                "model_info": {
+                    "max_input_tokens": 131072
+                },
+                "tokenizer_path": "/cloud/checkpoints/glm-moe/750b-moe/700b-sft-dsa-260127/iter_0020000_HF_FP8",
+                "use_generate": true,
+                "enable_summarize": true
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "9503f317-faba-45da-b01a-000cd6115566"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-5",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 21,
+            "api_request_times_msec": [
+                6692.781209945679,
+                4958.539724349976,
+                6172.800302505493,
+                5007.073402404785,
+                35140.86413383484,
+                65545.47572135925,
+                6104.988813400269,
+                11939.155101776123,
+                52312.273025512695,
+                15418.705463409424,
+                3424.427032470703,
+                45894.91057395935,
+                9825.393915176392,
+                57799.95274543762,
+                5623.692750930786,
+                58691.60008430481,
+                5447.315454483032,
+                40825.41346549988,
+                4809.708118438721,
+                80625.79846382141,
+                5830.461502075195
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/terminus_2.py\", line 1851, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/terminus_2.py\", line 1680, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/terminus_2.py\", line 1480, in _execute_commands\n    await session.send_keys(\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/tmux_session.py\", line 540, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/tmux_session.py\", line 500, in _send_non_blocking_keys\n    await asyncio.sleep(min_timeout_sec - elapsed_time_sec)\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 665, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/trial/trial.py\", line 248, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/trial/trial.py\", line 573, in run\n    await self._execute_agent()\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/trial/trial.py\", line 257, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-02-14T15:42:09.250803"
+    },
+    "started_at": "2026-02-14T15:26:41.553292",
+    "finished_at": "2026-02-14T15:44:01.695855",
+    "environment_setup": {
+        "started_at": "2026-02-14T15:26:41.567836",
+        "finished_at": "2026-02-14T15:26:51.323853"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-14T15:26:51.323872",
+        "finished_at": "2026-02-14T15:27:08.948632"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-14T15:27:08.948654",
+        "finished_at": "2026-02-14T15:42:09.243782"
+    },
+    "verifier": {
+        "started_at": "2026-02-14T15:42:09.273417",
+        "finished_at": "2026-02-14T15:43:52.591080"
+    }
+}

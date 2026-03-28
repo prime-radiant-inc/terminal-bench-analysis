@@ -1,0 +1,125 @@
+{
+    "id": "7b94df15-9bb2-4c88-860f-762ec09590b1",
+    "task_name": "reshard-c4-data",
+    "trial_name": "reshard-c4-data__vH6A2tq",
+    "trial_uri": "file:///private/tmp/jobs/Terminus2__Minimax-m2.5/reshard-c4-data__vH6A2tq",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "reshard-c4-data"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "19f99d7567f3e6e6ebe453523d76a69c2196bc34b0aa668abfb997d797cc6bd5",
+    "config": {
+        "task": {
+            "path": "reshard-c4-data",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "reshard-c4-data__vH6A2tq",
+        "trials_dir": "jobs/Terminus2__Minimax-m2.5",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/minimax-m2.5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1",
+                "reasoning_effort": "high"
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "9cc95f8c-41a9-4311-9697-52edfbed6e7a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "minimax-m2.5:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 163034,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 8184,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 25,
+            "api_request_times_msec": [
+                21027.963876724243,
+                24881.880044937134,
+                43707.74602890015,
+                16765.00678062439,
+                17468.11604499817,
+                8565.34719467163,
+                31764.90306854248,
+                34888.10610771179,
+                213363.15894126892,
+                10773.47207069397,
+                28587.14509010315,
+                194432.21807479858,
+                9153.895139694214,
+                6366.945028305054,
+                4827.383041381836,
+                6990.6721115112305,
+                4963.295936584473,
+                4137.443065643311,
+                3830.848217010498,
+                7994.196891784668,
+                4872.758150100708,
+                3541.7439937591553,
+                3197.0019340515137,
+                5540.861129760742,
+                4864.713191986084
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-18T00:55:46.129938Z",
+    "finished_at": "2026-02-18T01:15:56.673053Z",
+    "environment_setup": {
+        "started_at": "2026-02-18T00:55:46.132156Z",
+        "finished_at": "2026-02-18T00:56:34.308461Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-18T00:56:34.308490Z",
+        "finished_at": "2026-02-18T00:56:47.395266Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-18T00:56:47.395367Z",
+        "finished_at": "2026-02-18T01:15:00.764518Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-18T01:15:00.764607Z",
+        "finished_at": "2026-02-18T01:15:54.889858Z"
+    }
+}

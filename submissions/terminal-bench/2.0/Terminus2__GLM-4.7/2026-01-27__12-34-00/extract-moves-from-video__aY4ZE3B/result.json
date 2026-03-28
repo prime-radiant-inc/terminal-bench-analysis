@@ -1,0 +1,161 @@
+{
+    "id": "59712a4f-9a1c-4010-b8ce-33ea63c9a18f",
+    "task_name": "extract-moves-from-video",
+    "trial_name": "extract-moves-from-video__aY4ZE3B",
+    "trial_uri": "file:///Users/tbd/tbench/jobs/2026-01-26-terminus-ollama-cloud-glm-4-7-full-v01/extract-moves-from-video__aY4ZE3B",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "extract-moves-from-video"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "605fb166c0af666150b184a6ca50f1ca1c2221a5b93e44efd21c7ea40d746d54",
+    "config": {
+        "task": {
+            "path": "extract-moves-from-video",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "extract-moves-from-video__aY4ZE3B",
+        "trials_dir": "jobs/2026-01-26-terminus-ollama-cloud-glm-4-7-full-v01",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-4.7:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1",
+                "reasoning_effort": "high"
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "d15e9783-0e8b-4181-a5e1-e5d0b2dc303a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-4.7:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1766761,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 16607,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                2671.391010284424,
+                1957.3979377746582,
+                1589.4527435302734,
+                1625.9446144104004,
+                1526.2799263000488,
+                2119.6789741516113,
+                3011.6238594055176,
+                5470.5610275268555,
+                6481.736898422241,
+                2113.0733489990234,
+                1524.076223373413,
+                7247.751951217651,
+                2433.260917663574,
+                2662.029027938843,
+                2929.175853729248,
+                3294.9440479278564,
+                3004.27508354187,
+                2814.8417472839355,
+                5691.46203994751,
+                3880.479097366333,
+                4175.2989292144775,
+                4412.00590133667,
+                3057.293176651001,
+                3157.7141284942627,
+                3387.71390914917,
+                2859.853982925415,
+                3678.8930892944336,
+                3765.427827835083,
+                3205.415964126587,
+                3469.777822494507,
+                3316.46990776062,
+                4360.642194747925,
+                3385.1120471954346,
+                3792.2346591949463,
+                9706.643104553223,
+                4478.130102157593,
+                23509.12380218506,
+                14657.225131988525,
+                2912.681818008423,
+                3183.440923690796,
+                4587.275981903076,
+                2934.608221054077,
+                4493.495941162109,
+                4428.934335708618,
+                5588.968992233276,
+                2428.9309978485107,
+                29116.255044937134,
+                4188.361883163452,
+                2146.5039253234863,
+                8119.257926940918,
+                1956.4971923828125,
+                2877.748966217041,
+                5339.6971225738525,
+                11562.810182571411,
+                4635.6401443481445,
+                17433.536052703857,
+                36102.77986526489,
+                5312.69907951355,
+                2886.493921279907,
+                1730.802059173584,
+                5403.0609130859375,
+                9952.18801498413,
+                6231.9910526275635
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "DaytonaError",
+        "exception_message": "Failed to create session: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 354, in run\n    await self._execute_agent()\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 243, in _execute_agent\n    await asyncio.wait_for(\n  File \"/Users/tbd/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1397, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1085, in _run_agent_loop\n    if not await self._session.is_session_alive():\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 445, in is_session_alive\n    result = await self.environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/daytona.py\", line 462, in exec\n    await self._sandbox.process.create_session(session_id)\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona/_utils/errors.py\", line 90, in async_wrapper\n    process_n_raise_exception(e)\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona/_utils/errors.py\", line 71, in process_n_raise_exception\n    raise DaytonaError(f\"{message_prefix}{msg}\", status_code=status_code, headers=headers) from None\ndaytona.common.errors.DaytonaError: Failed to create session: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n\n",
+        "occurred_at": "2026-01-27T01:08:56.327757"
+    },
+    "started_at": "2026-01-27T07:46:01.680672Z",
+    "finished_at": "2026-01-27T08:08:56.911475Z",
+    "environment_setup": {
+        "started_at": "2026-01-27T07:46:01.681853Z",
+        "finished_at": "2026-01-27T07:46:03.228167Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-27T07:46:03.228192Z",
+        "finished_at": "2026-01-27T07:46:18.199459Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-27T07:46:18.199583Z",
+        "finished_at": "2026-01-27T08:08:53.661137Z"
+    },
+    "verifier": null
+}

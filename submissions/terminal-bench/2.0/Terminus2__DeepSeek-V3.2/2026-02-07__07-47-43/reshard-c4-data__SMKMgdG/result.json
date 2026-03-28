@@ -1,0 +1,122 @@
+{
+    "id": "648333ea-360e-42d2-ae53-9aa12254ee28",
+    "task_name": "reshard-c4-data",
+    "trial_name": "reshard-c4-data__SMKMgdG",
+    "trial_uri": "file:///root/harbor/jobs/2026-02-07__07-47-43/reshard-c4-data__SMKMgdG",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "reshard-c4-data"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "19f99d7567f3e6e6ebe453523d76a69c2196bc34b0aa668abfb997d797cc6bd5",
+    "config": {
+        "task": {
+            "path": "reshard-c4-data",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "reshard-c4-data__SMKMgdG",
+        "trials_dir": "jobs/2026-02-07__07-47-43",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "deepseek/deepseek-chat",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "bd502fde-cc79-4ca6-a1b2-abbcb1ea84cf"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "deepseek-chat",
+            "provider": "deepseek"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 440696,
+        "n_cache_tokens": 424576,
+        "n_output_tokens": 19319,
+        "cost_usd": 0.024515707999999997,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 25,
+            "api_request_times_msec": [
+                16676.71275138855,
+                8115.548610687256,
+                6858.244895935059,
+                10511.688232421875,
+                37157.41491317749,
+                25312.75749206543,
+                11443.604230880737,
+                11018.364667892456,
+                36839.68234062195,
+                30268.773317337036,
+                8880.507230758667,
+                29149.629592895508,
+                73207.12471008301,
+                34670.80521583557,
+                17306.251764297485,
+                12494.537115097046,
+                79641.08037948608,
+                67215.45100212097,
+                25542.316436767578,
+                22902.307510375977,
+                13457.633256912231,
+                18950.13928413391,
+                12183.369159698486,
+                5415.6599044799805,
+                5617.702007293701
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-07T12:32:18.863115Z",
+    "finished_at": "2026-02-07T12:44:41.596887Z",
+    "environment_setup": {
+        "started_at": "2026-02-07T12:32:18.897773Z",
+        "finished_at": "2026-02-07T12:32:19.584186Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-07T12:32:19.584200Z",
+        "finished_at": "2026-02-07T12:32:29.442149Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-07T12:32:29.442200Z",
+        "finished_at": "2026-02-07T12:43:37.552842Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-07T12:43:37.552942Z",
+        "finished_at": "2026-02-07T12:44:30.411405Z"
+    }
+}

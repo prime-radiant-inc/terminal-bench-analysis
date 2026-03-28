@@ -1,0 +1,120 @@
+{
+    "id": "ad90f0c8-590f-425b-91d3-b140063539ab",
+    "task_name": "fix-git",
+    "trial_name": "fix-git__M5HoRfp",
+    "trial_uri": "file:///workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51/fix-git__M5HoRfp",
+    "task_id": {
+        "path": "/workspace/terminal/terminal-bench-2/fix-git"
+    },
+    "source": "terminal-bench-2",
+    "task_checksum": "7fa0a681f751d73f290d862522a82a5e448fa529834987ee1b80e5665c51aa7e",
+    "config": {
+        "task": {
+            "path": "/workspace/terminal/terminal-bench-2/fix-git",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench-2"
+        },
+        "trial_name": "fix-git__M5HoRfp",
+        "trials_dir": "/workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "parser_name": "xml",
+                "remove_main_key": true,
+                "api_base": "http://100.113.75.1:8080",
+                "temperature": 0.7,
+                "top_p": 1.0,
+                "max_new_tokens": 8192,
+                "model_info": {
+                    "max_input_tokens": 131072
+                },
+                "tokenizer_path": "/cloud/checkpoints/glm-moe/750b-moe/700b-sft-dsa-260127/iter_0020000_HF_FP8",
+                "use_generate": true,
+                "enable_summarize": true
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "9503f317-faba-45da-b01a-000cd6115566"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-5",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 10,
+            "api_request_times_msec": [
+                6136.2879276275635,
+                11842.594861984253,
+                5089.806318283081,
+                5568.47620010376,
+                8545.929193496704,
+                5056.061029434204,
+                6118.333339691162,
+                6152.021884918213,
+                7119.263410568237,
+                4702.712535858154
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-14T15:24:34.260922",
+    "finished_at": "2026-02-14T15:26:42.051184",
+    "environment_setup": {
+        "started_at": "2026-02-14T15:24:34.293701",
+        "finished_at": "2026-02-14T15:24:44.978894"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-14T15:24:44.978918",
+        "finished_at": "2026-02-14T15:24:53.582948"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-14T15:24:53.582976",
+        "finished_at": "2026-02-14T15:26:20.997293"
+    },
+    "verifier": {
+        "started_at": "2026-02-14T15:26:21.052315",
+        "finished_at": "2026-02-14T15:26:29.891954"
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "id": "f949f959-2b5a-4d84-ad45-511252c7820a",
+    "task_name": "modernize-scientific-stack",
+    "trial_name": "modernize-scientific-stack__JvnreRs",
+    "trial_uri": "file:///Users/tbd/tbench/jobs/2026-01-26-terminus-ollama-cloud-glm-4-7-full-v01/modernize-scientific-stack__JvnreRs",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "modernize-scientific-stack"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "7adc1cfbf5f90a260af478606d0286ccc9ca975fed4b14aee0c8c1d86cb7185e",
+    "config": {
+        "task": {
+            "path": "modernize-scientific-stack",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "modernize-scientific-stack__JvnreRs",
+        "trials_dir": "jobs/2026-01-26-terminus-ollama-cloud-glm-4-7-full-v01",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-4.7:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1",
+                "reasoning_effort": "high"
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "d15e9783-0e8b-4181-a5e1-e5d0b2dc303a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-4.7:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 22077,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 3625,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 6,
+            "api_request_times_msec": [
+                2732.598066329956,
+                3888.645887374878,
+                31740.07773399353,
+                2098.881721496582,
+                8298.933982849121,
+                5104.5331954956055
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-01-27T17:13:00.433364Z",
+    "finished_at": "2026-01-27T17:14:27.447113Z",
+    "environment_setup": {
+        "started_at": "2026-01-27T17:13:00.434974Z",
+        "finished_at": "2026-01-27T17:13:02.757760Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-27T17:13:02.757784Z",
+        "finished_at": "2026-01-27T17:13:13.155824Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-27T17:13:13.155877Z",
+        "finished_at": "2026-01-27T17:14:18.910888Z"
+    },
+    "verifier": {
+        "started_at": "2026-01-27T17:14:19.538733Z",
+        "finished_at": "2026-01-27T17:14:27.304878Z"
+    }
+}

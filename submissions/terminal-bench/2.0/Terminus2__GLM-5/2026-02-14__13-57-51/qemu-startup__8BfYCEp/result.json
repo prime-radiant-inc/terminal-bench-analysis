@@ -1,0 +1,167 @@
+{
+    "id": "b193308b-d2fd-4e35-88e2-2bcb0a8880ae",
+    "task_name": "qemu-startup",
+    "trial_name": "qemu-startup__8BfYCEp",
+    "trial_uri": "file:///workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51/qemu-startup__8BfYCEp",
+    "task_id": {
+        "path": "/workspace/terminal/terminal-bench-2/qemu-startup"
+    },
+    "source": "terminal-bench-2",
+    "task_checksum": "0f33bbc23fc771ea1ee1cadd076a439733e19bf3ef15bbf2d728bfe948ea44dd",
+    "config": {
+        "task": {
+            "path": "/workspace/terminal/terminal-bench-2/qemu-startup",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench-2"
+        },
+        "trial_name": "qemu-startup__8BfYCEp",
+        "trials_dir": "/workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "parser_name": "xml",
+                "remove_main_key": true,
+                "api_base": "http://100.113.75.1:8080",
+                "temperature": 0.7,
+                "top_p": 1.0,
+                "max_new_tokens": 8192,
+                "model_info": {
+                    "max_input_tokens": 131072
+                },
+                "tokenizer_path": "/cloud/checkpoints/glm-moe/750b-moe/700b-sft-dsa-260127/iter_0020000_HF_FP8",
+                "use_generate": true,
+                "enable_summarize": true
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "9503f317-faba-45da-b01a-000cd6115566"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-5",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 52,
+            "api_request_times_msec": [
+                9494.904279708862,
+                20538.251638412476,
+                5238.832950592041,
+                12941.517353057861,
+                6011.550426483154,
+                12197.077512741089,
+                12166.356086730957,
+                9679.080724716187,
+                10151.510953903198,
+                5870.024919509888,
+                8538.962841033936,
+                9473.2346534729,
+                6754.246473312378,
+                6607.1672439575195,
+                9486.114978790283,
+                15077.518701553345,
+                19532.347440719604,
+                16686.811447143555,
+                7137.31837272644,
+                13393.164873123169,
+                5827.817440032959,
+                15429.285526275635,
+                5258.275270462036,
+                20205.23500442505,
+                7233.952045440674,
+                11225.685834884644,
+                18285.61496734619,
+                16320.876359939575,
+                3466.503381729126,
+                13959.928512573242,
+                11635.35451889038,
+                3247.2572326660156,
+                2767.1284675598145,
+                5731.679677963257,
+                3188.3909702301025,
+                7061.246871948242,
+                3834.535598754883,
+                6631.721973419189,
+                4942.376136779785,
+                2115.124464035034,
+                2597.717046737671,
+                6849.231719970703,
+                11754.180908203125,
+                4955.387115478516,
+                4436.882257461548,
+                12876.023530960083,
+                6364.506244659424,
+                10544.74401473999,
+                4937.6513957977295,
+                3560.2614879608154,
+                2770.8160877227783,
+                2840.609550476074
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/terminus_2.py\", line 1851, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/terminus_2.py\", line 1680, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/terminus_2.py\", line 1480, in _execute_commands\n    await session.send_keys(\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/tmux_session.py\", line 540, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/tmux_session.py\", line 500, in _send_non_blocking_keys\n    await asyncio.sleep(min_timeout_sec - elapsed_time_sec)\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 665, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/trial/trial.py\", line 248, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/trial/trial.py\", line 573, in run\n    await self._execute_agent()\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/trial/trial.py\", line 257, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-02-14T15:59:27.347068"
+    },
+    "started_at": "2026-02-14T15:44:10.234076",
+    "finished_at": "2026-02-14T16:01:14.903349",
+    "environment_setup": {
+        "started_at": "2026-02-14T15:44:10.267817",
+        "finished_at": "2026-02-14T15:44:16.648025"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-14T15:44:16.648036",
+        "finished_at": "2026-02-14T15:44:27.304996"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-14T15:44:27.305020",
+        "finished_at": "2026-02-14T15:59:27.334182"
+    },
+    "verifier": {
+        "started_at": "2026-02-14T15:59:27.368715",
+        "finished_at": "2026-02-14T16:01:11.400874"
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "id": "259eee4e-b3d4-4c75-9673-ea28e70bc9b3",
+    "task_name": "qemu-startup",
+    "trial_name": "qemu-startup__csub39n",
+    "trial_uri": "file:///Users/tbd/tbench/jobs/2026-01-26-terminus-ollama-cloud-glm-4-7-full-v01/qemu-startup__csub39n",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "qemu-startup"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "0f33bbc23fc771ea1ee1cadd076a439733e19bf3ef15bbf2d728bfe948ea44dd",
+    "config": {
+        "task": {
+            "path": "qemu-startup",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "qemu-startup__csub39n",
+        "trials_dir": "jobs/2026-01-26-terminus-ollama-cloud-glm-4-7-full-v01",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-4.7:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1",
+                "reasoning_effort": "high"
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "d15e9783-0e8b-4181-a5e1-e5d0b2dc303a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-4.7:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 342585,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 9400,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 29,
+            "api_request_times_msec": [
+                14078.348159790039,
+                4992.975950241089,
+                2505.898952484131,
+                2539.9160385131836,
+                1821.3341236114502,
+                1889.2598152160645,
+                2313.812017440796,
+                3769.047975540161,
+                2887.7158164978027,
+                2905.7929515838623,
+                2532.4573516845703,
+                3391.263961791992,
+                10040.925979614258,
+                3725.56471824646,
+                2681.044101715088,
+                5740.927934646606,
+                3693.5222148895264,
+                2594.1100120544434,
+                4527.310848236084,
+                2991.9610023498535,
+                2778.841018676758,
+                3176.6719818115234,
+                4610.537052154541,
+                4341.146945953369,
+                11995.080947875977,
+                6843.287706375122,
+                7217.220783233643,
+                2376.5220642089844,
+                6285.403728485107
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-01-27T07:29:14.198953Z",
+    "finished_at": "2026-01-27T07:40:10.599899Z",
+    "environment_setup": {
+        "started_at": "2026-01-27T07:29:14.199611Z",
+        "finished_at": "2026-01-27T07:29:16.409356Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-27T07:29:16.409382Z",
+        "finished_at": "2026-01-27T07:29:19.113530Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-27T07:29:19.113639Z",
+        "finished_at": "2026-01-27T07:40:00.987371Z"
+    },
+    "verifier": {
+        "started_at": "2026-01-27T07:40:01.553648Z",
+        "finished_at": "2026-01-27T07:40:10.250715Z"
+    }
+}

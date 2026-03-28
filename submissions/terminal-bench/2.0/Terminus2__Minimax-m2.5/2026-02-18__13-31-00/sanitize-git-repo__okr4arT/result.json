@@ -1,0 +1,121 @@
+{
+    "id": "941aa48c-22c4-4890-bd3e-da79169435d3",
+    "task_name": "sanitize-git-repo",
+    "trial_name": "sanitize-git-repo__okr4arT",
+    "trial_uri": "file:///private/tmp/jobs/Terminus2__Minimax-m2.5/sanitize-git-repo__okr4arT",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "sanitize-git-repo"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "2193195d0a2d45451b0ff7b8bfe47677e11744f9528f54d6281d01bda76267cc",
+    "config": {
+        "task": {
+            "path": "sanitize-git-repo",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "sanitize-git-repo__okr4arT",
+        "trials_dir": "jobs/Terminus2__Minimax-m2.5",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/minimax-m2.5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1",
+                "reasoning_effort": "high"
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "9cc95f8c-41a9-4311-9697-52edfbed6e7a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "minimax-m2.5:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 228359,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 6580,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 21,
+            "api_request_times_msec": [
+                4980.8409214019775,
+                5406.136989593506,
+                12276.716232299805,
+                5413.238048553467,
+                3774.4288444519043,
+                5393.623113632202,
+                2351.6108989715576,
+                5167.410850524902,
+                7013.132095336914,
+                3098.1550216674805,
+                9066.73002243042,
+                5043.696165084839,
+                7020.339012145996,
+                4424.777984619141,
+                7146.1522579193115,
+                4216.1290645599365,
+                2877.100944519043,
+                6216.092824935913,
+                4863.796949386597,
+                5063.868045806885,
+                5049.511909484863
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-18T02:26:25.149625Z",
+    "finished_at": "2026-02-18T02:29:11.372472Z",
+    "environment_setup": {
+        "started_at": "2026-02-18T02:26:25.151155Z",
+        "finished_at": "2026-02-18T02:26:29.858735Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-18T02:26:29.858760Z",
+        "finished_at": "2026-02-18T02:26:42.422649Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-18T02:26:42.422749Z",
+        "finished_at": "2026-02-18T02:29:00.605353Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-18T02:29:00.605425Z",
+        "finished_at": "2026-02-18T02:29:10.009239Z"
+    }
+}

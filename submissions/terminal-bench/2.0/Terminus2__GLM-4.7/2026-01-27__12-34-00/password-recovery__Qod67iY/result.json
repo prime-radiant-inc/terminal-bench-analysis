@@ -1,0 +1,172 @@
+{
+    "id": "d379415e-885a-4424-8060-ef65e828d1a7",
+    "task_name": "password-recovery",
+    "trial_name": "password-recovery__Qod67iY",
+    "trial_uri": "file:///Users/tbd/tbench/jobs/2026-01-26-terminus-ollama-cloud-glm-4-7-full-v01/password-recovery__Qod67iY",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "password-recovery"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "55e4df1aaefa8c3b2910a6a19ada0187b55ebf29358a05b22d52716029817cdb",
+    "config": {
+        "task": {
+            "path": "password-recovery",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "password-recovery__Qod67iY",
+        "trials_dir": "jobs/2026-01-26-terminus-ollama-cloud-glm-4-7-full-v01",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-4.7:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1",
+                "reasoning_effort": "high"
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "d15e9783-0e8b-4181-a5e1-e5d0b2dc303a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-4.7:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1872848,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 17867,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                3297.8930473327637,
+                3050.3628253936768,
+                3217.895984649658,
+                2510.5531215667725,
+                4582.37099647522,
+                3525.3171920776367,
+                4986.898183822632,
+                3729.7327518463135,
+                22453.624725341797,
+                9168.666124343872,
+                37582.61823654175,
+                9210.077047348022,
+                4030.758857727051,
+                4559.736728668213,
+                20376.71995162964,
+                4817.960977554321,
+                4486.340045928955,
+                5019.216299057007,
+                5128.998041152954,
+                5994.110107421875,
+                5798.68221282959,
+                3705.7740688323975,
+                6605.843067169189,
+                8537.762880325317,
+                12280.586957931519,
+                8403.717041015625,
+                68946.24996185303,
+                5728.288173675537,
+                9593.491077423096,
+                6738.264083862305,
+                29559.94486808777,
+                7976.619005203247,
+                12287.298917770386,
+                5201.351881027222,
+                1816.4379596710205,
+                1387.6171112060547,
+                1300.553798675537,
+                3976.875066757202,
+                1459.0108394622803,
+                2269.8991298675537,
+                1652.5650024414062,
+                3773.1058597564697,
+                2454.3471336364746,
+                2006.944179534912,
+                2070.054054260254,
+                1656.524896621704,
+                2224.0519523620605,
+                4208.994150161743,
+                2517.179250717163,
+                4842.399120330811,
+                1656.3880443572998,
+                11054.450988769531,
+                2777.8749465942383,
+                2498.1820583343506,
+                6677.9539585113525,
+                9749.405860900879,
+                24468.199729919434,
+                1479.0430068969727,
+                3522.9358673095703,
+                1973.3588695526123,
+                1975.5477905273438,
+                12045.938968658447,
+                6890.607833862305,
+                4207.280874252319,
+                5576.771020889282,
+                4555.157899856567,
+                4998.51393699646
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/tbd/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1397, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1226, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1057, in _execute_commands\n    return False, self._limit_output_length(await session.get_incremental_output())\n                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 600, in get_incremental_output\n    current_buffer = await self.capture_pane(capture_entire=True)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 569, in capture_pane\n    result = await self.environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/daytona.py\", line 476, in exec\n    response = await self._sandbox.process.execute_session_command(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona/_utils/errors.py\", line 88, in async_wrapper\n    return await func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona/_async/process.py\", line 348, in execute_session_command\n    response = await self._api_client.session_execute_command(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/pydantic/_internal/_validate_call.py\", line 34, in wrapper_function\n    return await wrapper(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona_toolbox_api_client_async/api/process_api.py\", line 3557, in session_execute_command\n    response_data = await self.api_client.call_api(\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona/internal/toolbox_api_client_proxy.py\", line 70, in call_api\n    return await self._api_client.call_api(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona_toolbox_api_client_async/api_client.py\", line 276, in call_api\n    response_data = await self.rest_client.request(\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona_toolbox_api_client_async/rest.py\", line 211, in request\n    r = await pool_manager.request(**args)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/aiohttp/client.py\", line 779, in _request\n    resp = await handler(req)\n           ^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/aiohttp/client.py\", line 757, in _connect_and_send_request\n    await resp.start(conn)\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/aiohttp/client_reqrep.py\", line 539, in start\n    message, payload = await protocol.read()  # type: ignore[union-attr]\n                       ^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/aiohttp/streams.py\", line 703, in read\n    await self._waiter\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 243, in _execute_agent\n    await asyncio.wait_for(\n  File \"/Users/tbd/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 354, in run\n    await self._execute_agent()\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 252, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-01-27T02:37:22.651973"
+    },
+    "started_at": "2026-01-27T09:22:06.060514Z",
+    "finished_at": "2026-01-27T09:37:38.393859Z",
+    "environment_setup": {
+        "started_at": "2026-01-27T09:22:06.061857Z",
+        "finished_at": "2026-01-27T09:22:07.348331Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-27T09:22:07.348359Z",
+        "finished_at": "2026-01-27T09:22:22.704390Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-27T09:22:22.704461Z",
+        "finished_at": "2026-01-27T09:37:22.650084Z"
+    },
+    "verifier": {
+        "started_at": "2026-01-27T09:37:30.011737Z",
+        "finished_at": "2026-01-27T09:37:37.930943Z"
+    }
+}

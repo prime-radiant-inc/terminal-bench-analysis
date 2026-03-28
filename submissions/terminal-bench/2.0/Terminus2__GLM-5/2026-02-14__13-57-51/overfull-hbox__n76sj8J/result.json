@@ -1,0 +1,189 @@
+{
+    "id": "2400dd89-eecc-41be-ae57-9a98c63fc9c8",
+    "task_name": "overfull-hbox",
+    "trial_name": "overfull-hbox__n76sj8J",
+    "trial_uri": "file:///workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51/overfull-hbox__n76sj8J",
+    "task_id": {
+        "path": "/workspace/terminal/terminal-bench-2/overfull-hbox"
+    },
+    "source": "terminal-bench-2",
+    "task_checksum": "96c3365a4d527007766a44afa802cd19d8601eb13b458cf4e7a2c1dce8058cb7",
+    "config": {
+        "task": {
+            "path": "/workspace/terminal/terminal-bench-2/overfull-hbox",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench-2"
+        },
+        "trial_name": "overfull-hbox__n76sj8J",
+        "trials_dir": "/workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "parser_name": "xml",
+                "remove_main_key": true,
+                "api_base": "http://100.113.75.1:8080",
+                "temperature": 0.7,
+                "top_p": 1.0,
+                "max_new_tokens": 8192,
+                "model_info": {
+                    "max_input_tokens": 131072
+                },
+                "tokenizer_path": "/cloud/checkpoints/glm-moe/750b-moe/700b-sft-dsa-260127/iter_0020000_HF_FP8",
+                "use_generate": true,
+                "enable_summarize": true
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "9503f317-faba-45da-b01a-000cd6115566"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-5",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 75,
+            "api_request_times_msec": [
+                6146.788597106934,
+                4453.064918518066,
+                4523.334264755249,
+                3424.302101135254,
+                5658.78438949585,
+                4822.840213775635,
+                30571.19369506836,
+                31165.016174316406,
+                5486.596345901489,
+                4105.509996414185,
+                3392.916440963745,
+                2720.1552391052246,
+                3141.2436962127686,
+                3031.5780639648438,
+                3238.316774368286,
+                6360.649347305298,
+                16241.941213607788,
+                24205.292463302612,
+                3374.704360961914,
+                2692.6443576812744,
+                5905.029296875,
+                7454.029321670532,
+                17854.26354408264,
+                18456.286907196045,
+                3338.95206451416,
+                3889.65106010437,
+                2536.66353225708,
+                11017.038583755493,
+                11059.475898742676,
+                4080.3303718566895,
+                2521.7411518096924,
+                3513.267755508423,
+                5283.705949783325,
+                10374.38702583313,
+                2662.3692512512207,
+                3545.069932937622,
+                23786.6849899292,
+                6076.852321624756,
+                21132.914781570435,
+                11507.61342048645,
+                10412.150382995605,
+                2890.3799057006836,
+                6188.919305801392,
+                5701.637506484985,
+                18714.087963104248,
+                3511.533737182617,
+                15722.79977798462,
+                4092.045307159424,
+                5090.2769565582275,
+                6737.446069717407,
+                2296.905040740967,
+                2836.378574371338,
+                5642.658472061157,
+                10817.68798828125,
+                11075.02293586731,
+                2905.6363105773926,
+                4265.401363372803,
+                8990.207195281982,
+                2926.7873764038086,
+                5292.6671504974365,
+                4490.588188171387,
+                9866.12844467163,
+                5485.338926315308,
+                4445.198774337769,
+                3719.682455062866,
+                18853.10125350952,
+                6607.227087020874,
+                4652.133464813232,
+                14875.787496566772,
+                4779.959678649902,
+                4278.083086013794,
+                2717.438220977783,
+                14427.74510383606,
+                11231.964588165283
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 750.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/terminus_2.py\", line 1851, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/terminus_2.py\", line 1555, in _run_agent_loop\n    ) = await self._handle_llm_interaction(\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/terminus_2.py\", line 1378, in _handle_llm_interaction\n    llm_response = await self._query_llm(\n                   ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 193, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 112, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 157, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/_utils.py\", line 111, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/__init__.py\", line 394, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 116, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/terminus_2.py\", line 1102, in _query_llm\n    llm_response = await chat.chat(\n                   ^^^^^^^^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/llms/chat.py\", line 84, in chat\n    llm_response: LLMResponse = await self._model.call(\n                                ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 193, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 112, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 157, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/_utils.py\", line 111, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/__init__.py\", line 394, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 116, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/llms/lite_llm.py\", line 518, in call\n    return await self.generate(messages, logging_path)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/llms/lite_llm.py\", line 330, in generate\n    async with session.post(\n               ^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/aiohttp/client.py\", line 1510, in __aenter__\n    self._resp: _RetType = await self._coro\n                           ^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/aiohttp/client.py\", line 779, in _request\n    resp = await handler(req)\n           ^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/aiohttp/client.py\", line 757, in _connect_and_send_request\n    await resp.start(conn)\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/aiohttp/client_reqrep.py\", line 539, in start\n    message, payload = await protocol.read()  # type: ignore[union-attr]\n                       ^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/aiohttp/streams.py\", line 703, in read\n    await self._waiter\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/trial/trial.py\", line 248, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/trial/trial.py\", line 573, in run\n    await self._execute_agent()\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/trial/trial.py\", line 257, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 750.0 seconds\n",
+        "occurred_at": "2026-02-14T14:24:10.058628"
+    },
+    "started_at": "2026-02-14T14:10:36.255061",
+    "finished_at": "2026-02-14T14:25:08.475609",
+    "environment_setup": {
+        "started_at": "2026-02-14T14:10:36.278454",
+        "finished_at": "2026-02-14T14:10:54.209970"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-14T14:10:54.209988",
+        "finished_at": "2026-02-14T14:11:40.021756"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-14T14:11:40.021779",
+        "finished_at": "2026-02-14T14:24:10.055016"
+    },
+    "verifier": {
+        "started_at": "2026-02-14T14:24:10.079229",
+        "finished_at": "2026-02-14T14:24:59.080461"
+    }
+}

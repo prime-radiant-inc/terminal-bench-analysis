@@ -1,0 +1,86 @@
+{
+  "id": "987c72be-b9ac-4d84-b1bb-a07cb8d97d19",
+  "task_name": "large-scale-text-editing",
+  "trial_name": "large-scale-text-editing__PuZatYy",
+  "trial_uri": "file:///root/terminal-bench/jobs/gap-fill-large-scale-text-editing/large-scale-text-editing__PuZatYy",
+  "task_id": {
+    "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+    "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+    "path": "large-scale-text-editing"
+  },
+  "source": "terminal-bench",
+  "task_checksum": "c7e5e082f251c7c83d53f7b645d97ab3152cc5fffe42d88ff9cce5c62c35ce16",
+  "config": {
+    "task": {
+      "path": "large-scale-text-editing",
+      "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+      "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+      "overwrite": false,
+      "download_dir": null,
+      "source": "terminal-bench"
+    },
+    "trial_name": "large-scale-text-editing__PuZatYy",
+    "trials_dir": "jobs/gap-fill-large-scale-text-editing",
+    "timeout_multiplier": 1.0,
+    "agent": {
+      "name": null,
+      "import_path": "tbench_agent:TBenchAgent",
+      "model_name": "claude-opus-4-6",
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "kwargs": {
+        "task_name": "large-scale-text-editing"
+      }
+    },
+    "environment": {
+      "type": "docker",
+      "force_build": false,
+      "delete": true,
+      "override_cpus": null,
+      "override_memory_mb": null,
+      "override_storage_mb": null,
+      "kwargs": {}
+    },
+    "verifier": {
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "disable": false
+    },
+    "job_id": "1432505c-c0f7-4e68-be19-3ed4d7232a6e"
+  },
+  "agent_info": {
+    "name": "claude-code-enhanced",
+    "version": "unknown",
+    "model_info": null
+  },
+  "agent_result": {
+    "n_input_tokens": null,
+    "n_cache_tokens": null,
+    "n_output_tokens": null,
+    "cost_usd": null,
+    "rollout_details": null,
+    "metadata": null
+  },
+  "verifier_result": null,
+  "exception_info": {
+    "exception_type": "OSError",
+    "exception_message": "[Errno 7] Argument list too long: 'docker'",
+    "exception_traceback": "Traceback (most recent call last):\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/trial/trial.py\", line 344, in run\n    await self._execute_agent()\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/trial/trial.py\", line 228, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 135, in run\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 261, in exec\n    return await self._run_docker_compose_command(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 130, in _run_docker_compose_command\n    process = await asyncio.create_subprocess_exec(\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/subprocess.py\", line 224, in create_subprocess_exec\n    transport, protocol = await loop.subprocess_exec(\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/base_events.py\", line 1744, in subprocess_exec\n    transport = await self._make_subprocess_transport(\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/unix_events.py\", line 211, in _make_subprocess_transport\n    transp = _UnixSubprocessTransport(self, protocol, args, shell,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/base_subprocess.py\", line 36, in __init__\n    self._start(args=args, shell=shell, stdin=stdin, stdout=stdout,\n  File \"/usr/lib/python3.12/asyncio/unix_events.py\", line 820, in _start\n    self._proc = subprocess.Popen(\n                 ^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/subprocess.py\", line 1026, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n  File \"/usr/lib/python3.12/subprocess.py\", line 1955, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nOSError: [Errno 7] Argument list too long: 'docker'\n",
+    "occurred_at": "2026-02-18T15:08:26.247321"
+  },
+  "started_at": "2026-02-18T15:07:24.455162",
+  "finished_at": "2026-02-18T15:08:29.495403",
+  "environment_setup": {
+    "started_at": "2026-02-18T15:07:24.458791",
+    "finished_at": "2026-02-18T15:07:41.607827"
+  },
+  "agent_setup": {
+    "started_at": "2026-02-18T15:07:41.607860",
+    "finished_at": "2026-02-18T15:08:24.938317"
+  },
+  "agent_execution": {
+    "started_at": "2026-02-18T15:08:24.938351",
+    "finished_at": "2026-02-18T15:08:26.238383"
+  },
+  "verifier": null
+}

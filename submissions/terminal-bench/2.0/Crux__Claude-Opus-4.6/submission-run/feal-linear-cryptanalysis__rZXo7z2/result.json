@@ -1,0 +1,86 @@
+{
+  "id": "ed3456f3-54d5-480f-991d-bed2813f4304",
+  "task_name": "feal-linear-cryptanalysis",
+  "trial_name": "feal-linear-cryptanalysis__rZXo7z2",
+  "trial_uri": "file:///root/terminal-bench/jobs/5d0c6756/feal-linear-cryptanalysis__rZXo7z2",
+  "task_id": {
+    "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+    "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+    "path": "feal-linear-cryptanalysis"
+  },
+  "source": "terminal-bench",
+  "task_checksum": "3ee298ac4e31a90a460afa5fc10d34fdca7c1e591ccda5fc2c5faee2963991f2",
+  "config": {
+    "task": {
+      "path": "feal-linear-cryptanalysis",
+      "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+      "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+      "overwrite": false,
+      "download_dir": null,
+      "source": "terminal-bench"
+    },
+    "trial_name": "feal-linear-cryptanalysis__rZXo7z2",
+    "trials_dir": "jobs/5d0c6756",
+    "timeout_multiplier": 1.0,
+    "agent": {
+      "name": null,
+      "import_path": "tbench_agent:TBenchAgent",
+      "model_name": "claude-opus-4-5",
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "kwargs": {
+        "task_name": "feal-linear-cryptanalysis"
+      }
+    },
+    "environment": {
+      "type": "docker",
+      "force_build": false,
+      "delete": true,
+      "override_cpus": null,
+      "override_memory_mb": null,
+      "override_storage_mb": null,
+      "kwargs": {}
+    },
+    "verifier": {
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "disable": false
+    },
+    "job_id": "1432505c-c0f7-4e68-be19-3ed4d7232a6e"
+  },
+  "agent_info": {
+    "name": "claude-code-enhanced",
+    "version": "unknown",
+    "model_info": null
+  },
+  "agent_result": {
+    "n_input_tokens": null,
+    "n_cache_tokens": null,
+    "n_output_tokens": null,
+    "cost_usd": null,
+    "rollout_details": null,
+    "metadata": null
+  },
+  "verifier_result": null,
+  "exception_info": {
+    "exception_type": "AttributeError",
+    "exception_message": "'list' object has no attribute 'domain'",
+    "exception_traceback": "Traceback (most recent call last):\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/trial/trial.py\", line 344, in run\n    await self._execute_agent()\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/trial/trial.py\", line 228, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 129, in run\n    self.create_run_agent_commands(rendered_instruction)\n  File \"/root/terminal-bench/tbench_agent.py\", line 1431, in create_run_agent_commands\n    enhanced_instruction = self._enhance_prompt(instruction)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/terminal-bench/tbench_agent.py\", line 1721, in _enhance_prompt\n    ranked_skills = router.route(task)\n                    ^^^^^^^^^^^^^^^^^^\n  File \"/root/terminal-bench/tbench_agent.py\", line 1198, in route\n    if skill.domain == task.primary_domain:\n       ^^^^^^^^^^^^\nAttributeError: 'list' object has no attribute 'domain'\n",
+    "occurred_at": "2026-02-08T17:34:44.271647"
+  },
+  "started_at": "2026-02-08T17:34:07.484332",
+  "finished_at": "2026-02-08T17:34:47.666369",
+  "environment_setup": {
+    "started_at": "2026-02-08T17:34:07.486464",
+    "finished_at": "2026-02-08T17:34:22.033973"
+  },
+  "agent_setup": {
+    "started_at": "2026-02-08T17:34:22.034003",
+    "finished_at": "2026-02-08T17:34:43.686933"
+  },
+  "agent_execution": {
+    "started_at": "2026-02-08T17:34:43.686965",
+    "finished_at": "2026-02-08T17:34:44.270405"
+  },
+  "verifier": null
+}

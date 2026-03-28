@@ -1,0 +1,116 @@
+{
+    "id": "94bab7ad-b8da-4390-8e7a-3de60acb31d6",
+    "task_name": "llm-inference-batching-scheduler",
+    "trial_name": "llm-inference-batching-scheduler__jtcPLAN",
+    "trial_uri": "file:///Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/jobs/2026-02-13__11-48-54/llm-inference-batching-scheduler__jtcPLAN",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "llm-inference-batching-scheduler"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "3a08e63e0643ea5914eedeecb08cb93a1f0a10b9dc7d19d1f570004af84531c8",
+    "config": {
+        "task": {
+            "path": "llm-inference-batching-scheduler",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "llm-inference-batching-scheduler__jtcPLAN",
+        "trials_dir": "jobs/2026-02-13__11-48-54",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "5b28a0ef-c564-4598-b3e9-a1d99edc85c3"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 785066,
+        "n_cache_tokens": 708534,
+        "n_output_tokens": 30021,
+        "cost_usd": 1.5787482499999999,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 19,
+            "api_request_times_msec": [
+                11623.904943466187,
+                3538.615942001343,
+                4628.453254699707,
+                10230.583906173706,
+                57065.393924713135,
+                46800.758838653564,
+                49919.031858444214,
+                43614.16006088257,
+                47692.39783287048,
+                12023.595094680786,
+                31015.65194129944,
+                13141.068696975708,
+                9599.732160568237,
+                59963.47403526306,
+                22968.953847885132,
+                13212.22710609436,
+                13081.668138504028,
+                15106.087923049927,
+                11984.531879425049
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-13T03:59:51.443453Z",
+    "finished_at": "2026-02-13T04:10:29.572381Z",
+    "environment_setup": {
+        "started_at": "2026-02-13T03:59:51.491044Z",
+        "finished_at": "2026-02-13T03:59:57.909924Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-13T03:59:57.909929Z",
+        "finished_at": "2026-02-13T04:00:17.132858Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-13T04:00:17.132877Z",
+        "finished_at": "2026-02-13T04:10:16.824211Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-13T04:10:19.593055Z",
+        "finished_at": "2026-02-13T04:10:29.121068Z"
+    }
+}

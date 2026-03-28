@@ -1,0 +1,115 @@
+{
+    "id": "6e272616-4bf6-4974-a6d6-f36523388360",
+    "task_name": "constraints-scheduling",
+    "trial_name": "constraints-scheduling__prYFhrj",
+    "trial_uri": "file:///workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51/constraints-scheduling__prYFhrj",
+    "task_id": {
+        "path": "/workspace/terminal/terminal-bench-2/constraints-scheduling"
+    },
+    "source": "terminal-bench-2",
+    "task_checksum": "c69027b9099bb7ac63a753b310e31cfef9cc20dce2d1c6c88956c8a854d7ac16",
+    "config": {
+        "task": {
+            "path": "/workspace/terminal/terminal-bench-2/constraints-scheduling",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench-2"
+        },
+        "trial_name": "constraints-scheduling__prYFhrj",
+        "trials_dir": "/workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "parser_name": "xml",
+                "remove_main_key": true,
+                "api_base": "http://100.113.75.1:8080",
+                "temperature": 0.7,
+                "top_p": 1.0,
+                "max_new_tokens": 8192,
+                "model_info": {
+                    "max_input_tokens": 131072
+                },
+                "tokenizer_path": "/cloud/checkpoints/glm-moe/750b-moe/700b-sft-dsa-260127/iter_0020000_HF_FP8",
+                "use_generate": true,
+                "enable_summarize": true
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "9503f317-faba-45da-b01a-000cd6115566"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-5",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 5,
+            "api_request_times_msec": [
+                7711.098670959473,
+                6700.240850448608,
+                71486.13834381104,
+                21911.64469718933,
+                28847.166538238525
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-14T15:17:18.298170",
+    "finished_at": "2026-02-14T15:20:36.996394",
+    "environment_setup": {
+        "started_at": "2026-02-14T15:17:18.332438",
+        "finished_at": "2026-02-14T15:17:22.268381"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-14T15:17:22.268399",
+        "finished_at": "2026-02-14T15:17:41.634727"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-14T15:17:41.634786",
+        "finished_at": "2026-02-14T15:20:13.316372"
+    },
+    "verifier": {
+        "started_at": "2026-02-14T15:20:13.610024",
+        "finished_at": "2026-02-14T15:20:31.381058"
+    }
+}

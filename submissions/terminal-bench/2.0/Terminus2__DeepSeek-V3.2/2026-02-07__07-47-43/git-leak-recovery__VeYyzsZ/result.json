@@ -1,0 +1,107 @@
+{
+    "id": "d6f62d92-26aa-41ac-a393-534877d87938",
+    "task_name": "git-leak-recovery",
+    "trial_name": "git-leak-recovery__VeYyzsZ",
+    "trial_uri": "file:///root/harbor/jobs/2026-02-07__07-47-43/git-leak-recovery__VeYyzsZ",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "git-leak-recovery"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "6e313b191485295fc042ddfdc4d1184dc9588de1fa57f7513685fec67a7d7d9d",
+    "config": {
+        "task": {
+            "path": "git-leak-recovery",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "git-leak-recovery__VeYyzsZ",
+        "trials_dir": "jobs/2026-02-07__07-47-43",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "deepseek/deepseek-chat",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "bd502fde-cc79-4ca6-a1b2-abbcb1ea84cf"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "deepseek-chat",
+            "provider": "deepseek"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 55477,
+        "n_cache_tokens": 51840,
+        "n_output_tokens": 6348,
+        "cost_usd": 0.00513604,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 10,
+            "api_request_times_msec": [
+                23620.27645111084,
+                16540.796041488647,
+                18613.502502441406,
+                19296.46897315979,
+                30412.662267684937,
+                27291.706562042236,
+                26893.239736557007,
+                21646.804332733154,
+                9762.654542922974,
+                3499.152660369873
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-08T01:51:25.944967Z",
+    "finished_at": "2026-02-08T01:55:30.765731Z",
+    "environment_setup": {
+        "started_at": "2026-02-08T01:51:25.946539Z",
+        "finished_at": "2026-02-08T01:51:28.385740Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-08T01:51:28.385751Z",
+        "finished_at": "2026-02-08T01:51:37.896452Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-08T01:51:37.896516Z",
+        "finished_at": "2026-02-08T01:55:12.162360Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-08T01:55:12.162437Z",
+        "finished_at": "2026-02-08T01:55:19.936467Z"
+    }
+}

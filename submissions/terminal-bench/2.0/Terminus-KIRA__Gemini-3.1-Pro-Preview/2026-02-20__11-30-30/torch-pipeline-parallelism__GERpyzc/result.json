@@ -1,0 +1,149 @@
+{
+    "id": "2a13dabd-a9cd-459f-a6dc-edfc055d154e",
+    "task_name": "torch-pipeline-parallelism",
+    "trial_name": "torch-pipeline-parallelism__GERpyzc",
+    "trial_uri": "file:///Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/jobs/2026-02-20__11-30-30/torch-pipeline-parallelism__GERpyzc",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "torch-pipeline-parallelism"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "3d4bac3d36d63a48403936af61510e24cce92d6650ab4e4b9b21e1192b183646",
+    "config": {
+        "task": {
+            "path": "torch-pipeline-parallelism",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "torch-pipeline-parallelism__GERpyzc",
+        "trials_dir": "jobs/2026-02-20__11-30-30",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "437f46df-c026-4476-8cde-8d57dd02c134"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "gemini-3.1-pro-preview",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1717865,
+        "n_cache_tokens": 1161337,
+        "n_output_tokens": 34115,
+        "cost_usd": 1.7547033999999997,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                34482.627868652344,
+                6243.566989898682,
+                8157.08065032959,
+                5722.51296043396,
+                7280.3990840911865,
+                9274.739027023315,
+                7660.377979278564,
+                4551.612854003906,
+                4399.330854415894,
+                7725.971937179565,
+                5401.98826789856,
+                4749.399662017822,
+                4745.110988616943,
+                4616.387844085693,
+                10490.944862365723,
+                4436.561107635498,
+                7118.32594871521,
+                4298.888206481934,
+                9043.896913528442,
+                5196.815013885498,
+                9073.297262191772,
+                10271.878957748413,
+                10745.51010131836,
+                3932.9357147216797,
+                19252.62999534607,
+                4283.705949783325,
+                9676.299810409546,
+                3502.6538372039795,
+                17573.66919517517,
+                3917.367935180664,
+                11925.28510093689,
+                4476.747989654541,
+                15682.74474143982,
+                7365.167856216431,
+                11065.178871154785,
+                3320.6281661987305,
+                12999.832153320312,
+                14636.588096618652,
+                12180.299043655396,
+                22096.076011657715,
+                18906.956911087036,
+                3752.7098655700684,
+                15796.068906784058,
+                3271.3050842285156,
+                4196.971893310547,
+                33835.78419685364,
+                10502.609252929688
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/yun/.pyenv/versions/3.13.0/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/terminal_bench/agents/terminus_3/terminus_3.py\", line 105, in run\n    result = await super().run(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1395, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/terminal_bench/agents/terminus_3/terminus_3_3.py\", line 488, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n    )\n    ^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/terminal_bench/agents/terminus_3/terminus_3.py\", line 96, in _execute_commands\n    output = await session.get_incremental_output()\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 600, in get_incremental_output\n    current_buffer = await self.capture_pane(capture_entire=True)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 569, in capture_pane\n    result = await self.environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        self._tmux_capture_pane(capture_entire=capture_entire)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/environments/daytona.py\", line 488, in exec\n    result = await self._poll_response(session_id, response.cmd_id)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/environments/daytona.py\", line 436, in _poll_response\n    await asyncio.sleep(1)\n  File \"/Users/yun/.pyenv/versions/3.13.0/lib/python3.13/asyncio/tasks.py\", line 718, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 251, in _execute_agent\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/Users/yun/.pyenv/versions/3.13.0/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/Users/yun/.pyenv/versions/3.13.0/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 362, in run\n    await self._execute_agent()\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 260, in _execute_agent\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {self._agent_timeout_sec} seconds\"\n    ) from e\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-02-20T12:23:54.743039"
+    },
+    "started_at": "2026-02-20T03:08:32.038690Z",
+    "finished_at": "2026-02-20T03:27:14.911287Z",
+    "environment_setup": {
+        "started_at": "2026-02-20T03:08:32.050544Z",
+        "finished_at": "2026-02-20T03:08:34.909109Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-20T03:08:34.909120Z",
+        "finished_at": "2026-02-20T03:08:54.744437Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-20T03:08:54.744470Z",
+        "finished_at": "2026-02-20T03:23:54.741158Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-20T03:23:59.447336Z",
+        "finished_at": "2026-02-20T03:27:14.483203Z"
+    }
+}

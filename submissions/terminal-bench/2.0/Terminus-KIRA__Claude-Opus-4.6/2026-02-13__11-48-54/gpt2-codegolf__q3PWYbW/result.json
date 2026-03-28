@@ -1,0 +1,137 @@
+{
+    "id": "7ff55f7a-7d40-404e-99d5-6f70e78fccd7",
+    "task_name": "gpt2-codegolf",
+    "trial_name": "gpt2-codegolf__q3PWYbW",
+    "trial_uri": "file:///Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/jobs/2026-02-13__11-48-54/gpt2-codegolf__q3PWYbW",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "gpt2-codegolf"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "c3dfea370953fe9b6cb53d368f1f242af2833cf1af623849bdaee8fe026b1cf1",
+    "config": {
+        "task": {
+            "path": "gpt2-codegolf",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "gpt2-codegolf__q3PWYbW",
+        "trials_dir": "jobs/2026-02-13__11-48-54",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "5b28a0ef-c564-4598-b3e9-a1d99edc85c3"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1179236,
+        "n_cache_tokens": 1097465,
+        "n_output_tokens": 38100,
+        "cost_usd": 2.0011925,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                8325.161933898926,
+                6289.189100265503,
+                9179.673194885254,
+                16055.795907974243,
+                13753.91411781311,
+                9129.776239395142,
+                12435.918807983398,
+                18054.795026779175,
+                13060.157060623169,
+                2738.9347553253174,
+                18350.898265838623,
+                32238.098859786987,
+                19660.538911819458,
+                32265.811920166016,
+                14522.376298904419,
+                28395.512104034424,
+                59579.67019081116,
+                7055.058717727661,
+                3165.8990383148193,
+                10806.90312385559,
+                16950.079917907715,
+                27612.3149394989,
+                25406.6481590271,
+                30779.425859451294,
+                4098.584175109863,
+                14262.058019638062,
+                29720.060110092163,
+                25706.64882659912,
+                25397.459983825684,
+                29685.08219718933,
+                27500.580072402954,
+                22273.72694015503,
+                40719.53272819519,
+                9486.811876296997,
+                33188.52519989014
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/hyogon.ryu/.local/share/uv/python/cpython-3.13.12-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/terminal_bench/agents/terminus_3/terminus_3.py\", line 105, in run\n    result = await super().run(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1395, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/terminal_bench/agents/terminus_3/terminus_3_3.py\", line 487, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n    )\n    ^\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/terminal_bench/agents/terminus_3/terminus_3.py\", line 71, in _execute_commands\n    await session.send_keys(\n        command.keystrokes, block=False, min_timeout_sec=0.0\n    )\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 563, in send_keys\n    await self._send_non_blocking_keys(\n    ...<2 lines>...\n    )\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 518, in _send_non_blocking_keys\n    await self.environment.exec(self._tmux_send_keys(keys))\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/harbor/environments/daytona.py\", line 476, in exec\n    response = await self._sandbox.process.execute_session_command(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<6 lines>...\n    )\n    ^\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/daytona/_utils/errors.py\", line 87, in async_wrapper\n    return await async_func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/daytona/_async/process.py\", line 353, in execute_session_command\n    response = await self._api_client.session_execute_command(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n    )\n    ^\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/pydantic/_internal/_validate_call.py\", line 34, in wrapper_function\n    return await wrapper(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/daytona_toolbox_api_client_async/api/process_api.py\", line 3854, in session_execute_command\n    response_data = await self.api_client.call_api(\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n    )\n    ^\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/daytona/internal/toolbox_api_client_proxy.py\", line 72, in call_api\n    return await self._api_client.call_api(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/daytona_toolbox_api_client_async/api_client.py\", line 276, in call_api\n    response_data = await self.rest_client.request(\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/daytona_toolbox_api_client_async/rest.py\", line 211, in request\n    r = await pool_manager.request(**args)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/aiohttp/client.py\", line 770, in _request\n    resp = await handler(req)\n           ^^^^^^^^^^^^^^^^^^\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/aiohttp/client.py\", line 748, in _connect_and_send_request\n    await resp.start(conn)\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/aiohttp/client_reqrep.py\", line 532, in start\n    message, payload = await protocol.read()  # type: ignore[union-attr]\n                       ^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/aiohttp/streams.py\", line 672, in read\n    await self._waiter\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 251, in _execute_agent\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/Users/hyogon.ryu/.local/share/uv/python/cpython-3.13.12-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/Users/hyogon.ryu/.local/share/uv/python/cpython-3.13.12-macos-aarch64-none/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 362, in run\n    await self._execute_agent()\n  File \"/Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/.venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 260, in _execute_agent\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {self._agent_timeout_sec} seconds\"\n    ) from e\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-02-13T12:45:29.975223"
+    },
+    "started_at": "2026-02-13T03:30:00.416873Z",
+    "finished_at": "2026-02-13T03:45:45.679753Z",
+    "environment_setup": {
+        "started_at": "2026-02-13T03:30:00.595898Z",
+        "finished_at": "2026-02-13T03:30:03.494664Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-13T03:30:03.494667Z",
+        "finished_at": "2026-02-13T03:30:29.961194Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-13T03:30:29.961209Z",
+        "finished_at": "2026-02-13T03:45:29.971287Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-13T03:45:32.488810Z",
+        "finished_at": "2026-02-13T03:45:45.155576Z"
+    }
+}

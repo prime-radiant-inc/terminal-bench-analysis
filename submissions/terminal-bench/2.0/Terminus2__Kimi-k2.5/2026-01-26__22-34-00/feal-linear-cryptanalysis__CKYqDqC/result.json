@@ -1,0 +1,128 @@
+{
+    "id": "badee135-1cba-41a8-ad15-5ab75d818693",
+    "task_name": "feal-linear-cryptanalysis",
+    "trial_name": "feal-linear-cryptanalysis__CKYqDqC",
+    "trial_uri": "file:///Users/tbd/tbench/jobs/2026-01-26-terminus-ollama-cloud-kimi-k2.5%3Acloud-full-v01/feal-linear-cryptanalysis__CKYqDqC",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "feal-linear-cryptanalysis"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "3ee298ac4e31a90a460afa5fc10d34fdca7c1e591ccda5fc2c5faee2963991f2",
+    "config": {
+        "task": {
+            "path": "feal-linear-cryptanalysis",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "feal-linear-cryptanalysis__CKYqDqC",
+        "trials_dir": "jobs/2026-01-26-terminus-ollama-cloud-kimi-k2.5:cloud-full-v01",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/kimi-k2.5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1"
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "51c16618-c2ea-4a8a-baac-cf3b720d2036"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "kimi-k2.5:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 943593,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 37283,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                10610.327005386353,
+                2082.4060440063477,
+                4281.799077987671,
+                6167.413949966431,
+                38835.85572242737,
+                13485.657930374146,
+                27269.36984062195,
+                13303.34210395813,
+                14464.303970336914,
+                22737.32900619507,
+                16373.353004455566,
+                16361.55390739441,
+                2000.4870891571045,
+                4761.574029922485,
+                32967.43416786194,
+                20248.57211112976,
+                8248.591184616089,
+                14452.292203903198,
+                4800.54497718811,
+                8428.9870262146,
+                2102.562189102173,
+                13101.680040359497,
+                3176.500082015991,
+                12785.008192062378,
+                14742.53511428833,
+                7678.9610385894775,
+                13069.359064102173,
+                2754.9309730529785,
+                33966.42994880676,
+                4617.118120193481,
+                2028.2769203186035
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "DaytonaError",
+        "exception_message": "Failed to create session: mkdir /root/.daytona/sessions/ff6a499e-14ab-453a-8e1b-f6c07ee75f79: no space left on device",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 354, in run\n    await self._execute_agent()\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 243, in _execute_agent\n    await asyncio.wait_for(\n  File \"/Users/tbd/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1397, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1226, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1057, in _execute_commands\n    return False, self._limit_output_length(await session.get_incremental_output())\n                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 600, in get_incremental_output\n    current_buffer = await self.capture_pane(capture_entire=True)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 569, in capture_pane\n    result = await self.environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/daytona.py\", line 462, in exec\n    await self._sandbox.process.create_session(session_id)\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona/_utils/errors.py\", line 89, in async_wrapper\n    process_n_raise_exception(e)\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona/_utils/errors.py\", line 67, in process_n_raise_exception\n    raise DaytonaError(f\"{message_prefix}{msg}\", status_code=status_code, headers=headers) from None\ndaytona.common.errors.DaytonaError: Failed to create session: mkdir /root/.daytona/sessions/ff6a499e-14ab-453a-8e1b-f6c07ee75f79: no space left on device\n",
+        "occurred_at": "2026-01-27T17:35:34.196014"
+    },
+    "started_at": "2026-01-28T00:18:56.907806Z",
+    "finished_at": "2026-01-28T00:35:34.885700Z",
+    "environment_setup": {
+        "started_at": "2026-01-28T00:18:56.910776Z",
+        "finished_at": "2026-01-28T00:19:00.740305Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-28T00:19:00.740319Z",
+        "finished_at": "2026-01-28T00:19:12.741775Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-28T00:19:12.741901Z",
+        "finished_at": "2026-01-28T00:35:32.456505Z"
+    },
+    "verifier": null
+}

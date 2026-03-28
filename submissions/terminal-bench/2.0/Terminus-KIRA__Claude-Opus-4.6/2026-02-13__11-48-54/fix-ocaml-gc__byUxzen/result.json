@@ -1,0 +1,170 @@
+{
+    "id": "b50b9f13-88e5-41cf-b61f-a9e6fb6abbc0",
+    "task_name": "fix-ocaml-gc",
+    "trial_name": "fix-ocaml-gc__byUxzen",
+    "trial_uri": "file:///Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/jobs/2026-02-13__11-48-54/fix-ocaml-gc__byUxzen",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "fix-ocaml-gc"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "faa983dd79f63daa168b41c753bddb0621822820ba6f16661a9767b815e436e8",
+    "config": {
+        "task": {
+            "path": "fix-ocaml-gc",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "fix-ocaml-gc__byUxzen",
+        "trials_dir": "jobs/2026-02-13__11-48-54",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "5b28a0ef-c564-4598-b3e9-a1d99edc85c3"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2155123,
+        "n_cache_tokens": 2103980,
+        "n_output_tokens": 12441,
+        "cost_usd": 1.6725625000000002,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 73,
+            "api_request_times_msec": [
+                6421.253204345703,
+                2567.5621032714844,
+                42764.888763427734,
+                8082.005023956299,
+                4186.450004577637,
+                4357.558012008667,
+                3791.0118103027344,
+                8473.067045211792,
+                6927.813291549683,
+                6050.820112228394,
+                4670.3808307647705,
+                4972.009897232056,
+                25350.817918777466,
+                15096.142053604126,
+                6353.686094284058,
+                6609.9889278411865,
+                3828.160047531128,
+                2732.326030731201,
+                2583.3511352539062,
+                2880.9659481048584,
+                2367.614984512329,
+                2403.2692909240723,
+                2302.4110794067383,
+                2203.909158706665,
+                2340.24715423584,
+                2348.004102706909,
+                2170.729875564575,
+                2244.7290420532227,
+                2502.092123031616,
+                2965.8470153808594,
+                3251.2669563293457,
+                3944.6918964385986,
+                3096.1239337921143,
+                2806.2610626220703,
+                3284.473180770874,
+                2870.9287643432617,
+                6096.9789028167725,
+                4291.061878204346,
+                3375.0152587890625,
+                2569.1897869110107,
+                2380.1941871643066,
+                2638.353109359741,
+                3444.4708824157715,
+                3416.3269996643066,
+                3676.0849952697754,
+                4080.3921222686768,
+                3196.9380378723145,
+                2792.6177978515625,
+                2392.659902572632,
+                2688.0688667297363,
+                2590.0251865386963,
+                2651.5839099884033,
+                5514.22381401062,
+                4332.329988479614,
+                4764.189958572388,
+                3279.425859451294,
+                3003.9632320404053,
+                3199.9521255493164,
+                3808.711051940918,
+                5578.607797622681,
+                3498.8579750061035,
+                7509.72580909729,
+                7882.407188415527,
+                4438.6420249938965,
+                2986.7680072784424,
+                3307.6062202453613,
+                3311.730146408081,
+                3711.3871574401855,
+                12860.781192779541,
+                10366.376876831055,
+                7143.316984176636,
+                15827.835083007812,
+                9508.47315788269
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-13T04:49:50.106024Z",
+    "finished_at": "2026-02-13T05:10:54.309244Z",
+    "environment_setup": {
+        "started_at": "2026-02-13T04:49:50.132675Z",
+        "finished_at": "2026-02-13T04:49:56.778834Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-13T04:49:56.778837Z",
+        "finished_at": "2026-02-13T04:50:14.190644Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-13T04:50:14.190661Z",
+        "finished_at": "2026-02-13T05:03:26.353987Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-13T05:03:29.095947Z",
+        "finished_at": "2026-02-13T05:10:53.861394Z"
+    }
+}

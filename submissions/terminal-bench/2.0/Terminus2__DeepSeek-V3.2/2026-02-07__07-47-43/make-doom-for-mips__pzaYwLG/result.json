@@ -1,0 +1,137 @@
+{
+    "id": "a111aac8-75aa-4bfd-b19b-ea4011dc65b6",
+    "task_name": "make-doom-for-mips",
+    "trial_name": "make-doom-for-mips__pzaYwLG",
+    "trial_uri": "file:///root/harbor/jobs/2026-02-07__07-47-43/make-doom-for-mips__pzaYwLG",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "make-doom-for-mips"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "48c24358a58435a97de86cc88255b6faf1cd3cb28bd27ff6a918e01655095981",
+    "config": {
+        "task": {
+            "path": "make-doom-for-mips",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "make-doom-for-mips__pzaYwLG",
+        "trials_dir": "jobs/2026-02-07__07-47-43",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "deepseek/deepseek-chat",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "bd502fde-cc79-4ca6-a1b2-abbcb1ea84cf"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "deepseek-chat",
+            "provider": "deepseek"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 909619,
+        "n_cache_tokens": 877760,
+        "n_output_tokens": 17965,
+        "cost_usd": 0.0410431,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                9109.848499298096,
+                9898.46158027649,
+                11092.730283737183,
+                14073.76503944397,
+                13203.616857528687,
+                15877.208232879639,
+                18301.57971382141,
+                26911.290645599365,
+                8011.014938354492,
+                7858.8666915893555,
+                9039.985179901123,
+                5543.62940788269,
+                8638.67473602295,
+                11559.10849571228,
+                5745.078086853027,
+                14904.632091522217,
+                11847.247123718262,
+                14939.65768814087,
+                12244.699239730835,
+                11815.085649490356,
+                8786.792516708374,
+                32513.73815536499,
+                19152.214765548706,
+                13864.277362823486,
+                49291.84174537659,
+                12871.593713760376,
+                10246.925592422485,
+                13841.840505599976,
+                19341.65596961975,
+                32456.380605697632,
+                19625.646114349365,
+                23305.357694625854,
+                18779.787302017212,
+                11082.148790359497,
+                23780.938625335693
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1395, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1115, in _run_agent_loop\n    ) = await self._handle_llm_interaction(\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 990, in _handle_llm_interaction\n    llm_response = await self._query_llm(\n                   ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 193, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 112, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 157, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/_utils.py\", line 111, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/__init__.py\", line 394, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 116, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 817, in _query_llm\n    llm_response = await chat.chat(\n                   ^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/llms/chat.py\", line 77, in chat\n    llm_response: LLMResponse = await self._model.call(\n                                ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 193, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 112, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 157, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/_utils.py\", line 111, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/__init__.py\", line 394, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 116, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/llms/lite_llm.py\", line 350, in call\n    response = await litellm.acompletion(**completion_kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/litellm/utils.py\", line 1861, in wrapper_async\n    result = await original_function(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/litellm/main.py\", line 611, in acompletion\n    response = await init_response\n               ^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/litellm/llms/custom_httpx/llm_http_handler.py\", line 293, in async_completion\n    response = await self._make_common_async_call(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/litellm/llms/custom_httpx/llm_http_handler.py\", line 161, in _make_common_async_call\n    response = await async_httpx_client.post(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/litellm/litellm_core_utils/logging_utils.py\", line 190, in async_wrapper\n    result = await func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/litellm/llms/custom_httpx/http_handler.py\", line 465, in post\n    response = await self.client.send(req, stream=stream)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/httpx/_client.py\", line 1643, in send\n    raise exc\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/httpx/_client.py\", line 1637, in send\n    await response.aread()\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/httpx/_models.py\", line 979, in aread\n    self._content = b\"\".join([part async for part in self.aiter_bytes()])\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/httpx/_models.py\", line 997, in aiter_bytes\n    async for raw_bytes in self.aiter_raw():\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/httpx/_models.py\", line 1055, in aiter_raw\n    async for raw_stream_bytes in self.stream:\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/httpx/_client.py\", line 176, in __aiter__\n    async for chunk in self._stream:\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/httpx/_content.py\", line 88, in __aiter__\n    async for part in self._stream:\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/litellm/llms/custom_httpx/aiohttp_transport.py\", line 85, in __aiter__\n    async for chunk in self._aiohttp_response.content.iter_chunked(self.CHUNK_SIZE):\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/aiohttp/streams.py\", line 52, in __anext__\n    rv = await self.read_func()\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/aiohttp/streams.py\", line 452, in read\n    await self._wait(\"read\")\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/aiohttp/streams.py\", line 371, in _wait\n    await waiter\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 251, in _execute_agent\n    await asyncio.wait_for(\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 362, in run\n    await self._execute_agent()\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 260, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-02-07T10:22:22.222787"
+    },
+    "started_at": "2026-02-07T10:07:09.792394Z",
+    "finished_at": "2026-02-07T10:23:16.772708Z",
+    "environment_setup": {
+        "started_at": "2026-02-07T10:07:09.803860Z",
+        "finished_at": "2026-02-07T10:07:13.967663Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-07T10:07:13.967678Z",
+        "finished_at": "2026-02-07T10:07:22.211255Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-07T10:07:22.211303Z",
+        "finished_at": "2026-02-07T10:22:22.218682Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-07T10:22:22.224640Z",
+        "finished_at": "2026-02-07T10:23:05.590377Z"
+    }
+}

@@ -1,0 +1,133 @@
+{
+    "id": "84d16eb0-7b5b-4bb7-bb64-6d4f5221d2fc",
+    "task_name": "compile-compcert",
+    "trial_name": "compile-compcert__DeQXqes",
+    "trial_uri": "file:///workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51/compile-compcert__DeQXqes",
+    "task_id": {
+        "path": "/workspace/terminal/terminal-bench-2/compile-compcert"
+    },
+    "source": "terminal-bench-2",
+    "task_checksum": "3c434d30e5ba4180232b09188d6f1e8e15a8e8e8f748fe479175757384a8d39e",
+    "config": {
+        "task": {
+            "path": "/workspace/terminal/terminal-bench-2/compile-compcert",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench-2"
+        },
+        "trial_name": "compile-compcert__DeQXqes",
+        "trials_dir": "/workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "parser_name": "xml",
+                "remove_main_key": true,
+                "api_base": "http://100.113.75.1:8080",
+                "temperature": 0.7,
+                "top_p": 1.0,
+                "max_new_tokens": 8192,
+                "model_info": {
+                    "max_input_tokens": 131072
+                },
+                "tokenizer_path": "/cloud/checkpoints/glm-moe/750b-moe/700b-sft-dsa-260127/iter_0020000_HF_FP8",
+                "use_generate": true,
+                "enable_summarize": true
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "9503f317-faba-45da-b01a-000cd6115566"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-5",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 23,
+            "api_request_times_msec": [
+                5901.085138320923,
+                6650.017976760864,
+                4268.085718154907,
+                5629.0929317474365,
+                5583.283185958862,
+                4412.438869476318,
+                2728.68275642395,
+                2359.266519546509,
+                1843.8053131103516,
+                4388.560056686401,
+                2405.7579040527344,
+                2105.097532272339,
+                2182.8041076660156,
+                2446.4123249053955,
+                1869.685173034668,
+                1888.794183731079,
+                1936.9397163391113,
+                1846.172571182251,
+                3891.31760597229,
+                4007.171392440796,
+                3896.6245651245117,
+                4019.3028450012207
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "AddTestsDirError",
+        "exception_message": "Failed to add tests directory to environment.",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/verifier/verifier.py\", line 83, in verify\n    await self._environment.upload_dir(\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/environments/docker/docker.py\", line 259, in upload_dir\n    await self._run_docker_compose_command(\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/environments/docker/docker.py\", line 183, in _run_docker_compose_command\n    raise RuntimeError(\nRuntimeError: Docker compose command failed for environment compile-compcert. Command: docker-compose -p compile-compcert__deqxqes -f /workspace/gcd/code/terminal_bench/src/harbor/environments/docker/docker-compose-prebuilt.yaml cp /workspace/terminal/terminal-bench-2/compile-compcert/tests main:/tests. Return code: 1. Stdout:  compile-compcert__deqxqes-main-1 copy /workspace/terminal/terminal-bench-2/compile-compcert/tests to compile-compcert__deqxqes-main-1:/tests Copying\nError response from daemon: rpc error: code = NotFound desc = not exists\n. Stderr: None. \n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/trial/trial.py\", line 597, in run\n    await self._run_verification()\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/trial/trial.py\", line 359, in _run_verification\n    await self._verify_with_retry()\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 193, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 112, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 157, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/_utils.py\", line 111, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/__init__.py\", line 394, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/root/.venvs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 116, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/trial/trial.py\", line 377, in _verify_with_retry\n    self._result.verifier_result = await asyncio.wait_for(\n                                   ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/verifier/verifier.py\", line 88, in verify\n    raise AddTestsDirError(\nharbor.verifier.verifier.AddTestsDirError: Failed to add tests directory to environment.\n",
+        "occurred_at": "2026-02-14T18:20:26.951364"
+    },
+    "started_at": "2026-02-14T18:02:13.061417",
+    "finished_at": "2026-02-14T18:20:27.375780",
+    "environment_setup": {
+        "started_at": "2026-02-14T18:02:13.076103",
+        "finished_at": "2026-02-14T18:02:21.025974"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-14T18:02:21.025994",
+        "finished_at": "2026-02-14T18:02:37.766611"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-14T18:02:37.766640",
+        "finished_at": "2026-02-14T18:20:26.771414"
+    },
+    "verifier": {
+        "started_at": "2026-02-14T18:20:26.885175",
+        "finished_at": "2026-02-14T18:20:26.949544"
+    }
+}

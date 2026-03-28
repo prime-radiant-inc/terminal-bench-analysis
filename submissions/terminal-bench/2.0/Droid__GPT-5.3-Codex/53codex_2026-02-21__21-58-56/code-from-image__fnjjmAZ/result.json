@@ -1,0 +1,91 @@
+{
+    "id": "32c0e1db-2d60-4d8e-acde-c5a6d0fcc81c",
+    "task_name": "code-from-image",
+    "trial_name": "code-from-image__fnjjmAZ",
+    "trial_uri": "file:///home/ssm-user/repo/factory-evals/jobs/53codex_2026-02-21__21-58-56/code-from-image__fnjjmAZ",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "code-from-image"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "179258dd4d90a45c225beff94152358b15906668f95bde3330a7d3c755dcf387",
+    "config": {
+        "task": {
+            "path": "code-from-image",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "code-from-image__fnjjmAZ",
+        "trials_dir": "jobs/53codex_2026-02-21__21-58-56",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "src.droid_terminal_bench.agents_v2.exec:DroidExecAgent",
+            "model_name": "gpt-5.3-codex",
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "run_id": "53codex_2026-02-21__21-58-56",
+                "payload_dir": "/tmp/tmp.BWAogChts3",
+                "reasoning_effort": "xhigh",
+                "allow_background_processes": "False"
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "force_build": true,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "b2471e2d-0fe0-4740-87a8-7c3fefd01044"
+    },
+    "agent_info": {
+        "name": "Factory Droid",
+        "version": "unknown",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-21T22:14:39.781913",
+    "finished_at": "2026-02-21T22:15:55.297803",
+    "environment_setup": {
+        "started_at": "2026-02-21T22:14:39.782392",
+        "finished_at": "2026-02-21T22:14:41.040959"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-21T22:14:41.040971",
+        "finished_at": "2026-02-21T22:14:48.455379"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-21T22:14:48.455405",
+        "finished_at": "2026-02-21T22:15:41.512602"
+    },
+    "verifier": {
+        "started_at": "2026-02-21T22:15:41.512695",
+        "finished_at": "2026-02-21T22:15:44.618624"
+    }
+}

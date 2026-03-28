@@ -1,0 +1,119 @@
+{
+    "id": "06e90775-e526-4df7-8468-ea8fc09fb8e2",
+    "task_name": "tune-mjcf",
+    "trial_name": "tune-mjcf__y3AGeke",
+    "trial_uri": "file:///Users/tbd/tbench/jobs/2026-01-26-terminus-ollama-cloud-kimi-k2.5%3Acloud-full-v01/tune-mjcf__y3AGeke",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "tune-mjcf"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "0014600ed83c316bbc3b495879f147f234d06578281af02817c9955794d4ebef",
+    "config": {
+        "task": {
+            "path": "tune-mjcf",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "tune-mjcf__y3AGeke",
+        "trials_dir": "jobs/2026-01-26-terminus-ollama-cloud-kimi-k2.5:cloud-full-v01",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/kimi-k2.5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1"
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "51c16618-c2ea-4a8a-baac-cf3b720d2036"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "kimi-k2.5:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 143722,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 7968,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 20,
+            "api_request_times_msec": [
+                8374.475002288818,
+                4066.011905670166,
+                7256.763935089111,
+                7398.072719573975,
+                2862.9257678985596,
+                13967.501878738403,
+                11835.149049758911,
+                5559.971809387207,
+                4969.748973846436,
+                5248.262882232666,
+                9381.340026855469,
+                3984.3530654907227,
+                5351.097106933594,
+                9676.215887069702,
+                13027.78172492981,
+                8530.164957046509,
+                8478.982925415039,
+                7017.797231674194,
+                1902.5547504425049,
+                2552.2429943084717
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-01-27T19:21:39.490189Z",
+    "finished_at": "2026-01-27T19:32:43.889826Z",
+    "environment_setup": {
+        "started_at": "2026-01-27T19:21:39.491773Z",
+        "finished_at": "2026-01-27T19:21:42.220417Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-27T19:21:42.220452Z",
+        "finished_at": "2026-01-27T19:21:54.221864Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-27T19:21:54.221980Z",
+        "finished_at": "2026-01-27T19:32:21.026445Z"
+    },
+    "verifier": {
+        "started_at": "2026-01-27T19:32:22.240486Z",
+        "finished_at": "2026-01-27T19:32:43.446348Z"
+    }
+}

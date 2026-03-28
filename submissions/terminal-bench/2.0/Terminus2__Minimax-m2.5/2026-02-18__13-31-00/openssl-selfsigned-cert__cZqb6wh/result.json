@@ -1,0 +1,106 @@
+{
+    "id": "049651a0-c104-43a1-9629-b3c87d205b6a",
+    "task_name": "openssl-selfsigned-cert",
+    "trial_name": "openssl-selfsigned-cert__cZqb6wh",
+    "trial_uri": "file:///private/tmp/jobs/Terminus2__Minimax-m2.5/openssl-selfsigned-cert__cZqb6wh",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "openssl-selfsigned-cert"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "8c096d8af92f88d8f876e26efc7f495ff13f50586736e56f35140fbb080ff390",
+    "config": {
+        "task": {
+            "path": "openssl-selfsigned-cert",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "openssl-selfsigned-cert__cZqb6wh",
+        "trials_dir": "jobs/Terminus2__Minimax-m2.5",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/minimax-m2.5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1",
+                "reasoning_effort": "high"
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "9cc95f8c-41a9-4311-9697-52edfbed6e7a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "minimax-m2.5:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 6906,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 2814,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 6,
+            "api_request_times_msec": [
+                9112.674951553345,
+                10157.480955123901,
+                25807.697057724,
+                7615.47064781189,
+                10810.621976852417,
+                18931.719064712524
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-17T19:32:29.029476Z",
+    "finished_at": "2026-02-17T19:34:25.910125Z",
+    "environment_setup": {
+        "started_at": "2026-02-17T19:32:29.036074Z",
+        "finished_at": "2026-02-17T19:32:30.897360Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-17T19:32:30.897376Z",
+        "finished_at": "2026-02-17T19:32:44.795978Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-17T19:32:44.796082Z",
+        "finished_at": "2026-02-17T19:34:14.028440Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-17T19:34:14.028512Z",
+        "finished_at": "2026-02-17T19:34:24.663073Z"
+    }
+}

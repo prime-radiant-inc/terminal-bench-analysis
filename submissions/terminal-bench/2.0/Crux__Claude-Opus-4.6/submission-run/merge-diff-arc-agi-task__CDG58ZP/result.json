@@ -1,0 +1,84 @@
+{
+  "id": "ee72cdd4-657c-425c-9431-4c5435068fe6",
+  "task_name": "merge-diff-arc-agi-task",
+  "trial_name": "merge-diff-arc-agi-task__CDG58ZP",
+  "trial_uri": "file:///root/terminal-bench/jobs/2025-12-04__00-15-07/merge-diff-arc-agi-task__CDG58ZP",
+  "task_id": {
+    "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+    "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+    "path": "merge-diff-arc-agi-task"
+  },
+  "source": "terminal-bench",
+  "task_checksum": "1e69376aa87a540b46c4dea3ba4f8507ed18aeeeef6f8786dab68eff71b0b58d",
+  "config": {
+    "task": {
+      "path": "merge-diff-arc-agi-task",
+      "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+      "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+      "overwrite": false,
+      "download_dir": null,
+      "source": "terminal-bench"
+    },
+    "trial_name": "merge-diff-arc-agi-task__CDG58ZP",
+    "trials_dir": "jobs/2025-12-04__00-15-07",
+    "timeout_multiplier": 1.0,
+    "agent": {
+      "name": null,
+      "import_path": "claude_code_enhanced:ClaudeCodeEnhanced",
+      "model_name": "claude-opus-4-5",
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "kwargs": {}
+    },
+    "environment": {
+      "type": "docker",
+      "force_build": false,
+      "delete": true,
+      "override_cpus": null,
+      "override_memory_mb": null,
+      "override_storage_mb": null,
+      "kwargs": {}
+    },
+    "verifier": {
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "disable": false
+    },
+    "job_id": "1432505c-c0f7-4e68-be19-3ed4d7232a6e"
+  },
+  "agent_info": {
+    "name": "claude-code-enhanced",
+    "version": "unknown",
+    "model_info": null
+  },
+  "agent_result": {
+    "n_input_tokens": null,
+    "n_cache_tokens": null,
+    "n_output_tokens": null,
+    "cost_usd": null,
+    "rollout_details": null,
+    "metadata": null
+  },
+  "verifier_result": null,
+  "exception_info": {
+    "exception_type": "KeyError",
+    "exception_message": "'ANTHROPIC_API_KEY'",
+    "exception_traceback": "Traceback (most recent call last):\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/trial/trial.py\", line 344, in run\n    await self._execute_agent()\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/trial/trial.py\", line 228, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 129, in run\n    self.create_run_agent_commands(rendered_instruction)\n  File \"/root/terminal-bench/claude_code_enhanced.py\", line 148, in create_run_agent_commands\n    \"ANTHROPIC_API_KEY\": os.environ[\"ANTHROPIC_API_KEY\"],\n                         ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen os>\", line 685, in __getitem__\nKeyError: 'ANTHROPIC_API_KEY'\n",
+    "occurred_at": "2025-12-04T00:17:10.374592"
+  },
+  "started_at": "2025-12-04T00:15:07.699400",
+  "finished_at": "2025-12-04T00:17:20.774887",
+  "environment_setup": {
+    "started_at": "2025-12-04T00:15:07.704598",
+    "finished_at": "2025-12-04T00:15:40.874055"
+  },
+  "agent_setup": {
+    "started_at": "2025-12-04T00:15:40.874102",
+    "finished_at": "2025-12-04T00:17:10.369791"
+  },
+  "agent_execution": {
+    "started_at": "2025-12-04T00:17:10.369822",
+    "finished_at": "2025-12-04T00:17:10.372138"
+  },
+  "verifier": null
+}

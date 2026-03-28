@@ -1,0 +1,142 @@
+{
+    "id": "01d44580-93a2-4609-9370-b0e48b7b7d11",
+    "task_name": "winning-avg-corewars",
+    "trial_name": "winning-avg-corewars__77JsRFV",
+    "trial_uri": "file:///Users/alexgshaw/Developer/laude/harbor/jobs/2026-02-05__17-41-47/winning-avg-corewars__77JsRFV",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "winning-avg-corewars"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "693d17797b3d2920f9f0316b3f758aee6b228e816c78bab22b75eae684853f13",
+    "config": {
+        "task": {
+            "path": "winning-avg-corewars",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "winning-avg-corewars__77JsRFV",
+        "trials_dir": "jobs/2026-02-05__17-41-47",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "reasoning_effort": "high",
+                "temperature": 1
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "865e6f10-b734-46c9-89bd-b8f3ec80e696"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1212446,
+        "n_cache_tokens": 1148441,
+        "n_output_tokens": 110258,
+        "cost_usd": 3.72400425,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                6326.406717300415,
+                50332.168102264404,
+                46883.38494300842,
+                63917.240619659424,
+                55788.22588920593,
+                68412.23692893982,
+                120521.6703414917,
+                104147.44973182678,
+                52473.7012386322,
+                30936.133861541748,
+                133685.60791015625,
+                112659.12890434265,
+                62421.11396789551,
+                128902.40097045898,
+                8304.030179977417,
+                48948.69089126587,
+                26012.31598854065,
+                59148.68497848511,
+                30434.614181518555,
+                50243.29710006714,
+                149033.91432762146,
+                29236.867904663086,
+                69914.1788482666,
+                40582.42988586426,
+                41795.44186592102,
+                53579.756021499634,
+                31634.970903396606,
+                50095.21198272705,
+                57683.09688568115,
+                93974.48086738586,
+                60864.3000125885,
+                121876.10602378845,
+                31493.779182434082,
+                47792.6299571991,
+                30170.372247695923,
+                13527.175903320312
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 3600.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1464, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1293, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n    )\n    ^\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1110, in _execute_commands\n    await session.send_keys(\n    ...<3 lines>...\n    )\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/agents/terminus_2/tmux_session.py\", line 563, in send_keys\n    await self._send_non_blocking_keys(\n    ...<2 lines>...\n    )\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/agents/terminus_2/tmux_session.py\", line 523, in _send_non_blocking_keys\n    await asyncio.sleep(min_timeout_sec - elapsed_time_sec)\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 718, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/trial/trial.py\", line 251, in _execute_agent\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/trial/trial.py\", line 362, in run\n    await self._execute_agent()\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/trial/trial.py\", line 260, in _execute_agent\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {self._agent_timeout_sec} seconds\"\n    ) from e\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 3600.0 seconds\n",
+        "occurred_at": "2026-02-05T22:17:44.766349"
+    },
+    "started_at": "2026-02-06T05:17:35.952401Z",
+    "finished_at": "2026-02-06T06:17:56.171218Z",
+    "environment_setup": {
+        "started_at": "2026-02-06T05:17:35.954148Z",
+        "finished_at": "2026-02-06T05:17:39.807190Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-06T05:17:39.807199Z",
+        "finished_at": "2026-02-06T05:17:44.752819Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-06T05:17:44.752844Z",
+        "finished_at": "2026-02-06T06:17:44.765347Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-06T06:17:46.250280Z",
+        "finished_at": "2026-02-06T06:17:55.921413Z"
+    }
+}

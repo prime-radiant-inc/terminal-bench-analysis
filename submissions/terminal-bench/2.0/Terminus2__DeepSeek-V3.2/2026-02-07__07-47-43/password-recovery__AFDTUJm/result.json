@@ -1,0 +1,112 @@
+{
+    "id": "2becaea2-4917-4e1f-80f4-2daf51013ba8",
+    "task_name": "password-recovery",
+    "trial_name": "password-recovery__AFDTUJm",
+    "trial_uri": "file:///root/harbor/jobs/2026-02-07__07-47-43/password-recovery__AFDTUJm",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "password-recovery"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "55e4df1aaefa8c3b2910a6a19ada0187b55ebf29358a05b22d52716029817cdb",
+    "config": {
+        "task": {
+            "path": "password-recovery",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "password-recovery__AFDTUJm",
+        "trials_dir": "jobs/2026-02-07__07-47-43",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "deepseek/deepseek-chat",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "bd502fde-cc79-4ca6-a1b2-abbcb1ea84cf"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "deepseek-chat",
+            "provider": "deepseek"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 182860,
+        "n_cache_tokens": 170496,
+        "n_output_tokens": 9764,
+        "cost_usd": 0.012336688,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 15,
+            "api_request_times_msec": [
+                16949.605703353882,
+                13909.60693359375,
+                14412.431955337524,
+                20417.497396469116,
+                19821.569681167603,
+                19384.04941558838,
+                26245.235681533813,
+                32639.569997787476,
+                19423.668384552002,
+                35160.43138504028,
+                22023.010969161987,
+                17116.474866867065,
+                13892.361879348755,
+                11389.257907867432,
+                3988.114356994629
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-08T03:13:14.140757Z",
+    "finished_at": "2026-02-08T03:19:21.163002Z",
+    "environment_setup": {
+        "started_at": "2026-02-08T03:13:14.145656Z",
+        "finished_at": "2026-02-08T03:13:17.758764Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-08T03:13:17.758776Z",
+        "finished_at": "2026-02-08T03:13:27.981858Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-08T03:13:27.981905Z",
+        "finished_at": "2026-02-08T03:19:03.931778Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-08T03:19:03.931844Z",
+        "finished_at": "2026-02-08T03:19:10.268448Z"
+    }
+}

@@ -1,0 +1,175 @@
+{
+    "id": "85a5ed7a-7d2a-43f4-8858-73fc9455109c",
+    "task_name": "extract-moves-from-video",
+    "trial_name": "extract-moves-from-video__VNbYznd",
+    "trial_uri": "file:///Users/alexgshaw/Developer/laude/harbor/jobs/2026-02-05__17-41-47/extract-moves-from-video__VNbYznd",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "extract-moves-from-video"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "605fb166c0af666150b184a6ca50f1ca1c2221a5b93e44efd21c7ea40d746d54",
+    "config": {
+        "task": {
+            "path": "extract-moves-from-video",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "extract-moves-from-video__VNbYznd",
+        "trials_dir": "jobs/2026-02-05__17-41-47",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "reasoning_effort": "high",
+                "temperature": 1
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "865e6f10-b734-46c9-89bd-b8f3ec80e696"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1891888,
+        "n_cache_tokens": 1827011,
+        "n_output_tokens": 28186,
+        "cost_usd": 2.00266425,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                6943.380117416382,
+                4471.612930297852,
+                2693.0129528045654,
+                4631.416082382202,
+                2049.9420166015625,
+                4246.474027633667,
+                6851.428031921387,
+                7620.185136795044,
+                12866.980791091919,
+                8332.649946212769,
+                11362.076759338379,
+                11211.217164993286,
+                9539.895057678223,
+                6797.7447509765625,
+                19764.000177383423,
+                3271.944999694824,
+                2839.3118381500244,
+                3490.2679920196533,
+                3144.676923751831,
+                2658.620834350586,
+                2794.095993041992,
+                2378.13401222229,
+                2620.795249938965,
+                2549.2191314697266,
+                4565.94181060791,
+                10172.480821609497,
+                16628.02815437317,
+                21039.797067642212,
+                34458.27293395996,
+                9275.681972503662,
+                20430.510759353638,
+                6910.300970077515,
+                4393.308877944946,
+                4043.5168743133545,
+                3958.8301181793213,
+                3216.0871028900146,
+                3686.6629123687744,
+                5340.363025665283,
+                10196.23613357544,
+                4385.168790817261,
+                4561.262845993042,
+                3088.6521339416504,
+                7239.296913146973,
+                3137.032985687256,
+                3387.9411220550537,
+                4130.183935165405,
+                25057.823181152344,
+                14287.34803199768,
+                26726.62615776062,
+                36166.83292388916,
+                30060.420989990234,
+                11201.897144317627,
+                10004.179954528809,
+                7561.491966247559,
+                3856.4999103546143,
+                4038.642168045044,
+                5125.235080718994,
+                2982.3288917541504,
+                15567.146062850952,
+                3550.229072570801,
+                3757.27915763855,
+                12622.93291091919,
+                3104.365110397339,
+                3183.608055114746,
+                3881.7827701568604,
+                3331.813097000122,
+                3345.378875732422,
+                3770.2860832214355,
+                49489.58325386047
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1800.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1464, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1184, in _run_agent_loop\n    ) = await self._handle_llm_interaction(\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        chat, prompt, logging_paths, original_instruction, self._session\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1059, in _handle_llm_interaction\n    llm_response = await self._query_llm(\n                   ^^^^^^^^^^^^^^^^^^^^^^\n        chat, prompt, logging_paths, original_instruction, session\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 189, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 111, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 153, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/tenacity/_utils.py\", line 99, in inner\n    return call(*args, **kwargs)\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/tenacity/__init__.py\", line 400, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ~~~~~~~~~~~~~~~~~^^\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ~~~~~~~~~~~~~~~~~^^\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 114, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 886, in _query_llm\n    llm_response = await chat.chat(\n                   ^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n    )\n    ^\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/llms/chat.py\", line 77, in chat\n    llm_response: LLMResponse = await self._model.call(\n                                ^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 189, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 111, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 153, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/tenacity/_utils.py\", line 99, in inner\n    return call(*args, **kwargs)\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/tenacity/__init__.py\", line 400, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ~~~~~~~~~~~~~~~~~^^\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ~~~~~~~~~~~~~~~~~^^\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 114, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/llms/lite_llm.py\", line 349, in call\n    response = await litellm.acompletion(**completion_kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/litellm/utils.py\", line 1861, in wrapper_async\n    result = await original_function(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/litellm/main.py\", line 611, in acompletion\n    response = await init_response\n               ^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/litellm/llms/anthropic/chat/handler.py\", line 254, in acompletion_function\n    response = await async_handler.post(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n        api_base, headers=headers, json=data, timeout=timeout\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/logging_utils.py\", line 190, in async_wrapper\n    result = await func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/litellm/llms/custom_httpx/http_handler.py\", line 465, in post\n    response = await self.client.send(req, stream=stream)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/httpx/_client.py\", line 1629, in send\n    response = await self._send_handling_auth(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/httpx/_client.py\", line 1657, in _send_handling_auth\n    response = await self._send_handling_redirects(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n    )\n    ^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/httpx/_client.py\", line 1694, in _send_handling_redirects\n    response = await self._send_single_request(request)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/httpx/_client.py\", line 1730, in _send_single_request\n    response = await transport.handle_async_request(request)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/litellm/llms/custom_httpx/aiohttp_transport.py\", line 273, in handle_async_request\n    response = await self._make_aiohttp_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/litellm/llms/custom_httpx/aiohttp_transport.py\", line 240, in _make_aiohttp_request\n    response = await client_session.request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<13 lines>...\n    ).__aenter__()\n    ^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/aiohttp/client.py\", line 1510, in __aenter__\n    self._resp: _RetType = await self._coro\n                           ^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/aiohttp/client.py\", line 779, in _request\n    resp = await handler(req)\n           ^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/aiohttp/client.py\", line 757, in _connect_and_send_request\n    await resp.start(conn)\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/aiohttp/client_reqrep.py\", line 539, in start\n    message, payload = await protocol.read()  # type: ignore[union-attr]\n                       ^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/.venv/lib/python3.13/site-packages/aiohttp/streams.py\", line 703, in read\n    await self._waiter\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/trial/trial.py\", line 251, in _execute_agent\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/trial/trial.py\", line 362, in run\n    await self._execute_agent()\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/trial/trial.py\", line 260, in _execute_agent\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {self._agent_timeout_sec} seconds\"\n    ) from e\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 1800.0 seconds\n",
+        "occurred_at": "2026-02-05T22:15:17.330423"
+    },
+    "started_at": "2026-02-06T05:44:53.092521Z",
+    "finished_at": "2026-02-06T06:15:28.737554Z",
+    "environment_setup": {
+        "started_at": "2026-02-06T05:44:53.093302Z",
+        "finished_at": "2026-02-06T05:44:56.051696Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-06T05:44:56.051717Z",
+        "finished_at": "2026-02-06T05:45:17.314046Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-06T05:45:17.314093Z",
+        "finished_at": "2026-02-06T06:15:17.324414Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-06T06:15:19.160567Z",
+        "finished_at": "2026-02-06T06:15:28.373217Z"
+    }
+}

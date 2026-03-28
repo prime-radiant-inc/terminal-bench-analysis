@@ -1,0 +1,118 @@
+{
+    "id": "3594b32e-25b1-4391-ba99-e475873a7571",
+    "task_name": "qemu-startup",
+    "trial_name": "qemu-startup__8QNFDzp",
+    "trial_uri": "file:///Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/jobs/2026-02-20__11-30-30/qemu-startup__8QNFDzp",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "qemu-startup"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "0f33bbc23fc771ea1ee1cadd076a439733e19bf3ef15bbf2d728bfe948ea44dd",
+    "config": {
+        "task": {
+            "path": "qemu-startup",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "qemu-startup__8QNFDzp",
+        "trials_dir": "jobs/2026-02-20__11-30-30",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "437f46df-c026-4476-8cde-8d57dd02c134"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "gemini-3.1-pro-preview",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 212250,
+        "n_cache_tokens": 140828,
+        "n_output_tokens": 16854,
+        "cost_usd": 0.3732576,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 21,
+            "api_request_times_msec": [
+                14546.93603515625,
+                15486.482858657837,
+                13933.33911895752,
+                13285.37917137146,
+                11173.13003540039,
+                4756.9379806518555,
+                6156.102895736694,
+                7388.987064361572,
+                5828.940153121948,
+                11430.850744247437,
+                6453.012943267822,
+                5932.754039764404,
+                5537.353992462158,
+                118842.08822250366,
+                20622.68328666687,
+                10808.152675628662,
+                7393.572092056274,
+                25350.48007965088,
+                4442.724227905273,
+                14692.157983779907,
+                9614.48335647583
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-20T03:07:00.697305Z",
+    "finished_at": "2026-02-20T03:15:23.614765Z",
+    "environment_setup": {
+        "started_at": "2026-02-20T03:07:00.718203Z",
+        "finished_at": "2026-02-20T03:07:03.319226Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-20T03:07:03.319234Z",
+        "finished_at": "2026-02-20T03:07:08.848886Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-20T03:07:08.849009Z",
+        "finished_at": "2026-02-20T03:15:10.485102Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-20T03:15:12.402335Z",
+        "finished_at": "2026-02-20T03:15:22.951384Z"
+    }
+}

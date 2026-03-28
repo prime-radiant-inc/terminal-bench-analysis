@@ -1,0 +1,107 @@
+{
+    "id": "19a487c6-0be1-44b5-a751-97e49d6594a6",
+    "task_name": "headless-terminal",
+    "trial_name": "headless-terminal__MHTUQRf",
+    "trial_uri": "file:///Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/jobs/2026-02-20__11-30-30/headless-terminal__MHTUQRf",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "headless-terminal"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "0f08b1ccc560ac08b8420b4a493a3b4c5354e2ace9f0cbe63a44e861e46c780d",
+    "config": {
+        "task": {
+            "path": "headless-terminal",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "headless-terminal__MHTUQRf",
+        "trials_dir": "jobs/2026-02-20__11-30-30",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "437f46df-c026-4476-8cde-8d57dd02c134"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "gemini-3.1-pro-preview",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 75788,
+        "n_cache_tokens": 40297,
+        "n_output_tokens": 10913,
+        "cost_usd": 0.2099974,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 10,
+            "api_request_times_msec": [
+                6414.32785987854,
+                16822.10612297058,
+                20112.733125686646,
+                7735.99100112915,
+                11943.886756896973,
+                4631.3371658325195,
+                8118.4282302856445,
+                16922.778129577637,
+                14498.860836029053,
+                15287.20474243164
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-20T02:46:54.053688Z",
+    "finished_at": "2026-02-20T02:50:52.464627Z",
+    "environment_setup": {
+        "started_at": "2026-02-20T02:46:54.090299Z",
+        "finished_at": "2026-02-20T02:46:58.645169Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-20T02:46:58.645181Z",
+        "finished_at": "2026-02-20T02:47:16.293160Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-20T02:47:16.293277Z",
+        "finished_at": "2026-02-20T02:50:24.511593Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-20T02:50:26.758091Z",
+        "finished_at": "2026-02-20T02:50:51.903560Z"
+    }
+}

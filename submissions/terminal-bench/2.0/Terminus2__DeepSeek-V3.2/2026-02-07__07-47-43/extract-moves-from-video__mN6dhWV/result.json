@@ -1,0 +1,160 @@
+{
+    "id": "afd73e03-ca31-4520-a87b-7c5ddaa9ea04",
+    "task_name": "extract-moves-from-video",
+    "trial_name": "extract-moves-from-video__mN6dhWV",
+    "trial_uri": "file:///root/harbor/jobs/2026-02-07__07-47-43/extract-moves-from-video__mN6dhWV",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "extract-moves-from-video"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "605fb166c0af666150b184a6ca50f1ca1c2221a5b93e44efd21c7ea40d746d54",
+    "config": {
+        "task": {
+            "path": "extract-moves-from-video",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "extract-moves-from-video__mN6dhWV",
+        "trials_dir": "jobs/2026-02-07__07-47-43",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "deepseek/deepseek-chat",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "bd502fde-cc79-4ca6-a1b2-abbcb1ea84cf"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "deepseek-chat",
+            "provider": "deepseek"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 980981,
+        "n_cache_tokens": 962944,
+        "n_output_tokens": 16293,
+        "cost_usd": 0.038855851999999996,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                20857.4640750885,
+                7200.041055679321,
+                5308.888912200928,
+                8043.320655822754,
+                4451.8938064575195,
+                5167.268753051758,
+                9230.251789093018,
+                10322.956800460815,
+                5767.436265945435,
+                9341.21036529541,
+                14463.485479354858,
+                5884.360313415527,
+                9327.089309692383,
+                6507.976293563843,
+                3667.5028800964355,
+                11522.698640823364,
+                7427.3521900177,
+                4913.6962890625,
+                4336.337327957153,
+                8836.866617202759,
+                5389.703035354614,
+                15261.250257492065,
+                9980.233907699585,
+                4901.7698764801025,
+                11780.763387680054,
+                10689.965963363647,
+                12545.265913009644,
+                7004.786491394043,
+                5417.573928833008,
+                11381.34479522705,
+                11592.2532081604,
+                5510.625839233398,
+                13425.015211105347,
+                9546.711921691895,
+                6097.405195236206,
+                5328.077554702759,
+                6878.021240234375,
+                9460.214138031006,
+                7714.536905288696,
+                10206.112623214722,
+                17062.016487121582,
+                12628.126621246338,
+                7864.088773727417,
+                5974.575042724609,
+                8091.7229652404785,
+                7996.638298034668,
+                7976.656436920166,
+                8306.047439575195,
+                15909.157752990723,
+                11399.69515800476,
+                15773.340702056885,
+                9486.491441726685,
+                7749.611616134644,
+                12163.797855377197,
+                16462.104320526123,
+                8720.941543579102,
+                9210.001945495605,
+                8786.689519882202
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1800.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1395, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1224, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1041, in _execute_commands\n    await session.send_keys(\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 563, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 518, in _send_non_blocking_keys\n    await self.environment.exec(self._tmux_send_keys(keys))\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 295, in exec\n    return await self._run_docker_compose_command(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 162, in _run_docker_compose_command\n    stdout_bytes, stderr_bytes = await process.communicate()\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/asyncio/subprocess.py\", line 202, in communicate\n    await self.wait()\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/asyncio/subprocess.py\", line 137, in wait\n    return await self._transport._wait()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/asyncio/base_subprocess.py\", line 230, in _wait\n    return await waiter\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 251, in _execute_agent\n    await asyncio.wait_for(\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 362, in run\n    await self._execute_agent()\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 260, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 1800.0 seconds\n",
+        "occurred_at": "2026-02-08T01:01:20.051090"
+    },
+    "started_at": "2026-02-08T00:31:06.476776Z",
+    "finished_at": "2026-02-08T01:01:38.238081Z",
+    "environment_setup": {
+        "started_at": "2026-02-08T00:31:06.478222Z",
+        "finished_at": "2026-02-08T00:31:07.214580Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-08T00:31:07.214592Z",
+        "finished_at": "2026-02-08T00:31:20.039327Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-08T00:31:20.039366Z",
+        "finished_at": "2026-02-08T01:01:20.044998Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-08T01:01:20.052139Z",
+        "finished_at": "2026-02-08T01:01:26.282477Z"
+    }
+}

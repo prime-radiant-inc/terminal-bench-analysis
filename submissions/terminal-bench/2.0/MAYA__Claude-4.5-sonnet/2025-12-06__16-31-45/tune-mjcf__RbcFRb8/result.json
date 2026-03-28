@@ -1,0 +1,71 @@
+{
+    "id": "27e229c1-1298-4d5b-af49-f46d38989214",
+    "task_name": "tune-mjcf",
+    "trial_name": "tune-mjcf__RbcFRb8",
+    "trial_uri": "file:///home/ubuntu/MAN/terminal-bench/jobs/2025-12-06__16-31-45/tune-mjcf__RbcFRb8",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "tune-mjcf"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "0014600ed83c316bbc3b495879f147f234d06578281af02817c9955794d4ebef",
+    "config": {
+        "task": {
+            "path": "tune-mjcf",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "tune-mjcf__RbcFRb8",
+        "trials_dir": "jobs/2025-12-06__16-31-45",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.eval.adya1:Final",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "e71e5882-504b-4615-a15f-e8763fcbfd92"
+    },
+    "agent_info": {
+        "name": "final",
+        "version": "1.5-official",
+        "model_info": null
+    },
+    "agent_result": null,
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RuntimeError",
+        "exception_message": "Docker compose command failed for environment tune-mjcf. Command: docker compose -p tune-mjcf__rbcfrb8 -f /home/ubuntu/MAN/venv/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  main Pulling \n b1badc6e5066 Already exists \n 7e88bf276da0 Already exists \n d55dfff74d98 Already exists \n e97853488aa5 Already exists \n 63ff33ad641b Already exists \n ff09ad2a276d Pulling fs layer \n 80f017778f19 Pulling fs layer \n e7b1c1b91ced Pulling fs layer \n e7b1c1b91ced Downloading [==================================================>]     732B/732B\n e7b1c1b91ced Verifying Checksum \n e7b1c1b91ced Download complete \n 80f017778f19 Downloading [=====================================>             ]     934B/1.247kB\n 80f017778f19 Downloading [==================================================>]  1.247kB/1.247kB\n 80f017778f19 Verifying Checksum \n 80f017778f19 Download complete \n ff09ad2a276d Downloading [>                                                  ]  368.6kB/36.09MB\n ff09ad2a276d Downloading [==================>                                ]  13.19MB/36.09MB\n ff09ad2a276d Downloading [==============================>                    ]  21.99MB/36.09MB\n ff09ad2a276d Downloading [===============================================>   ]  34.39MB/36.09MB\n ff09ad2a276d Verifying Checksum \n ff09ad2a276d Download complete \n ff09ad2a276d Extracting [>                                                  ]  393.2kB/36.09MB\n ff09ad2a276d Extracting [==>                                                ]  1.573MB/36.09MB\n ff09ad2a276d Extracting [===>                                               ]  2.753MB/36.09MB\n ff09ad2a276d Extracting [====>                                              ]  3.146MB/36.09MB\n ff09ad2a276d Extracting [====>                                              ]  3.539MB/36.09MB\n ff09ad2a276d Extracting [=====>                                             ]  3.932MB/36.09MB\n ff09ad2a276d Extracting [=====>                                             ]  4.325MB/36.09MB\n ff09ad2a276d Extracting [======>                                            ]  4.719MB/36.09MB\n ff09ad2a276d Extracting [=======>                                           ]  5.112MB/36.09MB\n ff09ad2a276d Extracting [========>                                          ]  6.291MB/36.09MB\n ff09ad2a276d Extracting [=========>                                         ]  6.685MB/36.09MB\n ff09ad2a276d Extracting [==========>                                        ]  7.471MB/36.09MB\n ff09ad2a276d Extracting [===========>                                       ]  8.651MB/36.09MB\n ff09ad2a276d Extracting [=============>                                     ]  9.437MB/36.09MB\n ff09ad2a276d Extracting [=============>                                     ]   9.83MB/36.09MB\n ff09ad2a276d Extracting [==============>                                    ]  10.22MB/36.09MB\n ff09ad2a276d Extracting [==============>                                    ]  10.62MB/36.09MB\n ff09ad2a276d Extracting [===============>                                   ]  11.01MB/36.09MB\n ff09ad2a276d Extracting [===============>                                   ]   11.4MB/36.09MB\n ff09ad2a276d Extracting [============================>                      ]  20.84MB/36.09MB\n ff09ad2a276d Extracting [========================================>          ]   29.1MB/36.09MB\n ff09ad2a276d Extracting [==================================================>]  36.09MB/36.09MB\nfailed to register layer: write /usr/local/lib/python3.13/site-packages/mujoco/egl/egl_ext.py: no space left on device\n. Stderr: None. ",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/MAN/venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 340, in run\n    await self._setup_environment()\n  File \"/home/ubuntu/MAN/venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 180, in _setup_environment\n    await self._start_environment_with_retry()\n  File \"/home/ubuntu/MAN/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 189, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/MAN/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 111, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/MAN/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 153, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/MAN/venv/lib/python3.12/site-packages/tenacity/_utils.py\", line 99, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/MAN/venv/lib/python3.12/site-packages/tenacity/__init__.py\", line 400, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/home/ubuntu/MAN/venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 114, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/MAN/venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 192, in _start_environment_with_retry\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/ubuntu/MAN/venv/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 184, in start\n    await self._run_docker_compose_command([\"up\", \"-d\"])\n  File \"/home/ubuntu/MAN/venv/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 166, in _run_docker_compose_command\n    raise RuntimeError(\nRuntimeError: Docker compose command failed for environment tune-mjcf. Command: docker compose -p tune-mjcf__rbcfrb8 -f /home/ubuntu/MAN/venv/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  main Pulling \n b1badc6e5066 Already exists \n 7e88bf276da0 Already exists \n d55dfff74d98 Already exists \n e97853488aa5 Already exists \n 63ff33ad641b Already exists \n ff09ad2a276d Pulling fs layer \n 80f017778f19 Pulling fs layer \n e7b1c1b91ced Pulling fs layer \n e7b1c1b91ced Downloading [==================================================>]     732B/732B\n e7b1c1b91ced Verifying Checksum \n e7b1c1b91ced Download complete \n 80f017778f19 Downloading [=====================================>             ]     934B/1.247kB\n 80f017778f19 Downloading [==================================================>]  1.247kB/1.247kB\n 80f017778f19 Verifying Checksum \n 80f017778f19 Download complete \n ff09ad2a276d Downloading [>                                                  ]  368.6kB/36.09MB\n ff09ad2a276d Downloading [==================>                                ]  13.19MB/36.09MB\n ff09ad2a276d Downloading [==============================>                    ]  21.99MB/36.09MB\n ff09ad2a276d Downloading [===============================================>   ]  34.39MB/36.09MB\n ff09ad2a276d Verifying Checksum \n ff09ad2a276d Download complete \n ff09ad2a276d Extracting [>                                                  ]  393.2kB/36.09MB\n ff09ad2a276d Extracting [==>                                                ]  1.573MB/36.09MB\n ff09ad2a276d Extracting [===>                                               ]  2.753MB/36.09MB\n ff09ad2a276d Extracting [====>                                              ]  3.146MB/36.09MB\n ff09ad2a276d Extracting [====>                                              ]  3.539MB/36.09MB\n ff09ad2a276d Extracting [=====>                                             ]  3.932MB/36.09MB\n ff09ad2a276d Extracting [=====>                                             ]  4.325MB/36.09MB\n ff09ad2a276d Extracting [======>                                            ]  4.719MB/36.09MB\n ff09ad2a276d Extracting [=======>                                           ]  5.112MB/36.09MB\n ff09ad2a276d Extracting [========>                                          ]  6.291MB/36.09MB\n ff09ad2a276d Extracting [=========>                                         ]  6.685MB/36.09MB\n ff09ad2a276d Extracting [==========>                                        ]  7.471MB/36.09MB\n ff09ad2a276d Extracting [===========>                                       ]  8.651MB/36.09MB\n ff09ad2a276d Extracting [=============>                                     ]  9.437MB/36.09MB\n ff09ad2a276d Extracting [=============>                                     ]   9.83MB/36.09MB\n ff09ad2a276d Extracting [==============>                                    ]  10.22MB/36.09MB\n ff09ad2a276d Extracting [==============>                                    ]  10.62MB/36.09MB\n ff09ad2a276d Extracting [===============>                                   ]  11.01MB/36.09MB\n ff09ad2a276d Extracting [===============>                                   ]   11.4MB/36.09MB\n ff09ad2a276d Extracting [============================>                      ]  20.84MB/36.09MB\n ff09ad2a276d Extracting [========================================>          ]   29.1MB/36.09MB\n ff09ad2a276d Extracting [==================================================>]  36.09MB/36.09MB\nfailed to register layer: write /usr/local/lib/python3.13/site-packages/mujoco/egl/egl_ext.py: no space left on device\n. Stderr: None. \n",
+        "occurred_at": "2025-12-06T23:28:14.026177"
+    },
+    "started_at": "2025-12-06T23:26:36.153317",
+    "finished_at": "2025-12-06T23:28:14.100630",
+    "environment_setup": {
+        "started_at": "2025-12-06T23:26:36.154266",
+        "finished_at": "2025-12-06T23:28:14.022099"
+    },
+    "agent_setup": null,
+    "agent_execution": null,
+    "verifier": null
+}

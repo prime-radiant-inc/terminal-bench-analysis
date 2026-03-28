@@ -1,0 +1,115 @@
+{
+    "id": "9cd257ac-3025-4b5b-99b5-c3bdcd235c34",
+    "task_name": "vulnerable-secret",
+    "trial_name": "vulnerable-secret__P2fEN43",
+    "trial_uri": "file:///Users/tbd/tbench/jobs/2026-01-26-terminus-ollama-cloud-kimi-k2.5%3Acloud-full-v01/vulnerable-secret__P2fEN43",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "vulnerable-secret"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "568760a9b221bd2efc27dc592833c1d2d99949b20995ba1321a3aa1567e6ba20",
+    "config": {
+        "task": {
+            "path": "vulnerable-secret",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "vulnerable-secret__P2fEN43",
+        "trials_dir": "jobs/2026-01-26-terminus-ollama-cloud-kimi-k2.5:cloud-full-v01",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/kimi-k2.5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1"
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "51c16618-c2ea-4a8a-baac-cf3b720d2036"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "kimi-k2.5:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 81645,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 3712,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 16,
+            "api_request_times_msec": [
+                1677.3250102996826,
+                8876.574277877808,
+                1615.5931949615479,
+                1919.983148574829,
+                8139.124870300293,
+                7548.389196395874,
+                1309.1950416564941,
+                5471.989870071411,
+                4536.5190505981445,
+                1806.725025177002,
+                3042.5071716308594,
+                1625.9119510650635,
+                41147.46689796448,
+                1945.875883102417,
+                1619.352102279663,
+                7362.082004547119
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-01-28T01:34:49.814698Z",
+    "finished_at": "2026-01-28T01:37:10.955864Z",
+    "environment_setup": {
+        "started_at": "2026-01-28T01:34:49.816316Z",
+        "finished_at": "2026-01-28T01:34:51.206019Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-28T01:34:51.206052Z",
+        "finished_at": "2026-01-28T01:35:02.407141Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-28T01:35:02.407240Z",
+        "finished_at": "2026-01-28T01:37:05.352347Z"
+    },
+    "verifier": {
+        "started_at": "2026-01-28T01:37:05.955163Z",
+        "finished_at": "2026-01-28T01:37:10.422502Z"
+    }
+}

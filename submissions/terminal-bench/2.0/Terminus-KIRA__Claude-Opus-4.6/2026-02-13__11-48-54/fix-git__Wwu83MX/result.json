@@ -1,0 +1,107 @@
+{
+    "id": "a7358602-5324-4703-9592-14b83ec7bd18",
+    "task_name": "fix-git",
+    "trial_name": "fix-git__Wwu83MX",
+    "trial_uri": "file:///Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/jobs/2026-02-13__11-48-54/fix-git__Wwu83MX",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "fix-git"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "7fa0a681f751d73f290d862522a82a5e448fa529834987ee1b80e5665c51aa7e",
+    "config": {
+        "task": {
+            "path": "fix-git",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "fix-git__Wwu83MX",
+        "trials_dir": "jobs/2026-02-13__11-48-54",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "5b28a0ef-c564-4598-b3e9-a1d99edc85c3"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 53990,
+        "n_cache_tokens": 32674,
+        "n_output_tokens": 3058,
+        "cost_usd": 0.21086325000000003,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 10,
+            "api_request_times_msec": [
+                6115.195035934448,
+                4482.033967971802,
+                4910.609245300293,
+                4721.666097640991,
+                5530.84397315979,
+                5138.485908508301,
+                9734.148979187012,
+                6754.7361850738525,
+                7731.396198272705,
+                9333.885908126831
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-13T03:12:07.408268Z",
+    "finished_at": "2026-02-13T03:14:47.832748Z",
+    "environment_setup": {
+        "started_at": "2026-02-13T03:12:07.453114Z",
+        "finished_at": "2026-02-13T03:12:15.516864Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-13T03:12:15.516872Z",
+        "finished_at": "2026-02-13T03:12:32.338844Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-13T03:12:32.338876Z",
+        "finished_at": "2026-02-13T03:14:38.496945Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-13T03:14:40.516042Z",
+        "finished_at": "2026-02-13T03:14:47.318612Z"
+    }
+}

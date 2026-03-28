@@ -1,0 +1,173 @@
+{
+    "id": "a1160904-ff8c-40dd-95bd-f8ca7060ce62",
+    "task_name": "qemu-alpine-ssh",
+    "trial_name": "qemu-alpine-ssh__6wPYyzD",
+    "trial_uri": "file:///workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51/qemu-alpine-ssh__6wPYyzD",
+    "task_id": {
+        "path": "/workspace/terminal/terminal-bench-2/qemu-alpine-ssh"
+    },
+    "source": "terminal-bench-2",
+    "task_checksum": "a6cd0bf0752902f3e284a6a9672d801de83fb9d0cf769c95f09fed2fd213548c",
+    "config": {
+        "task": {
+            "path": "/workspace/terminal/terminal-bench-2/qemu-alpine-ssh",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench-2"
+        },
+        "trial_name": "qemu-alpine-ssh__6wPYyzD",
+        "trials_dir": "/workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "parser_name": "xml",
+                "remove_main_key": true,
+                "api_base": "http://100.113.75.1:8080",
+                "temperature": 0.7,
+                "top_p": 1.0,
+                "max_new_tokens": 8192,
+                "model_info": {
+                    "max_input_tokens": 131072
+                },
+                "tokenizer_path": "/cloud/checkpoints/glm-moe/750b-moe/700b-sft-dsa-260127/iter_0020000_HF_FP8",
+                "use_generate": true,
+                "enable_summarize": true
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "9503f317-faba-45da-b01a-000cd6115566"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-5",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 63,
+            "api_request_times_msec": [
+                5815.761089324951,
+                9841.19439125061,
+                4654.981374740601,
+                5110.291242599487,
+                8271.14200592041,
+                10756.76679611206,
+                4722.023487091064,
+                9024.23095703125,
+                8305.362701416016,
+                5094.0842628479,
+                4077.894687652588,
+                4223.870515823364,
+                9131.292819976807,
+                5381.14857673645,
+                7462.602376937866,
+                5692.547559738159,
+                4271.743535995483,
+                2948.1890201568604,
+                3276.8144607543945,
+                4666.772127151489,
+                2075.76847076416,
+                1805.8600425720215,
+                7787.282705307007,
+                4321.066617965698,
+                2836.402416229248,
+                4359.853982925415,
+                5982.389450073242,
+                4913.651943206787,
+                8662.063121795654,
+                7048.536062240601,
+                6249.814510345459,
+                6411.888599395752,
+                2037.1427536010742,
+                3120.5146312713623,
+                5990.336179733276,
+                4263.279676437378,
+                2891.1781311035156,
+                3684.4093799591064,
+                3182.7392578125,
+                5499.504566192627,
+                4725.1410484313965,
+                2672.319173812866,
+                2589.16974067688,
+                7836.422920227051,
+                2320.796251296997,
+                3704.1194438934326,
+                3255.405902862549,
+                7664.985179901123,
+                2135.7240676879883,
+                2694.0364837646484,
+                3412.919282913208,
+                4515.305280685425,
+                4685.283422470093,
+                4564.011812210083,
+                3466.6318893432617,
+                3363.4469509124756,
+                4716.370105743408,
+                3838.9973640441895,
+                3934.6649646759033,
+                5641.394138336182,
+                8044.9628829956055,
+                9154.146671295166,
+                7893.7647342681885
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-14T17:23:10.250935",
+    "finished_at": "2026-02-14T17:33:33.028360",
+    "environment_setup": {
+        "started_at": "2026-02-14T17:23:10.274728",
+        "finished_at": "2026-02-14T17:23:16.778657"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-14T17:23:16.778669",
+        "finished_at": "2026-02-14T17:23:30.216579"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-14T17:23:30.216600",
+        "finished_at": "2026-02-14T17:33:16.748227"
+    },
+    "verifier": {
+        "started_at": "2026-02-14T17:33:16.818801",
+        "finished_at": "2026-02-14T17:33:29.435925"
+    }
+}

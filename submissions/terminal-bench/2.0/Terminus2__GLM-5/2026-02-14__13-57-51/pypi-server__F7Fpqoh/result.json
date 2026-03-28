@@ -1,0 +1,117 @@
+{
+    "id": "14861d76-ac46-4adf-9115-2406f3de3cdb",
+    "task_name": "pypi-server",
+    "trial_name": "pypi-server__F7Fpqoh",
+    "trial_uri": "file:///workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51/pypi-server__F7Fpqoh",
+    "task_id": {
+        "path": "/workspace/terminal/terminal-bench-2/pypi-server"
+    },
+    "source": "terminal-bench-2",
+    "task_checksum": "5c5f465d60305289c69ece744afc1064deef83b0ae79743fbc6e74428ab51d63",
+    "config": {
+        "task": {
+            "path": "/workspace/terminal/terminal-bench-2/pypi-server",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench-2"
+        },
+        "trial_name": "pypi-server__F7Fpqoh",
+        "trials_dir": "/workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "parser_name": "xml",
+                "remove_main_key": true,
+                "api_base": "http://100.113.75.1:8080",
+                "temperature": 0.7,
+                "top_p": 1.0,
+                "max_new_tokens": 8192,
+                "model_info": {
+                    "max_input_tokens": 131072
+                },
+                "tokenizer_path": "/cloud/checkpoints/glm-moe/750b-moe/700b-sft-dsa-260127/iter_0020000_HF_FP8",
+                "use_generate": true,
+                "enable_summarize": true
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "9503f317-faba-45da-b01a-000cd6115566"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-5",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 7,
+            "api_request_times_msec": [
+                9326.7502784729,
+                4285.895347595215,
+                5804.466247558594,
+                5573.810338973999,
+                6293.723821640015,
+                11174.751281738281,
+                6662.829399108887
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-14T15:41:49.107553",
+    "finished_at": "2026-02-14T15:44:06.258705",
+    "environment_setup": {
+        "started_at": "2026-02-14T15:41:49.139554",
+        "finished_at": "2026-02-14T15:41:55.969161"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-14T15:41:55.969179",
+        "finished_at": "2026-02-14T15:42:09.388461"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-14T15:42:09.388485",
+        "finished_at": "2026-02-14T15:43:45.485282"
+    },
+    "verifier": {
+        "started_at": "2026-02-14T15:43:45.491146",
+        "finished_at": "2026-02-14T15:43:54.309342"
+    }
+}

@@ -1,0 +1,126 @@
+{
+    "id": "ebcc7d71-749f-4f59-9a04-481ac4f16bb7",
+    "task_name": "rstan-to-pystan",
+    "trial_name": "rstan-to-pystan__6RYaEk5",
+    "trial_uri": "file:///Users/tbd/tbench/jobs/2026-01-26-terminus-ollama-cloud-kimi-k2.5%3Acloud-full-v01/rstan-to-pystan__6RYaEk5",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "rstan-to-pystan"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "1404a5a663c5ad348382a3374bf1ac11e28c2d10de5af6630ddd5ab69ff8f2e3",
+    "config": {
+        "task": {
+            "path": "rstan-to-pystan",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "rstan-to-pystan__6RYaEk5",
+        "trials_dir": "jobs/2026-01-26-terminus-ollama-cloud-kimi-k2.5:cloud-full-v01",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/kimi-k2.5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1"
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "51c16618-c2ea-4a8a-baac-cf3b720d2036"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "kimi-k2.5:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 640978,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 14657,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                1505.7013034820557,
+                4331.506013870239,
+                2112.4167442321777,
+                1175.7230758666992,
+                10787.853956222534,
+                1635.4129314422607,
+                1043.4517860412598,
+                2206.0940265655518,
+                1850.1319885253906,
+                9170.981884002686,
+                11917.896032333374,
+                1343.2590961456299,
+                7649.490118026733,
+                1925.9312152862549,
+                17658.605098724365,
+                1521.8679904937744,
+                3763.669013977051,
+                16644.6270942688,
+                21428.730726242065,
+                4554.4328689575195,
+                3293.7910556793213,
+                1228.7287712097168,
+                1157.1660041809082,
+                43793.925762176514,
+                4389.528036117554,
+                6426.797151565552,
+                12740.830898284912,
+                1269.0234184265137,
+                2780.4200649261475
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "DaytonaError",
+        "exception_message": "Failed to create session: unauthorized: failed to get auth URL: failed to parse request host: invalid host format: port and sandbox ID not found",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 354, in run\n    await self._execute_agent()\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 243, in _execute_agent\n    await asyncio.wait_for(\n  File \"/Users/tbd/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1397, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1226, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1057, in _execute_commands\n    return False, self._limit_output_length(await session.get_incremental_output())\n                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 600, in get_incremental_output\n    current_buffer = await self.capture_pane(capture_entire=True)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 569, in capture_pane\n    result = await self.environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/daytona.py\", line 462, in exec\n    await self._sandbox.process.create_session(session_id)\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona/_utils/errors.py\", line 89, in async_wrapper\n    process_n_raise_exception(e)\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona/_utils/errors.py\", line 67, in process_n_raise_exception\n    raise DaytonaError(f\"{message_prefix}{msg}\", status_code=status_code, headers=headers) from None\ndaytona.common.errors.DaytonaError: Failed to create session: unauthorized: failed to get auth URL: failed to parse request host: invalid host format: port and sandbox ID not found\n",
+        "occurred_at": "2026-01-27T22:45:13.745198"
+    },
+    "started_at": "2026-01-28T05:25:42.822394Z",
+    "finished_at": "2026-01-28T05:45:14.129653Z",
+    "environment_setup": {
+        "started_at": "2026-01-28T05:25:42.823316Z",
+        "finished_at": "2026-01-28T05:25:44.719656Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-28T05:25:44.719678Z",
+        "finished_at": "2026-01-28T05:25:55.212260Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-28T05:25:55.212361Z",
+        "finished_at": "2026-01-28T05:45:12.407347Z"
+    },
+    "verifier": null
+}

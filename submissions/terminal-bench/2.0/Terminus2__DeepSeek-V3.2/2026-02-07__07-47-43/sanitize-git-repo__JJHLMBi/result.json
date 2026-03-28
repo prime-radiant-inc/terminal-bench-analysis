@@ -1,0 +1,115 @@
+{
+    "id": "c7cb8d5f-7b31-417d-afec-825a88fa7209",
+    "task_name": "sanitize-git-repo",
+    "trial_name": "sanitize-git-repo__JJHLMBi",
+    "trial_uri": "file:///root/harbor/jobs/2026-02-07__07-47-43/sanitize-git-repo__JJHLMBi",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "sanitize-git-repo"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "2193195d0a2d45451b0ff7b8bfe47677e11744f9528f54d6281d01bda76267cc",
+    "config": {
+        "task": {
+            "path": "sanitize-git-repo",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "sanitize-git-repo__JJHLMBi",
+        "trials_dir": "jobs/2026-02-07__07-47-43",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "deepseek/deepseek-chat",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "bd502fde-cc79-4ca6-a1b2-abbcb1ea84cf"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "deepseek-chat",
+            "provider": "deepseek"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 388516,
+        "n_cache_tokens": 367040,
+        "n_output_tokens": 12715,
+        "cost_usd": 0.021630700000000003,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 18,
+            "api_request_times_msec": [
+                15316.329002380371,
+                18640.31744003296,
+                19930.788040161133,
+                39524.014472961426,
+                23800.666332244873,
+                35236.443758010864,
+                41609.59076881409,
+                26082.241773605347,
+                35374.84908103943,
+                19937.053442001343,
+                18831.86411857605,
+                21245.979070663452,
+                15680.47046661377,
+                15121.456861495972,
+                20563.414096832275,
+                20556.695461273193,
+                6011.592388153076,
+                4422.964811325073
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-07T12:02:01.041170Z",
+    "finished_at": "2026-02-07T12:09:21.719976Z",
+    "environment_setup": {
+        "started_at": "2026-02-07T12:02:01.043471Z",
+        "finished_at": "2026-02-07T12:02:04.353476Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-07T12:02:04.353488Z",
+        "finished_at": "2026-02-07T12:02:11.706403Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-07T12:02:11.706452Z",
+        "finished_at": "2026-02-07T12:09:06.436995Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-07T12:09:06.437073Z",
+        "finished_at": "2026-02-07T12:09:11.158577Z"
+    }
+}

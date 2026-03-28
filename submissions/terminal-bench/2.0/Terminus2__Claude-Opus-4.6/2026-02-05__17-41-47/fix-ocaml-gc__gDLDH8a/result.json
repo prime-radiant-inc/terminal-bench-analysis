@@ -1,0 +1,121 @@
+{
+    "id": "77c93ffc-3ace-45a3-986b-ab46b0a8df95",
+    "task_name": "fix-ocaml-gc",
+    "trial_name": "fix-ocaml-gc__gDLDH8a",
+    "trial_uri": "file:///Users/alexgshaw/Developer/laude/harbor/jobs/2026-02-05__17-41-47/fix-ocaml-gc__gDLDH8a",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "fix-ocaml-gc"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "faa983dd79f63daa168b41c753bddb0621822820ba6f16661a9767b815e436e8",
+    "config": {
+        "task": {
+            "path": "fix-ocaml-gc",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "fix-ocaml-gc__gDLDH8a",
+        "trials_dir": "jobs/2026-02-05__17-41-47",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "reasoning_effort": "high",
+                "temperature": 1
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "865e6f10-b734-46c9-89bd-b8f3ec80e696"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 273708,
+        "n_cache_tokens": 244713,
+        "n_output_tokens": 10727,
+        "cost_usd": 0.5689515000000002,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 20,
+            "api_request_times_msec": [
+                4248.102903366089,
+                3256.5360069274902,
+                5434.566974639893,
+                5821.006774902344,
+                8703.999996185303,
+                5283.467054367065,
+                4450.88791847229,
+                59598.275899887085,
+                37093.859910964966,
+                21293.995141983032,
+                3167.675256729126,
+                2784.0030193328857,
+                2540.790796279907,
+                3483.3459854125977,
+                8208.62889289856,
+                4722.388029098511,
+                4097.746133804321,
+                4301.377058029175,
+                9307.565927505493,
+                5143.494129180908
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-06T02:27:41.727752Z",
+    "finished_at": "2026-02-06T02:52:05.816683Z",
+    "environment_setup": {
+        "started_at": "2026-02-06T02:27:41.728591Z",
+        "finished_at": "2026-02-06T02:27:44.474781Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-06T02:27:44.474810Z",
+        "finished_at": "2026-02-06T02:28:00.656336Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-06T02:28:00.656365Z",
+        "finished_at": "2026-02-06T02:40:13.628113Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-06T02:40:14.885303Z",
+        "finished_at": "2026-02-06T02:52:05.460431Z"
+    }
+}

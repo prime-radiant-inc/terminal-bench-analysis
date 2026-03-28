@@ -1,0 +1,153 @@
+{
+    "id": "0988a26e-d84a-4168-89c6-956a90677e39",
+    "task_name": "make-doom-for-mips",
+    "trial_name": "make-doom-for-mips__azAmDhR",
+    "trial_uri": "file:///Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/jobs/2026-02-20__11-30-30/make-doom-for-mips__azAmDhR",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "make-doom-for-mips"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "48c24358a58435a97de86cc88255b6faf1cd3cb28bd27ff6a918e01655095981",
+    "config": {
+        "task": {
+            "path": "make-doom-for-mips",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "make-doom-for-mips__azAmDhR",
+        "trials_dir": "jobs/2026-02-20__11-30-30",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "437f46df-c026-4476-8cde-8d57dd02c134"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "gemini-3.1-pro-preview",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2111543,
+        "n_cache_tokens": 1661443,
+        "n_output_tokens": 22262,
+        "cost_usd": 1.4996325999999998,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                6156.107664108276,
+                6909.801959991455,
+                8504.040956497192,
+                6104.004859924316,
+                5992.338180541992,
+                4680.542945861816,
+                6491.495847702026,
+                6132.546663284302,
+                5409.044981002808,
+                4343.81103515625,
+                4857.285976409912,
+                110303.218126297,
+                5156.697988510132,
+                5478.8007736206055,
+                7957.035064697266,
+                8593.079805374146,
+                10364.893913269043,
+                8460.241079330444,
+                4834.968090057373,
+                3809.231996536255,
+                7399.26290512085,
+                6978.701114654541,
+                4993.388891220093,
+                5669.24786567688,
+                4413.393974304199,
+                4140.331983566284,
+                7467.41509437561,
+                3849.0331172943115,
+                5628.072023391724,
+                15219.997882843018,
+                8378.558874130249,
+                6349.581003189087,
+                7148.982048034668,
+                5379.022836685181,
+                13207.061052322388,
+                4398.106098175049,
+                12662.365198135376,
+                9861.91701889038,
+                14254.63318824768,
+                9288.137912750244,
+                4494.945049285889,
+                8336.017847061157,
+                15062.209844589233,
+                5948.899984359741,
+                5421.895265579224,
+                6206.647157669067,
+                5508.0811977386475,
+                10891.185760498047,
+                9214.566946029663,
+                4308.913946151733,
+                4945.11604309082
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/yun/.pyenv/versions/3.13.0/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/terminal_bench/agents/terminus_3/terminus_3.py\", line 105, in run\n    result = await super().run(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1395, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/terminal_bench/agents/terminus_3/terminus_3_3.py\", line 488, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n    )\n    ^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/terminal_bench/agents/terminus_3/terminus_3.py\", line 82, in _execute_commands\n    if marker in await session.capture_pane():\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 569, in capture_pane\n    result = await self.environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        self._tmux_capture_pane(capture_entire=capture_entire)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/environments/daytona.py\", line 488, in exec\n    result = await self._poll_response(session_id, response.cmd_id)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/environments/daytona.py\", line 433, in _poll_response\n    response = await self._get_session_command_with_retry(session_id, command_id)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 189, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 111, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 153, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/tenacity/_utils.py\", line 99, in inner\n    return call(*args, **kwargs)\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/tenacity/__init__.py\", line 400, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ~~~~~~~~~~~~~~~~~^^\n  File \"/Users/yun/.pyenv/versions/3.13.0/lib/python3.13/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ~~~~~~~~~~~~~~~~~^^\n  File \"/Users/yun/.pyenv/versions/3.13.0/lib/python3.13/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 114, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/environments/daytona.py\", line 413, in _get_session_command_with_retry\n    return await self._sandbox.process.get_session_command(session_id, command_id)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/daytona/_utils/errors.py\", line 87, in async_wrapper\n    return await async_func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/daytona/_async/process.py\", line 308, in get_session_command\n    return await self._api_client.get_session_command(session_id=session_id, command_id=command_id)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/pydantic/_internal/_validate_call.py\", line 34, in wrapper_function\n    return await wrapper(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/daytona_toolbox_api_client_async/api/process_api.py\", line 2212, in get_session_command\n    response_data = await self.api_client.call_api(\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n    )\n    ^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/daytona/internal/toolbox_api_client_proxy.py\", line 72, in call_api\n    return await self._api_client.call_api(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/daytona_toolbox_api_client_async/api_client.py\", line 276, in call_api\n    response_data = await self.rest_client.request(\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/daytona_toolbox_api_client_async/rest.py\", line 211, in request\n    r = await pool_manager.request(**args)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/aiohttp/client.py\", line 770, in _request\n    resp = await handler(req)\n           ^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/aiohttp/client.py\", line 748, in _connect_and_send_request\n    await resp.start(conn)\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/aiohttp/client_reqrep.py\", line 532, in start\n    message, payload = await protocol.read()  # type: ignore[union-attr]\n                       ^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/aiohttp/streams.py\", line 672, in read\n    await self._waiter\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 251, in _execute_agent\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/Users/yun/.pyenv/versions/3.13.0/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/Users/yun/.pyenv/versions/3.13.0/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 362, in run\n    await self._execute_agent()\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 260, in _execute_agent\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {self._agent_timeout_sec} seconds\"\n    ) from e\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-02-20T12:23:41.638412"
+    },
+    "started_at": "2026-02-20T03:08:18.633151Z",
+    "finished_at": "2026-02-20T03:24:31.856872Z",
+    "environment_setup": {
+        "started_at": "2026-02-20T03:08:18.679806Z",
+        "finished_at": "2026-02-20T03:08:22.835110Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-20T03:08:22.835118Z",
+        "finished_at": "2026-02-20T03:08:41.624938Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-20T03:08:41.624967Z",
+        "finished_at": "2026-02-20T03:23:41.632873Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-20T03:23:49.319447Z",
+        "finished_at": "2026-02-20T03:24:31.100004Z"
+    }
+}

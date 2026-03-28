@@ -1,0 +1,111 @@
+{
+    "id": "f1a77c52-f24d-4c30-bb05-108098388255",
+    "task_name": "qemu-startup",
+    "trial_name": "qemu-startup__5jdurvm",
+    "trial_uri": "file:///Users/tbd/tbench/jobs/2026-01-26-terminus-ollama-cloud-kimi-k2.5%3Acloud-full-v01/qemu-startup__5jdurvm",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "qemu-startup"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "0f33bbc23fc771ea1ee1cadd076a439733e19bf3ef15bbf2d728bfe948ea44dd",
+    "config": {
+        "task": {
+            "path": "qemu-startup",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "qemu-startup__5jdurvm",
+        "trials_dir": "jobs/2026-01-26-terminus-ollama-cloud-kimi-k2.5:cloud-full-v01",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/kimi-k2.5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1"
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "51c16618-c2ea-4a8a-baac-cf3b720d2036"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "kimi-k2.5:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 22200,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 2748,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 12,
+            "api_request_times_msec": [
+                18867.53010749817,
+                6487.792253494263,
+                5135.128974914551,
+                10010.598182678223,
+                4855.802059173584,
+                17665.733098983765,
+                2752.922773361206,
+                4002.6791095733643,
+                1282.202959060669,
+                5195.552110671997,
+                10697.089910507202,
+                5473.582983016968
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-01-27T22:38:44.920243Z",
+    "finished_at": "2026-01-27T22:41:41.144853Z",
+    "environment_setup": {
+        "started_at": "2026-01-27T22:38:44.921097Z",
+        "finished_at": "2026-01-27T22:38:48.684917Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-27T22:38:48.684946Z",
+        "finished_at": "2026-01-27T22:38:53.014407Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-27T22:38:53.014462Z",
+        "finished_at": "2026-01-27T22:41:25.744719Z"
+    },
+    "verifier": {
+        "started_at": "2026-01-27T22:41:28.373918Z",
+        "finished_at": "2026-01-27T22:41:40.578878Z"
+    }
+}

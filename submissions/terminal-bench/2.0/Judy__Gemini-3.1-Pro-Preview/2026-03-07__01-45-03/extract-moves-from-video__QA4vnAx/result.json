@@ -1,0 +1,94 @@
+{
+    "id": "ddabe16e-a17e-45d2-b363-edf9033146da",
+    "task_name": "extract-moves-from-video",
+    "trial_name": "extract-moves-from-video__QA4vnAx",
+    "trial_uri": "file:///home/hoop/workload/judy/eval/gemini-3.1/jobs/2026-03-07__01-45-03/extract-moves-from-video__QA4vnAx",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "extract-moves-from-video"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "605fb166c0af666150b184a6ca50f1ca1c2221a5b93e44efd21c7ea40d746d54",
+    "config": {
+        "task": {
+            "path": "extract-moves-from-video",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "extract-moves-from-video__QA4vnAx",
+        "trials_dir": "jobs/2026-03-07__01-45-03",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "judy.envs.tbench.cli:Judy",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "8fa353c2-d924-4ab2-86ae-5e290ee898bc"
+    },
+    "agent_info": {
+        "name": "judy",
+        "version": "0.8.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1800.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/hoop/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/asyncio/tasks.py\", line 488, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/hoop/workload/judy/judy/envs/tbench/cli.py\", line 165, in run\n    await solve_task(\n    ...<8 lines>...\n    )\n  File \"/home/hoop/workload/judy/judy/envs/tbench/solver.py\", line 238, in solve_task\n    tool_exec_result = await tool_registry.call_tool(\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        event.name, event.arguments\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/hoop/workload/judy/judy/core/utils/tool.py\", line 259, in call_tool\n    tool_result_content = await call_single_tool(tool.get_function(), args)\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hoop/workload/judy/judy/core/utils/tool.py\", line 160, in call_single_tool\n    result_content = await coro\n                     ^^^^^^^^^^\n  File \"/home/hoop/workload/judy/judy/envs/command_manager.py\", line 144, in run_shell_command\n    bg_process_result = await self._bg_process_manager.wait_by_process(\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        bg_process, timeout_sec\n        ^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/hoop/workload/judy/judy/envs/process_manager.py\", line 173, in wait_by_process\n    result = await bg_process._wait(timeout_sec)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hoop/workload/judy/judy/envs/process_manager.py\", line 112, in _wait\n    await asyncio.shield(self._task)\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/hoop/workload/judy/.venv/lib/python3.14/site-packages/harbor/trial/trial.py\", line 251, in _execute_agent\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/home/hoop/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/asyncio/tasks.py\", line 487, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/home/hoop/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/asyncio/timeouts.py\", line 114, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/hoop/workload/judy/.venv/lib/python3.14/site-packages/harbor/trial/trial.py\", line 362, in run\n    await self._execute_agent()\n  File \"/home/hoop/workload/judy/.venv/lib/python3.14/site-packages/harbor/trial/trial.py\", line 260, in _execute_agent\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {self._agent_timeout_sec} seconds\"\n    ) from e\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 1800.0 seconds\n",
+        "occurred_at": "2026-03-07T05:54:40.301175"
+    },
+    "started_at": "2026-03-07T05:23:37.957052Z",
+    "finished_at": "2026-03-07T05:55:04.153901Z",
+    "environment_setup": {
+        "started_at": "2026-03-07T05:23:37.960579Z",
+        "finished_at": "2026-03-07T05:23:39.035236Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-07T05:23:39.035251Z",
+        "finished_at": "2026-03-07T05:24:40.088818Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-07T05:24:40.088880Z",
+        "finished_at": "2026-03-07T05:54:40.299134Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-07T05:54:40.303439Z",
+        "finished_at": "2026-03-07T05:54:51.511726Z"
+    }
+}

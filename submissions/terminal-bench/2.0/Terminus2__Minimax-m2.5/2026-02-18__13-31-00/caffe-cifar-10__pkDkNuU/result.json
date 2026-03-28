@@ -1,0 +1,139 @@
+{
+    "id": "5a71fbc8-2f34-4cc0-9eec-3fdd22c08a97",
+    "task_name": "caffe-cifar-10",
+    "trial_name": "caffe-cifar-10__pkDkNuU",
+    "trial_uri": "file:///private/tmp/jobs/Terminus2__Minimax-m2.5/caffe-cifar-10__pkDkNuU",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "caffe-cifar-10"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "69e68a75ace210a7fdbce0d1605c0d530a7b5119791d91c6786f84313b30fc3a",
+    "config": {
+        "task": {
+            "path": "caffe-cifar-10",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "caffe-cifar-10__pkDkNuU",
+        "trials_dir": "jobs/Terminus2__Minimax-m2.5",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/minimax-m2.5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1",
+                "reasoning_effort": "high"
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "9cc95f8c-41a9-4311-9697-52edfbed6e7a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "minimax-m2.5:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 50154,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 6204,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                6370.832920074463,
+                5359.956979751587,
+                7529.465198516846,
+                3577.14581489563,
+                2589.481830596924,
+                3801.9068241119385,
+                3405.574083328247,
+                5456.877708435059,
+                9349.387884140015,
+                3031.395196914673,
+                7192.126274108887,
+                16668.376207351685,
+                163041.82696342468,
+                5201.814889907837,
+                14858.759880065918,
+                12559.249877929688,
+                16413.453817367554,
+                6638.48876953125,
+                4593.736886978149,
+                4072.0808506011963,
+                21859.150171279907,
+                13727.999925613403,
+                11076.801061630249,
+                3644.663095474243,
+                4092.6787853240967,
+                4548.264980316162,
+                3774.3499279022217,
+                5722.921848297119,
+                4899.182081222534,
+                7428.826808929443,
+                2812.140941619873,
+                6912.455081939697,
+                18002.00319290161,
+                3125.7710456848145
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1200.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/dopper/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/dopper/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1397, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/dopper/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1226, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/dopper/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1043, in _execute_commands\n    await session.send_keys(\n  File \"/Users/dopper/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 563, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/Users/dopper/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 523, in _send_non_blocking_keys\n    await asyncio.sleep(min_timeout_sec - elapsed_time_sec)\n  File \"/Users/dopper/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/tasks.py\", line 665, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/dopper/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 243, in _execute_agent\n    await asyncio.wait_for(\n  File \"/Users/dopper/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/dopper/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/dopper/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 354, in run\n    await self._execute_agent()\n  File \"/Users/dopper/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 252, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 1200.0 seconds\n",
+        "occurred_at": "2026-02-17T13:13:18.112105"
+    },
+    "started_at": "2026-02-17T19:52:52.070895Z",
+    "finished_at": "2026-02-17T20:13:40.617357Z",
+    "environment_setup": {
+        "started_at": "2026-02-17T19:52:52.072022Z",
+        "finished_at": "2026-02-17T19:52:59.742410Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-17T19:52:59.742426Z",
+        "finished_at": "2026-02-17T19:53:18.092214Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-17T19:53:18.092295Z",
+        "finished_at": "2026-02-17T20:13:18.111525Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-17T20:13:18.112715Z",
+        "finished_at": "2026-02-17T20:13:38.857064Z"
+    }
+}

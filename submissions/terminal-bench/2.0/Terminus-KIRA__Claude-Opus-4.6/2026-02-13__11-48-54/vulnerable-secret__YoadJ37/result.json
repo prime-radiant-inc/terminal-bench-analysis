@@ -1,0 +1,109 @@
+{
+    "id": "5400db66-80bb-4b06-8615-e8b952fa9b89",
+    "task_name": "vulnerable-secret",
+    "trial_name": "vulnerable-secret__YoadJ37",
+    "trial_uri": "file:///Users/hyogon.ryu/Desktop/project/crash-terminus-2/3.2-last/kraftonai-terminus/jobs/2026-02-13__11-48-54/vulnerable-secret__YoadJ37",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "vulnerable-secret"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "568760a9b221bd2efc27dc592833c1d2d99949b20995ba1321a3aa1567e6ba20",
+    "config": {
+        "task": {
+            "path": "vulnerable-secret",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "vulnerable-secret__YoadJ37",
+        "trials_dir": "jobs/2026-02-13__11-48-54",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "5b28a0ef-c564-4598-b3e9-a1d99edc85c3"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 107782,
+        "n_cache_tokens": 82014,
+        "n_output_tokens": 3573,
+        "cost_usd": 0.27698700000000004,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 12,
+            "api_request_times_msec": [
+                8391.25394821167,
+                3661.4651679992676,
+                6376.114845275879,
+                4322.600841522217,
+                13783.71000289917,
+                4372.450828552246,
+                6508.155107498169,
+                7851.409912109375,
+                6823.737859725952,
+                8270.986080169678,
+                8216.545104980469,
+                5253.647089004517
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-13T04:56:29.862934Z",
+    "finished_at": "2026-02-13T04:59:35.765213Z",
+    "environment_setup": {
+        "started_at": "2026-02-13T04:56:29.894936Z",
+        "finished_at": "2026-02-13T04:56:42.233107Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-13T04:56:42.233109Z",
+        "finished_at": "2026-02-13T04:56:57.950030Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-13T04:56:57.950055Z",
+        "finished_at": "2026-02-13T04:59:25.022766Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-13T04:59:28.072841Z",
+        "finished_at": "2026-02-13T04:59:35.231969Z"
+    }
+}

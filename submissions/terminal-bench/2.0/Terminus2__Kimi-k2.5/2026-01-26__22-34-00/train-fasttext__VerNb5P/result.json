@@ -1,0 +1,176 @@
+{
+    "id": "aa7d4853-89d9-44dd-bf43-e344edcfa4b9",
+    "task_name": "train-fasttext",
+    "trial_name": "train-fasttext__VerNb5P",
+    "trial_uri": "file:///Users/tbd/tbench/jobs/2026-01-26-terminus-ollama-cloud-kimi-k2.5%3Acloud-full-v01/train-fasttext__VerNb5P",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "train-fasttext"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "fe83ab1fc447e909ed3f48d61ff42abfd29b3168c63c3efcdea9c5014c27b2f7",
+    "config": {
+        "task": {
+            "path": "train-fasttext",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "train-fasttext__VerNb5P",
+        "trials_dir": "jobs/2026-01-26-terminus-ollama-cloud-kimi-k2.5:cloud-full-v01",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/kimi-k2.5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1"
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "51c16618-c2ea-4a8a-baac-cf3b720d2036"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "kimi-k2.5:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1591374,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 9983,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                1646.9829082489014,
+                2128.68595123291,
+                1742.781162261963,
+                3466.3078784942627,
+                5178.904056549072,
+                4127.679347991943,
+                1382.1229934692383,
+                4469.4108963012695,
+                11811.043977737427,
+                5036.904096603394,
+                3950.403928756714,
+                4632.81512260437,
+                1443.6562061309814,
+                11341.02201461792,
+                3436.856985092163,
+                1414.6578311920166,
+                4854.064226150513,
+                8109.061241149902,
+                5221.606969833374,
+                3737.01810836792,
+                2700.5350589752197,
+                1426.630973815918,
+                3798.9089488983154,
+                3143.899917602539,
+                4106.741905212402,
+                3987.198829650879,
+                3317.4002170562744,
+                13030.964136123657,
+                5967.483997344971,
+                4153.180122375488,
+                1936.3150596618652,
+                2648.8547325134277,
+                3604.6829223632812,
+                4758.355140686035,
+                1365.6179904937744,
+                4025.092840194702,
+                1296.9160079956055,
+                988.9721870422363,
+                1157.5560569763184,
+                3585.036039352417,
+                1326.9309997558594,
+                7098.930835723877,
+                2074.9781131744385,
+                1554.5330047607422,
+                1807.6229095458984,
+                5330.05428314209,
+                3534.2140197753906,
+                14257.866382598877,
+                5658.393859863281,
+                4094.1321849823,
+                1471.2378978729248,
+                9106.892108917236,
+                6556.586027145386,
+                1635.5810165405273,
+                2921.9799041748047,
+                1717.7939414978027,
+                4683.351039886475,
+                9581.748962402344,
+                1545.6559658050537,
+                4635.2479457855225,
+                3549.823999404907,
+                4824.53989982605,
+                8900.279998779297,
+                6229.977130889893,
+                24447.660207748413,
+                2606.5001487731934,
+                9587.105751037598,
+                10981.940984725952,
+                27027.921199798584,
+                37841.59207344055,
+                3477.086067199707,
+                3946.7811584472656
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 3600.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/tbd/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1397, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1226, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1043, in _execute_commands\n    await session.send_keys(\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 563, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 523, in _send_non_blocking_keys\n    await asyncio.sleep(min_timeout_sec - elapsed_time_sec)\n  File \"/Users/tbd/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/tasks.py\", line 665, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 243, in _execute_agent\n    await asyncio.wait_for(\n  File \"/Users/tbd/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 354, in run\n    await self._execute_agent()\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 252, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 3600.0 seconds\n",
+        "occurred_at": "2026-01-27T13:16:14.229463"
+    },
+    "started_at": "2026-01-27T19:16:01.866957Z",
+    "finished_at": "2026-01-27T20:17:41.792681Z",
+    "environment_setup": {
+        "started_at": "2026-01-27T19:16:01.878529Z",
+        "finished_at": "2026-01-27T19:16:04.236475Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-27T19:16:04.236502Z",
+        "finished_at": "2026-01-27T19:16:14.209781Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-27T19:16:14.209870Z",
+        "finished_at": "2026-01-27T20:16:14.228711Z"
+    },
+    "verifier": {
+        "started_at": "2026-01-27T20:16:15.873472Z",
+        "finished_at": "2026-01-27T20:17:41.469381Z"
+    }
+}

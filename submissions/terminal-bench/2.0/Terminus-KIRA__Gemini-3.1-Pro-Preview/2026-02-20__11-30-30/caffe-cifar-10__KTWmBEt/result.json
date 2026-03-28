@@ -1,0 +1,157 @@
+{
+    "id": "6e76df56-9398-4fa9-a15b-8b43b2441e4f",
+    "task_name": "caffe-cifar-10",
+    "trial_name": "caffe-cifar-10__KTWmBEt",
+    "trial_uri": "file:///Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/jobs/2026-02-20__11-30-30/caffe-cifar-10__KTWmBEt",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "caffe-cifar-10"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "69e68a75ace210a7fdbce0d1605c0d530a7b5119791d91c6786f84313b30fc3a",
+    "config": {
+        "task": {
+            "path": "caffe-cifar-10",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "caffe-cifar-10__KTWmBEt",
+        "trials_dir": "jobs/2026-02-20__11-30-30",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "437f46df-c026-4476-8cde-8d57dd02c134"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "gemini-3.1-pro-preview",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1528901,
+        "n_cache_tokens": 1204772,
+        "n_output_tokens": 9665,
+        "cost_usd": 1.0051923999999997,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                8517.051935195923,
+                14736.051797866821,
+                4780.304908752441,
+                4206.089019775391,
+                5375.115871429443,
+                4239.483833312988,
+                3637.2320652008057,
+                5354.674816131592,
+                10354.011058807373,
+                7951.642990112305,
+                4449.012994766235,
+                4673.642873764038,
+                6708.401918411255,
+                4936.344146728516,
+                3743.126153945923,
+                3772.7019786834717,
+                3783.3878993988037,
+                3615.1580810546875,
+                4144.022703170776,
+                3467.5326347351074,
+                3566.746950149536,
+                3705.4450511932373,
+                3752.3632049560547,
+                4020.3278064727783,
+                3807.234048843384,
+                3579.3991088867188,
+                4082.425832748413,
+                3934.255838394165,
+                3465.5909538269043,
+                5825.521230697632,
+                3607.0079803466797,
+                4011.204719543457,
+                3755.5289268493652,
+                7333.055019378662,
+                3376.4631748199463,
+                3989.304780960083,
+                3054.702043533325,
+                3200.584888458252,
+                2855.2048206329346,
+                3113.6410236358643,
+                2926.5708923339844,
+                3464.7791385650635,
+                2760.9429359436035,
+                3146.0390090942383,
+                2906.1999320983887,
+                3008.255958557129,
+                3777.87184715271,
+                2868.185043334961,
+                2800.0380992889404,
+                2894.2439556121826,
+                4217.845678329468,
+                5603.2280921936035,
+                3736.2959384918213,
+                4399.163007736206,
+                3043.553113937378
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1200.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/yun/.pyenv/versions/3.13.0/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/terminal_bench/agents/terminus_3/terminus_3.py\", line 105, in run\n    result = await super().run(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1395, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/terminal_bench/agents/terminus_3/terminus_3_3.py\", line 488, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n    )\n    ^\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/terminal_bench/agents/terminus_3/terminus_3.py\", line 84, in _execute_commands\n    await asyncio.sleep(0.5)\n  File \"/Users/yun/.pyenv/versions/3.13.0/lib/python3.13/asyncio/tasks.py\", line 718, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 251, in _execute_agent\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/Users/yun/.pyenv/versions/3.13.0/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/Users/yun/.pyenv/versions/3.13.0/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 362, in run\n    await self._execute_agent()\n  File \"/Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/.venv/lib/python3.13/site-packages/harbor/trial/trial.py\", line 260, in _execute_agent\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {self._agent_timeout_sec} seconds\"\n    ) from e\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 1200.0 seconds\n",
+        "occurred_at": "2026-02-20T13:30:39.326331"
+    },
+    "started_at": "2026-02-20T04:10:17.592553Z",
+    "finished_at": "2026-02-20T04:31:05.548868Z",
+    "environment_setup": {
+        "started_at": "2026-02-20T04:10:17.611894Z",
+        "finished_at": "2026-02-20T04:10:21.787166Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-20T04:10:21.787175Z",
+        "finished_at": "2026-02-20T04:10:39.309158Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-20T04:10:39.309245Z",
+        "finished_at": "2026-02-20T04:30:39.321982Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-20T04:30:43.541960Z",
+        "finished_at": "2026-02-20T04:31:04.790628Z"
+    }
+}

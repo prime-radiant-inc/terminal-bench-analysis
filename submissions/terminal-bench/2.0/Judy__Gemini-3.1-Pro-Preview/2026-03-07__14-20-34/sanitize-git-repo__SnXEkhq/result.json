@@ -1,0 +1,94 @@
+{
+    "id": "6c7fe6ba-5f5f-431a-aec7-8f7dd4367436",
+    "task_name": "sanitize-git-repo",
+    "trial_name": "sanitize-git-repo__SnXEkhq",
+    "trial_uri": "file:///home/hoop/workload/judy/eval/vertex_ai_gemini_3.1/jobs/2026-03-07__14-20-34/sanitize-git-repo__SnXEkhq",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "sanitize-git-repo"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "2193195d0a2d45451b0ff7b8bfe47677e11744f9528f54d6281d01bda76267cc",
+    "config": {
+        "task": {
+            "path": "sanitize-git-repo",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "sanitize-git-repo__SnXEkhq",
+        "trials_dir": "jobs/2026-03-07__14-20-34",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "judy.envs.tbench.cli:Judy",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "be344f63-1493-4c90-ad21-b5302e45e925"
+    },
+    "agent_info": {
+        "name": "judy",
+        "version": "0.8.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/hoop/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/asyncio/tasks.py\", line 488, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/hoop/workload/judy/judy/envs/tbench/cli.py\", line 165, in run\n    await solve_task(\n    ...<8 lines>...\n    )\n  File \"/home/hoop/workload/judy/judy/envs/tbench/solver.py\", line 243, in solve_task\n    async for event in output_streamer.stream():\n    ...<62 lines>...\n        await dump_trajectory(trajectory_steps_builder.steps)\n  File \"/home/hoop/workload/judy/judy/core/agents/output_streamer.py\", line 33, in stream\n    event = await self._events.get()\n            ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hoop/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/asyncio/queues.py\", line 186, in get\n    await getter\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/hoop/workload/judy/.venv/lib/python3.14/site-packages/harbor/trial/trial.py\", line 251, in _execute_agent\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/home/hoop/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/asyncio/tasks.py\", line 487, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/home/hoop/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/asyncio/timeouts.py\", line 114, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/hoop/workload/judy/.venv/lib/python3.14/site-packages/harbor/trial/trial.py\", line 362, in run\n    await self._execute_agent()\n  File \"/home/hoop/workload/judy/.venv/lib/python3.14/site-packages/harbor/trial/trial.py\", line 260, in _execute_agent\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {self._agent_timeout_sec} seconds\"\n    ) from e\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-03-07T23:24:17.146039"
+    },
+    "started_at": "2026-03-07T23:08:33.336352Z",
+    "finished_at": "2026-03-07T23:24:32.962046Z",
+    "environment_setup": {
+        "started_at": "2026-03-07T23:08:33.342634Z",
+        "finished_at": "2026-03-07T23:08:37.721838Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-07T23:08:37.721880Z",
+        "finished_at": "2026-03-07T23:09:17.025782Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-07T23:09:17.025842Z",
+        "finished_at": "2026-03-07T23:24:17.141105Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-07T23:24:17.149252Z",
+        "finished_at": "2026-03-07T23:24:21.573603Z"
+    }
+}

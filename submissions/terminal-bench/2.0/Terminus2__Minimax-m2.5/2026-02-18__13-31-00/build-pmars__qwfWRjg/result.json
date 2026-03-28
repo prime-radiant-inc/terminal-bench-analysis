@@ -1,0 +1,121 @@
+{
+    "id": "ab3ba14c-92d4-4204-bd96-174fa29134cd",
+    "task_name": "build-pmars",
+    "trial_name": "build-pmars__qwfWRjg",
+    "trial_uri": "file:///private/tmp/jobs/Terminus2__Minimax-m2.5/build-pmars__qwfWRjg",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "build-pmars"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "55f554b8d07c2ec69aa88e385675925e684eb09c256610e0abca10375efc3876",
+    "config": {
+        "task": {
+            "path": "build-pmars",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "build-pmars__qwfWRjg",
+        "trials_dir": "jobs/Terminus2__Minimax-m2.5",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/minimax-m2.5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1",
+                "reasoning_effort": "high"
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "9cc95f8c-41a9-4311-9697-52edfbed6e7a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "minimax-m2.5:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 23061,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 4218,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 21,
+            "api_request_times_msec": [
+                5348.728179931641,
+                26431.758642196655,
+                15765.262126922607,
+                3308.525800704956,
+                5984.334230422974,
+                4446.408033370972,
+                2875.7739067077637,
+                3193.66192817688,
+                4308.324098587036,
+                3560.586929321289,
+                5779.323101043701,
+                4222.757816314697,
+                32381.505966186523,
+                3676.8147945404053,
+                11856.90188407898,
+                3266.5412425994873,
+                4465.137004852295,
+                5315.506935119629,
+                6139.631986618042,
+                7784.617185592651,
+                24423.506021499634
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-17T22:57:03.951792Z",
+    "finished_at": "2026-02-17T23:01:06.274634Z",
+    "environment_setup": {
+        "started_at": "2026-02-17T22:57:03.953232Z",
+        "finished_at": "2026-02-17T22:57:07.854208Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-17T22:57:07.854223Z",
+        "finished_at": "2026-02-17T22:57:09.912921Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-17T22:57:09.913037Z",
+        "finished_at": "2026-02-17T23:00:50.474985Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-17T23:00:50.475090Z",
+        "finished_at": "2026-02-17T23:01:04.883775Z"
+    }
+}

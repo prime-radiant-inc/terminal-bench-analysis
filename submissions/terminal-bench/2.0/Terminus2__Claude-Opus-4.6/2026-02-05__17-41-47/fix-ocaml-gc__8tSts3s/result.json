@@ -1,0 +1,123 @@
+{
+    "id": "dafc8b2f-75e5-48c5-839b-99086e250f32",
+    "task_name": "fix-ocaml-gc",
+    "trial_name": "fix-ocaml-gc__8tSts3s",
+    "trial_uri": "file:///Users/alexgshaw/Developer/laude/harbor/jobs/2026-02-05__17-41-47/fix-ocaml-gc__8tSts3s",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "fix-ocaml-gc"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "faa983dd79f63daa168b41c753bddb0621822820ba6f16661a9767b815e436e8",
+    "config": {
+        "task": {
+            "path": "fix-ocaml-gc",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "fix-ocaml-gc__8tSts3s",
+        "trials_dir": "jobs/2026-02-05__17-41-47",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "reasoning_effort": "high",
+                "temperature": 1
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "865e6f10-b734-46c9-89bd-b8f3ec80e696"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 391712,
+        "n_cache_tokens": 356218,
+        "n_output_tokens": 11679,
+        "cost_usd": 0.6891039999999999,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 22,
+            "api_request_times_msec": [
+                3922.5380420684814,
+                3506.2646865844727,
+                6092.346906661987,
+                5882.685899734497,
+                6878.556966781616,
+                3948.235034942627,
+                79525.55084228516,
+                26856.0471534729,
+                25119.69017982483,
+                3324.522018432617,
+                2632.9829692840576,
+                2798.326015472412,
+                4337.941884994507,
+                3464.2531871795654,
+                3296.783208847046,
+                3750.4537105560303,
+                3729.0990352630615,
+                2743.337869644165,
+                7215.928077697754,
+                4712.517976760864,
+                14074.087142944336,
+                5748.672008514404
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-06T05:03:55.962094Z",
+    "finished_at": "2026-02-06T05:32:59.285724Z",
+    "environment_setup": {
+        "started_at": "2026-02-06T05:03:55.962788Z",
+        "finished_at": "2026-02-06T05:04:00.457262Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-06T05:04:00.457282Z",
+        "finished_at": "2026-02-06T05:04:20.490802Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-06T05:04:20.490850Z",
+        "finished_at": "2026-02-06T05:20:30.503888Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-06T05:20:31.723432Z",
+        "finished_at": "2026-02-06T05:32:58.755273Z"
+    }
+}

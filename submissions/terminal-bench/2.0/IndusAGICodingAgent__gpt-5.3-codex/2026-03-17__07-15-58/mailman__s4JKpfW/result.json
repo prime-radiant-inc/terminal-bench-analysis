@@ -1,0 +1,104 @@
+{
+    "id": "12d5e5bd-ef9d-4785-b0c9-799f40a2daa2",
+    "task_name": "mailman",
+    "trial_name": "mailman__s4JKpfW",
+    "trial_uri": "file:///home/varun_isranivarun/work/indus-bench/induscode-official-final/2026-03-17__07-15-58/mailman__s4JKpfW",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "mailman"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "e9dc41ba89f17a0f2db146fc147c13e6ec85e80ea4f00ab460f50ac7fbacc0e9",
+    "config": {
+        "task": {
+            "path": "mailman",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "mailman__s4JKpfW",
+        "trials_dir": "induscode-official-final/2026-03-17__07-15-58",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "indusagi_tbench:IndusAGICodingAgent",
+            "model_name": "openai-codex/gpt-5.3-codex",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "939eea3e-9004-470b-8438-6c8b01300c1e"
+    },
+    "agent_info": {
+        "name": "IndusAGICodingAgent",
+        "version": "unknown",
+        "model_info": {
+            "name": "gpt-5.3-codex",
+            "provider": "openai-codex"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": 0.7996927999999999,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1800.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/varun_isranivarun/work/indus-bench/.venv-linux/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 156, in run\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/varun_isranivarun/work/indus-bench/.venv-linux/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 349, in exec\n    return await self._run_docker_compose_command(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/varun_isranivarun/work/indus-bench/.venv-linux/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 197, in _run_docker_compose_command\n    stdout_bytes, stderr_bytes = await process.communicate()\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/subprocess.py\", line 201, in communicate\n    stdin, stdout, stderr = await tasks.gather(stdin, stdout, stderr)\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/subprocess.py\", line 181, in _read_stream\n    output = await stream.read()\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/streams.py\", line 706, in read\n    block = await self.read(self._limit)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/streams.py\", line 713, in read\n    await self._wait_for_data('read')\n  File \"/usr/lib/python3.12/asyncio/streams.py\", line 545, in _wait_for_data\n    await self._waiter\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/varun_isranivarun/work/indus-bench/.venv-linux/lib/python3.12/site-packages/harbor/trial/trial.py\", line 259, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n  File \"/usr/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/varun_isranivarun/work/indus-bench/.venv-linux/lib/python3.12/site-packages/harbor/trial/trial.py\", line 483, in run\n    await self._execute_agent()\n  File \"/home/varun_isranivarun/work/indus-bench/.venv-linux/lib/python3.12/site-packages/harbor/trial/trial.py\", line 268, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 1800.0 seconds\n",
+        "occurred_at": "2026-03-17T18:50:23.398947"
+    },
+    "started_at": "2026-03-17T18:17:48.195810Z",
+    "finished_at": "2026-03-17T18:51:51.715182Z",
+    "environment_setup": {
+        "started_at": "2026-03-17T18:17:48.207051Z",
+        "finished_at": "2026-03-17T18:18:26.919520Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-17T18:18:26.919536Z",
+        "finished_at": "2026-03-17T18:20:23.445679Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-17T18:20:23.445756Z",
+        "finished_at": "2026-03-17T18:50:23.390324Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-17T18:50:23.694560Z",
+        "finished_at": "2026-03-17T18:51:23.441616Z"
+    }
+}

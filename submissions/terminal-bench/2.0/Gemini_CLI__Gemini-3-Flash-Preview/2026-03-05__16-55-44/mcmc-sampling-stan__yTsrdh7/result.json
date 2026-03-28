@@ -1,0 +1,94 @@
+{
+    "id": "c56cd7ad-f6f4-4913-928c-4fa2e726e93f",
+    "task_name": "mcmc-sampling-stan",
+    "trial_name": "mcmc-sampling-stan__yTsrdh7",
+    "trial_uri": "file:///home/user/harbor/jobs/2026-03-05__16-55-44/mcmc-sampling-stan__yTsrdh7",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "mcmc-sampling-stan"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "a2c8524885b5ab2e9a3b8c6cd374001556f013e9009487963d3a04271130deed",
+    "config": {
+        "task": {
+            "path": "mcmc-sampling-stan",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "mcmc-sampling-stan__yTsrdh7",
+        "trials_dir": "jobs/2026-03-05__16-55-44",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "gemini-cli",
+            "import_path": null,
+            "model_name": "google/gemini-3-flash-preview",
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "e8931df4-57e8-4f84-8239-512bbfa2ff47"
+    },
+    "agent_info": {
+        "name": "gemini-cli",
+        "version": "unknown",
+        "model_info": {
+            "name": "gemini-3-flash-preview",
+            "provider": "google"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 124258,
+        "n_cache_tokens": 49015,
+        "n_output_tokens": 1222,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1800.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/user/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/installed/gemini_cli.py\", line 268, in run\n    await super().run(instruction, environment, context)\n  File \"/home/user/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 145, in run\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/user/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 261, in exec\n    return await self._run_docker_compose_command(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/user/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 144, in _run_docker_compose_command\n    stdout_bytes, stderr_bytes = await process.communicate()\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/subprocess.py\", line 201, in communicate\n    stdin, stdout, stderr = await tasks.gather(stdin, stdout, stderr)\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/subprocess.py\", line 181, in _read_stream\n    output = await stream.read()\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/streams.py\", line 706, in read\n    block = await self.read(self._limit)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/streams.py\", line 713, in read\n    await self._wait_for_data('read')\n  File \"/usr/lib/python3.12/asyncio/streams.py\", line 545, in _wait_for_data\n    await self._waiter\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/user/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 228, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n  File \"/usr/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/user/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 347, in run\n    await self._execute_agent()\n  File \"/home/user/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 237, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 1800.0 seconds\n",
+        "occurred_at": "2026-03-05T19:47:22.882601"
+    },
+    "started_at": "2026-03-05T19:14:37.130072",
+    "finished_at": "2026-03-05T20:09:06.384740",
+    "environment_setup": {
+        "started_at": "2026-03-05T19:14:37.141228",
+        "finished_at": "2026-03-05T19:14:54.697961"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-05T19:14:54.697984",
+        "finished_at": "2026-03-05T19:17:21.191522"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-05T19:17:21.191572",
+        "finished_at": "2026-03-05T19:47:22.879696"
+    },
+    "verifier": {
+        "started_at": "2026-03-05T19:47:23.018510",
+        "finished_at": "2026-03-05T20:08:30.409935"
+    }
+}

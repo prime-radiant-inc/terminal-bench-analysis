@@ -1,0 +1,124 @@
+{
+    "id": "70cca009-7ea4-4868-8b9a-23fdaa8e4ea3",
+    "task_name": "count-dataset-tokens",
+    "trial_name": "count-dataset-tokens__hFpMBGo",
+    "trial_uri": "file:///Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/jobs/2026-02-20__11-30-30/count-dataset-tokens__hFpMBGo",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "count-dataset-tokens"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "1fa5f3961f0ad1c1748ebdaa39f27fd2bfd0f654cb728089365af6162b6d0ec7",
+    "config": {
+        "task": {
+            "path": "count-dataset-tokens",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "count-dataset-tokens__hFpMBGo",
+        "trials_dir": "jobs/2026-02-20__11-30-30",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "437f46df-c026-4476-8cde-8d57dd02c134"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "gemini-3.1-pro-preview",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 727462,
+        "n_cache_tokens": 487603,
+        "n_output_tokens": 21950,
+        "cost_usd": 0.8406385999999999,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 27,
+            "api_request_times_msec": [
+                8571.786880493164,
+                6936.698913574219,
+                17577.660083770752,
+                4346.492052078247,
+                5339.691877365112,
+                6267.306089401245,
+                5239.414215087891,
+                9435.422897338867,
+                25473.875045776367,
+                10779.421091079712,
+                4570.968151092529,
+                7381.486892700195,
+                11364.051103591919,
+                10694.90098953247,
+                8078.871011734009,
+                8879.535913467407,
+                10155.182838439941,
+                5214.266061782837,
+                20195.975065231323,
+                26849.260091781616,
+                9311.047315597534,
+                5825.080871582031,
+                7855.9722900390625,
+                13894.154071807861,
+                7594.200134277344,
+                7230.193853378296,
+                10015.875101089478
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-20T03:29:46.909863Z",
+    "finished_at": "2026-02-20T03:37:33.806115Z",
+    "environment_setup": {
+        "started_at": "2026-02-20T03:29:46.982130Z",
+        "finished_at": "2026-02-20T03:29:50.316468Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-20T03:29:50.316476Z",
+        "finished_at": "2026-02-20T03:30:05.116655Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-20T03:30:05.116730Z",
+        "finished_at": "2026-02-20T03:37:24.323170Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-20T03:37:26.417322Z",
+        "finished_at": "2026-02-20T03:37:33.025327Z"
+    }
+}

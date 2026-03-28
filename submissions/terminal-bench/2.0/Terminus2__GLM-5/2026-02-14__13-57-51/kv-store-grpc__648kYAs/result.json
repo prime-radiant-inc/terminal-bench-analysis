@@ -1,0 +1,120 @@
+{
+    "id": "be150187-0d70-46d9-b1c5-79c2a0747de2",
+    "task_name": "kv-store-grpc",
+    "trial_name": "kv-store-grpc__648kYAs",
+    "trial_uri": "file:///workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51/kv-store-grpc__648kYAs",
+    "task_id": {
+        "path": "/workspace/terminal/terminal-bench-2/kv-store-grpc"
+    },
+    "source": "terminal-bench-2",
+    "task_checksum": "9cadf1bf085c84578136694353c11b9994a645e814307cd5ce1071b800cd6a62",
+    "config": {
+        "task": {
+            "path": "/workspace/terminal/terminal-bench-2/kv-store-grpc",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench-2"
+        },
+        "trial_name": "kv-store-grpc__648kYAs",
+        "trials_dir": "/workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "parser_name": "xml",
+                "remove_main_key": true,
+                "api_base": "http://100.113.75.1:8080",
+                "temperature": 0.7,
+                "top_p": 1.0,
+                "max_new_tokens": 8192,
+                "model_info": {
+                    "max_input_tokens": 131072
+                },
+                "tokenizer_path": "/cloud/checkpoints/glm-moe/750b-moe/700b-sft-dsa-260127/iter_0020000_HF_FP8",
+                "use_generate": true,
+                "enable_summarize": true
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "9503f317-faba-45da-b01a-000cd6115566"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-5",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 10,
+            "api_request_times_msec": [
+                5243.99209022522,
+                7452.26526260376,
+                4240.523338317871,
+                3700.7992267608643,
+                9165.9574508667,
+                4892.715930938721,
+                3685.310125350952,
+                6227.92911529541,
+                7878.206491470337,
+                9934.165477752686
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-14T16:18:04.436758",
+    "finished_at": "2026-02-14T16:20:20.545674",
+    "environment_setup": {
+        "started_at": "2026-02-14T16:18:04.453976",
+        "finished_at": "2026-02-14T16:18:10.062328"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-14T16:18:10.062347",
+        "finished_at": "2026-02-14T16:18:19.093439"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-14T16:18:19.093494",
+        "finished_at": "2026-02-14T16:20:06.187255"
+    },
+    "verifier": {
+        "started_at": "2026-02-14T16:20:06.189962",
+        "finished_at": "2026-02-14T16:20:13.450173"
+    }
+}

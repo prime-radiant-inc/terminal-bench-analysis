@@ -1,0 +1,116 @@
+{
+    "id": "771eb6d6-faed-4dd5-bc48-911fb7401ab5",
+    "task_name": "protein-assembly",
+    "trial_name": "protein-assembly__77CQnZj",
+    "trial_uri": "file:///Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/jobs/2026-02-20__11-30-30/protein-assembly__77CQnZj",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "protein-assembly"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "b8df06c6c42605ec37afb3b9c6e2f4feb1be9663380bd7129fcbaa9559253a60",
+    "config": {
+        "task": {
+            "path": "protein-assembly",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "protein-assembly__77CQnZj",
+        "trials_dir": "jobs/2026-02-20__11-30-30",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "437f46df-c026-4476-8cde-8d57dd02c134"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "gemini-3.1-pro-preview",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 299388,
+        "n_cache_tokens": 170149,
+        "n_output_tokens": 25910,
+        "cost_usd": 0.6034278,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 19,
+            "api_request_times_msec": [
+                13008.404970169067,
+                21871.304988861084,
+                9206.933975219727,
+                9923.811197280884,
+                12378.784894943237,
+                12649.210691452026,
+                4510.575771331787,
+                4582.868814468384,
+                4888.630151748657,
+                7587.655067443848,
+                7833.715915679932,
+                9747.693061828613,
+                19618.44491958618,
+                12434.633016586304,
+                26947.437047958374,
+                14990.357160568237,
+                7748.862981796265,
+                25972.651958465576,
+                42588.68885040283
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-20T03:30:23.082069Z",
+    "finished_at": "2026-02-20T03:37:57.573595Z",
+    "environment_setup": {
+        "started_at": "2026-02-20T03:30:23.136642Z",
+        "finished_at": "2026-02-20T03:30:26.361437Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-20T03:30:26.361447Z",
+        "finished_at": "2026-02-20T03:30:41.845403Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-20T03:30:41.845468Z",
+        "finished_at": "2026-02-20T03:37:48.541778Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-20T03:37:50.505184Z",
+        "finished_at": "2026-02-20T03:37:57.125701Z"
+    }
+}

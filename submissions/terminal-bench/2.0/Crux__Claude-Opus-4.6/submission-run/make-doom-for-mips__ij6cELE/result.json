@@ -1,0 +1,93 @@
+{
+  "id": "2be1ef08-76ce-48b3-903b-1166b9193e3c",
+  "task_name": "make-doom-for-mips",
+  "trial_name": "make-doom-for-mips__ij6cELE",
+  "trial_uri": "file:///root/terminal-bench/jobs/3376dcb7/make-doom-for-mips__ij6cELE",
+  "task_id": {
+    "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+    "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+    "path": "make-doom-for-mips"
+  },
+  "source": "terminal-bench",
+  "task_checksum": "48c24358a58435a97de86cc88255b6faf1cd3cb28bd27ff6a918e01655095981",
+  "config": {
+    "task": {
+      "path": "make-doom-for-mips",
+      "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+      "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+      "overwrite": false,
+      "download_dir": null,
+      "source": "terminal-bench"
+    },
+    "trial_name": "make-doom-for-mips__ij6cELE",
+    "trials_dir": "jobs/3376dcb7",
+    "timeout_multiplier": 1.0,
+    "agent": {
+      "name": null,
+      "import_path": "tbench_agent:TBenchAgent",
+      "model_name": "claude-opus-4-6",
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "kwargs": {
+        "task_name": "make-doom-for-mips"
+      }
+    },
+    "environment": {
+      "type": "docker",
+      "force_build": false,
+      "delete": true,
+      "override_cpus": null,
+      "override_memory_mb": null,
+      "override_storage_mb": null,
+      "kwargs": {}
+    },
+    "verifier": {
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "disable": false
+    },
+    "job_id": "1432505c-c0f7-4e68-be19-3ed4d7232a6e"
+  },
+  "agent_info": {
+    "name": "claude-code-enhanced",
+    "version": "unknown",
+    "model_info": null
+  },
+  "agent_result": {
+    "n_input_tokens": null,
+    "n_cache_tokens": null,
+    "n_output_tokens": null,
+    "cost_usd": null,
+    "rollout_details": null,
+    "metadata": null
+  },
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.0
+    }
+  },
+  "exception_info": {
+    "exception_type": "AgentTimeoutError",
+    "exception_message": "Agent execution timed out after 900.0 seconds",
+    "exception_traceback": "Traceback (most recent call last):\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 135, in run\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 261, in exec\n    return await self._run_docker_compose_command(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 144, in _run_docker_compose_command\n    stdout_bytes, stderr_bytes = await process.communicate()\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/subprocess.py\", line 201, in communicate\n    stdin, stdout, stderr = await tasks.gather(stdin, stdout, stderr)\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/subprocess.py\", line 181, in _read_stream\n    output = await stream.read()\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/streams.py\", line 706, in read\n    block = await self.read(self._limit)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/streams.py\", line 713, in read\n    await self._wait_for_data('read')\n  File \"/usr/lib/python3.12/asyncio/streams.py\", line 545, in _wait_for_data\n    await self._waiter\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/trial/trial.py\", line 228, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n  File \"/usr/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/trial/trial.py\", line 344, in run\n    await self._execute_agent()\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/trial/trial.py\", line 237, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+    "occurred_at": "2026-02-10T22:33:27.856360"
+  },
+  "started_at": "2026-02-10T22:16:58.458968",
+  "finished_at": "2026-02-10T22:34:54.555293",
+  "environment_setup": {
+    "started_at": "2026-02-10T22:16:58.463228",
+    "finished_at": "2026-02-10T22:17:14.810293"
+  },
+  "agent_setup": {
+    "started_at": "2026-02-10T22:17:14.810321",
+    "finished_at": "2026-02-10T22:17:48.743568"
+  },
+  "agent_execution": {
+    "started_at": "2026-02-10T22:17:48.743595",
+    "finished_at": "2026-02-10T22:33:27.849084"
+  },
+  "verifier": {
+    "started_at": "2026-02-10T22:33:27.858137",
+    "finished_at": "2026-02-10T22:34:51.150284"
+  }
+}

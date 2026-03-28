@@ -1,0 +1,117 @@
+{
+    "id": "ba1f643a-e683-4d41-8020-3555e4159864",
+    "task_name": "constraints-scheduling",
+    "trial_name": "constraints-scheduling__jzfuSVc",
+    "trial_uri": "file:///workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51/constraints-scheduling__jzfuSVc",
+    "task_id": {
+        "path": "/workspace/terminal/terminal-bench-2/constraints-scheduling"
+    },
+    "source": "terminal-bench-2",
+    "task_checksum": "c69027b9099bb7ac63a753b310e31cfef9cc20dce2d1c6c88956c8a854d7ac16",
+    "config": {
+        "task": {
+            "path": "/workspace/terminal/terminal-bench-2/constraints-scheduling",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench-2"
+        },
+        "trial_name": "constraints-scheduling__jzfuSVc",
+        "trials_dir": "/workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "parser_name": "xml",
+                "remove_main_key": true,
+                "api_base": "http://100.113.75.1:8080",
+                "temperature": 0.7,
+                "top_p": 1.0,
+                "max_new_tokens": 8192,
+                "model_info": {
+                    "max_input_tokens": 131072
+                },
+                "tokenizer_path": "/cloud/checkpoints/glm-moe/750b-moe/700b-sft-dsa-260127/iter_0020000_HF_FP8",
+                "use_generate": true,
+                "enable_summarize": true
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "9503f317-faba-45da-b01a-000cd6115566"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-5",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 7,
+            "api_request_times_msec": [
+                9204.78630065918,
+                7528.510570526123,
+                8330.93285560608,
+                51087.59808540344,
+                7666.937828063965,
+                15420.917510986328,
+                25972.655296325684
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-14T16:06:48.217725",
+    "finished_at": "2026-02-14T16:10:13.460003",
+    "environment_setup": {
+        "started_at": "2026-02-14T16:06:48.242021",
+        "finished_at": "2026-02-14T16:06:58.906553"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-14T16:06:58.906569",
+        "finished_at": "2026-02-14T16:07:18.885117"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-14T16:07:18.885155",
+        "finished_at": "2026-02-14T16:09:37.477656"
+    },
+    "verifier": {
+        "started_at": "2026-02-14T16:09:37.514590",
+        "finished_at": "2026-02-14T16:09:58.176292"
+    }
+}

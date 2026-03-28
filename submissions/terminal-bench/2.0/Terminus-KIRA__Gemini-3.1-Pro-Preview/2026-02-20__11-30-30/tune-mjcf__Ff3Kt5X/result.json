@@ -1,0 +1,117 @@
+{
+    "id": "bbcf52e4-8581-4d58-8a74-884ea6a804fa",
+    "task_name": "tune-mjcf",
+    "trial_name": "tune-mjcf__Ff3Kt5X",
+    "trial_uri": "file:///Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/jobs/2026-02-20__11-30-30/tune-mjcf__Ff3Kt5X",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "tune-mjcf"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "0014600ed83c316bbc3b495879f147f234d06578281af02817c9955794d4ebef",
+    "config": {
+        "task": {
+            "path": "tune-mjcf",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "tune-mjcf__Ff3Kt5X",
+        "trials_dir": "jobs/2026-02-20__11-30-30",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "437f46df-c026-4476-8cde-8d57dd02c134"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "gemini-3.1-pro-preview",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 194504,
+        "n_cache_tokens": 100500,
+        "n_output_tokens": 12541,
+        "cost_usd": 0.3585999999999999,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 20,
+            "api_request_times_msec": [
+                9481.446981430054,
+                6771.611928939819,
+                16402.940034866333,
+                6835.381984710693,
+                3859.6839904785156,
+                7527.400970458984,
+                18939.064025878906,
+                9380.91230392456,
+                7794.028759002686,
+                8201.82180404663,
+                6204.692840576172,
+                3925.6579875946045,
+                6519.674777984619,
+                4965.888023376465,
+                3578.252077102661,
+                20517.564296722412,
+                4319.017171859741,
+                6290.925979614258,
+                6844.005107879639,
+                20617.746829986572
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-20T02:49:33.136772Z",
+    "finished_at": "2026-02-20T02:54:43.138720Z",
+    "environment_setup": {
+        "started_at": "2026-02-20T02:49:33.182066Z",
+        "finished_at": "2026-02-20T02:49:35.783741Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-20T02:49:35.783757Z",
+        "finished_at": "2026-02-20T02:49:51.153142Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-20T02:49:51.153228Z",
+        "finished_at": "2026-02-20T02:54:21.093282Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-20T02:54:22.852255Z",
+        "finished_at": "2026-02-20T02:54:42.693242Z"
+    }
+}

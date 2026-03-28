@@ -1,0 +1,128 @@
+{
+    "id": "c1e7fec5-a5c3-4981-8126-f5f78ccd54fa",
+    "task_name": "qemu-alpine-ssh",
+    "trial_name": "qemu-alpine-ssh__NbtdH3e",
+    "trial_uri": "file:///Users/tbd/local-only/projects/nts-mvp_/_tbench-wt/jobs/2026-01-26-terminus-ollama-cloud-glm-4-7-full-v01/qemu-alpine-ssh__NbtdH3e",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "qemu-alpine-ssh"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "a6cd0bf0752902f3e284a6a9672d801de83fb9d0cf769c95f09fed2fd213548c",
+    "config": {
+        "task": {
+            "path": "qemu-alpine-ssh",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "qemu-alpine-ssh__NbtdH3e",
+        "trials_dir": "jobs/2026-01-26-terminus-ollama-cloud-glm-4-7-full-v01",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-4.7:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1",
+                "reasoning_effort": "high"
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "d15e9783-0e8b-4181-a5e1-e5d0b2dc303a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-4.7:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 141332,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 6234,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 28,
+            "api_request_times_msec": [
+                3424.3767261505127,
+                32863.361120224,
+                3134.7551345825195,
+                2002.573013305664,
+                5360.874891281128,
+                50994.49872970581,
+                4064.281940460205,
+                37882.58409500122,
+                13541.002035140991,
+                1866.8138980865479,
+                8378.544807434082,
+                1980.9930324554443,
+                54190.778970718384,
+                2222.6169109344482,
+                6652.305126190186,
+                3208.677291870117,
+                1948.1322765350342,
+                1502.6681423187256,
+                2028.080940246582,
+                2970.5116748809814,
+                1568.114995956421,
+                3116.758108139038,
+                29328.442096710205,
+                2271.8710899353027,
+                2002.4499893188477,
+                1580.8100700378418,
+                40850.53086280823,
+                4221.374988555908
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-01-26T23:37:46.282757Z",
+    "finished_at": "2026-01-26T23:46:02.763522Z",
+    "environment_setup": {
+        "started_at": "2026-01-26T23:37:46.286179Z",
+        "finished_at": "2026-01-26T23:37:48.059849Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-26T23:37:48.059874Z",
+        "finished_at": "2026-01-26T23:37:51.056024Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-26T23:37:51.056078Z",
+        "finished_at": "2026-01-26T23:45:55.082039Z"
+    },
+    "verifier": {
+        "started_at": "2026-01-26T23:45:55.758891Z",
+        "finished_at": "2026-01-26T23:46:02.387447Z"
+    }
+}

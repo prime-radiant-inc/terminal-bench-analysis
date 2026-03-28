@@ -1,0 +1,104 @@
+{
+    "id": "43a2f7c7-a1c0-4ef6-a302-a6ce35afca6f",
+    "task_name": "multi-source-data-merger",
+    "trial_name": "multi-source-data-merger__Qg8ohfC",
+    "trial_uri": "file:///Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/jobs/2026-02-20__11-30-30/multi-source-data-merger__Qg8ohfC",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "multi-source-data-merger"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "0f86ced6d81948760d828ee03060c28c44eb7244e7ef72442c18dc1c71115280",
+    "config": {
+        "task": {
+            "path": "multi-source-data-merger",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "multi-source-data-merger__Qg8ohfC",
+        "trials_dir": "jobs/2026-02-20__11-30-30",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "437f46df-c026-4476-8cde-8d57dd02c134"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "gemini-3.1-pro-preview",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 52202,
+        "n_cache_tokens": 16157,
+        "n_output_tokens": 33147,
+        "cost_usd": 0.4730854,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 7,
+            "api_request_times_msec": [
+                16050.625085830688,
+                6654.65784072876,
+                60731.080770492554,
+                53403.40709686279,
+                29038.87391090393,
+                64066.1199092865,
+                60034.17205810547
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-20T03:25:16.653710Z",
+    "finished_at": "2026-02-20T03:30:59.453487Z",
+    "environment_setup": {
+        "started_at": "2026-02-20T03:25:16.694332Z",
+        "finished_at": "2026-02-20T03:25:19.792855Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-20T03:25:19.792863Z",
+        "finished_at": "2026-02-20T03:25:25.193288Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-20T03:25:25.193320Z",
+        "finished_at": "2026-02-20T03:30:46.745351Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-20T03:30:48.493593Z",
+        "finished_at": "2026-02-20T03:30:58.847166Z"
+    }
+}

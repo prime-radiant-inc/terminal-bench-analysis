@@ -1,0 +1,121 @@
+{
+    "id": "b35b14b3-235b-4c61-bf2a-d08a722b4b5e",
+    "task_name": "build-pov-ray",
+    "trial_name": "build-pov-ray__v28Ewty",
+    "trial_uri": "file:///private/tmp/jobs/Terminus2__Minimax-m2.5/build-pov-ray__v28Ewty",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "build-pov-ray"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "faca0987c8afa99023a8952f31da77a9017ed01ca04de9fee03b7d3fb1d92e26",
+    "config": {
+        "task": {
+            "path": "build-pov-ray",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "build-pov-ray__v28Ewty",
+        "trials_dir": "jobs/Terminus2__Minimax-m2.5",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/minimax-m2.5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1",
+                "reasoning_effort": "high"
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "9cc95f8c-41a9-4311-9697-52edfbed6e7a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "minimax-m2.5:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 100496,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 3904,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 21,
+            "api_request_times_msec": [
+                25034.646034240723,
+                9248.697996139526,
+                5788.833141326904,
+                3488.710880279541,
+                21602.94795036316,
+                9936.319351196289,
+                4706.990003585815,
+                5151.5209674835205,
+                6090.484380722046,
+                4514.707088470459,
+                9171.621084213257,
+                5376.264810562134,
+                3322.741985321045,
+                3151.578187942505,
+                15796.5087890625,
+                14054.584264755249,
+                11864.836692810059,
+                224481.586933136,
+                259625.51188468933,
+                15765.3329372406,
+                45135.20932197571
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-17T23:45:26.901089Z",
+    "finished_at": "2026-02-18T00:04:30.752748Z",
+    "environment_setup": {
+        "started_at": "2026-02-17T23:45:26.902845Z",
+        "finished_at": "2026-02-17T23:45:34.175613Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-17T23:45:34.175637Z",
+        "finished_at": "2026-02-17T23:45:52.651180Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-17T23:45:52.651262Z",
+        "finished_at": "2026-02-18T00:04:04.407845Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-18T00:04:04.408029Z",
+        "finished_at": "2026-02-18T00:04:29.281439Z"
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "id": "c45bf22d-e670-48b5-b722-139ab7ebbbb4",
+    "task_name": "crack-7z-hash",
+    "trial_name": "crack-7z-hash__PBq7erQ",
+    "trial_uri": "file:///workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51/crack-7z-hash__PBq7erQ",
+    "task_id": {
+        "path": "/workspace/terminal/terminal-bench-2/crack-7z-hash"
+    },
+    "source": "terminal-bench-2",
+    "task_checksum": "6557afcd0ab96deef7a8292019ea507be18f91433df61618b622866a293525a8",
+    "config": {
+        "task": {
+            "path": "/workspace/terminal/terminal-bench-2/crack-7z-hash",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench-2"
+        },
+        "trial_name": "crack-7z-hash__PBq7erQ",
+        "trials_dir": "/workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "parser_name": "xml",
+                "remove_main_key": true,
+                "api_base": "http://100.113.75.1:8080",
+                "temperature": 0.7,
+                "top_p": 1.0,
+                "max_new_tokens": 8192,
+                "model_info": {
+                    "max_input_tokens": 131072
+                },
+                "tokenizer_path": "/cloud/checkpoints/glm-moe/750b-moe/700b-sft-dsa-260127/iter_0020000_HF_FP8",
+                "use_generate": true,
+                "enable_summarize": true
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "9503f317-faba-45da-b01a-000cd6115566"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-5",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 24,
+            "api_request_times_msec": [
+                6123.475790023804,
+                3887.1588706970215,
+                5023.573398590088,
+                4440.008878707886,
+                4076.902151107788,
+                4572.574138641357,
+                6579.161882400513,
+                6423.080921173096,
+                4851.151704788208,
+                7549.816131591797,
+                4779.58869934082,
+                3392.0230865478516,
+                3216.228246688843,
+                3026.567220687866,
+                3391.1943435668945,
+                6133.947372436523,
+                5235.430479049683,
+                6266.923189163208,
+                3652.5027751922607,
+                4799.779176712036,
+                5016.656398773193,
+                2776.7281532287598,
+                5605.507850646973,
+                4848.501682281494
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-14T16:08:25.828684",
+    "finished_at": "2026-02-14T16:14:54.508267",
+    "environment_setup": {
+        "started_at": "2026-02-14T16:08:25.865487",
+        "finished_at": "2026-02-14T16:08:32.348430"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-14T16:08:32.348440",
+        "finished_at": "2026-02-14T16:08:58.749210"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-14T16:08:58.749259",
+        "finished_at": "2026-02-14T16:14:29.131289"
+    },
+    "verifier": {
+        "started_at": "2026-02-14T16:14:29.133550",
+        "finished_at": "2026-02-14T16:14:45.613479"
+    }
+}

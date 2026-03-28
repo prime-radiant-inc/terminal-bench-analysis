@@ -1,0 +1,142 @@
+{
+    "id": "b05a3b97-99ae-4909-ab64-b9cf80fea53a",
+    "task_name": "financial-document-processor",
+    "trial_name": "financial-document-processor__KG8gkdi",
+    "trial_uri": "file:///workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51/financial-document-processor__KG8gkdi",
+    "task_id": {
+        "path": "/workspace/terminal/terminal-bench-2/financial-document-processor"
+    },
+    "source": "terminal-bench-2",
+    "task_checksum": "e8ee9e8948d949d0abe46d431736d1cf04e8aab76d98fc9c819fb26960ab1352",
+    "config": {
+        "task": {
+            "path": "/workspace/terminal/terminal-bench-2/financial-document-processor",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench-2"
+        },
+        "trial_name": "financial-document-processor__KG8gkdi",
+        "trials_dir": "/workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "parser_name": "xml",
+                "remove_main_key": true,
+                "api_base": "http://100.113.75.1:8080",
+                "temperature": 0.7,
+                "top_p": 1.0,
+                "max_new_tokens": 8192,
+                "model_info": {
+                    "max_input_tokens": 131072
+                },
+                "tokenizer_path": "/cloud/checkpoints/glm-moe/750b-moe/700b-sft-dsa-260127/iter_0020000_HF_FP8",
+                "use_generate": true,
+                "enable_summarize": true
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "9503f317-faba-45da-b01a-000cd6115566"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-5",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 28,
+            "api_request_times_msec": [
+                8790.472745895386,
+                7534.731864929199,
+                5645.925521850586,
+                3051.0549545288086,
+                5988.184690475464,
+                4922.433376312256,
+                5432.472705841064,
+                2905.4911136627197,
+                35253.034353256226,
+                8931.687831878662,
+                8466.635942459106,
+                5819.5343017578125,
+                9614.526748657227,
+                41843.09530258179,
+                39078.24969291687,
+                50083.929777145386,
+                11165.49563407898,
+                12662.83130645752,
+                33911.71598434448,
+                9879.40788269043,
+                13331.237077713013,
+                37941.938638687134,
+                25986.369609832764,
+                42669.073820114136,
+                17245.69058418274,
+                36657.01484680176,
+                15590.305805206299
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1200.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/terminus_2.py\", line 1851, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/terminus_2.py\", line 1522, in _run_agent_loop\n    if not await self._session.is_session_alive():\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/agents/terminus_2/tmux_session.py\", line 420, in is_session_alive\n    result = await self.environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/environments/docker/docker.py\", line 366, in exec\n    return await self._run_docker_compose_command(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/environments/docker/docker.py\", line 147, in _run_docker_compose_command\n    process = await asyncio.create_subprocess_exec(\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/subprocess.py\", line 224, in create_subprocess_exec\n    transport, protocol = await loop.subprocess_exec(\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/base_events.py\", line 1756, in subprocess_exec\n    transport = await self._make_subprocess_transport(\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/unix_events.py\", line 218, in _make_subprocess_transport\n    await waiter\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/trial/trial.py\", line 248, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/trial/trial.py\", line 573, in run\n    await self._execute_agent()\n  File \"/workspace/gcd/code/terminal_bench/src/harbor/trial/trial.py\", line 257, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 1200.0 seconds\n",
+        "occurred_at": "2026-02-14T15:44:45.403661"
+    },
+    "started_at": "2026-02-14T15:24:10.351492",
+    "finished_at": "2026-02-14T15:45:08.503288",
+    "environment_setup": {
+        "started_at": "2026-02-14T15:24:10.390704",
+        "finished_at": "2026-02-14T15:24:18.845588"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-14T15:24:18.845605",
+        "finished_at": "2026-02-14T15:24:45.363249"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-14T15:24:45.363294",
+        "finished_at": "2026-02-14T15:44:45.398234"
+    },
+    "verifier": {
+        "started_at": "2026-02-14T15:44:45.431279",
+        "finished_at": "2026-02-14T15:45:03.513075"
+    }
+}

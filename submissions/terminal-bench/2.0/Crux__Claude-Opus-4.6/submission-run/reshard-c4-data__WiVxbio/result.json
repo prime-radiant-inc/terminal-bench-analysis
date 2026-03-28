@@ -1,0 +1,84 @@
+{
+  "id": "aedd2319-6007-432c-96d2-8e376c068757",
+  "task_name": "reshard-c4-data",
+  "trial_name": "reshard-c4-data__WiVxbio",
+  "trial_uri": "file:///root/terminal-bench/jobs/b24c4c88/reshard-c4-data__WiVxbio",
+  "task_id": {
+    "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+    "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+    "path": "reshard-c4-data"
+  },
+  "source": "terminal-bench",
+  "task_checksum": "19f99d7567f3e6e6ebe453523d76a69c2196bc34b0aa668abfb997d797cc6bd5",
+  "config": {
+    "task": {
+      "path": "reshard-c4-data",
+      "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+      "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+      "overwrite": false,
+      "download_dir": null,
+      "source": "terminal-bench"
+    },
+    "trial_name": "reshard-c4-data__WiVxbio",
+    "trials_dir": "jobs/b24c4c88",
+    "timeout_multiplier": 1.0,
+    "agent": {
+      "name": null,
+      "import_path": "tbench_agent:TBenchAgent",
+      "model_name": "claude-opus-4-6",
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "kwargs": {}
+    },
+    "environment": {
+      "type": "docker",
+      "force_build": false,
+      "delete": true,
+      "override_cpus": null,
+      "override_memory_mb": null,
+      "override_storage_mb": null,
+      "kwargs": {}
+    },
+    "verifier": {
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "disable": false
+    },
+    "job_id": "1432505c-c0f7-4e68-be19-3ed4d7232a6e"
+  },
+  "agent_info": {
+    "name": "claude-code-enhanced",
+    "version": "unknown",
+    "model_info": null
+  },
+  "agent_result": {
+    "n_input_tokens": null,
+    "n_cache_tokens": null,
+    "n_output_tokens": null,
+    "cost_usd": null,
+    "rollout_details": null,
+    "metadata": null
+  },
+  "verifier_result": null,
+  "exception_info": {
+    "exception_type": "NameError",
+    "exception_message": "name 'ClaudeCodeEnhanced' is not defined",
+    "exception_traceback": "Traceback (most recent call last):\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/trial/trial.py\", line 344, in run\n    await self._execute_agent()\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/trial/trial.py\", line 228, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/root/harbor-env/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 129, in run\n    self.create_run_agent_commands(rendered_instruction)\n  File \"/root/terminal-bench/tbench_agent.py\", line 1411, in create_run_agent_commands\n    enhanced_instruction = self._enhance_prompt(instruction)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/terminal-bench/tbench_agent.py\", line 1751, in _enhance_prompt\n    variant = ClaudeCodeEnhanced._prompt_variant\n              ^^^^^^^^^^^^^^^^^^\nNameError: name 'ClaudeCodeEnhanced' is not defined\n",
+    "occurred_at": "2026-02-08T00:26:28.882672"
+  },
+  "started_at": "2026-02-08T00:23:13.939249",
+  "finished_at": "2026-02-08T00:26:33.492275",
+  "environment_setup": {
+    "started_at": "2026-02-08T00:23:13.944769",
+    "finished_at": "2026-02-08T00:26:01.996356"
+  },
+  "agent_setup": {
+    "started_at": "2026-02-08T00:26:01.996430",
+    "finished_at": "2026-02-08T00:26:28.759123"
+  },
+  "agent_execution": {
+    "started_at": "2026-02-08T00:26:28.759214",
+    "finished_at": "2026-02-08T00:26:28.877430"
+  },
+  "verifier": null
+}

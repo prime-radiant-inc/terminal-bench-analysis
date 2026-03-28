@@ -1,0 +1,145 @@
+{
+    "id": "1fdb97c8-a25d-4041-b349-44a9d381694e",
+    "task_name": "make-mips-interpreter",
+    "trial_name": "make-mips-interpreter__evMJKc2",
+    "trial_uri": "file:///Users/tbd/tbench/jobs/2026-01-26-terminus-ollama-cloud-glm-4-7-full-v01/make-mips-interpreter__evMJKc2",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "make-mips-interpreter"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "8c83716ee4cc62408b9d9bb2fb2a59dad434305da76b32d3186e7da1c106efe3",
+    "config": {
+        "task": {
+            "path": "make-mips-interpreter",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "make-mips-interpreter__evMJKc2",
+        "trials_dir": "jobs/2026-01-26-terminus-ollama-cloud-glm-4-7-full-v01",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-4.7:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1",
+                "reasoning_effort": "high"
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "d15e9783-0e8b-4181-a5e1-e5d0b2dc303a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-4.7:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2476520,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 51637,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                2952.7359008789062,
+                2861.0029220581055,
+                3257.6608657836914,
+                12756.017923355103,
+                5466.588020324707,
+                10277.742862701416,
+                127400.75993537903,
+                3221.869945526123,
+                10534.478187561035,
+                8365.721225738525,
+                8696.707725524902,
+                10693.276166915894,
+                51299.41701889038,
+                11391.965866088867,
+                16030.843019485474,
+                11082.689046859741,
+                14103.89494895935,
+                5240.207672119141,
+                7613.335132598877,
+                17881.24108314514,
+                15298.506021499634,
+                19323.155879974365,
+                12555.670976638794,
+                17964.716911315918,
+                6746.027946472168,
+                20086.13896369934,
+                19608.68787765503,
+                8443.342924118042,
+                22398.163080215454,
+                10891.563653945923,
+                22207.457065582275,
+                10983.080863952637,
+                1968.2021141052246,
+                9863.886833190918,
+                11542.383193969727,
+                15065.179109573364,
+                15208.258152008057,
+                14384.470701217651,
+                28062.932014465332,
+                66701.82514190674,
+                15003.820180892944,
+                19438.289880752563,
+                18047.288179397583,
+                19021.955966949463,
+                30482.70320892334,
+                35692.057847976685,
+                46328.91893386841
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "DaytonaError",
+        "exception_message": "Failed to create session: unauthorized: failed to get auth URL: failed to parse request host: invalid host format: port and sandbox ID not found",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 354, in run\n    await self._execute_agent()\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 243, in _execute_agent\n    await asyncio.wait_for(\n  File \"/Users/tbd/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1397, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1226, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1043, in _execute_commands\n    await session.send_keys(\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 563, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 518, in _send_non_blocking_keys\n    await self.environment.exec(self._tmux_send_keys(keys))\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/daytona.py\", line 462, in exec\n    await self._sandbox.process.create_session(session_id)\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona/_utils/errors.py\", line 90, in async_wrapper\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona/_utils/errors.py\", line 71, in process_n_raise_exception\n    (\ndaytona.common.errors.DaytonaError: Failed to create session: unauthorized: failed to get auth URL: failed to parse request host: invalid host format: port and sandbox ID not found\n",
+        "occurred_at": "2026-01-27T11:45:38.407615"
+    },
+    "started_at": "2026-01-27T18:22:05.474807Z",
+    "finished_at": "2026-01-27T18:46:49.926984Z",
+    "environment_setup": {
+        "started_at": "2026-01-27T18:22:05.478128Z",
+        "finished_at": "2026-01-27T18:23:21.832756Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-27T18:23:21.832781Z",
+        "finished_at": "2026-01-27T18:23:34.075395Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-27T18:23:34.075432Z",
+        "finished_at": "2026-01-27T18:45:37.191937Z"
+    },
+    "verifier": null
+}

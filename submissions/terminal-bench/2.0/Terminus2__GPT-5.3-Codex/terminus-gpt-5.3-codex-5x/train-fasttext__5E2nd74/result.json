@@ -1,0 +1,151 @@
+{
+    "id": "dcd9b3fd-afc7-44e8-9b78-1e4ce168fa9a",
+    "task_name": "train-fasttext",
+    "trial_name": "train-fasttext__5E2nd74",
+    "trial_uri": "file:///Users/alexgshaw/Developer/laude/harbor-terminus-responses/jobs/terminus-gpt-5.3-codex-5x/train-fasttext__5E2nd74",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "train-fasttext"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "fe83ab1fc447e909ed3f48d61ff42abfd29b3168c63c3efcdea9c5014c27b2f7",
+    "config": {
+        "task": {
+            "path": "train-fasttext",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "train-fasttext__5E2nd74",
+        "trials_dir": "jobs/terminus-gpt-5.3-codex-5x",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/gpt-5.3-codex",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "reasoning_effort": "xhigh",
+                "use_responses_api": true
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {
+                "snapshot_template_name": "{name}"
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "e19cda61-df3b-4508-a301-2500c9a7e944"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "gpt-5.3-codex",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2285681,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 52155,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                15918.462991714478,
+                111737.33901977539,
+                102613.37113380432,
+                7125.193119049072,
+                7980.756998062134,
+                3728.2938957214355,
+                4044.044017791748,
+                20506.91318511963,
+                5224.599123001099,
+                6826.585292816162,
+                10309.69786643982,
+                7521.570920944214,
+                10360.116958618164,
+                5674.136638641357,
+                34169.53492164612,
+                4020.6987857818604,
+                3731.3179969787598,
+                53156.44598007202,
+                51560.47797203064,
+                9146.506071090698,
+                15907.219171524048,
+                25943.456888198853,
+                7000.71382522583,
+                14686.398029327393,
+                78933.57110023499,
+                22247.448921203613,
+                50764.50300216675,
+                74527.2171497345,
+                46826.15804672241,
+                6305.980205535889,
+                48928.17807197571,
+                20926.41592025757,
+                51294.02780532837,
+                26119.89998817444,
+                23023.595094680786,
+                27718.560218811035,
+                94247.10607528687,
+                26237.181186676025,
+                27390.928030014038,
+                63351.05514526367,
+                55964.17808532715,
+                4190.497875213623,
+                16809.979915618896,
+                8383.384943008423,
+                14450.005292892456,
+                7863.24405670166,
+                5914.548873901367
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 3600.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor-terminus-responses/src/harbor/agents/terminus_2/terminus_2.py\", line 1404, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/Users/alexgshaw/Developer/laude/harbor-terminus-responses/src/harbor/agents/terminus_2/terminus_2.py\", line 1233, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n    )\n    ^\n  File \"/Users/alexgshaw/Developer/laude/harbor-terminus-responses/src/harbor/agents/terminus_2/terminus_2.py\", line 1050, in _execute_commands\n    await session.send_keys(\n    ...<3 lines>...\n    )\n  File \"/Users/alexgshaw/Developer/laude/harbor-terminus-responses/src/harbor/agents/terminus_2/tmux_session.py\", line 563, in send_keys\n    await self._send_non_blocking_keys(\n    ...<2 lines>...\n    )\n  File \"/Users/alexgshaw/Developer/laude/harbor-terminus-responses/src/harbor/agents/terminus_2/tmux_session.py\", line 523, in _send_non_blocking_keys\n    await asyncio.sleep(min_timeout_sec - elapsed_time_sec)\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 718, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/alexgshaw/Developer/laude/harbor-terminus-responses/src/harbor/trial/trial.py\", line 251, in _execute_agent\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/alexgshaw/Developer/laude/harbor-terminus-responses/src/harbor/trial/trial.py\", line 362, in run\n    await self._execute_agent()\n  File \"/Users/alexgshaw/Developer/laude/harbor-terminus-responses/src/harbor/trial/trial.py\", line 260, in _execute_agent\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {self._agent_timeout_sec} seconds\"\n    ) from e\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 3600.0 seconds\n",
+        "occurred_at": "2026-02-05T00:53:27.021027"
+    },
+    "started_at": "2026-02-05T07:53:14.423143Z",
+    "finished_at": "2026-02-05T08:53:34.480176Z",
+    "environment_setup": {
+        "started_at": "2026-02-05T07:53:14.431634Z",
+        "finished_at": "2026-02-05T07:53:16.601611Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-05T07:53:16.601632Z",
+        "finished_at": "2026-02-05T07:53:27.009844Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-05T07:53:27.009868Z",
+        "finished_at": "2026-02-05T08:53:27.019698Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-05T08:53:29.861840Z",
+        "finished_at": "2026-02-05T08:53:34.148264Z"
+    }
+}

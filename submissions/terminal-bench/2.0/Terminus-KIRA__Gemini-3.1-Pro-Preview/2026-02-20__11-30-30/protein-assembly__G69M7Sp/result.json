@@ -1,0 +1,122 @@
+{
+    "id": "ce53ecfc-2ef9-4888-8f79-e581a0d850aa",
+    "task_name": "protein-assembly",
+    "trial_name": "protein-assembly__G69M7Sp",
+    "trial_uri": "file:///Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/jobs/2026-02-20__11-30-30/protein-assembly__G69M7Sp",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "protein-assembly"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "b8df06c6c42605ec37afb3b9c6e2f4feb1be9663380bd7129fcbaa9559253a60",
+    "config": {
+        "task": {
+            "path": "protein-assembly",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "protein-assembly__G69M7Sp",
+        "trials_dir": "jobs/2026-02-20__11-30-30",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "437f46df-c026-4476-8cde-8d57dd02c134"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "gemini-3.1-pro-preview",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 370833,
+        "n_cache_tokens": 266577,
+        "n_output_tokens": 37134,
+        "cost_usd": 0.7074354,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 25,
+            "api_request_times_msec": [
+                12077.008962631226,
+                13505.012035369873,
+                29661.50188446045,
+                8364.312171936035,
+                6541.958332061768,
+                4276.798248291016,
+                4628.859758377075,
+                6841.007947921753,
+                11761.415004730225,
+                3794.055938720703,
+                3651.113986968994,
+                4004.55904006958,
+                9356.809139251709,
+                4097.177028656006,
+                3733.84690284729,
+                3616.9590950012207,
+                3617.168188095093,
+                12806.374311447144,
+                14647.640228271484,
+                20522.281885147095,
+                11682.93023109436,
+                14825.958967208862,
+                75935.7099533081,
+                41598.99091720581,
+                48288.5057926178
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-20T03:49:35.723889Z",
+    "finished_at": "2026-02-20T03:58:06.308115Z",
+    "environment_setup": {
+        "started_at": "2026-02-20T03:49:35.730946Z",
+        "finished_at": "2026-02-20T03:49:38.280396Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-20T03:49:38.280400Z",
+        "finished_at": "2026-02-20T03:49:54.614697Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-20T03:49:54.614719Z",
+        "finished_at": "2026-02-20T03:57:57.116116Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-20T03:57:59.264616Z",
+        "finished_at": "2026-02-20T03:58:05.865658Z"
+    }
+}

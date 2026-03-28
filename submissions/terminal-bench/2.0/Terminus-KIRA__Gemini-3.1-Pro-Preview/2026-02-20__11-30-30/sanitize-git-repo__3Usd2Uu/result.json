@@ -1,0 +1,117 @@
+{
+    "id": "723552f8-317e-4924-9470-9337e5bdc88a",
+    "task_name": "sanitize-git-repo",
+    "trial_name": "sanitize-git-repo__3Usd2Uu",
+    "trial_uri": "file:///Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/jobs/2026-02-20__11-30-30/sanitize-git-repo__3Usd2Uu",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "sanitize-git-repo"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "2193195d0a2d45451b0ff7b8bfe47677e11744f9528f54d6281d01bda76267cc",
+    "config": {
+        "task": {
+            "path": "sanitize-git-repo",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "sanitize-git-repo__3Usd2Uu",
+        "trials_dir": "jobs/2026-02-20__11-30-30",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "437f46df-c026-4476-8cde-8d57dd02c134"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "gemini-3.1-pro-preview",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 812438,
+        "n_cache_tokens": 582996,
+        "n_output_tokens": 30964,
+        "cost_usd": 0.9470512000000001,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 20,
+            "api_request_times_msec": [
+                8110.5170249938965,
+                18620.946884155273,
+                44458.15992355347,
+                32658.020973205566,
+                10127.29811668396,
+                27454.72502708435,
+                8997.864961624146,
+                12601.15909576416,
+                4766.206979751587,
+                4417.970180511475,
+                6836.504936218262,
+                6616.4610385894775,
+                9094.26474571228,
+                11272.4449634552,
+                9320.772647857666,
+                4385.72096824646,
+                10594.707250595093,
+                41498.00205230713,
+                40501.351833343506,
+                36854.10499572754
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-20T03:54:14.646526Z",
+    "finished_at": "2026-02-20T04:02:50.965153Z",
+    "environment_setup": {
+        "started_at": "2026-02-20T03:54:14.689173Z",
+        "finished_at": "2026-02-20T03:54:18.454980Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-20T03:54:18.454996Z",
+        "finished_at": "2026-02-20T03:54:33.574071Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-20T03:54:33.574119Z",
+        "finished_at": "2026-02-20T04:02:38.683179Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-20T04:02:42.097926Z",
+        "finished_at": "2026-02-20T04:02:50.372406Z"
+    }
+}

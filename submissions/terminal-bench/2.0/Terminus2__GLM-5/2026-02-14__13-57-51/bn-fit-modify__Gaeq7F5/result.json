@@ -1,0 +1,125 @@
+{
+    "id": "be2532cc-f094-493d-92b3-1636e3d08a10",
+    "task_name": "bn-fit-modify",
+    "trial_name": "bn-fit-modify__Gaeq7F5",
+    "trial_uri": "file:///workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51/bn-fit-modify__Gaeq7F5",
+    "task_id": {
+        "path": "/workspace/terminal/terminal-bench-2/bn-fit-modify"
+    },
+    "source": "terminal-bench-2",
+    "task_checksum": "2758dba68c97cbf8fff87af7e955ac424bfe84ff053e20f160f713d3eee2358f",
+    "config": {
+        "task": {
+            "path": "/workspace/terminal/terminal-bench-2/bn-fit-modify",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench-2"
+        },
+        "trial_name": "bn-fit-modify__Gaeq7F5",
+        "trials_dir": "/workspace/swe-data/tb2_outputs/TERMINUS_2-openai_glm-5-terminal-bench-2-xml-temp0.7-topp1.0-default-attempts5-2026-02-14__13-57-51",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/glm-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "parser_name": "xml",
+                "remove_main_key": true,
+                "api_base": "http://100.113.75.1:8080",
+                "temperature": 0.7,
+                "top_p": 1.0,
+                "max_new_tokens": 8192,
+                "model_info": {
+                    "max_input_tokens": 131072
+                },
+                "tokenizer_path": "/cloud/checkpoints/glm-moe/750b-moe/700b-sft-dsa-260127/iter_0020000_HF_FP8",
+                "use_generate": true,
+                "enable_summarize": true
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "9503f317-faba-45da-b01a-000cd6115566"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "glm-5",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 15,
+            "api_request_times_msec": [
+                7494.349241256714,
+                9576.287984848022,
+                2944.5645809173584,
+                4659.964561462402,
+                3956.8817615509033,
+                2800.781011581421,
+                2751.800537109375,
+                6775.630235671997,
+                3058.3090782165527,
+                6312.215566635132,
+                43452.61859893799,
+                58179.72230911255,
+                10476.340532302856,
+                10858.524322509766,
+                11196.014881134033
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-14T16:45:47.963953",
+    "finished_at": "2026-02-14T16:54:27.450939",
+    "environment_setup": {
+        "started_at": "2026-02-14T16:45:47.982956",
+        "finished_at": "2026-02-14T16:45:51.307493"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-14T16:45:51.307510",
+        "finished_at": "2026-02-14T16:46:10.224102"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-14T16:46:10.224125",
+        "finished_at": "2026-02-14T16:54:03.838988"
+    },
+    "verifier": {
+        "started_at": "2026-02-14T16:54:03.847098",
+        "finished_at": "2026-02-14T16:54:22.025199"
+    }
+}

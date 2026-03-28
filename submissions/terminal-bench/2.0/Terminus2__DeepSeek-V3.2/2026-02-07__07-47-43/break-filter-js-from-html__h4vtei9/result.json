@@ -1,0 +1,131 @@
+{
+    "id": "316c6684-6b75-4a10-9831-f639b27acddd",
+    "task_name": "break-filter-js-from-html",
+    "trial_name": "break-filter-js-from-html__h4vtei9",
+    "trial_uri": "file:///root/harbor/jobs/2026-02-07__07-47-43/break-filter-js-from-html__h4vtei9",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "break-filter-js-from-html"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "b33421492e86b07de2a01bc2205f7e7d2fdc36446a84787265d99e5e138fdaaa",
+    "config": {
+        "task": {
+            "path": "break-filter-js-from-html",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "break-filter-js-from-html__h4vtei9",
+        "trials_dir": "jobs/2026-02-07__07-47-43",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "deepseek/deepseek-chat",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "bd502fde-cc79-4ca6-a1b2-abbcb1ea84cf"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "deepseek-chat",
+            "provider": "deepseek"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 781738,
+        "n_cache_tokens": 770880,
+        "n_output_tokens": 30366,
+        "cost_usd": 0.0373786,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 33,
+            "api_request_times_msec": [
+                8706.803321838379,
+                23847.99027442932,
+                36280.23934364319,
+                25811.928749084473,
+                9877.0911693573,
+                33624.536991119385,
+                45474.140882492065,
+                79785.87818145752,
+                19847.147226333618,
+                56363.322734832764,
+                51032.89699554443,
+                26019.014596939087,
+                36325.987577438354,
+                86932.08479881287,
+                14764.503479003906,
+                31109.69066619873,
+                42931.92481994629,
+                25100.216150283813,
+                30182.689428329468,
+                10914.444923400879,
+                31756.76417350769,
+                41475.93975067139,
+                24061.599731445312,
+                20855.6067943573,
+                20928.56764793396,
+                17458.277940750122,
+                27781.57687187195,
+                23190.845012664795,
+                13206.394672393799,
+                9461.306810379028,
+                12012.073993682861,
+                7584.463596343994,
+                7700.235605239868
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RewardFileNotFoundError",
+        "exception_message": "No reward file found at jobs/2026-02-07__07-47-43/break-filter-js-from-html__h4vtei9/verifier/reward.txt or jobs/2026-02-07__07-47-43/break-filter-js-from-html__h4vtei9/verifier/reward.json",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 382, in run\n    await self._run_verification()\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 272, in _run_verification\n    await self._verify_with_retry()\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 193, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 112, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 157, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/_utils.py\", line 111, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/__init__.py\", line 394, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 116, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 290, in _verify_with_retry\n    self.result.verifier_result = await asyncio.wait_for(\n                                  ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/verifier/verifier.py\", line 157, in verify\n    raise RewardFileNotFoundError(\nharbor.verifier.verifier.RewardFileNotFoundError: No reward file found at jobs/2026-02-07__07-47-43/break-filter-js-from-html__h4vtei9/verifier/reward.txt or jobs/2026-02-07__07-47-43/break-filter-js-from-html__h4vtei9/verifier/reward.json\n",
+        "occurred_at": "2026-02-07T08:05:16.663054"
+    },
+    "started_at": "2026-02-07T07:47:43.815052Z",
+    "finished_at": "2026-02-07T08:05:27.634324Z",
+    "environment_setup": {
+        "started_at": "2026-02-07T07:47:43.818137Z",
+        "finished_at": "2026-02-07T07:47:58.215820Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-07T07:47:58.215832Z",
+        "finished_at": "2026-02-07T07:48:03.551569Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-07T07:48:03.551631Z",
+        "finished_at": "2026-02-07T08:05:16.493494Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-07T08:05:16.493569Z",
+        "finished_at": "2026-02-07T08:05:16.661937Z"
+    }
+}

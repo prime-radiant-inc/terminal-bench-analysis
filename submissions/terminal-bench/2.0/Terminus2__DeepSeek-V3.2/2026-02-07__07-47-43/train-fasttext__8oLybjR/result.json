@@ -1,0 +1,166 @@
+{
+    "id": "947e9b8a-57dc-4374-bf27-b3e3a8b8d31b",
+    "task_name": "train-fasttext",
+    "trial_name": "train-fasttext__8oLybjR",
+    "trial_uri": "file:///root/harbor/jobs/2026-02-07__07-47-43/train-fasttext__8oLybjR",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "train-fasttext"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "fe83ab1fc447e909ed3f48d61ff42abfd29b3168c63c3efcdea9c5014c27b2f7",
+    "config": {
+        "task": {
+            "path": "train-fasttext",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "train-fasttext__8oLybjR",
+        "trials_dir": "jobs/2026-02-07__07-47-43",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "deepseek/deepseek-chat",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "bd502fde-cc79-4ca6-a1b2-abbcb1ea84cf"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "deepseek-chat",
+            "provider": "deepseek"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1298507,
+        "n_cache_tokens": 1273664,
+        "n_output_tokens": 16476,
+        "cost_usd": 0.049538551999999986,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                11405.988931655884,
+                14854.811191558838,
+                10265.982389450073,
+                11482.81741142273,
+                11613.669633865356,
+                7832.221746444702,
+                7610.029697418213,
+                12840.09575843811,
+                10914.223432540894,
+                17938.14730644226,
+                6099.549055099487,
+                13204.674005508423,
+                8570.651292800903,
+                8869.603157043457,
+                4938.229560852051,
+                7436.362028121948,
+                14285.744428634644,
+                6270.580291748047,
+                12284.785509109497,
+                6789.266586303711,
+                6429.314851760864,
+                11591.208219528198,
+                6768.62645149231,
+                7461.02499961853,
+                10284.930944442749,
+                8930.667400360107,
+                14026.840448379517,
+                6328.064918518066,
+                6474.491357803345,
+                11250.27585029602,
+                7545.1340675354,
+                8271.846294403076,
+                7264.443635940552,
+                6231.982946395874,
+                6184.355020523071,
+                14635.75553894043,
+                5491.719961166382,
+                5996.7076778411865,
+                6101.645946502686,
+                12196.786642074585,
+                4924.219846725464,
+                5415.865898132324,
+                6183.753252029419,
+                6974.981784820557,
+                6225.431442260742,
+                7743.363380432129,
+                7285.881042480469,
+                16014.511823654175,
+                6326.336145401001,
+                7732.447385787964,
+                14214.086055755615,
+                5762.633800506592,
+                6309.378147125244,
+                5523.261070251465,
+                6265.049457550049,
+                5805.996417999268,
+                5428.756475448608,
+                6130.401134490967,
+                6298.286437988281,
+                6127.714157104492,
+                8079.373121261597,
+                7145.125150680542,
+                9896.308898925781,
+                5504.420280456543
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 3600.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1395, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1224, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1041, in _execute_commands\n    await session.send_keys(\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 563, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 523, in _send_non_blocking_keys\n    await asyncio.sleep(min_timeout_sec - elapsed_time_sec)\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/asyncio/tasks.py\", line 665, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 251, in _execute_agent\n    await asyncio.wait_for(\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 362, in run\n    await self._execute_agent()\n  File \"/root/anaconda3/envs/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 260, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 3600.0 seconds\n",
+        "occurred_at": "2026-02-08T05:44:55.019124"
+    },
+    "started_at": "2026-02-08T04:44:39.920763Z",
+    "finished_at": "2026-02-08T05:45:24.511284Z",
+    "environment_setup": {
+        "started_at": "2026-02-08T04:44:39.962268Z",
+        "finished_at": "2026-02-08T04:44:47.638686Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-08T04:44:47.638699Z",
+        "finished_at": "2026-02-08T04:44:55.011964Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-08T04:44:55.012019Z",
+        "finished_at": "2026-02-08T05:44:55.018374Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-08T05:44:55.020067Z",
+        "finished_at": "2026-02-08T05:45:11.827221Z"
+    }
+}

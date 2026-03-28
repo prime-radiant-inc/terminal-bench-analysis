@@ -1,0 +1,117 @@
+{
+    "id": "9f679137-dcf2-434b-9d83-f8e7accd9b09",
+    "task_name": "gcode-to-text",
+    "trial_name": "gcode-to-text__VSW59t5",
+    "trial_uri": "file:///Users/yun/workspace/kraftonai-terminus-t3.2-image-simple/jobs/2026-02-20__11-30-30/gcode-to-text__VSW59t5",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "gcode-to-text"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "5531de29b9b445e4cd67b66231d34cb9e7bddcf15f4c2574b7376a19f0e4c339",
+    "config": {
+        "task": {
+            "path": "gcode-to-text",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "gcode-to-text__VSW59t5",
+        "trials_dir": "jobs/2026-02-20__11-30-30",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.agents.terminus_3.terminus_3_3:Terminus33",
+            "model_name": "vertex_ai/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "437f46df-c026-4476-8cde-8d57dd02c134"
+    },
+    "agent_info": {
+        "name": "terminus-3-3",
+        "version": "3.3.0",
+        "model_info": {
+            "name": "gemini-3.1-pro-preview",
+            "provider": "vertex_ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 553286,
+        "n_cache_tokens": 366302,
+        "n_output_tokens": 9687,
+        "cost_usd": 0.5586983999999999,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 20,
+            "api_request_times_msec": [
+                7954.533100128174,
+                10533.318996429443,
+                12264.665842056274,
+                5435.6842041015625,
+                7841.714859008789,
+                4263.373136520386,
+                6442.022085189819,
+                4782.555818557739,
+                3799.94797706604,
+                3994.9398040771484,
+                4002.919912338257,
+                8169.818878173828,
+                5346.138954162598,
+                7990.355968475342,
+                4061.1929893493652,
+                4297.863006591797,
+                4363.38210105896,
+                15560.366868972778,
+                10592.17095375061,
+                12248.113870620728
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-20T02:32:33.878605Z",
+    "finished_at": "2026-02-20T02:37:32.781502Z",
+    "environment_setup": {
+        "started_at": "2026-02-20T02:32:33.900322Z",
+        "finished_at": "2026-02-20T02:32:36.661126Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-20T02:32:36.661137Z",
+        "finished_at": "2026-02-20T02:32:51.799027Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-20T02:32:51.799063Z",
+        "finished_at": "2026-02-20T02:37:23.196436Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-20T02:37:25.739206Z",
+        "finished_at": "2026-02-20T02:37:32.328647Z"
+    }
+}

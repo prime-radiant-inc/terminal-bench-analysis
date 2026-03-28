@@ -1,0 +1,106 @@
+{
+    "id": "822e3c61-8066-44d2-a434-8f835de3344c",
+    "task_name": "hf-model-inference",
+    "trial_name": "hf-model-inference__FsmyVz5",
+    "trial_uri": "file:///root/harbor/jobs/2026-02-07__07-47-43/hf-model-inference__FsmyVz5",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "hf-model-inference"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "b96307ee0e1a454b667fb19da4b08116252525a2897250a9d7f8825fa0b86088",
+    "config": {
+        "task": {
+            "path": "hf-model-inference",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "hf-model-inference__FsmyVz5",
+        "trials_dir": "jobs/2026-02-07__07-47-43",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "deepseek/deepseek-chat",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "bd502fde-cc79-4ca6-a1b2-abbcb1ea84cf"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "deepseek-chat",
+            "provider": "deepseek"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 82083,
+        "n_cache_tokens": 72128,
+        "n_output_tokens": 3182,
+        "cost_usd": 0.006143424000000001,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 9,
+            "api_request_times_msec": [
+                9818.306684494019,
+                7253.673553466797,
+                13455.366849899292,
+                22095.31855583191,
+                11304.514646530151,
+                15567.384958267212,
+                13224.827766418457,
+                6476.3970375061035,
+                4184.74268913269
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-07T09:17:00.057597Z",
+    "finished_at": "2026-02-07T09:22:41.464977Z",
+    "environment_setup": {
+        "started_at": "2026-02-07T09:17:00.059206Z",
+        "finished_at": "2026-02-07T09:18:08.640571Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-07T09:18:08.640587Z",
+        "finished_at": "2026-02-07T09:18:16.424690Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-07T09:18:16.424729Z",
+        "finished_at": "2026-02-07T09:22:21.576438Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-07T09:22:21.576527Z",
+        "finished_at": "2026-02-07T09:22:29.059752Z"
+    }
+}

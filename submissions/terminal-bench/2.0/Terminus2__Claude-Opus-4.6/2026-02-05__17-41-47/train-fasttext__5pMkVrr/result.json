@@ -1,0 +1,166 @@
+{
+    "id": "2717908b-14ee-4f34-821f-553bd5cad76e",
+    "task_name": "train-fasttext",
+    "trial_name": "train-fasttext__5pMkVrr",
+    "trial_uri": "file:///Users/alexgshaw/Developer/laude/harbor/jobs/2026-02-05__17-41-47/train-fasttext__5pMkVrr",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "train-fasttext"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "fe83ab1fc447e909ed3f48d61ff42abfd29b3168c63c3efcdea9c5014c27b2f7",
+    "config": {
+        "task": {
+            "path": "train-fasttext",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "train-fasttext__5pMkVrr",
+        "trials_dir": "jobs/2026-02-05__17-41-47",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "reasoning_effort": "high",
+                "temperature": 1
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "865e6f10-b734-46c9-89bd-b8f3ec80e696"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1238247,
+        "n_cache_tokens": 1180362,
+        "n_output_tokens": 14660,
+        "cost_usd": 1.2958922500000005,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                5553.585767745972,
+                3680.4959774017334,
+                4063.292980194092,
+                2334.520101547241,
+                3225.939989089966,
+                2584.9950313568115,
+                7884.872198104858,
+                9783.618688583374,
+                3033.0657958984375,
+                11587.230920791626,
+                2745.162010192871,
+                2898.6239433288574,
+                2837.883710861206,
+                2813.938856124878,
+                2811.9139671325684,
+                2459.604024887085,
+                2611.9959354400635,
+                2118.5359954833984,
+                2424.696922302246,
+                2919.636011123657,
+                5469.206094741821,
+                4644.956111907959,
+                16089.440107345581,
+                14473.700046539307,
+                3890.5317783355713,
+                14592.975854873657,
+                4303.006410598755,
+                4073.122978210449,
+                3963.428735733032,
+                3781.1617851257324,
+                3821.5160369873047,
+                9552.760124206543,
+                3203.734874725342,
+                2982.241153717041,
+                2439.5718574523926,
+                2649.2319107055664,
+                2694.6020126342773,
+                2605.397939682007,
+                2816.0488605499268,
+                2569.027900695801,
+                2945.7499980926514,
+                2412.774085998535,
+                2473.9761352539062,
+                4385.837078094482,
+                2663.55299949646,
+                3483.1643104553223,
+                12720.78275680542,
+                3365.732192993164,
+                19999.215126037598,
+                11007.898807525635,
+                3345.250129699707,
+                3484.913110733032,
+                3649.1572856903076,
+                3438.394069671631,
+                3494.5826530456543,
+                2957.0798873901367,
+                4492.4211502075195,
+                4852.743148803711,
+                6515.181064605713,
+                10771.344900131226,
+                5564.839839935303,
+                2687.3579025268555,
+                2985.7730865478516,
+                2663.6171340942383
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 3600.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1464, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1293, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n    )\n    ^\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1110, in _execute_commands\n    await session.send_keys(\n    ...<3 lines>...\n    )\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/agents/terminus_2/tmux_session.py\", line 563, in send_keys\n    await self._send_non_blocking_keys(\n    ...<2 lines>...\n    )\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/agents/terminus_2/tmux_session.py\", line 523, in _send_non_blocking_keys\n    await asyncio.sleep(min_timeout_sec - elapsed_time_sec)\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 718, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/trial/trial.py\", line 251, in _execute_agent\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/Users/alexgshaw/.local/share/uv/python/cpython-3.13.1-macos-aarch64-none/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/trial/trial.py\", line 362, in run\n    await self._execute_agent()\n  File \"/Users/alexgshaw/Developer/laude/harbor/src/harbor/trial/trial.py\", line 260, in _execute_agent\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {self._agent_timeout_sec} seconds\"\n    ) from e\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 3600.0 seconds\n",
+        "occurred_at": "2026-02-05T20:33:38.517071"
+    },
+    "started_at": "2026-02-06T03:33:23.207680Z",
+    "finished_at": "2026-02-06T04:33:46.123930Z",
+    "environment_setup": {
+        "started_at": "2026-02-06T03:33:23.215074Z",
+        "finished_at": "2026-02-06T03:33:26.253589Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-06T03:33:26.253591Z",
+        "finished_at": "2026-02-06T03:33:38.503061Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-06T03:33:38.503092Z",
+        "finished_at": "2026-02-06T04:33:38.516263Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-06T04:33:41.805654Z",
+        "finished_at": "2026-02-06T04:33:45.825659Z"
+    }
+}

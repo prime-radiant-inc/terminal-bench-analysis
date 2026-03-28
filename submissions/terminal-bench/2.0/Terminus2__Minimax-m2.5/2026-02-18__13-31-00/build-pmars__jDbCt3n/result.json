@@ -1,0 +1,125 @@
+{
+    "id": "55633cef-df1f-4371-bc1c-ffd390357e71",
+    "task_name": "build-pmars",
+    "trial_name": "build-pmars__jDbCt3n",
+    "trial_uri": "file:///private/tmp/jobs/Terminus2__Minimax-m2.5/build-pmars__jDbCt3n",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "build-pmars"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "55f554b8d07c2ec69aa88e385675925e684eb09c256610e0abca10375efc3876",
+    "config": {
+        "task": {
+            "path": "build-pmars",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "build-pmars__jDbCt3n",
+        "trials_dir": "jobs/Terminus2__Minimax-m2.5",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/minimax-m2.5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1",
+                "reasoning_effort": "high"
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "9cc95f8c-41a9-4311-9697-52edfbed6e7a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "minimax-m2.5:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 33081,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 4822,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 25,
+            "api_request_times_msec": [
+                6347.75185585022,
+                3941.155195236206,
+                3384.2179775238037,
+                3786.594867706299,
+                3834.5718383789062,
+                3493.9723014831543,
+                13784.006834030151,
+                3291.5399074554443,
+                4113.231182098389,
+                3040.9648418426514,
+                10515.359878540039,
+                5758.440971374512,
+                13973.33288192749,
+                16992.243766784668,
+                3075.1590728759766,
+                7024.803161621094,
+                7578.394651412964,
+                5731.365919113159,
+                3037.368059158325,
+                8239.049911499023,
+                4497.174024581909,
+                5317.786931991577,
+                8275.482177734375,
+                6114.970922470093,
+                4408.43391418457
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-17T19:29:34.186400Z",
+    "finished_at": "2026-02-17T19:36:35.595534Z",
+    "environment_setup": {
+        "started_at": "2026-02-17T19:29:34.188161Z",
+        "finished_at": "2026-02-17T19:29:38.293219Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-17T19:29:38.293242Z",
+        "finished_at": "2026-02-17T19:29:40.357722Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-17T19:29:40.357834Z",
+        "finished_at": "2026-02-17T19:36:21.464659Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-17T19:36:21.464747Z",
+        "finished_at": "2026-02-17T19:36:34.191592Z"
+    }
+}

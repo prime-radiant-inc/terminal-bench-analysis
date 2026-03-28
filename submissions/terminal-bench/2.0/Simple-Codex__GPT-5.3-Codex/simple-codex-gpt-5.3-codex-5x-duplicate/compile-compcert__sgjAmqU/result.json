@@ -1,0 +1,95 @@
+{
+    "id": "96b67b97-913b-4b5a-bf0b-52729d2d3d8b",
+    "task_name": "compile-compcert",
+    "trial_name": "compile-compcert__sgjAmqU",
+    "trial_uri": "file:///Users/alexgshaw/Developer/laude/harbor-oai/jobs/simple-codex-gpt-5.3-codex-5x/compile-compcert__sgjAmqU",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "compile-compcert"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "3c434d30e5ba4180232b09188d6f1e8e15a8e8e8f748fe479175757384a8d39e",
+    "config": {
+        "task": {
+            "path": "compile-compcert",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "compile-compcert__sgjAmqU",
+        "trials_dir": "jobs/simple-codex-gpt-5.3-codex-5x",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "simple_codex",
+            "import_path": null,
+            "model_name": "openai/gpt-5.3-codex",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {
+                "snapshot_template_name": "{name}"
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "a3e257e6-964c-46fe-88d3-b6eb38ddb607"
+    },
+    "agent_info": {
+        "name": "simple_codex",
+        "version": "unknown",
+        "model_info": {
+            "name": "gpt-5.3-codex",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 4073618,
+        "n_cache_tokens": null,
+        "n_output_tokens": 17410,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-05T08:08:50.553999Z",
+    "finished_at": "2026-02-05T08:42:31.254484Z",
+    "environment_setup": {
+        "started_at": "2026-02-05T08:08:50.555011Z",
+        "finished_at": "2026-02-05T08:08:53.172349Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-05T08:08:53.172356Z",
+        "finished_at": "2026-02-05T08:09:15.014769Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-05T08:09:15.014796Z",
+        "finished_at": "2026-02-05T08:42:21.292965Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-05T08:42:22.656539Z",
+        "finished_at": "2026-02-05T08:42:30.888900Z"
+    }
+}

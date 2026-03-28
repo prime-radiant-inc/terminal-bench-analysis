@@ -1,0 +1,124 @@
+{
+    "id": "037c8448-abbc-4c48-95c6-0abfe707cb54",
+    "task_name": "extract-moves-from-video",
+    "trial_name": "extract-moves-from-video__TKwb9of",
+    "trial_uri": "file:///Users/tbd/tbench/jobs/2026-01-26-terminus-ollama-cloud-kimi-k2.5%3Acloud-full-v01/extract-moves-from-video__TKwb9of",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "extract-moves-from-video"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "605fb166c0af666150b184a6ca50f1ca1c2221a5b93e44efd21c7ea40d746d54",
+    "config": {
+        "task": {
+            "path": "extract-moves-from-video",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "extract-moves-from-video__TKwb9of",
+        "trials_dir": "jobs/2026-01-26-terminus-ollama-cloud-kimi-k2.5:cloud-full-v01",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/kimi-k2.5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "https://ollama.com/v1"
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "51c16618-c2ea-4a8a-baac-cf3b720d2036"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "kimi-k2.5:cloud",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 268871,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 4933,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                2091.125726699829,
+                1264.4572257995605,
+                1820.227861404419,
+                1306.5941333770752,
+                1982.8438758850098,
+                3717.297315597534,
+                1140.0299072265625,
+                8339.092254638672,
+                1992.1910762786865,
+                1470.4928398132324,
+                4857.565879821777,
+                5667.752742767334,
+                3779.027223587036,
+                8528.341054916382,
+                2557.490348815918,
+                9404.113292694092,
+                1786.3600254058838,
+                1229.1359901428223,
+                2391.702890396118,
+                1622.4730014801025,
+                1179.448127746582,
+                1765.1779651641846,
+                1205.4100036621094,
+                4424.475908279419,
+                3291.9178009033203,
+                1762.6769542694092,
+                6191.344738006592
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "DaytonaError",
+        "exception_message": "Failed to create session: unauthorized: failed to get auth URL: failed to parse request host: invalid host format: port and sandbox ID not found",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 354, in run\n    await self._execute_agent()\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 243, in _execute_agent\n    await asyncio.wait_for(\n  File \"/Users/tbd/.local/share/uv/python/cpython-3.12.11-macos-aarch64-none/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1397, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1085, in _run_agent_loop\n    if not await self._session.is_session_alive():\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 445, in is_session_alive\n    result = await self.environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/daytona.py\", line 462, in exec\n    await self._sandbox.process.create_session(session_id)\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona/_utils/errors.py\", line 89, in async_wrapper\n    process_n_raise_exception(e)\n  File \"/Users/tbd/.local/share/uv/tools/harbor/lib/python3.12/site-packages/daytona/_utils/errors.py\", line 67, in process_n_raise_exception\n    raise DaytonaError(f\"{message_prefix}{msg}\", status_code=status_code, headers=headers) from None\ndaytona.common.errors.DaytonaError: Failed to create session: unauthorized: failed to get auth URL: failed to parse request host: invalid host format: port and sandbox ID not found\n",
+        "occurred_at": "2026-01-27T18:03:18.018638"
+    },
+    "started_at": "2026-01-28T00:48:20.703040Z",
+    "finished_at": "2026-01-28T01:03:18.237101Z",
+    "environment_setup": {
+        "started_at": "2026-01-28T00:48:20.704497Z",
+        "finished_at": "2026-01-28T00:48:23.232833Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-28T00:48:23.232842Z",
+        "finished_at": "2026-01-28T00:48:39.745548Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-28T00:48:39.745664Z",
+        "finished_at": "2026-01-28T01:03:16.908582Z"
+    },
+    "verifier": null
+}

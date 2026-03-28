@@ -1,0 +1,114 @@
+{
+    "id": "62829a90-f055-43eb-8a5e-66f6a55cb0c8",
+    "task_name": "llm-inference-batching-scheduler",
+    "trial_name": "llm-inference-batching-scheduler__JerzDQQ",
+    "trial_uri": "file:///Users/alexgshaw/Developer/laude/harbor/jobs/2026-02-05__17-41-47/llm-inference-batching-scheduler__JerzDQQ",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "llm-inference-batching-scheduler"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "3a08e63e0643ea5914eedeecb08cb93a1f0a10b9dc7d19d1f570004af84531c8",
+    "config": {
+        "task": {
+            "path": "llm-inference-batching-scheduler",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "llm-inference-batching-scheduler__JerzDQQ",
+        "trials_dir": "jobs/2026-02-05__17-41-47",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "reasoning_effort": "high",
+                "temperature": 1
+            }
+        },
+        "environment": {
+            "type": "daytona",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "865e6f10-b734-46c9-89bd-b8f3ec80e696"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 267600,
+        "n_cache_tokens": 231712,
+        "n_output_tokens": 19910,
+        "cost_usd": 0.8350785000000001,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 13,
+            "api_request_times_msec": [
+                5872.655153274536,
+                32368.301153182983,
+                52634.3879699707,
+                75263.62800598145,
+                4305.245161056519,
+                4081.815004348755,
+                80686.44309043884,
+                13900.506019592285,
+                12784.211874008179,
+                9036.151885986328,
+                12300.87399482727,
+                5186.813116073608,
+                4742.500782012939
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-06T04:01:11.027695Z",
+    "finished_at": "2026-02-06T04:08:35.505078Z",
+    "environment_setup": {
+        "started_at": "2026-02-06T04:01:11.030455Z",
+        "finished_at": "2026-02-06T04:01:12.899480Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-06T04:01:12.899505Z",
+        "finished_at": "2026-02-06T04:01:23.225493Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-06T04:01:23.225527Z",
+        "finished_at": "2026-02-06T04:08:27.782541Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-06T04:08:28.922890Z",
+        "finished_at": "2026-02-06T04:08:35.089818Z"
+    }
+}
