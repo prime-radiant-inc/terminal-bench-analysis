@@ -1,7 +1,9 @@
-name: Fetch Data
+name: Build DB and README
 
 on:
   push:
+    branches:
+    - main
   schedule:
   - cron: "3 6 * * *"
   workflow_dispatch:
@@ -12,25 +14,27 @@ permissions:
   id-token: write
 
 jobs:
-  fetch-data:
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v6
     - uses: astral-sh/setup-uv@v7
       with:
         enable-cache: true
-        cache-dependency-glob: "fetch_data.py"
+        cache-dependency-glob: "*.py"
     - run: uv run fetch_data.py --update
+    - run: uv run build_db.py
+    - run: uv run --with cogapp cog -r README.md
     - name: Commit and push changes
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git add -A
-        git diff --staged --quiet || git commit -m "Update data"
+        git diff --staged --quiet || git commit -m "Update data and README"
         git push
 
   deploy:
-    needs: fetch-data
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
