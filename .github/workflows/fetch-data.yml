@@ -18,7 +18,7 @@ jobs:
       with:
         enable-cache: true
         cache-dependency-glob: "fetch_data.py"
-    - run: uv run fetch_data.py
+    - run: uv run fetch_data.py --update
     - name: Commit and push changes
       run: |
         git config user.name "github-actions[bot]"
