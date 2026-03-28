@@ -2,6 +2,8 @@ name: Build DB and README
 
 on:
   push:
+    branches:
+    - main
   schedule:
   - cron: "3 6 * * *"
   workflow_dispatch:
