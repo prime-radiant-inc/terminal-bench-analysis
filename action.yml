@@ -1,0 +1,52 @@
+name: Build DB and README
+
+on:
+  push:
+  schedule:
+  - cron: "3 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+    - uses: astral-sh/setup-uv@v7
+      with:
+        enable-cache: true
+        cache-dependency-glob: "*.py"
+    - run: uv run fetch_data.py --update
+    - run: uv run build_db.py
+    - run: uv run --with cogapp cog -r README.md
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add -A
+        git diff --staged --quiet || git commit -m "Update data and README"
+        git push
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+    - uses: actions/checkout@v6
+      with:
+        ref: main
+    - uses: astral-sh/setup-uv@v7
+      with:
+        enable-cache: true
+        cache-dependency-glob: "build_db.py"
+    - run: bash build_site.sh
+    - uses: actions/configure-pages@v6
+    - uses: actions/upload-pages-artifact@v4
+    - uses: actions/deploy-pages@v5
+      id: deployment
