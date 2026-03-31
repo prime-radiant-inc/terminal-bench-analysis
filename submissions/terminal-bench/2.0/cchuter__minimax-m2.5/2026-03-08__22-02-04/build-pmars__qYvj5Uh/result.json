@@ -1,0 +1,109 @@
+{
+    "id": "c0468f3e-2bdb-4c0a-8d0a-4b1096a1bc69",
+    "task_name": "build-pmars",
+    "trial_name": "build-pmars__qYvj5Uh",
+    "trial_uri": "",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "build-pmars"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "55f554b8d07c2ec69aa88e385675925e684eb09c256610e0abca10375efc3876",
+    "config": {
+        "task": {
+            "path": "build-pmars",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "build-pmars__qYvj5Uh",
+        "trials_dir": "jobs/2026-03-08__22-02-04",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "blobfish_harbor:BlobfishAgent",
+            "model_name": "minimax/minimax-m2.5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "backend": "claude",
+                "agent_name": "cchuter",
+                "agent_org": "teamblobfish.com",
+                "prompt_variant": "auto"
+            },
+            "env": {
+                "ANTHROPIC_BASE_URL": "<redacted>",
+                "ANTHROPIC_API_KEY": "<redacted>"
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {
+                "network_mode": "host"
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "13b00b41-2094-4b75-a57e-fc01d61456b9"
+    },
+    "agent_info": {
+        "name": "cchuter",
+        "version": "unknown",
+        "model_info": {
+            "name": "minimax-m2.5",
+            "provider": "minimax"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2912988,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 3734,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-14T23:14:15.422870Z",
+    "finished_at": "2026-03-14T23:21:23.935631Z",
+    "environment_setup": {
+        "started_at": "2026-03-14T23:14:15.424012Z",
+        "finished_at": "2026-03-14T23:14:19.376016Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-14T23:14:19.376047Z",
+        "finished_at": "2026-03-14T23:14:40.821646Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-14T23:14:40.821782Z",
+        "finished_at": "2026-03-14T23:21:16.121818Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-14T23:21:16.121982Z",
+        "finished_at": "2026-03-14T23:21:22.244074Z"
+    }
+}

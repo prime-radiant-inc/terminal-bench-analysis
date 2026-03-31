@@ -1,0 +1,131 @@
+{
+    "id": "d79e0132-1180-470a-940d-cb31f119a142",
+    "task_name": "build-pov-ray",
+    "trial_name": "build-pov-ray__5EYC4qg",
+    "trial_uri": "file:///home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon/build-pov-ray__5EYC4qg",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "build-pov-ray"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "faca0987c8afa99023a8952f31da77a9017ed01ca04de9fee03b7d3fb1d92e26",
+    "config": {
+        "task": {
+            "path": "build-pov-ray",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "build-pov-ray__5EYC4qg",
+        "trials_dir": "/home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "hosted_vllm/gpt-oss-20b-rl",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "http://localhost:8000/v1",
+                "model_info": {
+                    "max_input_tokens": 32768,
+                    "max_output_tokens": 4096,
+                    "input_cost_per_token": 0.0,
+                    "output_cost_per_token": 0.0
+                },
+                "temperature": 1.0
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "modal",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "002791dd-4f52-4481-aa6c-09c0cbbfa33a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "gpt-oss-20b-rl",
+            "provider": "hosted_vllm"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 278919,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 61186,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 15,
+            "api_request_times_msec": [
+                86043.39241981506,
+                12136.697769165039,
+                6936.80477142334,
+                3731.640577316284,
+                1211.5058898925781,
+                10376.500368118286,
+                10516.377925872803,
+                4020.2345848083496,
+                5607.002735137939,
+                10373.96788597107,
+                25203.948974609375,
+                21862.154006958008,
+                5622.089385986328,
+                3274.2462158203125,
+                10248.998641967773,
+                10540.960311889648,
+                9308.005094528198,
+                21542.156457901
+            ],
+            "summarization_count": 1
+        }
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RuntimeError",
+        "exception_message": "build-pov-ray__5EYC4qg: failed to send non-blocking keys: no server running on /tmp/tmux-0/default\n",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/workspace/harbor/src/harbor/trial/trial.py\", line 493, in run\n    await self._execute_agent()\n  File \"/home/ubuntu/workspace/harbor/src/harbor/trial/trial.py\", line 261, in _execute_agent\n    await asyncio.wait_for(\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1597, in run\n    await self._run_agent_loop(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1412, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1227, in _execute_commands\n    await session.send_keys(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/tmux_session.py\", line 646, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/tmux_session.py\", line 599, in _send_non_blocking_keys\n    raise RuntimeError(\nRuntimeError: build-pov-ray__5EYC4qg: failed to send non-blocking keys: no server running on /tmp/tmux-0/default\n\n",
+        "occurred_at": "2026-03-30T09:58:09.124422"
+    },
+    "started_at": "2026-03-30T09:49:55.281397Z",
+    "finished_at": "2026-03-30T09:58:11.005441Z",
+    "environment_setup": {
+        "started_at": "2026-03-30T09:49:55.282339Z",
+        "finished_at": "2026-03-30T09:49:58.238160Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-30T09:49:58.238169Z",
+        "finished_at": "2026-03-30T09:50:18.138753Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-30T09:50:18.138824Z",
+        "finished_at": "2026-03-30T09:58:07.616402Z"
+    },
+    "verifier": null
+}

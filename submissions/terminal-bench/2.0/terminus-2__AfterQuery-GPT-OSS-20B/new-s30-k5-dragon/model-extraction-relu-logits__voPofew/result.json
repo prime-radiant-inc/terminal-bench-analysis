@@ -1,0 +1,120 @@
+{
+    "id": "2782333f-8558-4154-b855-c34067eff301",
+    "task_name": "model-extraction-relu-logits",
+    "trial_name": "model-extraction-relu-logits__voPofew",
+    "trial_uri": "file:///home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon/model-extraction-relu-logits__voPofew",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "model-extraction-relu-logits"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "d0dd8f420350bee97f2d47a2b0c74996be0146aa7bd6f8a1871d9629200dc359",
+    "config": {
+        "task": {
+            "path": "model-extraction-relu-logits",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "model-extraction-relu-logits__voPofew",
+        "trials_dir": "/home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "hosted_vllm/gpt-oss-20b-rl",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "http://localhost:8000/v1",
+                "model_info": {
+                    "max_input_tokens": 32768,
+                    "max_output_tokens": 4096,
+                    "input_cost_per_token": 0.0,
+                    "output_cost_per_token": 0.0
+                },
+                "temperature": 1.0
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "modal",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "002791dd-4f52-4481-aa6c-09c0cbbfa33a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "gpt-oss-20b-rl",
+            "provider": "hosted_vllm"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 25084,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 16830,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 5,
+            "api_request_times_msec": [
+                49888.200759887695,
+                14848.849534988403,
+                2031.0981273651123,
+                523.8947868347168,
+                599.367618560791
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-30T12:16:44.289236Z",
+    "finished_at": "2026-03-30T12:19:15.805119Z",
+    "environment_setup": {
+        "started_at": "2026-03-30T12:16:44.289886Z",
+        "finished_at": "2026-03-30T12:16:50.319913Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-30T12:16:50.319923Z",
+        "finished_at": "2026-03-30T12:17:07.362450Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-30T12:17:07.362502Z",
+        "finished_at": "2026-03-30T12:18:19.570653Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-30T12:18:20.873721Z",
+        "finished_at": "2026-03-30T12:18:44.634009Z"
+    }
+}

@@ -1,0 +1,154 @@
+{
+    "id": "823bf5cf-b222-49e0-b8dd-d858b32b6ba5",
+    "task_name": "db-wal-recovery",
+    "trial_name": "db-wal-recovery__icThc3R",
+    "trial_uri": "file:///home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon/db-wal-recovery__icThc3R",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "db-wal-recovery"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "01f470c86f3a1f7ce4d91bdf0aaaa89fa96a4124ac48617990e2735b5291913a",
+    "config": {
+        "task": {
+            "path": "db-wal-recovery",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "db-wal-recovery__icThc3R",
+        "trials_dir": "/home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "hosted_vllm/gpt-oss-20b-rl",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "http://localhost:8000/v1",
+                "model_info": {
+                    "max_input_tokens": 32768,
+                    "max_output_tokens": 4096,
+                    "input_cost_per_token": 0.0,
+                    "output_cost_per_token": 0.0
+                },
+                "temperature": 1.0
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "modal",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "002791dd-4f52-4481-aa6c-09c0cbbfa33a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "gpt-oss-20b-rl",
+            "provider": "hosted_vllm"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 518379,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 171338,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 25,
+            "api_request_times_msec": [
+                9579.640626907349,
+                5473.201751708984,
+                7067.767858505249,
+                11684.415817260742,
+                30520.90835571289,
+                20217.418670654297,
+                37191.662311553955,
+                20603.128671646118,
+                3196.7859268188477,
+                48485.013484954834,
+                13342.24247932434,
+                4650.693416595459,
+                4500.9765625,
+                48536.98682785034,
+                8226.734161376953,
+                26255.99193572998,
+                6373.038530349731,
+                61894.235372543335,
+                23614.527702331543,
+                3951.3373374938965,
+                6874.875545501709,
+                35148.850440979004,
+                21444.725036621094,
+                37489.58945274353,
+                14078.985452651978,
+                14640.473365783691,
+                49372.79915809631,
+                28479.467630386353,
+                5496.580362319946,
+                6054.470777511597,
+                16666.050910949707,
+                51502.164125442505,
+                12859.56859588623,
+                21619.985342025757
+            ],
+            "summarization_count": 3
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1597, in run\n    await self._run_agent_loop(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1412, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1227, in _execute_commands\n    await session.send_keys(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/tmux_session.py\", line 646, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/tmux_session.py\", line 606, in _send_non_blocking_keys\n    await asyncio.sleep(min_timeout_sec - elapsed_time_sec)\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 665, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/ubuntu/workspace/harbor/src/harbor/trial/trial.py\", line 261, in _execute_agent\n    await asyncio.wait_for(\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/ubuntu/workspace/harbor/src/harbor/trial/trial.py\", line 493, in run\n    await self._execute_agent()\n  File \"/home/ubuntu/workspace/harbor/src/harbor/trial/trial.py\", line 270, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-03-30T15:23:51.361280"
+    },
+    "started_at": "2026-03-30T15:08:35.040361Z",
+    "finished_at": "2026-03-30T15:24:09.713649Z",
+    "environment_setup": {
+        "started_at": "2026-03-30T15:08:35.041158Z",
+        "finished_at": "2026-03-30T15:08:37.404638Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-30T15:08:37.404647Z",
+        "finished_at": "2026-03-30T15:08:51.354179Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-30T15:08:51.354239Z",
+        "finished_at": "2026-03-30T15:23:51.360467Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-30T15:23:53.453149Z",
+        "finished_at": "2026-03-30T15:24:08.526596Z"
+    }
+}

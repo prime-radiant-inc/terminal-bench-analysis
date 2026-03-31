@@ -1,0 +1,156 @@
+{
+    "id": "4f16befd-3e12-4e79-b6b0-85c7d199caae",
+    "task_name": "mteb-leaderboard",
+    "trial_name": "mteb-leaderboard__uqR25gm",
+    "trial_uri": "file:///home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon/mteb-leaderboard__uqR25gm",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "mteb-leaderboard"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "8c2f8d63470a11b27a25e2630e407a5eb9e9fbeda599d3df7f9bc5f2f7aeff20",
+    "config": {
+        "task": {
+            "path": "mteb-leaderboard",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "mteb-leaderboard__uqR25gm",
+        "trials_dir": "/home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "hosted_vllm/gpt-oss-20b-rl",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "http://localhost:8000/v1",
+                "model_info": {
+                    "max_input_tokens": 32768,
+                    "max_output_tokens": 4096,
+                    "input_cost_per_token": 0.0,
+                    "output_cost_per_token": 0.0
+                },
+                "temperature": 1.0
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "modal",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "002791dd-4f52-4481-aa6c-09c0cbbfa33a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "gpt-oss-20b-rl",
+            "provider": "hosted_vllm"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 649431,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 177252,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 31,
+            "api_request_times_msec": [
+                24307.4152469635,
+                7141.407012939453,
+                10245.46766281128,
+                3673.87318611145,
+                4630.515575408936,
+                47157.38368034363,
+                8254.510641098022,
+                13742.192268371582,
+                5468.5821533203125,
+                7887.476682662964,
+                10345.00241279602,
+                3345.076322555542,
+                9551.227807998657,
+                8813.593626022339,
+                22351.648569107056,
+                20283.281803131104,
+                5080.767631530762,
+                7918.849229812622,
+                6420.586585998535,
+                52929.9476146698,
+                42103.3456325531,
+                20571.135997772217,
+                3010.57767868042,
+                10795.470237731934,
+                6497.290372848511,
+                12027.011394500732,
+                5998.003721237183,
+                15854.037523269653,
+                47557.37018585205,
+                8018.975734710693,
+                9085.003852844238,
+                35525.46262741089,
+                25131.067752838135,
+                12178.256750106812,
+                17013.785362243652,
+                63744.75932121277,
+                23571.77734375,
+                7420.978307723999,
+                37348.30355644226,
+                13175.68588256836,
+                13799.320936203003,
+                34137.98785209656,
+                11703.685283660889
+            ],
+            "summarization_count": 4
+        }
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RuntimeError",
+        "exception_message": "mteb-leaderboard__uqR25gm: failed to send non-blocking keys: no server running on /tmp/tmux-0/default\n",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/workspace/harbor/src/harbor/trial/trial.py\", line 493, in run\n    await self._execute_agent()\n  File \"/home/ubuntu/workspace/harbor/src/harbor/trial/trial.py\", line 261, in _execute_agent\n    await asyncio.wait_for(\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1597, in run\n    await self._run_agent_loop(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1412, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1227, in _execute_commands\n    await session.send_keys(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/tmux_session.py\", line 646, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/tmux_session.py\", line 599, in _send_non_blocking_keys\n    raise RuntimeError(\nRuntimeError: mteb-leaderboard__uqR25gm: failed to send non-blocking keys: no server running on /tmp/tmux-0/default\n\n",
+        "occurred_at": "2026-03-30T10:20:57.100611"
+    },
+    "started_at": "2026-03-30T10:02:51.568190Z",
+    "finished_at": "2026-03-30T10:21:29.397280Z",
+    "environment_setup": {
+        "started_at": "2026-03-30T10:02:51.568625Z",
+        "finished_at": "2026-03-30T10:02:54.819266Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-30T10:02:54.819272Z",
+        "finished_at": "2026-03-30T10:02:57.911739Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-30T10:02:57.911794Z",
+        "finished_at": "2026-03-30T10:20:55.444565Z"
+    },
+    "verifier": null
+}

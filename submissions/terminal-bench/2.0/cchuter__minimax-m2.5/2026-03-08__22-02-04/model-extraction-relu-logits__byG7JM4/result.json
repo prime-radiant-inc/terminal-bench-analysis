@@ -1,0 +1,109 @@
+{
+    "id": "77ddcb59-6932-4bc1-923e-506733d13fff",
+    "task_name": "model-extraction-relu-logits",
+    "trial_name": "model-extraction-relu-logits__byG7JM4",
+    "trial_uri": "",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "model-extraction-relu-logits"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "d0dd8f420350bee97f2d47a2b0c74996be0146aa7bd6f8a1871d9629200dc359",
+    "config": {
+        "task": {
+            "path": "model-extraction-relu-logits",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "model-extraction-relu-logits__byG7JM4",
+        "trials_dir": "jobs/2026-03-08__22-02-04",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "blobfish_harbor:BlobfishAgent",
+            "model_name": "minimax/minimax-m2.5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "backend": "claude",
+                "agent_name": "cchuter",
+                "agent_org": "teamblobfish.com",
+                "prompt_variant": "auto"
+            },
+            "env": {
+                "ANTHROPIC_BASE_URL": "<redacted>",
+                "ANTHROPIC_API_KEY": "<redacted>"
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {
+                "network_mode": "host"
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "13b00b41-2094-4b75-a57e-fc01d61456b9"
+    },
+    "agent_info": {
+        "name": "cchuter",
+        "version": "unknown",
+        "model_info": {
+            "name": "minimax-m2.5",
+            "provider": "minimax"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2802369,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 12164,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-11T08:08:30.327349Z",
+    "finished_at": "2026-03-11T08:23:21.111524Z",
+    "environment_setup": {
+        "started_at": "2026-03-11T08:08:30.328235Z",
+        "finished_at": "2026-03-11T08:08:33.821030Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-11T08:08:33.821132Z",
+        "finished_at": "2026-03-11T08:08:55.554856Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-11T08:08:55.554943Z",
+        "finished_at": "2026-03-11T08:22:15.983873Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-11T08:22:15.984030Z",
+        "finished_at": "2026-03-11T08:23:19.458760Z"
+    }
+}

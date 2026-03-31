@@ -1,0 +1,135 @@
+{
+    "id": "fef96911-985f-47a5-8dff-060be6caf70a",
+    "task_name": "hf-model-inference",
+    "trial_name": "hf-model-inference__sj6TUdb",
+    "trial_uri": "file:///home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon/hf-model-inference__sj6TUdb",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "hf-model-inference"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "b96307ee0e1a454b667fb19da4b08116252525a2897250a9d7f8825fa0b86088",
+    "config": {
+        "task": {
+            "path": "hf-model-inference",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "hf-model-inference__sj6TUdb",
+        "trials_dir": "/home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "hosted_vllm/gpt-oss-20b-rl",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "http://localhost:8000/v1",
+                "model_info": {
+                    "max_input_tokens": 32768,
+                    "max_output_tokens": 4096,
+                    "input_cost_per_token": 0.0,
+                    "output_cost_per_token": 0.0
+                },
+                "temperature": 1.0
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "modal",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "002791dd-4f52-4481-aa6c-09c0cbbfa33a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "gpt-oss-20b-rl",
+            "provider": "hosted_vllm"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 331402,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 60173,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 16,
+            "api_request_times_msec": [
+                7856.294393539429,
+                11760.485410690308,
+                9323.051452636719,
+                5804.9962520599365,
+                20825.03581047058,
+                32805.577993392944,
+                8513.07463645935,
+                5843.721151351929,
+                6477.816343307495,
+                5777.3168087005615,
+                6869.513273239136,
+                10650.182008743286,
+                11821.762561798096,
+                21074.038982391357,
+                24713.49787712097,
+                12092.901229858398,
+                8433.868646621704,
+                5880.416631698608,
+                8050.45223236084,
+                6226.417303085327,
+                15819.602489471436,
+                13465.240716934204
+            ],
+            "summarization_count": 2
+        }
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "NotFoundError",
+        "exception_message": "Modal Sandbox with container ID ta-01KMZMFBPSNDMYFS8XXNZ2GHYX not found. This means this Sandbox has already shut down. (Error code: 57S0E7WJ)",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/workspace/harbor/src/harbor/trial/trial.py\", line 493, in run\n    await self._execute_agent()\n  File \"/home/ubuntu/workspace/harbor/src/harbor/trial/trial.py\", line 261, in _execute_agent\n    await asyncio.wait_for(\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1597, in run\n    await self._run_agent_loop(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1412, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1227, in _execute_commands\n    await session.send_keys(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/tmux_session.py\", line 646, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/tmux_session.py\", line 597, in _send_non_blocking_keys\n    result = await self.environment.exec(command=command)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/src/harbor/environments/modal.py\", line 371, in exec\n    process = await self._sandbox.exec.aio(\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/modal/sandbox.py\", line 968, in exec\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/modal/sandbox.py\", line 1027, in _exec\n    return await self._exec_through_command_router(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/modal/sandbox.py\", line 1122, in _exec_through_command_router\n    _ = await command_router_client.exec_start(start_req)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/modal/_utils/task_command_router_client.py\", line 240, in exec_start\n    with grpc_error_converter():\n         ^^^^^^^^^^^^^^^^^^^^^^\nmodal.exception.NotFoundError: Modal Sandbox with container ID ta-01KMZMFBPSNDMYFS8XXNZ2GHYX not found. This means this Sandbox has already shut down. (Error code: 57S0E7WJ)\n",
+        "occurred_at": "2026-03-30T15:18:46.865562"
+    },
+    "started_at": "2026-03-30T15:05:55.364881Z",
+    "finished_at": "2026-03-30T15:18:47.003059Z",
+    "environment_setup": {
+        "started_at": "2026-03-30T15:05:55.365341Z",
+        "finished_at": "2026-03-30T15:05:58.442102Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-30T15:05:58.442114Z",
+        "finished_at": "2026-03-30T15:06:17.722486Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-30T15:06:17.722558Z",
+        "finished_at": "2026-03-30T15:18:46.815528Z"
+    },
+    "verifier": null
+}

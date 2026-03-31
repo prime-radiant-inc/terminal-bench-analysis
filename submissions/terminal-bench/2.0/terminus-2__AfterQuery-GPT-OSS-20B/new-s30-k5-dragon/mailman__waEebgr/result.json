@@ -1,0 +1,138 @@
+{
+    "id": "3c7a02f5-f710-4473-a7af-2937f2922576",
+    "task_name": "mailman",
+    "trial_name": "mailman__waEebgr",
+    "trial_uri": "file:///home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon/mailman__waEebgr",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "mailman"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "e9dc41ba89f17a0f2db146fc147c13e6ec85e80ea4f00ab460f50ac7fbacc0e9",
+    "config": {
+        "task": {
+            "path": "mailman",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "mailman__waEebgr",
+        "trials_dir": "/home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "hosted_vllm/gpt-oss-20b-rl",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "http://localhost:8000/v1",
+                "model_info": {
+                    "max_input_tokens": 32768,
+                    "max_output_tokens": 4096,
+                    "input_cost_per_token": 0.0,
+                    "output_cost_per_token": 0.0
+                },
+                "temperature": 1.0
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "modal",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "002791dd-4f52-4481-aa6c-09c0cbbfa33a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "gpt-oss-20b-rl",
+            "provider": "hosted_vllm"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 338967,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 77328,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 16,
+            "api_request_times_msec": [
+                2729.6276092529297,
+                53165.870666503906,
+                9819.086074829102,
+                17942.776441574097,
+                8823.493003845215,
+                9824.31697845459,
+                6580.53731918335,
+                9217.171669006348,
+                4331.36773109436,
+                6169.2705154418945,
+                76210.49761772156,
+                5224.677085876465,
+                13299.875974655151,
+                5370.620012283325,
+                13375.285148620605,
+                10480.209827423096,
+                6197.282791137695,
+                11623.096227645874,
+                14299.74913597107,
+                24272.88770675659,
+                9303.730964660645,
+                11662.335395812988
+            ],
+            "summarization_count": 2
+        }
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "VerifierTimeoutError",
+        "exception_message": "Verifier execution timed out after 1800.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/synchronicity/synchronizer.py\", line 459, in _run_function_async\n    value = await asyncio.shield(a_fut)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/src/harbor/verifier/verifier.py\", line 124, in verify\n    await self._environment.exec(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/environments/modal.py\", line 380, in exec\n    stdout = await process.stdout.read.aio()\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/synchronicity/async_wrap.py\", line 30, in wrapper\n    return await user_wrapper(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/synchronicity/async_wrap.py\", line 30, in wrapper\n    return await user_wrapper(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/synchronicity/async_wrap.py\", line 30, in wrapper\n    return await user_wrapper(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/synchronicity/synchronizer.py\", line 474, in _run_function_async\n    await a_fut  # wait for cancellation logic to complete - this *normally* raises CancelledError\n    ^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/ubuntu/workspace/harbor/src/harbor/trial/trial.py\", line 300, in _verify_with_retry\n    self.result.verifier_result = await asyncio.wait_for(\n                                  ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/ubuntu/workspace/harbor/src/harbor/trial/trial.py\", line 513, in run\n    await self._run_verification()\n  File \"/home/ubuntu/workspace/harbor/src/harbor/trial/trial.py\", line 282, in _run_verification\n    await self._verify_with_retry()\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 193, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 112, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 157, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/tenacity/_utils.py\", line 111, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/tenacity/__init__.py\", line 413, in exc_check\n    raise retry_exc.reraise()\n          ^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/tenacity/__init__.py\", line 184, in reraise\n    raise self.last_attempt.result()\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/home/ubuntu/workspace/harbor/.venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 116, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/src/harbor/trial/trial.py\", line 305, in _verify_with_retry\n    raise VerifierTimeoutError(\nharbor.trial.trial.VerifierTimeoutError: Verifier execution timed out after 1800.0 seconds\n",
+        "occurred_at": "2026-03-30T13:00:27.414598"
+    },
+    "started_at": "2026-03-30T11:49:19.297654Z",
+    "finished_at": "2026-03-30T13:00:29.116808Z",
+    "environment_setup": {
+        "started_at": "2026-03-30T11:49:19.298136Z",
+        "finished_at": "2026-03-30T11:49:22.095605Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-30T11:49:22.095611Z",
+        "finished_at": "2026-03-30T11:49:35.900684Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-30T11:49:35.900757Z",
+        "finished_at": "2026-03-30T12:00:25.125221Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-30T12:00:26.408823Z",
+        "finished_at": "2026-03-30T13:00:27.412894Z"
+    }
+}

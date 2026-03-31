@@ -1,0 +1,159 @@
+{
+    "id": "d3b91fac-a085-49dc-bda7-8b6a730b03a4",
+    "task_name": "custom-memory-heap-crash",
+    "trial_name": "custom-memory-heap-crash__EeNF35C",
+    "trial_uri": "file:///home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon/custom-memory-heap-crash__EeNF35C",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "custom-memory-heap-crash"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "fba0e3be977223b1f8c182da8411663258f83b3563dd5dcd12beae87762ccabf",
+    "config": {
+        "task": {
+            "path": "custom-memory-heap-crash",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "custom-memory-heap-crash__EeNF35C",
+        "trials_dir": "/home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "hosted_vllm/gpt-oss-20b-rl",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "http://localhost:8000/v1",
+                "model_info": {
+                    "max_input_tokens": 32768,
+                    "max_output_tokens": 4096,
+                    "input_cost_per_token": 0.0,
+                    "output_cost_per_token": 0.0
+                },
+                "temperature": 1.0
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "modal",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "002791dd-4f52-4481-aa6c-09c0cbbfa33a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "gpt-oss-20b-rl",
+            "provider": "hosted_vllm"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 880058,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 320153,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 31,
+            "api_request_times_msec": [
+                2839.8597240448,
+                141916.2151813507,
+                6620.016574859619,
+                30358.3562374115,
+                28648.96297454834,
+                50370.77069282532,
+                34637.7592086792,
+                35984.77506637573,
+                35359.57646369934,
+                9869.4167137146,
+                44661.8766784668,
+                22091.100931167603,
+                44485.684394836426,
+                5988.752126693726,
+                50386.49368286133,
+                32385.6942653656,
+                10047.556161880493,
+                30351.279497146606,
+                23146.494150161743,
+                4400.818824768066,
+                4102.697372436523,
+                8738.240718841553,
+                2556.614398956299,
+                5015.262126922607,
+                3116.29319190979,
+                8826.664209365845,
+                583.5757255554199,
+                34062.1292591095,
+                8860.978126525879,
+                35736.64855957031,
+                66724.64394569397,
+                33818.33362579346,
+                8144.99568939209,
+                28474.043130874634,
+                20645.952463150024,
+                5311.560392379761,
+                19244.117259979248,
+                48410.82239151001,
+                8586.646318435669,
+                16273.568391799927,
+                257823.32134246826,
+                45141.51358604431,
+                9089.05577659607,
+                7829.767465591431,
+                16414.366483688354,
+                30295.46070098877
+            ],
+            "summarization_count": 5
+        }
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RuntimeError",
+        "exception_message": "custom-memory-heap-crash__EeNF35C: failed to send non-blocking keys: no current target\n",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/workspace/harbor/src/harbor/trial/trial.py\", line 493, in run\n    await self._execute_agent()\n  File \"/home/ubuntu/workspace/harbor/src/harbor/trial/trial.py\", line 261, in _execute_agent\n    await asyncio.wait_for(\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1597, in run\n    await self._run_agent_loop(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1412, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/terminus_2.py\", line 1227, in _execute_commands\n    await session.send_keys(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/tmux_session.py\", line 646, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/home/ubuntu/workspace/harbor/src/harbor/agents/terminus_2/tmux_session.py\", line 599, in _send_non_blocking_keys\n    raise RuntimeError(\nRuntimeError: custom-memory-heap-crash__EeNF35C: failed to send non-blocking keys: no current target\n\n",
+        "occurred_at": "2026-03-30T09:55:38.221592"
+    },
+    "started_at": "2026-03-30T09:30:27.457596Z",
+    "finished_at": "2026-03-30T09:55:40.550249Z",
+    "environment_setup": {
+        "started_at": "2026-03-30T09:30:27.458152Z",
+        "finished_at": "2026-03-30T09:30:31.197643Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-30T09:30:31.197653Z",
+        "finished_at": "2026-03-30T09:30:34.649006Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-30T09:30:34.649188Z",
+        "finished_at": "2026-03-30T09:55:36.694113Z"
+    },
+    "verifier": null
+}

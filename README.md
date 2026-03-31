@@ -101,10 +101,12 @@ order by avg_reward desc
 | MAYA__Claude-4.5-sonnet | 445 | 190 | 241 | 14 | 0.4408 |
 | Terminus2__Kimi-k2.5 | 445 | 189 | 161 | 95 | 0.4385 |
 | Terminus2__Minimax-m2.5 | 445 | 188 | 92 | 165 | 0.4292 |
+| cchuter__minimax-m2.5 | 445 | 188 | 95 | 162 | 0.4263 |
 | Terminus2__DeepSeek-V3.2 | 445 | 176 | 183 | 86 | 0.3982 |
 | Terminus2__GLM-4.7 | 445 | 147 | 139 | 159 | 0.3475 |
 | ClaudeCode__GLM-4.7 | 445 | 148 | 250 | 47 | 0.3348 |
 | dakou__qwen3-coder-480b | 445 | 121 | 232 | 92 | 0.275 |
+| terminus-2__AfterQuery-GPT-OSS-20B | 445 | 75 | 177 | 193 | 0.1756 |
 <!--[[[end]]]-->
 
 ## Best Model per Backbone
@@ -173,10 +175,12 @@ order by ss.avg_reward desc
 | google/gemini-3-flash-preview | Gemini_CLI__Gemini-3-Flash-Preview | 0.4806 | 211 | 445 |
 | openai/kimi-k2.5:cloud | Terminus2__Kimi-k2.5 | 0.4385 | 189 | 445 |
 | openai/minimax-m2.5:cloud | Terminus2__Minimax-m2.5 | 0.4292 | 188 | 445 |
+| minimax/minimax-m2.5 | cchuter__minimax-m2.5 | 0.4263 | 188 | 445 |
 | deepseek/deepseek-chat | Terminus2__DeepSeek-V3.2 | 0.3982 | 176 | 445 |
 | openai/glm-4.7:cloud | Terminus2__GLM-4.7 | 0.3475 | 147 | 445 |
 | GLM-4.7 | ClaudeCode__GLM-4.7 | 0.3348 | 148 | 445 |
 | qwen3-coder-modelscope | dakou__qwen3-coder-480b | 0.275 | 121 | 445 |
+| hosted_vllm/gpt-oss-20b-rl | terminus-2__AfterQuery-GPT-OSS-20B | 0.1756 | 75 | 445 |
 <!--[[[end]]]-->
 
 ## The Hardest Tasks
@@ -202,21 +206,21 @@ limit 15
 
 | task_name | n_trials | n_passed | n_failed | n_errored | failure_rate |
 | --- | --- | --- | --- | --- | --- |
-| make-doom-for-mips | 188 | 0 | 38 | 150 | 1.0 |
-| filter-js-from-html | 188 | 6 | 160 | 22 | 0.9639 |
-| caffe-cifar-10 | 188 | 7 | 61 | 120 | 0.9598 |
-| install-windows-3.11 | 188 | 12 | 160 | 16 | 0.9358 |
-| sam-cell-seg | 188 | 12 | 173 | 3 | 0.9351 |
-| train-fasttext | 188 | 13 | 41 | 134 | 0.9253 |
-| raman-fitting | 188 | 16 | 119 | 53 | 0.914 |
-| extract-moves-from-video | 188 | 17 | 74 | 97 | 0.9086 |
-| gpt2-codegolf | 188 | 22 | 47 | 119 | 0.883 |
-| video-processing | 188 | 38 | 146 | 4 | 0.7957 |
-| torch-pipeline-parallelism | 188 | 39 | 106 | 43 | 0.7869 |
-| dna-assembly | 188 | 44 | 118 | 26 | 0.7634 |
-| make-mips-interpreter | 188 | 47 | 63 | 78 | 0.7418 |
-| model-extraction-relu-logits | 188 | 50 | 109 | 29 | 0.7283 |
-| mteb-retrieve | 188 | 52 | 128 | 8 | 0.7111 |
+| make-doom-for-mips | 198 | 0 | 38 | 160 | 1.0 |
+| filter-js-from-html | 198 | 6 | 166 | 26 | 0.9655 |
+| caffe-cifar-10 | 198 | 7 | 66 | 125 | 0.962 |
+| install-windows-3.11 | 198 | 12 | 168 | 18 | 0.9391 |
+| sam-cell-seg | 198 | 12 | 181 | 5 | 0.9381 |
+| train-fasttext | 198 | 13 | 42 | 143 | 0.9293 |
+| raman-fitting | 198 | 16 | 123 | 59 | 0.9184 |
+| extract-moves-from-video | 198 | 17 | 76 | 105 | 0.9133 |
+| gpt2-codegolf | 198 | 22 | 50 | 126 | 0.8889 |
+| video-processing | 198 | 38 | 156 | 4 | 0.8061 |
+| torch-pipeline-parallelism | 198 | 39 | 115 | 44 | 0.7979 |
+| dna-assembly | 198 | 44 | 122 | 32 | 0.7755 |
+| make-mips-interpreter | 198 | 47 | 64 | 87 | 0.7552 |
+| model-extraction-relu-logits | 198 | 53 | 115 | 30 | 0.7268 |
+| mteb-retrieve | 198 | 52 | 138 | 8 | 0.7263 |
 <!--[[[end]]]-->
 
 ## Tasks No One Has Solved
@@ -238,7 +242,7 @@ where n_passed = 0
 
 | task_name | n_trials | n_failed | n_errored |
 | --- | --- | --- | --- |
-| make-doom-for-mips | 188 | 38 | 150 |
+| make-doom-for-mips | 198 | 38 | 160 |
 <!--[[[end]]]-->
 
 ## The Easiest Tasks
@@ -262,21 +266,21 @@ limit 15
 
 | task_name | n_trials | n_passed | n_failed | n_errored | avg_reward |
 | --- | --- | --- | --- | --- | --- |
-| git-leak-recovery | 188 | 185 | 2 | 1 | 0.9893 |
-| fix-git | 188 | 183 | 5 | 0 | 0.9734 |
-| constraints-scheduling | 188 | 181 | 5 | 2 | 0.9731 |
-| nginx-request-logging | 188 | 181 | 6 | 1 | 0.9679 |
-| multi-source-data-merger | 188 | 180 | 7 | 1 | 0.9626 |
-| vulnerable-secret | 188 | 180 | 7 | 1 | 0.9626 |
-| modernize-scientific-stack | 188 | 177 | 6 | 5 | 0.962 |
-| custom-memory-heap-crash | 188 | 180 | 3 | 5 | 0.9574 |
-| prove-plus-comm | 188 | 179 | 8 | 1 | 0.9572 |
-| code-from-image | 188 | 178 | 3 | 7 | 0.957 |
-| cobol-modernization | 188 | 179 | 9 | 0 | 0.9521 |
-| distribution-search | 188 | 177 | 6 | 5 | 0.9465 |
-| log-summary-date-ranges | 188 | 177 | 10 | 1 | 0.9465 |
-| portfolio-optimization | 188 | 172 | 11 | 5 | 0.9399 |
-| git-multibranch | 188 | 174 | 11 | 3 | 0.9355 |
+| git-leak-recovery | 198 | 193 | 4 | 1 | 0.9797 |
+| fix-git | 198 | 193 | 5 | 0 | 0.9747 |
+| constraints-scheduling | 198 | 190 | 6 | 2 | 0.9694 |
+| multi-source-data-merger | 198 | 189 | 8 | 1 | 0.9594 |
+| modernize-scientific-stack | 198 | 186 | 7 | 5 | 0.9588 |
+| nginx-request-logging | 198 | 187 | 10 | 1 | 0.9492 |
+| prove-plus-comm | 198 | 187 | 10 | 1 | 0.9492 |
+| distribution-search | 198 | 186 | 6 | 6 | 0.9442 |
+| vulnerable-secret | 198 | 186 | 7 | 5 | 0.9442 |
+| log-summary-date-ranges | 198 | 185 | 11 | 2 | 0.9391 |
+| portfolio-optimization | 198 | 181 | 12 | 5 | 0.9378 |
+| custom-memory-heap-crash | 198 | 183 | 7 | 8 | 0.9289 |
+| cobol-modernization | 198 | 183 | 11 | 4 | 0.9242 |
+| git-multibranch | 198 | 181 | 11 | 6 | 0.9235 |
+| code-from-image | 198 | 180 | 7 | 11 | 0.9184 |
 <!--[[[end]]]-->
 
 ## Error Analysis
@@ -320,20 +324,21 @@ order by n desc
 
 | exception_type | n | pct |
 | --- | --- | --- |
-| AgentTimeoutError | 2175 | 90.7 |
-| VerifierTimeoutError | 44 | 1.8 |
-| AgentSetupTimeoutError | 42 | 1.8 |
-| RuntimeError | 41 | 1.7 |
-| DaytonaError | 31 | 1.3 |
-| EnvironmentStartTimeoutError | 19 | 0.8 |
-| BadRequestError | 9 | 0.4 |
-| RewardFileNotFoundError | 9 | 0.4 |
+| AgentTimeoutError | 2533 | 91.2 |
+| RuntimeError | 52 | 1.9 |
+| VerifierTimeoutError | 51 | 1.8 |
+| AgentSetupTimeoutError | 43 | 1.5 |
+| DaytonaError | 31 | 1.1 |
+| EnvironmentStartTimeoutError | 19 | 0.7 |
+| BadRequestError | 9 | 0.3 |
+| RewardFileNotFoundError | 9 | 0.3 |
 | NameError | 8 | 0.3 |
 | OSError | 8 | 0.3 |
-| AddTestsDirError | 4 | 0.2 |
-| AttributeError | 4 | 0.2 |
-| DownloadVerifierDirError | 4 | 0.2 |
+| AddTestsDirError | 4 | 0.1 |
+| AttributeError | 4 | 0.1 |
+| DownloadVerifierDirError | 4 | 0.1 |
 | KeyError | 1 | 0.0 |
+| NotFoundError | 1 | 0.0 |
 <!--[[[end]]]-->
 
 ### Which submissions error the most?
@@ -375,7 +380,9 @@ order by error_pct desc
 
 | submission | n_trials | n_errors | error_pct | n_timeouts |
 | --- | --- | --- | --- | --- |
+| terminus-2__AfterQuery-GPT-OSS-20B | 445 | 200 | 44.9 | 184 |
 | Terminus2__Minimax-m2.5 | 445 | 181 | 40.7 | 179 |
+| cchuter__minimax-m2.5 | 445 | 178 | 40.0 | 174 |
 | Terminus2__GLM-4.7 | 445 | 161 | 36.2 | 143 |
 | Terminus2__GLM-5 | 445 | 111 | 24.9 | 108 |
 | IndusAGICodingAgent__gpt-5.3-codex | 445 | 106 | 23.8 | 42 |
@@ -458,21 +465,21 @@ limit 15
 
 | task_name | n_timeouts | timeout_pct |
 | --- | --- | --- |
-| make-doom-for-mips | 148 | 78.7 |
-| train-fasttext | 130 | 69.1 |
-| gpt2-codegolf | 120 | 63.8 |
-| caffe-cifar-10 | 118 | 62.8 |
-| extract-moves-from-video | 99 | 52.7 |
-| make-mips-interpreter | 75 | 39.9 |
-| db-wal-recovery | 73 | 38.8 |
-| qemu-alpine-ssh | 70 | 37.2 |
-| path-tracing | 69 | 36.7 |
-| tune-mjcf | 64 | 34.0 |
-| write-compressor | 56 | 29.8 |
-| torch-pipeline-parallelism | 53 | 28.2 |
-| raman-fitting | 53 | 28.2 |
-| query-optimize | 49 | 26.1 |
-| path-tracing-reverse | 45 | 23.9 |
+| make-doom-for-mips | 158 | 79.8 |
+| train-fasttext | 139 | 70.2 |
+| gpt2-codegolf | 127 | 64.1 |
+| caffe-cifar-10 | 123 | 62.1 |
+| extract-moves-from-video | 107 | 54.0 |
+| make-mips-interpreter | 84 | 42.4 |
+| qemu-alpine-ssh | 79 | 39.9 |
+| db-wal-recovery | 79 | 39.9 |
+| path-tracing | 77 | 38.9 |
+| tune-mjcf | 69 | 34.8 |
+| write-compressor | 66 | 33.3 |
+| raman-fitting | 59 | 29.8 |
+| torch-pipeline-parallelism | 54 | 27.3 |
+| path-tracing-reverse | 53 | 26.8 |
+| query-optimize | 50 | 25.3 |
 <!--[[[end]]]-->
 
 ## Timing Analysis
@@ -522,9 +529,9 @@ group by status
 
 | status | n | avg_agent_sec | min_sec | max_sec |
 | --- | --- | --- | --- | --- |
-| errored | 1950 | 1517.5 | 0.0 | 12000.1 |
-| failed | 3983 | 543.7 | 0.1 | 9338.2 |
-| passed | 10667 | 440.2 | 1.3 | 6250.0 |
+| errored | 2302 | 1519.0 | 0.0 | 12000.1 |
+| failed | 4255 | 560.8 | 0.1 | 9338.2 |
+| passed | 10930 | 443.7 | 1.3 | 6250.0 |
 <!--[[[end]]]-->
 
 ### Time breakdown: setup vs execution vs verification
@@ -578,6 +585,8 @@ limit 15
 
 | submission | env_setup_sec | agent_setup_sec | exec_sec | verify_sec |
 | --- | --- | --- | --- | --- |
+| cchuter__minimax-m2.5 | 11.1 | 26.4 | 1042.8 | 74.8 |
+| terminus-2__AfterQuery-GPT-OSS-20B | 2.7 | 20.6 | 1015.9 | 92.2 |
 | Terminus2__Minimax-m2.5 | 17.5 | 18.3 | 965.5 | 93.5 |
 | Terminus2__GLM-4.7 | 14.0 | 20.6 | 886.2 | 90.8 |
 | Terminus2__GLM-5 | 10.5 | 17.2 | 822.9 | 63.2 |
@@ -591,8 +600,6 @@ limit 15
 | Terminus2__Kimi-k2.5 | 15.1 | 12.4 | 711.6 | 74.5 |
 | Deep-Agents__GPT-5.2-Codex | 3.4 | 0.0 | 704.5 | 45.8 |
 | Terminus2__DeepSeek-V3.2 | 9.5 | 8.7 | 703.4 | 31.1 |
-| Capy__Claude-Opus-4.6 | 1.2 | 7.5 | 674.8 | 65.4 |
-| Terminus2__Claude-Opus-4.6 | 3.6 | 12.9 | 656.2 | 49.6 |
 <!--[[[end]]]-->
 
 ## Cost Analysis
@@ -755,21 +762,21 @@ limit 15
 
 | task_name | top_half | bottom_half | discrimination |
 | --- | --- | --- | --- |
-| sanitize-git-repo | 0.931 | 0.127 | 0.803 |
-| protein-assembly | 0.846 | 0.127 | 0.719 |
-| chess-best-move | 0.792 | 0.109 | 0.683 |
-| break-filter-js-from-html | 0.915 | 0.236 | 0.679 |
-| circuit-fibsqrt | 0.938 | 0.309 | 0.629 |
-| overfull-hbox | 0.846 | 0.218 | 0.628 |
-| write-compressor | 0.804 | 0.182 | 0.622 |
-| feal-linear-cryptanalysis | 0.912 | 0.291 | 0.621 |
-| path-tracing | 0.682 | 0.073 | 0.609 |
-| path-tracing-reverse | 0.692 | 0.091 | 0.601 |
-| polyglot-rust-c | 0.677 | 0.091 | 0.586 |
-| bn-fit-modify | 0.977 | 0.418 | 0.559 |
-| winning-avg-corewars | 0.788 | 0.255 | 0.534 |
-| polyglot-c-py | 0.623 | 0.091 | 0.532 |
-| financial-document-processor | 0.823 | 0.291 | 0.532 |
+| sanitize-git-repo | 0.931 | 0.185 | 0.746 |
+| protein-assembly | 0.846 | 0.108 | 0.738 |
+| chess-best-move | 0.792 | 0.092 | 0.7 |
+| break-filter-js-from-html | 0.915 | 0.215 | 0.7 |
+| circuit-fibsqrt | 0.938 | 0.262 | 0.677 |
+| feal-linear-cryptanalysis | 0.912 | 0.246 | 0.665 |
+| overfull-hbox | 0.846 | 0.185 | 0.662 |
+| write-compressor | 0.804 | 0.154 | 0.65 |
+| path-tracing | 0.682 | 0.062 | 0.621 |
+| path-tracing-reverse | 0.692 | 0.077 | 0.615 |
+| polyglot-rust-c | 0.677 | 0.077 | 0.6 |
+| bn-fit-modify | 0.977 | 0.385 | 0.592 |
+| sqlite-db-truncate | 1.0 | 0.431 | 0.569 |
+| polyglot-c-py | 0.623 | 0.077 | 0.546 |
+| sparql-university | 0.938 | 0.4 | 0.538 |
 <!--[[[end]]]-->
 
 ## The Most Inconsistent Tasks
@@ -817,21 +824,21 @@ limit 15
 
 | task_name | mean_reward | worst | best | variance | n_submissions |
 | --- | --- | --- | --- | --- | --- |
-| polyglot-rust-c | 0.465 | 0.0 | 1.0 | 0.2108 | 40 |
-| chess-best-move | 0.57 | 0.0 | 1.0 | 0.1951 | 40 |
-| path-tracing-reverse | 0.525 | 0.0 | 1.0 | 0.1934 | 40 |
-| polyglot-c-py | 0.43 | 0.0 | 1.0 | 0.1851 | 40 |
-| write-compressor | 0.573 | 0.0 | 1.0 | 0.1814 | 40 |
-| protein-assembly | 0.585 | 0.0 | 1.0 | 0.1808 | 40 |
-| db-wal-recovery | 0.325 | 0.0 | 1.0 | 0.1734 | 40 |
-| break-filter-js-from-html | 0.703 | 0.0 | 1.0 | 0.17 | 40 |
-| path-tracing | 0.463 | 0.0 | 1.0 | 0.1686 | 40 |
-| feal-linear-cryptanalysis | 0.698 | 0.0 | 1.0 | 0.1667 | 40 |
-| qemu-alpine-ssh | 0.552 | 0.0 | 1.0 | 0.165 | 40 |
-| regex-chess | 0.371 | 0.0 | 1.0 | 0.1607 | 40 |
-| configure-git-webserver | 0.525 | 0.0 | 1.0 | 0.1594 | 40 |
-| overfull-hbox | 0.66 | 0.0 | 1.0 | 0.1584 | 40 |
-| sanitize-git-repo | 0.69 | 0.0 | 1.0 | 0.1579 | 40 |
+| polyglot-rust-c | 0.443 | 0.0 | 1.0 | 0.2105 | 42 |
+| chess-best-move | 0.543 | 0.0 | 1.0 | 0.2005 | 42 |
+| path-tracing-reverse | 0.5 | 0.0 | 1.0 | 0.1967 | 42 |
+| protein-assembly | 0.557 | 0.0 | 1.0 | 0.1877 | 42 |
+| write-compressor | 0.545 | 0.0 | 1.0 | 0.1876 | 42 |
+| polyglot-c-py | 0.41 | 0.0 | 1.0 | 0.1847 | 42 |
+| feal-linear-cryptanalysis | 0.664 | 0.0 | 1.0 | 0.1809 | 42 |
+| break-filter-js-from-html | 0.673 | 0.0 | 1.0 | 0.179 | 42 |
+| qemu-alpine-ssh | 0.526 | 0.0 | 1.0 | 0.171 | 42 |
+| overfull-hbox | 0.629 | 0.0 | 1.0 | 0.1706 | 42 |
+| path-tracing | 0.441 | 0.0 | 1.0 | 0.1703 | 42 |
+| db-wal-recovery | 0.31 | 0.0 | 1.0 | 0.1699 | 42 |
+| sanitize-git-repo | 0.681 | 0.0 | 1.0 | 0.1639 | 42 |
+| regex-chess | 0.354 | 0.0 | 1.0 | 0.1593 | 42 |
+| financial-document-processor | 0.648 | 0.0 | 1.0 | 0.1577 | 42 |
 <!--[[[end]]]-->
 
 ## Submissions That Improved Across Runs
@@ -971,7 +978,9 @@ order by r.submission, r.run_date
 | Terminus2__GPT-5.3-Codex | terminus-gpt-5.3-codex-5x | 445 | 288 | 0.6545 |
 | Terminus2__Kimi-k2.5 | 2026-01-26__22-34-00 | 445 | 189 | 0.4385 |
 | Terminus2__Minimax-m2.5 | 2026-02-18__13-31-00 | 445 | 188 | 0.4292 |
+| cchuter__minimax-m2.5 | 2026-03-08__22-02-04 | 445 | 188 | 0.4263 |
 | dakou__qwen3-coder-480b | 2025-12-25__23-49-10 | 445 | 121 | 0.275 |
+| terminus-2__AfterQuery-GPT-OSS-20B | new-s30-k5-dragon | 445 | 75 | 0.1756 |
 <!--[[[end]]]-->
 
 ## Infrastructure Errors
@@ -1018,6 +1027,7 @@ order by n desc
 | Terminus2__Kimi-k2.5 | DaytonaError | 9 |
 | Gemini_CLI__Gemini-3-Flash-Preview | VerifierTimeoutError | 6 |
 | MAYA__Claude-4.5-sonnet | VerifierTimeoutError | 6 |
+| terminus-2__AfterQuery-GPT-OSS-20B | VerifierTimeoutError | 6 |
 | OpenSage__GPT-5.3-Codex | VerifierTimeoutError | 5 |
 | Droid__Claude-Opus-4.6 | RewardFileNotFoundError | 4 |
 | IndusAGICodingAgent__gpt-5.3-codex | EnvironmentStartTimeoutError | 4 |
@@ -1045,6 +1055,7 @@ order by n desc
 | Terminus2__Kimi-k2.5 | AddTestsDirError | 1 |
 | Terminus2__Minimax-m2.5 | RewardFileNotFoundError | 1 |
 | Terminus2__Minimax-m2.5 | VerifierTimeoutError | 1 |
+| cchuter__minimax-m2.5 | VerifierTimeoutError | 1 |
 <!--[[[end]]]-->
 
 ## All 89 Tasks by Failure Rate
@@ -1067,92 +1078,92 @@ order by failure_rate desc
 | task_name | failure_rate_pct |
 | --- | --- |
 | make-doom-for-mips | 100.0 |
-| filter-js-from-html | 96.4 |
-| caffe-cifar-10 | 96.0 |
-| install-windows-3.11 | 93.6 |
-| sam-cell-seg | 93.5 |
-| train-fasttext | 92.5 |
-| raman-fitting | 91.4 |
-| extract-moves-from-video | 90.9 |
-| gpt2-codegolf | 88.3 |
-| video-processing | 79.6 |
-| torch-pipeline-parallelism | 78.7 |
-| dna-assembly | 76.3 |
-| make-mips-interpreter | 74.2 |
-| model-extraction-relu-logits | 72.8 |
-| mteb-retrieve | 71.1 |
-| db-wal-recovery | 69.7 |
-| mteb-leaderboard | 69.2 |
-| dna-insert | 68.1 |
-| torch-tensor-parallelism | 61.8 |
-| regex-chess | 59.8 |
-| gcode-to-text | 58.1 |
-| polyglot-c-py | 54.3 |
-| query-optimize | 54.0 |
-| polyglot-rust-c | 50.5 |
-| path-tracing | 50.0 |
-| adaptive-rejection-sampler | 48.1 |
-| path-tracing-reverse | 48.1 |
-| configure-git-webserver | 46.3 |
-| qemu-alpine-ssh | 45.1 |
-| chess-best-move | 41.5 |
-| write-compressor | 38.4 |
-| protein-assembly | 37.6 |
-| winning-avg-corewars | 37.6 |
-| extract-elf | 36.8 |
-| cancel-async-tasks | 35.6 |
-| tune-mjcf | 34.4 |
-| financial-document-processor | 33.5 |
-| overfull-hbox | 32.6 |
-| mailman | 31.4 |
-| sanitize-git-repo | 30.5 |
-| schemelike-metacircular-eval | 29.9 |
-| compile-compcert | 28.8 |
-| feal-linear-cryptanalysis | 26.4 |
-| qemu-startup | 26.2 |
-| break-filter-js-from-html | 25.0 |
-| circuit-fibsqrt | 24.7 |
-| rstan-to-pystan | 24.6 |
-| build-pmars | 22.5 |
-| largest-eigenval | 22.0 |
-| sparql-university | 21.4 |
-| large-scale-text-editing | 20.2 |
-| build-cython-ext | 19.3 |
-| bn-fit-modify | 18.8 |
-| pytorch-model-recovery | 18.7 |
-| count-dataset-tokens | 17.7 |
-| crack-7z-hash | 17.6 |
-| mcmc-sampling-stan | 17.2 |
-| password-recovery | 16.7 |
-| pytorch-model-cli | 16.6 |
-| llm-inference-batching-scheduler | 16.0 |
-| feal-differential-cryptanalysis | 15.7 |
-| reshard-c4-data | 15.2 |
-| openssl-selfsigned-cert | 15.0 |
-| sqlite-db-truncate | 15.0 |
-| sqlite-with-gcov | 15.0 |
-| fix-code-vulnerability | 13.4 |
-| fix-ocaml-gc | 13.1 |
-| build-pov-ray | 13.0 |
-| kv-store-grpc | 12.8 |
-| hf-model-inference | 11.9 |
-| headless-terminal | 11.3 |
+| filter-js-from-html | 96.5 |
+| caffe-cifar-10 | 96.2 |
+| install-windows-3.11 | 93.9 |
+| sam-cell-seg | 93.8 |
+| train-fasttext | 92.9 |
+| raman-fitting | 91.8 |
+| extract-moves-from-video | 91.3 |
+| gpt2-codegolf | 88.9 |
+| video-processing | 80.6 |
+| torch-pipeline-parallelism | 79.8 |
+| dna-assembly | 77.5 |
+| make-mips-interpreter | 75.5 |
+| model-extraction-relu-logits | 72.7 |
+| mteb-retrieve | 72.6 |
+| db-wal-recovery | 71.2 |
+| mteb-leaderboard | 70.7 |
+| dna-insert | 69.7 |
+| torch-tensor-parallelism | 63.8 |
+| regex-chess | 61.9 |
+| gcode-to-text | 60.2 |
+| polyglot-c-py | 56.6 |
+| query-optimize | 53.6 |
+| polyglot-rust-c | 53.0 |
+| path-tracing | 52.6 |
+| adaptive-rejection-sampler | 50.8 |
+| path-tracing-reverse | 50.8 |
+| qemu-alpine-ssh | 47.7 |
+| configure-git-webserver | 46.5 |
+| chess-best-move | 44.4 |
+| write-compressor | 41.5 |
+| protein-assembly | 40.8 |
+| winning-avg-corewars | 39.3 |
+| tune-mjcf | 37.8 |
+| extract-elf | 37.4 |
+| overfull-hbox | 36.1 |
+| cancel-async-tasks | 35.9 |
+| financial-document-processor | 35.4 |
+| schemelike-metacircular-eval | 33.0 |
+| compile-compcert | 32.1 |
+| sanitize-git-repo | 31.5 |
+| mailman | 31.3 |
+| feal-linear-cryptanalysis | 30.2 |
+| qemu-startup | 29.9 |
+| break-filter-js-from-html | 28.6 |
+| circuit-fibsqrt | 28.6 |
+| rstan-to-pystan | 26.9 |
+| sparql-university | 24.4 |
+| largest-eigenval | 24.0 |
+| build-pmars | 23.4 |
+| build-cython-ext | 22.8 |
+| large-scale-text-editing | 21.8 |
+| bn-fit-modify | 21.5 |
+| crack-7z-hash | 21.4 |
+| count-dataset-tokens | 20.4 |
+| password-recovery | 20.4 |
+| feal-differential-cryptanalysis | 19.5 |
+| pytorch-model-recovery | 19.3 |
+| llm-inference-batching-scheduler | 19.2 |
+| mcmc-sampling-stan | 18.9 |
+| sqlite-db-truncate | 18.5 |
+| pytorch-model-cli | 18.3 |
+| reshard-c4-data | 17.5 |
+| fix-ocaml-gc | 16.6 |
+| sqlite-with-gcov | 15.8 |
+| openssl-selfsigned-cert | 15.3 |
+| fix-code-vulnerability | 15.2 |
+| build-pov-ray | 14.9 |
+| kv-store-grpc | 14.6 |
+| hf-model-inference | 12.9 |
+| headless-terminal | 11.2 |
+| merge-diff-arc-agi-task | 10.2 |
 | pypi-server | 10.2 |
-| merge-diff-arc-agi-task | 9.1 |
-| regex-log | 7.4 |
-| git-multibranch | 6.5 |
-| portfolio-optimization | 6.0 |
-| distribution-search | 5.3 |
-| log-summary-date-ranges | 5.3 |
-| cobol-modernization | 4.8 |
-| code-from-image | 4.3 |
-| prove-plus-comm | 4.3 |
-| custom-memory-heap-crash | 4.3 |
-| modernize-scientific-stack | 3.8 |
-| multi-source-data-merger | 3.7 |
-| vulnerable-secret | 3.7 |
-| nginx-request-logging | 3.2 |
-| constraints-scheduling | 2.7 |
-| fix-git | 2.7 |
-| git-leak-recovery | 1.1 |
+| regex-log | 10.1 |
+| code-from-image | 8.2 |
+| git-multibranch | 7.6 |
+| cobol-modernization | 7.6 |
+| custom-memory-heap-crash | 7.1 |
+| portfolio-optimization | 6.2 |
+| log-summary-date-ranges | 6.1 |
+| distribution-search | 5.6 |
+| vulnerable-secret | 5.6 |
+| nginx-request-logging | 5.1 |
+| prove-plus-comm | 5.1 |
+| modernize-scientific-stack | 4.1 |
+| multi-source-data-merger | 4.1 |
+| constraints-scheduling | 3.1 |
+| fix-git | 2.5 |
+| git-leak-recovery | 2.0 |
 <!--[[[end]]]-->

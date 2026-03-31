@@ -1,0 +1,139 @@
+{
+    "id": "3c8b0c50-143c-4b41-ae73-1cbe1b8b8c7f",
+    "task_name": "feal-differential-cryptanalysis",
+    "trial_name": "feal-differential-cryptanalysis__vMnUmyt",
+    "trial_uri": "file:///home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon/feal-differential-cryptanalysis__vMnUmyt",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "feal-differential-cryptanalysis"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "798945c624cad262a52c46271a557698875990a600a6a5cb35c2dfd9b00bf80d",
+    "config": {
+        "task": {
+            "path": "feal-differential-cryptanalysis",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "feal-differential-cryptanalysis__vMnUmyt",
+        "trials_dir": "/home/ubuntu/workspace/eval_results/new-s30-k5-dragon/new-s30-k5-dragon",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "hosted_vllm/gpt-oss-20b-rl",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_base": "http://localhost:8000/v1",
+                "model_info": {
+                    "max_input_tokens": 32768,
+                    "max_output_tokens": 4096,
+                    "input_cost_per_token": 0.0,
+                    "output_cost_per_token": 0.0
+                },
+                "temperature": 1.0
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "modal",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "002791dd-4f52-4481-aa6c-09c0cbbfa33a"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "gpt-oss-20b-rl",
+            "provider": "hosted_vllm"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 365062,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 81677,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 21,
+            "api_request_times_msec": [
+                2994.1070079803467,
+                92560.42814254761,
+                10376.155853271484,
+                20826.273679733276,
+                18146.625757217407,
+                7180.087566375732,
+                9617.594957351685,
+                6478.394031524658,
+                16736.267805099487,
+                10217.485666275024,
+                13669.898271560669,
+                3110.210418701172,
+                7623.727798461914,
+                18910.02106666565,
+                27532.01675415039,
+                9368.760824203491,
+                6131.19101524353,
+                3734.5786094665527,
+                24110.960483551025,
+                2577.0208835601807,
+                8830.070972442627,
+                28846.989154815674,
+                1816.1804676055908,
+                460.7203006744385
+            ],
+            "summarization_count": 1
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-30T15:55:37.900774Z",
+    "finished_at": "2026-03-30T16:04:51.696165Z",
+    "environment_setup": {
+        "started_at": "2026-03-30T15:55:37.901378Z",
+        "finished_at": "2026-03-30T15:55:40.477643Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-30T15:55:40.477653Z",
+        "finished_at": "2026-03-30T15:55:56.707746Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-30T15:55:56.707845Z",
+        "finished_at": "2026-03-30T16:03:34.174734Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-30T16:03:35.907093Z",
+        "finished_at": "2026-03-30T16:04:20.261507Z"
+    }
+}
