@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-93997",
+  "Success": true,
+  "Output": "All 3 tests pass. The solution uses 1522 lines (well under 32000 limit) and computes `fib(isqrt(N)) % 2^32` correctly using a sequential circuit design:\n\n- **isqrt** via repeated subtraction (R -= 1, 3, 5, 7, ...)\n- **fibonacci** iteration runs in parallel with isqrt\n- After `isqrt(N)` steps, `fib_a = fib(isqrt(N))` and the circuit freezes",
+  "Error": "",
+  "Duration": 2471066835967,
+  "PRUrl": "",
+  "CommitSHA": "d75fdc8",
+  "TokensInput": 385,
+  "TokensOutput": 151084,
+  "TokensTotal": 151469,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 3.779025,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 2640095021,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 2640152780,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

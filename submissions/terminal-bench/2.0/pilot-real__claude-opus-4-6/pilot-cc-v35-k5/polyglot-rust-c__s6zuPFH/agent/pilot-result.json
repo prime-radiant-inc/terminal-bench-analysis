@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-94623",
+  "Success": false,
+  "Output": "Tests pass. The polyglot works by using nested block comments (which Rust supports but C++ doesn't) combined with `#if 0`/`#endif` preprocessor directives to hide each language's code from the other:\n\n- **C++ sees**: `/* /* */` as a complete block comment, then the C++ `main()`, then `#if 0` skips everything until `#endif`\n- **Rust sees**: `/* /* */` as opening a nested block comment, skipping all C++ code until `// */` closes it, then the Rust `fn main()`, then another nested comment hides `#endif`",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 179804527829,
+  "PRUrl": "",
+  "CommitSHA": "4f47a67",
+  "TokensInput": 749,
+  "TokensOutput": 31014,
+  "TokensTotal": 31763,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.20024,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

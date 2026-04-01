@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-78173",
+  "Success": false,
+  "Output": "All 3 tests pass:\n\n1. **test_image_c_exists** - `/app/mystery.c` exists\n2. **test_image_compiles** - Compiles with `gcc -static` and compressed size is 1243 bytes (under 2100)\n3. **test_image_similarity** - Cosine similarity \u003e= 0.995 between original and reverse-engineered output\n\nThe mystery binary is a ray tracer that renders an 800x600 PPM image with:\n- A red sphere at (0, -0.5, -5) with radius 1.0\n- A checkerboard ground plane at y = -1.5\n- Sky gradient from white to (0.5, 0.7, 1.0)\n- Directional light in the direction normalize(1, 1, -1)\n- Lambertian shading with ambient 0.2 and diffuse 0.8\n- Shadow rays against the sphere",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 914077243696,
+  "PRUrl": "",
+  "CommitSHA": "7e6b004",
+  "TokensInput": 73,
+  "TokensOutput": 60949,
+  "TokensTotal": 61022,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 1.2934750000000002,
+  "FilesChanged": 2,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-99760",
+  "Success": false,
+  "Output": "All 5 tests pass. The algorithm:\n\n1. Uses the first frame as background (no runner)\n2. For each frame, computes foreground via background subtraction\n3. Filters to lower portion of image (y \u003e height/3) to avoid top-of-image noise\n4. Finds the main contiguous block of athlete-present frames\n5. Tracks the 95th percentile of foreground y-coordinates (feet position)\n6. Smooths the signal and detects takeoff (feet leave ground) and landing (feet return to ground) via threshold crossings",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 545387656143,
+  "PRUrl": "",
+  "CommitSHA": "7fdef63",
+  "TokensInput": 47,
+  "TokensOutput": 30044,
+  "TokensTotal": 30091,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.70196,
+  "FilesChanged": 5,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-14640",
+  "Success": true,
+  "Output": "All tests pass. The polyglot works using a `#if 0` / `'''` trick:\n\n- **C sees**: `#if 0` skips to `#endif`, then compiles the C code, then `#if 0` skips the Python code\n- **Python sees**: `#if 0` as a comment, `'''` starts a triple-quoted string that swallows all the C code, then `'''` ends the string, and the Python code executes normally",
+  "Error": "",
+  "Duration": 66321475287,
+  "PRUrl": "",
+  "CommitSHA": "f1dbbb7",
+  "TokensInput": 12,
+  "TokensOutput": 2436,
+  "TokensTotal": 2448,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.06096,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 3588924121,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 3588980393,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

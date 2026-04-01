@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-73353",
+  "Success": true,
+  "Output": "Both tests pass now. The issue was that the stop hook runs `pytest` from `/app/` which couldn't find the tests in `/tests/`. Added `pytest.ini` to point to the correct test path.",
+  "Error": "",
+  "Duration": 62583824455,
+  "PRUrl": "",
+  "CommitSHA": "29a543f",
+  "TokensInput": 286,
+  "TokensOutput": 5356,
+  "TokensTotal": 5642,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.051340000000000004,
+  "FilesChanged": 3,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 1663114657,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 1663146578,
+    "TotalRetries": 2
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

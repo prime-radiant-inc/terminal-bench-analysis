@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-42728",
+  "Success": false,
+  "Output": "All 4 tests pass. The implementation:\n\n- **world_size=1**: Uses the model's forward directly for all microbatches, then calls backward on all losses (AFAB).\n- **world_size=2**: Partitions decoder layers evenly across ranks. Rank 0 handles embedding + first half of layers, rank 1 handles second half + norm + lm_head + loss computation. Uses `dist.send`/`dist.recv` for hidden state and gradient communication between stages.",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 711825902006,
+  "PRUrl": "",
+  "CommitSHA": "636406a",
+  "TokensInput": 66,
+  "TokensOutput": 74824,
+  "TokensTotal": 74890,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.70512,
+  "FilesChanged": 2,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

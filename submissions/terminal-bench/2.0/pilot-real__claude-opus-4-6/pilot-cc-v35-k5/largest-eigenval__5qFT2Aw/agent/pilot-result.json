@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-75025",
+  "Success": false,
+  "Output": "All 27 tests pass. The solution works by:\n\n1. **Calling `numpy.linalg._umath_linalg.eig` directly** - bypasses all of numpy's Python-level validation, type checking, and array creation overhead in `np.linalg.eig`\n2. **Pre-allocating output buffers** - reuses the same output arrays for each matrix size instead of allocating new ones each call\n3. **Copying only the dominant eigenvector** - returns just the needed column rather than the full eigenvector matrix\n\nThis gives a 1.5-3.4x speedup across all matrix sizes (2x2 through 10x10).",
+  "Error": "retry execution failed: failed to start Claude Code: context deadline exceeded",
+  "Duration": 3603792254609,
+  "PRUrl": "",
+  "CommitSHA": "",
+  "TokensInput": 22,
+  "TokensOutput": 6118,
+  "TokensTotal": 6140,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.15306,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

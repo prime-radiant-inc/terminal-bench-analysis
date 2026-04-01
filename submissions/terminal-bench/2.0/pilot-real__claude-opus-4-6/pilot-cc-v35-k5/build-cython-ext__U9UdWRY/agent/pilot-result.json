@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-58223",
+  "Success": false,
+  "Output": "All 11 tests pass. Here's a summary of the fixes applied:\n\n**Python 3.13 fix:**\n- `pyknotid/make/torus.py`: `from fractions import gcd` → `from math import gcd` (removed in Python 3.5+)\n\n**NumPy 2.x fixes** (removed deprecated aliases):\n- `pyknotid/spacecurves/spacecurve.py`: `n.float` → `float`, `np.float` → `float`, `np.bool` → `bool`\n- `pyknotid/invariants.py`: `n.complex` → `complex`, `n.float` → `float`\n- `pyknotid/make/periodic_knot.py`: `n.float` → `float`\n- `pyknotid/representations/representation.py`: `n.int()` → `int()`\n- `pyknotid/representations/dtnotation.py`: `n.int` → `int`\n- `pyknotid/representations/gausscode.py`: `n.bool` → `bool`\n- `pyknotid/spacecurves/openknot.py`: `n.int` → `int`, `n.bool` → `bool`\n- `pyknotid/spacecurves/knot.py`: `n.int` → `int`\n- `pyknotid/spacecurves/periodiccell.py`: `np.int` → `int`\n- `pyknotid/simplify/octree.py`: `n.bool` → `bool`\n- `pyknotid/spacecurves/ccomplexity.pyx`: `np.int` → `np.int64` (Cython extension, required rebuild)",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 316301992604,
+  "PRUrl": "",
+  "CommitSHA": "4ec281f",
+  "TokensInput": 1715,
+  "TokensOutput": 14283,
+  "TokensTotal": 15998,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.24775000000000003,
+  "FilesChanged": 19,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

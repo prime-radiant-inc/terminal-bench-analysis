@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-54340",
+  "Success": true,
+  "Output": "Test passes in 7.77s. The attack works by exploiting a probability-1 differential characteristic through FEAL-4:\n\n- **Plaintext difference**: `0x8080000080800000` (same `0x80800000` in both halves)\n- After the initial `R ^= L`, the R difference cancels to 0\n- Round 0 propagates zero diff, Round 1 uses the probability-1 differential `0x80800000 → 0x02000000` of the F-function (due to `0x80` XOR behaving identically to addition mod 256)\n- This guarantees `ΔL₃ = 0x02000000` entering the last round, regardless of round 2 behavior\n- With 5 chosen plaintext pairs, brute-force all 65536 candidate `key[5]` values and check which one is consistent with the known output differential across all pairs",
+  "Error": "",
+  "Duration": 488819253976,
+  "PRUrl": "",
+  "CommitSHA": "266bfc4",
+  "TokensInput": 915,
+  "TokensOutput": 30733,
+  "TokensTotal": 31648,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.7729,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 2003656280,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 2003705074,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

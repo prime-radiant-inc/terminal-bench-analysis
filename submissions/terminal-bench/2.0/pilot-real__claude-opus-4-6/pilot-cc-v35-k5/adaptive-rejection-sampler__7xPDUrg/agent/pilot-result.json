@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-77717",
+  "Success": false,
+  "Output": "All 9 pytest tests pass. The implementation includes:\n\n- **`ars()` function**: Full Gilks \u0026 Wild (1992) adaptive rejection sampler with upper/lower hull construction, squeezing test, and adaptive refinement\n- **Modular design**: 10+ auxiliary functions (`compute_log_density`, `compute_z_intersections`, `eval_upper_hull`, `eval_lower_hull`, `sample_upper_hull`, `numerical_derivative`, `check_log_concavity`, `check_log_concavity_thorough`, `initialize_abscissae`, `validate_inputs`)\n- **Input validation**: Rejects negative sample counts, invalid domains, non-function inputs\n- **Log-concavity checks**: Both thorough pre-check (dense grid) and incremental checks during sampling\n- **`test()` function**: 7 formal tests with PASS/FAIL output, mean/sd statistics, KS tests against Normal, Exponential, Gamma, Beta distributions\n- **Sample files**: `normal_samples.txt` and `exponential_samples.txt` generated",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 335056505047,
+  "PRUrl": "",
+  "CommitSHA": "fb23b46",
+  "TokensInput": 57,
+  "TokensOutput": 20990,
+  "TokensTotal": 21047,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.44545999999999997,
+  "FilesChanged": 9,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

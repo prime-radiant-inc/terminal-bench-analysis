@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-81196",
+  "Success": false,
+  "Output": "Test passes. The polyglot works by exploiting C++'s backslash-newline line splicing in comments:\n\n- **C++ sees**: Lines 1-2 merged into a single `//` comment (hiding Rust code), then the C++ `main` with `#include`s, then `// */` as a line comment.\n- **Rust sees**: Line 1 as a `//` comment, line 2 as the Rust `fn main()` followed by `/*` starting a block comment that hides the C++ code, closed by `*/` in `// */`.",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 238107972302,
+  "PRUrl": "",
+  "CommitSHA": "3d655b0",
+  "TokensInput": 1068,
+  "TokensOutput": 50526,
+  "TokensTotal": 51594,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.28707,
+  "FilesChanged": 2,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-154",
+  "Success": true,
+  "Output": "Test passes. The regex correctly:\n- Validates IPv4 addresses (0-255, no leading zeros, alphanumeric boundaries)\n- Validates dates (proper month/day ranges, Feb up to 29, alphanumeric boundaries)\n- Captures only the last valid date on lines containing a valid IPv4\n- Rejects false matches like `1234-56-7890`, `abc192.168.1.1`, `2000-02-30`, etc.",
+  "Error": "",
+  "Duration": 251105190590,
+  "PRUrl": "",
+  "CommitSHA": "623f52b",
+  "TokensInput": 10,
+  "TokensOutput": 14456,
+  "TokensTotal": 14466,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.36145,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 5035218414,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 5035275214,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

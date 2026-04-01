@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-5067",
+  "Success": false,
+  "Output": "All 3 tests pass in 2.15 seconds:\n\n- **test_vm_execution** - DOOM boots and outputs `I_InitGraphics: DOOM screen size: w x h: 320 x 200`\n- **test_frame_bmp_exists** - `/tmp/frame.bmp` is created (1,024,054 bytes)\n- **test_frame_bmp_similar_to_reference** - Frame matches the DOOM title screen reference image at \u003e95% similarity\n\nThe MIPS VM (`vm.js`) implements:\n- **ELF loader** for the MIPS32 LE binary\n- **Sparse page-based memory** (16KB pages) to handle the 1GB BSS region efficiently\n- **Full MIPS32r2 instruction set** including R-type, I-type, J-type, SPECIAL2/3 (mul, clz, ext, ins, seb, seh, wsbh), LWL/LWR/SWL/SWR unaligned access, and LL/SC\n- **Custom syscall handling** (read/write/open/close/lseek/fsync/mkdir/unlink/rename) with file position tracking\n- **Branch delay slot** support via the nextPC architecture\n- **Performance optimizations**: page-level caching for instruction fetch and data access, inlined field decoding",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 1061055927670,
+  "PRUrl": "",
+  "CommitSHA": "d3594c0",
+  "TokensInput": 387,
+  "TokensOutput": 128904,
+  "TokensTotal": 129291,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 1.531125,
+  "FilesChanged": 3,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

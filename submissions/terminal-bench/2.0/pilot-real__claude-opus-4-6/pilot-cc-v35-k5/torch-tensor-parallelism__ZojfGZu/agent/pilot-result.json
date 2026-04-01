@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-79798",
+  "Success": false,
+  "Output": "All 13 tests pass. The implementation creates:\n\n- **`ColumnParallelLinear`**: Shards weight along output dimension (rows), uses `all_gather` to concatenate partial outputs into full output\n- **`RowParallelLinear`**: Shards weight along input dimension (columns), uses `all_reduce(SUM)` to combine partial outputs, adds full bias after reduction\n- Custom autograd functions (`_AllGather`, `_AllReduce`) handle proper gradient flow in backward passes",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 181007047099,
+  "PRUrl": "",
+  "CommitSHA": "e719fbe",
+  "TokensInput": 5905,
+  "TokensOutput": 13252,
+  "TokensTotal": 19157,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.17893,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

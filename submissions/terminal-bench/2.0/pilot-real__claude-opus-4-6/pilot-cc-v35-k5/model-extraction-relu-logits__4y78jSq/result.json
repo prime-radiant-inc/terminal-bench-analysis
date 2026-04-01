@@ -1,0 +1,101 @@
+{
+    "id": "f78afd69-8741-4cf7-a261-e43e5dbd5e9a",
+    "task_name": "model-extraction-relu-logits",
+    "trial_name": "model-extraction-relu-logits__4y78jSq",
+    "trial_uri": "file:///Users/aleks.petrov/Projects/startups/pilot/pilot-bench/jobs/pilot-cc-v35-k5/model-extraction-relu-logits__4y78jSq",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "model-extraction-relu-logits"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "d0dd8f420350bee97f2d47a2b0c74996be0146aa7bd6f8a1871d9629200dc359",
+    "config": {
+        "task": {
+            "path": "model-extraction-relu-logits",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "model-extraction-relu-logits__4y78jSq",
+        "trials_dir": "jobs/pilot-cc-v35-k5",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 9.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": 5.0,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "pilot_agent:PilotAgent",
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "CLAUDE_CODE_OAUTH_TOKEN": "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"
+            }
+        },
+        "environment": {
+            "type": "modal",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "2091aa0a-be8e-40f8-96c1-4b56588bac52"
+    },
+    "agent_info": {
+        "name": "pilot-real",
+        "version": "unknown",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 37,
+        "n_cache_tokens": null,
+        "n_output_tokens": 43793,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-26T22:37:00.526980Z",
+    "finished_at": "2026-03-26T23:05:40.223784Z",
+    "environment_setup": {
+        "started_at": "2026-03-26T22:37:00.529277Z",
+        "finished_at": "2026-03-26T22:37:04.330583Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-26T22:37:04.330652Z",
+        "finished_at": "2026-03-26T22:49:17.532923Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-26T22:49:17.533387Z",
+        "finished_at": "2026-03-26T23:04:28.720244Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-26T23:04:33.468329Z",
+        "finished_at": "2026-03-26T23:05:06.958175Z"
+    }
+}

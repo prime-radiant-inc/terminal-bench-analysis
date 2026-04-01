@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-79811",
+  "Success": false,
+  "Output": "All 5 tests pass:\n\n- **test_image_c_exists** - image.c exists\n- **test_image_compiles** - compiles with gcc, compressed size 759 bytes (well under 2100 limit)\n- **test_no_deps** - no external dependencies\n- **test_runs_and_produces_output** - runs in chroot jail and produces reconstructed.ppm\n- **test_image_similarity** - cosine similarity 0.99999997 (threshold: 0.99)\n\nThe solution is a compact ray tracer (759 bytes compressed) that reproduces the scene: a red sphere on a checkerboard floor with sky gradient, directional lighting, and hard shadows.",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 811778599420,
+  "PRUrl": "",
+  "CommitSHA": "b10e836",
+  "TokensInput": 53,
+  "TokensOutput": 61783,
+  "TokensTotal": 61836,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 1.19072,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

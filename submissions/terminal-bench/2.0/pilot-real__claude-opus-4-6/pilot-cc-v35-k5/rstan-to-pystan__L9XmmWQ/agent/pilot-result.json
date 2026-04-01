@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-13835",
+  "Success": true,
+  "Output": "All 6 tests pass. The R script was successfully converted to Python using PyStan 3.10.0 with:\n\n- Identical Stan model code\n- Matching sampling hyperparameters: 4 chains, 1000 warmup, 1000 post-warmup samples, thin=2, adapt_delta=0.93, max_depth=14\n- `random_seed=1` in `stan.build()` as required\n- Posterior means all within expected ranges:\n  - alpha: 1.0858 (expected [1.08, 1.1])\n  - sigma: 0.1341 (expected [0.133, 0.136])\n  - rho: [0.581, 0.886, 1.499] \n  - beta: [-0.046, -0.818, 0.419]",
+  "Error": "",
+  "Duration": 573495590493,
+  "PRUrl": "",
+  "CommitSHA": "7c2dbef",
+  "TokensInput": 11116,
+  "TokensOutput": 14345,
+  "TokensTotal": 25461,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.41420500000000005,
+  "FilesChanged": 2,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 2925329667,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 2925404978,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

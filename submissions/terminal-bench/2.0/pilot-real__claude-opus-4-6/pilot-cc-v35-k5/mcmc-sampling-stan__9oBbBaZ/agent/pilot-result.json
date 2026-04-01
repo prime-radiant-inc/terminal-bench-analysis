@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-59301",
+  "Success": true,
+  "Output": "All 6 tests pass. Summary of results:\n\n- **Alpha posterior mean**: 2.869 (expected range: [2.84, 2.91])\n- **Beta posterior mean**: 16.336 (expected range: [16.1, 16.7])\n\nFiles created:\n- `/app/hierarchical_model.stan` - Stan model with binomial-beta hierarchy and `(alpha+beta)^(-5/2)` prior\n- `/app/analysis.R` - R script using `rstan::sampling` with 4 chains, 100K iterations, seed=1\n- `/app/posterior_alpha_mean.txt` - Alpha posterior mean\n- `/app/posterior_beta_mean.txt` - Beta posterior mean",
+  "Error": "",
+  "Duration": 1422224898227,
+  "PRUrl": "",
+  "CommitSHA": "dadd182",
+  "TokensInput": 20,
+  "TokensOutput": 3785,
+  "TokensTotal": 3805,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.094725,
+  "FilesChanged": 2,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": false,
+        "Duration": 1290807533937,
+        "RetryCount": 2,
+        "Error": "quality gate timed out"
+      }
+    ],
+    "TotalDuration": 1290807626677,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

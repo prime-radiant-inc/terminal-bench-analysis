@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-17989",
+  "Success": false,
+  "Output": "Test passes. The bypass works by exploiting a parser differential between BeautifulSoup's `html.parser` and the browser's HTML5 parser:\n\n- **BeautifulSoup** sees `\u003c!--` and treats everything after it as a comment, so it never processes the `\u003cimg onerror=...\u003e` tag\n- **Browsers** parse `\u003c!--\u003e` as an abruptly-closed empty comment per the HTML5 spec, then interpret `\u003cimg src=x onerror=alert(1)\u003e` as a real element that triggers the alert",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 163673026021,
+  "PRUrl": "",
+  "CommitSHA": "070a504",
+  "TokensInput": 70,
+  "TokensOutput": 30843,
+  "TokensTotal": 30913,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.17476999999999998,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

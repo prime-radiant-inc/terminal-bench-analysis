@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-3222",
+  "Success": true,
+  "Output": "All 6 tests pass. Summary of what was done:\n\n1. **Installed RStan 2.32.7** with required system dependencies (liblapack-dev, libblas-dev, gfortran)\n2. **Stan model** (`/app/hierarchical_model.stan`): Implements the hierarchical model with binomial likelihood, Beta prior on theta, and the `(alpha+beta)^(-5/2)` hyperprior\n3. **R script** (`/app/analysis.R`): Loads data, runs 4 chains x 100K iterations with seed=1, extracts posterior means\n4. **Results**: alpha ≈ 2.879 (expected [2.84, 2.91]), beta ≈ 16.393 (expected [16.1, 16.7])",
+  "Error": "",
+  "Duration": 1188684330697,
+  "PRUrl": "",
+  "CommitSHA": "56f3feb",
+  "TokensInput": 540,
+  "TokensOutput": 3889,
+  "TokensTotal": 4429,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.099925,
+  "FilesChanged": 3,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": false,
+        "Duration": 1402796856427,
+        "RetryCount": 2,
+        "Error": "quality gate timed out"
+      }
+    ],
+    "TotalDuration": 1402796899931,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-11282",
+  "Success": false,
+  "Output": "All 7 tests pass. The solution:\n\n1. **Classified 17 documents** - 10 invoices moved to `/app/invoices/`, 7 others moved to `/app/other/`\n2. **Extracted amounts** from invoices using pdfplumber (PDFs) and tesseract OCR (JPGs), handling three formats:\n   - PDF invoices with `TotalPrice` field\n   - European-style invoices with SUMMARY tables (VAT + Gross worth)\n   - Simple invoices with SubTotal/Total/Amount Due (using Total per the special case rule)\n3. **Created `summary.csv`** with all 10 invoices plus a totals row (total_amount=81315.20, vat_amount=5402.48)\n4. **`/app/documents/` is empty** after processing",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 737156349458,
+  "PRUrl": "",
+  "CommitSHA": "8a139fb",
+  "TokensInput": 9831,
+  "TokensOutput": 39462,
+  "TokensTotal": 49293,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.616375,
+  "FilesChanged": 3,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

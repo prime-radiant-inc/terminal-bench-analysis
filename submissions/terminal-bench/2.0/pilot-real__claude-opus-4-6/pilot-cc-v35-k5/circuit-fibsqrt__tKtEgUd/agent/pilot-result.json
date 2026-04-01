@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-98412",
+  "Success": true,
+  "Output": "All 3 tests pass. The solution uses 6,644 signals (well under the 32,000 limit).\n\n**Architecture:**\n- Signals 0-31: Input bits (LSB first)\n- Signals 32-33: Constants (0 and 1)\n- Signals 34-~5600: Combinational isqrt circuit (16-iteration subtraction-based binary square root)\n- Signals ~5600-~5680: Fibonacci state machine registers (started, counter[16], a[32], b[32]) with backward references for 1-step delay\n- Signals ~5680-~6610: Fibonacci combinational logic (next state computation)\n- Signals 6612-6643: Output (copy of `a` register = fib result)",
+  "Error": "",
+  "Duration": 992528909374,
+  "PRUrl": "",
+  "CommitSHA": "e407ab8",
+  "TokensInput": 18,
+  "TokensOutput": 51775,
+  "TokensTotal": 51793,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 1.294465,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 3649315612,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 3649462615,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

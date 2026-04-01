@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-91483",
+  "Success": false,
+  "Output": "All 5 tests pass. The algorithm works by:\n\n1. **Background subtraction** using the first frame (no runner) to detect the athlete\n2. **Tracking `bottom_y`** (bottom edge of athlete bounding box) per frame - this corresponds to foot position\n3. **Finding \"ground frames\"** where `bottom_y \u003e 0.95 * max(bottom_y)` - these are frames where feet are on the ground near the camera\n4. **Detecting the jump** as the largest gap between consecutive ground frames\n5. **Takeoff** = last ground frame before the gap, **Landing** = first ground frame after the gap",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 687523509454,
+  "PRUrl": "",
+  "CommitSHA": "5fe7748",
+  "TokensInput": 38,
+  "TokensOutput": 41789,
+  "TokensTotal": 41827,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.991275,
+  "FilesChanged": 5,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

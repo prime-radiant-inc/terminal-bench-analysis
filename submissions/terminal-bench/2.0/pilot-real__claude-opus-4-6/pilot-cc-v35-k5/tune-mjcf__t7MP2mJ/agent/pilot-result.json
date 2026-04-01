@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-51478",
+  "Success": false,
+  "Output": "All 4 tests pass. The solution: switching the constraint solver from Newton (default) to PGS (`\u003coption solver=\"PGS\"/\u003e`).\n\n- **Speedup**: 1.91x (52% of reference time, well under the 60% target)\n- **Correctness**: Final state difference ~0, max element-wise diff ~1.78e-07 (well within atol=1e-5)\n- **Reference model**: Unchanged\n\nThe PGS (Projected Gauss-Seidel) solver is much cheaper per iteration than Newton for this cable model with a single equality constraint, while producing nearly identical results.",
+  "Error": "retry execution failed: oom_killed: Process killed by SIGKILL (exit code 137)",
+  "Duration": 328876043091,
+  "PRUrl": "",
+  "CommitSHA": "7f9671b",
+  "TokensInput": 92,
+  "TokensOutput": 137418,
+  "TokensTotal": 137510,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.21921,
+  "FilesChanged": 3,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

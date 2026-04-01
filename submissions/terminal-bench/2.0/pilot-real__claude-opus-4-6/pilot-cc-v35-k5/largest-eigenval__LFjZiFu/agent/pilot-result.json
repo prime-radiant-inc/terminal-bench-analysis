@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-22193",
+  "Success": false,
+  "Output": "All 27 tests pass. The solution uses a Python C extension module (`fast_eig_ext.c`) that:\n\n1. Calls LAPACK's `dgeev` directly via the bundled `scipy_openblas64` library, bypassing all numpy Python-level overhead\n2. Uses pre-allocated static buffers in C for LAPACK workspace\n3. Creates numpy output arrays directly via numpy's C API (`PyArray_SimpleNew`)\n4. Finds the dominant eigenvalue in C with a simple magnitude comparison loop\n\nThis achieves 2x-15x speedup over the numpy reference across all matrix sizes (2x2 to 10x10).",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 460660767018,
+  "PRUrl": "",
+  "CommitSHA": "74934fe",
+  "TokensInput": 2783,
+  "TokensOutput": 36339,
+  "TokensTotal": 39122,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.6025100000000001,
+  "FilesChanged": 4,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

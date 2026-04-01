@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-15545",
+  "Success": true,
+  "Output": "All tests pass. Here's the fix:\n\n**Bug**: In `runtime/shared_heap.c:650`, the `pool_sweep()` function used `p += Whsize_hd(hd)` to advance the pointer after processing each block. This advances by the block's actual header+data size (`wosize + 1`), but pool slots are all fixed-width (`wh` words). This caused pointer misalignment, reading garbage as headers and crashing during bootstrap.\n\n**Fix**: Changed `p += Whsize_hd(hd)` to `p += wh` on line 650, matching the correct pattern used in `verify_pool()`, `calc_pool_stats()`, and `pool_finalise()`.",
+  "Error": "",
+  "Duration": 752045277126,
+  "PRUrl": "",
+  "CommitSHA": "e633693",
+  "TokensInput": 1401,
+  "TokensOutput": 6524,
+  "TokensTotal": 7925,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.170105,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 3152667309,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 3152719780,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

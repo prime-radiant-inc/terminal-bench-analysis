@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-92089",
+  "Success": false,
+  "Output": "All 4 tests pass. The fix was adding `\u003coption solver=\"PGS\"/\u003e` to the model XML. \n\nThe Newton solver (default) was spending ~60% of per-step time on constraint factorization for a single equality constraint. The PGS (Projected Gauss-Seidel) solver handles this much more efficiently, cutting simulation time to ~50% of the reference — well within the 60% target — while producing identical physics results (max state difference \u003c 2e-7).",
+  "Error": "retry execution failed: oom_killed: Process killed by SIGKILL (exit code 137)",
+  "Duration": 592017909385,
+  "PRUrl": "",
+  "CommitSHA": "fb7110a",
+  "TokensInput": 47,
+  "TokensOutput": 35904,
+  "TokensTotal": 35951,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.5354800000000001,
+  "FilesChanged": 8,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

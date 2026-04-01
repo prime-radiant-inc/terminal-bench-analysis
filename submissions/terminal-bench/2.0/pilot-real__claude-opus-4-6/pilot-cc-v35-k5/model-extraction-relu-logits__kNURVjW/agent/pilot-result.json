@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-60036",
+  "Success": false,
+  "Output": "Test passes. The extraction works by:\n\n1. Sweeping random lines through input space and evaluating `forward()` at many points\n2. Detecting kink points (where ReLU neurons switch on/off) via second differences\n3. Computing the gradient change at each kink — this equals `±A2[0,i] * A1[i,:]`, revealing each row of A1 up to a scalar factor\n4. De-duplicating by checking cosine similarity between found directions",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 190818612810,
+  "PRUrl": "",
+  "CommitSHA": "c0fd2db",
+  "TokensInput": 2647,
+  "TokensOutput": 14274,
+  "TokensTotal": 16921,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.24034,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

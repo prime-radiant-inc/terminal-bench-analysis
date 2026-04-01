@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-5018",
+  "Success": true,
+  "Output": "All 5 tests pass. Here's what I did:\n\n1. **Recovered the secret**: Found `secret[lost_and_found_in_git]` in a dangling commit/blob (unreachable after history rewrite) and wrote it to `/app/secret.txt`\n2. **Cleaned up**: Ran `git reflog expire --expire=now --all` and `git gc --prune=now --aggressive` to permanently remove all unreachable objects containing the secret\n3. **Preserved existing content**: The repository's files, commit messages, and checksum remain unchanged",
+  "Error": "",
+  "Duration": 81734982085,
+  "PRUrl": "",
+  "CommitSHA": "52d4ad1",
+  "TokensInput": 15,
+  "TokensOutput": 2383,
+  "TokensTotal": 2398,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.05965,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 7143826313,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 7144217080,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

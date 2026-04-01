@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-78561",
+  "Success": false,
+  "Output": "All 3 tests pass. The merge script:\n\n1. Reads all three sources with their different schemas\n2. Maps fields to unified names (id/userId → user_id, full_name/userName → name, etc.)\n3. Merges by user_id with source_a \u003e source_b \u003e source_c priority\n4. Outputs `merged_users.parquet` with 4 unique users and `conflicts.json` with 3 conflicts (all for user 101 who appears in all 3 sources with differing name, email, and created_date)",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 65038622026,
+  "PRUrl": "",
+  "CommitSHA": "8661dc6",
+  "TokensInput": 1165,
+  "TokensOutput": 6920,
+  "TokensTotal": 8085,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.056185,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

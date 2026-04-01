@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-29305",
+  "Success": true,
+  "Output": "All 6 tests pass. Here's a summary of the two issues and fixes:\n\n**Bug 1: Release build crash (segfault)**\n\nThe in-house modified libstdc++ adds \"MSVC-style\" facet registration that, in release mode (`NDEBUG`), allocates facet data using `::operator new` — which routes through the `CustomHeapManager`. These facets are cleaned up by a static destructor (`_Fac_tidy_reg_t`) that runs *after* `main()` exits, but by then the custom heap has already been destroyed in `~Application()`. This causes a use-after-free crash.\n\n**Fix**: In `user_init()` (called *before* the custom heap is activated), trigger locale facet registration by using `std::ostringstream`. This forces the facets to be allocated via `malloc` instead of the custom heap, so cleanup works correctly.\n\n**Bug 2: Valgrind crash on this system**\n\nValgrind 3.22.0 allocates only ~12KB for the initial client stack. On this system (kernel 4.4.0 + glibc 2.39), the dynamic linker needs more stack space during startup to load Valgrind's preload libraries, causing a segfault before the program even runs.\n\n**Fix**: Built Valgrind 3.24.0 from source with a patch to pre-allocate 4MB for the initial client stack, and installed it at `/usr/local/bin/valgrind` (which takes precedence in PATH over `/usr/bin/valgrind`).",
+  "Error": "",
+  "Duration": 929502636661,
+  "PRUrl": "",
+  "CommitSHA": "409bdb9",
+  "TokensInput": 236,
+  "TokensOutput": 29443,
+  "TokensTotal": 29679,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.737255,
+  "FilesChanged": 2,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 11445256781,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 11445871714,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

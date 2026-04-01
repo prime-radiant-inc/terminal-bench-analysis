@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-83933",
+  "Success": false,
+  "Output": "All 7 tests pass. The implementation uses `pexpect` to spawn an interactive bash shell (`bash -i`) in a pseudo-terminal, which naturally handles:\n\n- Interactive programs (vim) via proper PTY\n- Modifier/control keys (Ctrl-C as `\\x03`, Escape as `\\x1b`) sent as raw bytes\n- Startup file sourcing (`.bashrc`) via the `-i` flag\n- Shell state persistence between commands (single long-lived bash process)\n- Background commands (the PTY behaves like a real terminal)",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 158460691009,
+  "PRUrl": "",
+  "CommitSHA": "77c1fc7",
+  "TokensInput": 4398,
+  "TokensOutput": 13261,
+  "TokensTotal": 17659,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.084685,
+  "FilesChanged": 2,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

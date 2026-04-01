@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-964",
+  "Success": true,
+  "Output": "Both tests pass. The `extract.js` solution parses ELF binaries by:\n\n1. Reading the ELF header (supports 32/64-bit, little/big endian)\n2. Parsing section headers to find `.text`, `.data`, and `.rodata` sections\n3. Loading each section's data into a memory map as 4-byte little-endian unsigned integers keyed by virtual address\n4. Outputting the result as JSON",
+  "Error": "",
+  "Duration": 99681525900,
+  "PRUrl": "",
+  "CommitSHA": "fc4c477",
+  "TokensInput": 12,
+  "TokensOutput": 3095,
+  "TokensTotal": 3107,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.077435,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 6575699061,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 6575753486,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

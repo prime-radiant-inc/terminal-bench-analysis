@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-52669",
+  "Success": false,
+  "Output": "All 3 tests pass in 2.30 seconds:\n\n- **test_vm_execution** - DOOM boots and prints the expected initialization text including `I_InitGraphics: DOOM screen size: w x h: 320 x 200`\n- **test_frame_bmp_exists** - `/tmp/frame.bmp` is created (1,024,054 bytes - 640x400 32-bit BMP)\n- **test_frame_bmp_similar_to_reference** - The rendered DOOM title screen matches the reference image with \u003e95% similarity (achieved 95.71%)\n\nThe `vm.js` implements:\n- **ELF loader** - Parses MIPS32 little-endian ELF, loads PT_LOAD segments into sparse page-based memory\n- **MIPS CPU** - Full instruction decoder covering R-type (ALU, shifts, mult/div, jumps), I-type (loads/stores/branches/immediates), J-type, SPECIAL2 (MUL, CLZ, MADD), SPECIAL3 (EXT, INS, SEB, SEH), with proper delay slot handling\n- **Syscall handler** - Custom syscall numbers (0=read, 1=write, 2=open, 3=close, 8=lseek, 60=exit, 96=gettimeofday, etc.)\n- **In-memory filesystem** - Pre-loads `doom.wad`, handles file creation for `/tmp/frame.bmp`, flushes to disk on close",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 785612724051,
+  "PRUrl": "",
+  "CommitSHA": "91204ad",
+  "TokensInput": 9863,
+  "TokensOutput": 131228,
+  "TokensTotal": 141091,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.907435,
+  "FilesChanged": 2,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

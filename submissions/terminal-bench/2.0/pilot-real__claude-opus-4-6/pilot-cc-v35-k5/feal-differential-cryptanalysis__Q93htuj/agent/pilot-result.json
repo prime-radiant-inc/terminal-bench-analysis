@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-3050",
+  "Success": true,
+  "Output": "Test passes in 0.66 seconds. The attack works by:\n\n1. Choosing plaintext pairs with difference ΔPL = ΔPR = 0x80800000, which cancels out in the pre-round XOR giving ΔR₀ = 0\n2. This produces a deterministic differential ΔL₃ = 0x02000000 through 3 rounds (probability 1)\n3. For each of the 65536 possible key[5] values, peeling back round 3 and checking if ΔL₃ matches the expected value\n4. Only the correct key[5] satisfies the constraint for all pairs",
+  "Error": "",
+  "Duration": 238724561909,
+  "PRUrl": "",
+  "CommitSHA": "107ba2d",
+  "TokensInput": 13,
+  "TokensOutput": 14116,
+  "TokensTotal": 14129,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.352965,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 1261707144,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 1261755278,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

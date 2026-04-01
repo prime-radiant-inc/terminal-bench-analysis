@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-7543",
+  "Success": true,
+  "Output": "The bug was in `runtime/shared_heap.c` line 650 in the `pool_sweep` function. The RLE free-space compression scheme stores the count of contiguous free blocks in the `Wosize` field of free block headers. The sweep loop had:\n\n```c\np += wh * Wosize_hd(hd);  // skip contiguous free blocks (correct)\n...\np += Whsize_hd(hd);        // BUG: should advance by one sizeclass slot\n```\n\n`Whsize_hd(hd)` on a free header returns `Wosize + 1` (the run-length count + 1), not the fixed sizeclass slot width `wh`. This caused the pointer to advance by the wrong amount, leading to out-of-bounds memory access and the segfault. The fix was changing `p += Whsize_hd(hd)` to `p += wh`, matching the pattern used in all the other pool traversal functions (`calc_pool_stats`, `pool_finalise`, `compact_update_pools`).",
+  "Error": "",
+  "Duration": 1018054108914,
+  "PRUrl": "",
+  "CommitSHA": "cacde0a",
+  "TokensInput": 27,
+  "TokensOutput": 9094,
+  "TokensTotal": 9121,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.227485,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 4807776633,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 4807841151,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

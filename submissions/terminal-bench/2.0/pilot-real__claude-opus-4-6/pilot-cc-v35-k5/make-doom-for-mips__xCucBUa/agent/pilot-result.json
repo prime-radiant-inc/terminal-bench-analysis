@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-89028",
+  "Success": false,
+  "Output": "All 3 tests pass:\n\n- **test_vm_execution** - DOOM initializes and prints the expected \"I_InitGraphics: DOOM screen size: w x h: 320 x 200\" message\n- **test_frame_bmp_exists** - `/tmp/frame.bmp` is created and non-empty (1,024,054 bytes)\n- **test_frame_bmp_similar_to_reference** - The rendered frame matches the reference image with ≥95% similarity\n\nThe fix was adding the `precision` parameter to all `_put_int` call sites in `vsnprintf`, which made `%.3d` format specifiers produce zero-padded output (e.g., \"033\" instead of \"33\"), allowing DOOM's font loading (`STCFN033`, etc.) to work correctly.",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 1951839041857,
+  "PRUrl": "",
+  "CommitSHA": "3cd3b83",
+  "TokensInput": 6871,
+  "TokensOutput": 85582,
+  "TokensTotal": 92453,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 1.909935,
+  "FilesChanged": 23,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

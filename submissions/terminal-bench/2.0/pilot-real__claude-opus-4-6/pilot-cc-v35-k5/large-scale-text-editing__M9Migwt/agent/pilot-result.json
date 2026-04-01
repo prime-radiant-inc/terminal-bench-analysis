@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-61112",
+  "Success": true,
+  "Output": "All 5 tests pass. The solution uses three distinct macros:\n\n- **Macro a** (8 keystrokes): `:s/ //g\u003cCR\u003e` — removes all spaces\n- **Macro b** (33 keystrokes): `:s/\\v(.+),(.+),(.+)/\\3;\\2;\\1;OK/\u003cCR\u003e` — reverses columns, changes delimiter to `;`, appends `;OK`\n- **Macro c** (3 keystrokes): `gUU` — uppercases the entire line\n\nTotal: 44 keystrokes (well under the 200 limit).",
+  "Error": "",
+  "Duration": 340661969291,
+  "PRUrl": "",
+  "CommitSHA": "ffbd5fd",
+  "TokensInput": 5361,
+  "TokensOutput": 33472,
+  "TokensTotal": 38833,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.375875,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 33101105939,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 33101138908,
+    "TotalRetries": 2
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

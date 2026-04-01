@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-26767",
+  "Success": true,
+  "Output": "Tests pass. The attack recovered the FEAL round keys in ~10 seconds using a meet-in-the-middle approach:\n\n- **k0=429667, k3=750757** (20-bit seeds)\n- **K0=0xb24dca68, K1=0x0d14a358, K2=0xa888fa20, K3=0x5cc59c18** (expanded 32-bit round keys)\n\nThe approach:\n1. Peel round 0 from plaintext side (depends on k0) and round 3 from ciphertext side (depends on k3)\n2. Use F-function invertibility to derive a consistency constraint between k0 and k3 across two pairs\n3. Build a hash table on k3's constraint value, then look up k0's constraint value (2^20 + 2^20 instead of 2^40)\n4. Derive K1 and K2 algebraically from the peeled states, verify against all 32 pairs",
+  "Error": "",
+  "Duration": 1335259213995,
+  "PRUrl": "",
+  "CommitSHA": "a7822fe",
+  "TokensInput": 16,
+  "TokensOutput": 86748,
+  "TokensTotal": 86764,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 2.16878,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 1606741935,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 1606788968,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

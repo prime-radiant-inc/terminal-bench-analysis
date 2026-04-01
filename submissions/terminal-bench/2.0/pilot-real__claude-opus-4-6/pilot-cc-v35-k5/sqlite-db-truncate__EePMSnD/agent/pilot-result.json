@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-13066",
+  "Success": true,
+  "Output": "Test passes. The corrupted SQLite database had its first page (header + schema) truncated, leaving only the data page. I parsed the B-tree leaf page directly from the raw bytes and recovered all 10 rows with their word/value pairs.",
+  "Error": "",
+  "Duration": 103995066879,
+  "PRUrl": "",
+  "CommitSHA": "20d3ce4",
+  "TokensInput": 12,
+  "TokensOutput": 3562,
+  "TokensTotal": 3574,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.08911000000000001,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 4975425238,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 4975476139,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

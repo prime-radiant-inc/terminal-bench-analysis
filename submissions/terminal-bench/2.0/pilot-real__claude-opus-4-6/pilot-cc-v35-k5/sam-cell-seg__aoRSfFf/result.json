@@ -1,0 +1,101 @@
+{
+    "id": "88399ca6-2299-4795-9576-4a9affe5d68e",
+    "task_name": "sam-cell-seg",
+    "trial_name": "sam-cell-seg__aoRSfFf",
+    "trial_uri": "file:///Users/aleks.petrov/Projects/startups/pilot/pilot-bench/jobs/pilot-cc-v35-k5/sam-cell-seg__aoRSfFf",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "sam-cell-seg"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "1bc7f69e2e775b9ceac4b65975556b8c838b2d77cc0f50b01162adfea1630eb5",
+    "config": {
+        "task": {
+            "path": "sam-cell-seg",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "sam-cell-seg__aoRSfFf",
+        "trials_dir": "jobs/pilot-cc-v35-k5",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 9.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": 5.0,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "pilot_agent:PilotAgent",
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "CLAUDE_CODE_OAUTH_TOKEN": "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"
+            }
+        },
+        "environment": {
+            "type": "modal",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "2091aa0a-be8e-40f8-96c1-4b56588bac52"
+    },
+    "agent_info": {
+        "name": "pilot-real",
+        "version": "unknown",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 8015,
+        "n_cache_tokens": null,
+        "n_output_tokens": 27965,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-28T13:42:16.123758Z",
+    "finished_at": "2026-03-28T14:14:28.071945Z",
+    "environment_setup": {
+        "started_at": "2026-03-28T13:42:16.128618Z",
+        "finished_at": "2026-03-28T13:42:19.988309Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-28T13:42:19.988336Z",
+        "finished_at": "2026-03-28T13:54:46.237488Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-28T13:54:46.237919Z",
+        "finished_at": "2026-03-28T14:12:27.263033Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-28T14:12:28.953276Z",
+        "finished_at": "2026-03-28T14:13:50.758963Z"
+    }
+}

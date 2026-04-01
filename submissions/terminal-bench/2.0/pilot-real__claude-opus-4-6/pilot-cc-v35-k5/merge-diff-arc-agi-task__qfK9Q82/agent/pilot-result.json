@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-73866",
+  "Success": true,
+  "Output": "All 5 tests pass:\n\n1. **Git repo** exists at `/app/repo`\n2. **Both branches** (`branch1`, `branch2`) fetched from bundles\n3. **algo.py** exists in `/app/repo/`\n4. **`map` function** is present and callable\n5. **Correct outputs** for all test examples\n\nThe `map` function works by:\n- Extracting distinct non-zero values from the input grid\n- Mapping each value to its anti-diagonal index `(row + col) % n` where `n` is the count of distinct non-zero values\n- Tiling the entire output grid using that diagonal pattern",
+  "Error": "",
+  "Duration": 146253375691,
+  "PRUrl": "",
+  "CommitSHA": "602f239",
+  "TokensInput": 22,
+  "TokensOutput": 6503,
+  "TokensTotal": 6525,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.162685,
+  "FilesChanged": 2,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 5234684873,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 5234736097,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

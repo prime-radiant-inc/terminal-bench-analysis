@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-63657",
+  "Success": true,
+  "Output": "Tests pass. Here's a summary of the fix:\n\n**Bug**: In `/app/ocaml/runtime/shared_heap.c:650`, the `pool_sweep()` function's loop advancement used `p += Whsize_hd(hd)` instead of `p += wh`.\n\n**Root cause**: When a garbage block is freed during sweeping, `hd` is reloaded to `POOL_FREE_HEADER(0)` (line 607) so the merge logic at line 614 can identify it as free. However, `Whsize_hd(POOL_FREE_HEADER(0))` = 1, while the actual pool slot size is `wh`. This caused the sweep pointer to advance by only 1 word instead of `wh` words, reading into the middle of the current slot on the next iteration and corrupting heap traversal.\n\n**Fix**: Changed line 650 from `p += Whsize_hd(hd)` to `p += wh`. In a pool, every slot is exactly `wh` words, so the advancement should always be `wh` — matching the pattern used in the `verify_pool` function (line 1590).",
+  "Error": "",
+  "Duration": 704180732000,
+  "PRUrl": "",
+  "CommitSHA": "74f848f",
+  "TokensInput": 1499,
+  "TokensOutput": 15075,
+  "TokensTotal": 16574,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.38437,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 4118500891,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 4118548564,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

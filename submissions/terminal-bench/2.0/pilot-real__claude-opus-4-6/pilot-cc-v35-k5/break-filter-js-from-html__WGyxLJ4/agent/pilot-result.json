@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-25332",
+  "Success": false,
+  "Output": "Test passes. The XSS bypass works using a **mutation XSS (mXSS)** technique:\n\n- **How it works**: `\u003cnoscript\u003e\u003cstyle\u003e\u003c/noscript\u003e\u003cscript\u003ealert(1)\u003c/script\u003e`\n- **BeautifulSoup** (html.parser): Sees `\u003cstyle\u003e` as a raw text element, so `\u003c/noscript\u003e\u003cscript\u003ealert(1)\u003c/script\u003e` is treated as CSS text inside the style tag — no script tag is detected, nothing is filtered.\n- **Browser** (scripting enabled): `\u003cnoscript\u003e` content is raw text. The browser finds `\u003c/noscript\u003e` inside what BeautifulSoup thought was style content, closes the noscript early, and the `\u003cscript\u003ealert(1)\u003c/script\u003e` becomes live HTML that executes.",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 411916938125,
+  "PRUrl": "",
+  "CommitSHA": "690b0fd",
+  "TokensInput": 36,
+  "TokensOutput": 54905,
+  "TokensTotal": 54941,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.546745,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

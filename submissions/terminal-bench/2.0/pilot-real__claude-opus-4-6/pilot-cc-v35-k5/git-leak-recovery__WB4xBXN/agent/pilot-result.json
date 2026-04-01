@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-57651",
+  "Success": true,
+  "Output": "All 5 tests pass. Here's what was done:\n\n1. **Recovered the secret** from a dangling git commit (`d6454a8`) that was left behind after a `git reset HEAD~1` — the secret `secret[lost_and_found_in_git]` was in a blob within that orphaned commit's tree. Wrote it to `/app/secret.txt`.\n\n2. **Cleaned up the repo** by expiring all reflogs (`git reflog expire --expire=now --all`) and running aggressive garbage collection (`git gc --prune=now --aggressive`) to permanently remove all unreachable objects.\n\n3. **Preserved existing commits** — both commits with message `chore: init e665d1a2-04a7-4e61-b523-e897e231d9cc` and all repo files remain untouched.",
+  "Error": "",
+  "Duration": 77726888286,
+  "PRUrl": "",
+  "CommitSHA": "128f13d",
+  "TokensInput": 15,
+  "TokensOutput": 1801,
+  "TokensTotal": 1816,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.0451,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 3339311455,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 3339392772,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

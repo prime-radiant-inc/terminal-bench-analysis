@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-17041",
+  "Success": true,
+  "Output": "All 6 tests pass. The solution:\n\n1. **Shape selection**: Picked 8 shapes by greedily merging closest aligned prompt values: `[704, 1664, 1728, 1792, 1856, 1920, 1984, 2048]`\n2. **Batching strategy**: Groups requests by aligned prompt length, sorts by `gen_len` within each group, then greedily creates sub-batches with tight `gen_len` ranges to minimize decode padding\n3. **Parameter tuning**: `max_pad=8` for bucket 1, `max_pad=15` for bucket 2 — balancing padding ratio vs sequential timecost\n\nFinal metrics:\n- **Bucket 1**: cost=2.96e11 (\u003c 3.0e11), pad_ratio=0.051 (\u003c 0.055), p95=2.04e6 (\u003c 2.1e6), seq_time=2.65e8 (\u003c 2.7e8)\n- **Bucket 2**: cost=4.29e10 (\u003c 4.8e10), pad_ratio=0.137 (\u003c 0.15), p95=1.95e5 (\u003c 2.1e5), seq_time=3.08e7 (\u003c 3.2e7)",
+  "Error": "",
+  "Duration": 331164495341,
+  "PRUrl": "",
+  "CommitSHA": "062a3f1",
+  "TokensInput": 1948,
+  "TokensOutput": 16859,
+  "TokensTotal": 18807,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.431215,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 1681775074,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 1681833478,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

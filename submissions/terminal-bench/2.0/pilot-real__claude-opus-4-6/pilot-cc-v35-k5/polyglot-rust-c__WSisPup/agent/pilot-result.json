@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-41208",
+  "Success": false,
+  "Output": "Test passes. The polyglot works by exploiting Rust's nested block comment support vs C++'s flat block comments:\n\n- `/* /* */` ... `#if 0` — C++ sees a closed comment then code; Rust sees one open nested comment\n- `/* */ // */` — Rust closes the outer comment here; C++ sees two separate comments\n- `#if 0` / `#endif` — C++ preprocessor skips the Rust code block\n- `/* /* */` ... `/* */ // */` at the end — wraps `#endif` in a Rust block comment",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 252579896899,
+  "PRUrl": "",
+  "CommitSHA": "99a9f7f",
+  "TokensInput": 35,
+  "TokensOutput": 30403,
+  "TokensTotal": 30438,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.32999,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

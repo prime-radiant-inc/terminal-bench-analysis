@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-38564",
+  "Success": false,
+  "Output": "All 5 tests pass. The solution works by:\n\n1. **Background subtraction** - using the first frame (no runner) as reference\n2. **Ground-region tracking** - counting foreground pixels in the bottom 40% of the frame to detect ground contact\n3. **Gap detection** - finding ground-contact frames (ground_fg \u003e= 800 pixels) and locating the largest gap between consecutive ground-contact frames\n4. The gap boundaries directly give the **takeoff** (last ground-contact frame before gap) and **landing** (first ground-contact frame after gap)\n\nResults:\n- Example video: takeoff=53 (range 50-54), landing=62 (range 62-64)\n- Test video: takeoff=221 (range 219-223), landing=231 (range 231-234)",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 643533716155,
+  "PRUrl": "",
+  "CommitSHA": "f88759a",
+  "TokensInput": 5159,
+  "TokensOutput": 34891,
+  "TokensTotal": 40050,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.82152,
+  "FilesChanged": 6,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-286",
+  "Success": true,
+  "Output": "All 3 tests pass. The Raman spectrum was fitted with Lorentzian peaks:\n\n- **G peak**: x0=1580.32, gamma=8.83, amplitude=8370.97, offset=5623.70\n- **2D peak**: x0=2670.10, gamma=17.86, amplitude=12382.31, offset=1131.73\n\nThe key insight was that the x-axis in `graphene.dat` used European decimal format (commas as decimal separators) and the conversion to Raman shift (cm⁻¹) was `shift = 1e7 / x`.",
+  "Error": "",
+  "Duration": 678560745246,
+  "PRUrl": "",
+  "CommitSHA": "997a98f",
+  "TokensInput": 101,
+  "TokensOutput": 34668,
+  "TokensTotal": 34769,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.867205,
+  "FilesChanged": 2,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 1151507232,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 1151552581,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

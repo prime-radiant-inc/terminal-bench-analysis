@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-87246",
+  "Success": false,
+  "Output": "Test passes. The polyglot works by using two tricks:\n\n1. **`//\\` (backslash-newline)**: In C++, `\\` at end of a `//` comment continues the comment to the next line. In Rust, it's just a regular comment with no continuation — so the next line is active code.\n\n2. **`/* */` block comment**: The C++ code is wrapped in `/* */` which Rust sees as a block comment (hiding it), but C++ never sees because the `/*` and `*/` lines are each preceded by `//\\` which comments them out in C++.",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 200020857865,
+  "PRUrl": "",
+  "CommitSHA": "168ee32",
+  "TokensInput": 1090,
+  "TokensOutput": 30688,
+  "TokensTotal": 31778,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.25883,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

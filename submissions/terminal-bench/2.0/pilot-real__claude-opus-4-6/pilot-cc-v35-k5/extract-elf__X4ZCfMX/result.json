@@ -1,0 +1,101 @@
+{
+    "id": "d30fa1e9-dc26-4d2b-9491-7358ea9df760",
+    "task_name": "extract-elf",
+    "trial_name": "extract-elf__X4ZCfMX",
+    "trial_uri": "file:///Users/aleks.petrov/Projects/startups/pilot/pilot-bench/jobs/pilot-cc-v35-k5/extract-elf__X4ZCfMX",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "extract-elf"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "cd3887ff7e15541da700a00b6464b8dc3a54a140b9cddee7cd462ae18f3e8056",
+    "config": {
+        "task": {
+            "path": "extract-elf",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "extract-elf__X4ZCfMX",
+        "trials_dir": "jobs/pilot-cc-v35-k5",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 9.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": 5.0,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "pilot_agent:PilotAgent",
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "CLAUDE_CODE_OAUTH_TOKEN": "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"
+            }
+        },
+        "environment": {
+            "type": "modal",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "2091aa0a-be8e-40f8-96c1-4b56588bac52"
+    },
+    "agent_info": {
+        "name": "pilot-real",
+        "version": "unknown",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 16,
+        "n_cache_tokens": null,
+        "n_output_tokens": 3807,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-27T08:32:12.991175Z",
+    "finished_at": "2026-03-27T08:45:45.102896Z",
+    "environment_setup": {
+        "started_at": "2026-03-27T08:32:12.995454Z",
+        "finished_at": "2026-03-27T08:32:18.410237Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-27T08:32:18.410299Z",
+        "finished_at": "2026-03-27T08:42:44.211192Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-27T08:42:44.212888Z",
+        "finished_at": "2026-03-27T08:45:16.045617Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-27T08:45:17.841545Z",
+        "finished_at": "2026-03-27T08:45:42.991346Z"
+    }
+}

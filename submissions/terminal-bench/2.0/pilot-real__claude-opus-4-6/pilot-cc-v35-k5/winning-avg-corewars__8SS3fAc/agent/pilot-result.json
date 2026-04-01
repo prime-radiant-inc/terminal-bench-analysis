@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-27977",
+  "Success": true,
+  "Output": "All 3 tests pass. The key fix was changing `ptr dat 0, 1` to `ptr dat 0, 4` — starting the bomb pointer at offset 4 instead of 1 improved snake wins from 31 to 35, pushing it above the 33 threshold while keeping all other opponents well above their thresholds:\n\n| Opponent | Wins | Threshold | Status |\n|----------|------|-----------|--------|\n| stone | 84 | 75 | PASS |\n| paper | 83 | 75 | PASS |\n| vampire | 87 | 75 | PASS |\n| snake | 35 | 33 | PASS |\n| g2-clear | 57 | 33 | PASS |",
+  "Error": "",
+  "Duration": 3151395828368,
+  "PRUrl": "",
+  "CommitSHA": "7dc158d",
+  "TokensInput": 2835,
+  "TokensOutput": 144244,
+  "TokensTotal": 147079,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 3.620275,
+  "FilesChanged": 26,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 1687397204,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 1687434168,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

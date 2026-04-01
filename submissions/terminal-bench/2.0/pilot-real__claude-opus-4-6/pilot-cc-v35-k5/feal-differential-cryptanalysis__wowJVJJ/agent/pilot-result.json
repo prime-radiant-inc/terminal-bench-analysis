@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-13680",
+  "Success": true,
+  "Output": "Test passes in under 1 second. The attack works by:\n\n1. Choosing plaintext pairs with difference ΔPL = ΔPR = 0x80800000 (cancels to ΔR=0 after pre-round mixing)\n2. Exploiting the FEAL f-function's deterministic differential: input XOR 0x80800000 always produces output XOR 0x02000000\n3. This propagates through 3 rounds giving ΔL_3 = 0x02000000\n4. Brute-forcing all 65536 possible key[5] values (16-bit seed × 1234567) and checking which one yields the expected ΔL_3 after partially decrypting the last round",
+  "Error": "",
+  "Duration": 249115082645,
+  "PRUrl": "",
+  "CommitSHA": "4e37c9b",
+  "TokensInput": 13,
+  "TokensOutput": 14551,
+  "TokensTotal": 14564,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.36384,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 1294819092,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 1294856178,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

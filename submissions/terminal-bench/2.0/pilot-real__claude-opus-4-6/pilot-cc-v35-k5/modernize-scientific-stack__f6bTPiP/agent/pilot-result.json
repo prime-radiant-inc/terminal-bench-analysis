@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-25053",
+  "Success": true,
+  "Output": "Both tests pass now. The fix was that the stop hook runs `pytest` from `/app` without arguments — it wasn't finding the tests in `/tests/`. I replaced `requirements.txt` with `pyproject.toml` which both satisfies the dependency file requirement and configures `testpaths = [\"/tests\"]` so pytest discovers the tests correctly.",
+  "Error": "",
+  "Duration": 107297300830,
+  "PRUrl": "",
+  "CommitSHA": "3025a2d",
+  "TokensInput": 285,
+  "TokensOutput": 4112,
+  "TokensTotal": 4397,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.068625,
+  "FilesChanged": 3,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 1290495309,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 1290543412,
+    "TotalRetries": 1
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

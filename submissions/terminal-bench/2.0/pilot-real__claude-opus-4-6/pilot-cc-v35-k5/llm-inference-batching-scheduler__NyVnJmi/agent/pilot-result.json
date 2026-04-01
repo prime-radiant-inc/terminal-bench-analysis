@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-79130",
+  "Success": true,
+  "Output": "All 6 tests pass. Here's a summary of the solution:\n\n**Approach:**\n1. **Shape selection**: 8 shapes `[64, 128, 256, 320, 704, 1280, 1664, 2048]` covering all aligned sequence lengths across both buckets\n2. **Bucket 1**: Group by aligned prompt length, sort by gen_len within each group, create batches with gen_len spread ≤ 7\n3. **Bucket 2**: Start with tight batches (spread=3), then greedily merge adjacent batches to reduce sequential timecost while staying within the decode padding budget. Merges are prioritized by efficiency (ms saved per padding token spent)\n\n**Results:**\n| Metric | B1 Actual | B1 Threshold | B2 Actual | B2 Threshold |\n|---|---|---|---|---|\n| Cost | 2.885e+11 | 3.0e+11 | 4.362e+10 | 4.8e+10 |\n| Pad ratio | 0.0532 | 0.055 | 0.1409 | 0.15 |\n| P95 latency | 2.036e+06 | 2.1e+06 | 1.953e+05 | 2.1e+05 |\n| Seq timecost | 2.672e+08 | 2.7e+08 | 3.179e+07 | 3.2e+07 |",
+  "Error": "",
+  "Duration": 899452591373,
+  "PRUrl": "",
+  "CommitSHA": "4c680a4",
+  "TokensInput": 18,
+  "TokensOutput": 48011,
+  "TokensTotal": 48029,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 1.200365,
+  "FilesChanged": 2,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 2862489987,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 2862560737,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

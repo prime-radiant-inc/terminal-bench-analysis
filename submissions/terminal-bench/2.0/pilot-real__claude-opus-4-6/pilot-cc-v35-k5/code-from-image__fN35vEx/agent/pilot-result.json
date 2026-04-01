@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-10236",
+  "Success": true,
+  "Output": "Both tests pass. The solution:\n\n1. Read `/app/code.png` as bytes\n2. Compute `h0 = sha256(img_bytes)` (raw digest)\n3. Compute `H = sha256(h0 || h0[:10] || SALT)` where SALT = `b\"0000TBENCH-SALT\"`\n4. Output the hex: `bee26a133f103b9ecda444c70ec22cafef6e31a3de7af6d047974dc90ce3defe`",
+  "Error": "",
+  "Duration": 61008457820,
+  "PRUrl": "",
+  "CommitSHA": "d8045b9",
+  "TokensInput": 10,
+  "TokensOutput": 1163,
+  "TokensTotal": 1173,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.029125,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 2842553579,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 2842817233,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

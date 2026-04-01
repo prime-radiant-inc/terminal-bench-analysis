@@ -65,6 +65,7 @@ order by avg_reward desc
 
 | submission | n_trials | n_passed | n_failed | n_errored | avg_reward |
 | --- | --- | --- | --- | --- | --- |
+| pilot-real__claude-opus-4-6 | 445 | 365 | 74 | 6 | 0.8314 |
 | OB-1_GPT-5.4-GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | 445 | 367 | 77 | 1 | 0.8266 |
 | Forge__GPT-5.4 | 445 | 364 | 49 | 32 | 0.818 |
 | Forge__Opus-4.6 | 445 | 364 | 49 | 32 | 0.818 |
@@ -154,10 +155,10 @@ order by ss.avg_reward desc
 
 | model_name | best_submission | avg_reward | n_passed | n_trials |
 | --- | --- | --- | --- | --- |
+| anthropic/claude-opus-4-6 | pilot-real__claude-opus-4-6 | 0.8314 | 365 | 445 |
 | auto | OB-1_GPT-5.4-GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | 0.8266 | 367 | 445 |
 | litellm_proxy/sage-gpt-5.3-codex | OpenSage__GPT-5.3-Codex | 0.795 | 349 | 445 |
 | gpt-5.3-codex | Droid__GPT-5.3-Codex | 0.773 | 344 | 445 |
-| anthropic/claude-opus-4-6 | Capy__Claude-Opus-4.6 | 0.7579 | 335 | 445 |
 | openai/gpt-5.3-codex | Simple-Codex__GPT-5.3-Codex | 0.7563 | 332 | 445 |
 | vertex_ai/gemini-3.1-pro-preview | Terminus-KIRA__Gemini-3.1-Pro-Preview | 0.7517 | 333 | 445 |
 | vertex_ai/claude-opus-4-6 | Terminus-KIRA__Claude-Opus-4.6 | 0.7489 | 331 | 445 |
@@ -206,21 +207,21 @@ limit 15
 
 | task_name | n_trials | n_passed | n_failed | n_errored | failure_rate |
 | --- | --- | --- | --- | --- | --- |
-| make-doom-for-mips | 198 | 0 | 38 | 160 | 1.0 |
-| filter-js-from-html | 198 | 6 | 166 | 26 | 0.9655 |
-| caffe-cifar-10 | 198 | 7 | 66 | 125 | 0.962 |
-| install-windows-3.11 | 198 | 12 | 168 | 18 | 0.9391 |
-| sam-cell-seg | 198 | 12 | 181 | 5 | 0.9381 |
-| train-fasttext | 198 | 13 | 42 | 143 | 0.9293 |
-| raman-fitting | 198 | 16 | 123 | 59 | 0.9184 |
-| extract-moves-from-video | 198 | 17 | 76 | 105 | 0.9133 |
-| gpt2-codegolf | 198 | 22 | 50 | 126 | 0.8889 |
-| video-processing | 198 | 38 | 156 | 4 | 0.8061 |
-| torch-pipeline-parallelism | 198 | 39 | 115 | 44 | 0.7979 |
-| dna-assembly | 198 | 44 | 122 | 32 | 0.7755 |
-| make-mips-interpreter | 198 | 47 | 64 | 87 | 0.7552 |
-| model-extraction-relu-logits | 198 | 53 | 115 | 30 | 0.7268 |
-| mteb-retrieve | 198 | 52 | 138 | 8 | 0.7263 |
+| make-doom-for-mips | 203 | 0 | 43 | 160 | 1.0 |
+| filter-js-from-html | 203 | 11 | 166 | 26 | 0.9385 |
+| caffe-cifar-10 | 203 | 12 | 66 | 125 | 0.9365 |
+| train-fasttext | 203 | 13 | 47 | 143 | 0.9312 |
+| install-windows-3.11 | 203 | 16 | 169 | 18 | 0.9208 |
+| sam-cell-seg | 203 | 17 | 181 | 5 | 0.9146 |
+| raman-fitting | 203 | 21 | 123 | 59 | 0.8955 |
+| extract-moves-from-video | 203 | 22 | 76 | 105 | 0.8905 |
+| gpt2-codegolf | 203 | 27 | 50 | 126 | 0.867 |
+| video-processing | 203 | 43 | 156 | 4 | 0.7861 |
+| torch-pipeline-parallelism | 203 | 44 | 115 | 44 | 0.7778 |
+| dna-assembly | 203 | 49 | 122 | 32 | 0.7562 |
+| make-mips-interpreter | 203 | 51 | 65 | 87 | 0.7411 |
+| model-extraction-relu-logits | 203 | 58 | 115 | 30 | 0.7085 |
+| mteb-retrieve | 203 | 57 | 138 | 8 | 0.7077 |
 <!--[[[end]]]-->
 
 ## Tasks No One Has Solved
@@ -242,7 +243,7 @@ where n_passed = 0
 
 | task_name | n_trials | n_failed | n_errored |
 | --- | --- | --- | --- |
-| make-doom-for-mips | 198 | 38 | 160 |
+| make-doom-for-mips | 203 | 43 | 160 |
 <!--[[[end]]]-->
 
 ## The Easiest Tasks
@@ -266,21 +267,21 @@ limit 15
 
 | task_name | n_trials | n_passed | n_failed | n_errored | avg_reward |
 | --- | --- | --- | --- | --- | --- |
-| git-leak-recovery | 198 | 193 | 4 | 1 | 0.9797 |
-| fix-git | 198 | 193 | 5 | 0 | 0.9747 |
-| constraints-scheduling | 198 | 190 | 6 | 2 | 0.9694 |
-| multi-source-data-merger | 198 | 189 | 8 | 1 | 0.9594 |
-| modernize-scientific-stack | 198 | 186 | 7 | 5 | 0.9588 |
-| nginx-request-logging | 198 | 187 | 10 | 1 | 0.9492 |
-| prove-plus-comm | 198 | 187 | 10 | 1 | 0.9492 |
-| distribution-search | 198 | 186 | 6 | 6 | 0.9442 |
-| vulnerable-secret | 198 | 186 | 7 | 5 | 0.9442 |
-| log-summary-date-ranges | 198 | 185 | 11 | 2 | 0.9391 |
-| portfolio-optimization | 198 | 181 | 12 | 5 | 0.9378 |
-| custom-memory-heap-crash | 198 | 183 | 7 | 8 | 0.9289 |
-| cobol-modernization | 198 | 183 | 11 | 4 | 0.9242 |
-| git-multibranch | 198 | 181 | 11 | 6 | 0.9235 |
-| code-from-image | 198 | 180 | 7 | 11 | 0.9184 |
+| git-leak-recovery | 203 | 198 | 4 | 1 | 0.9802 |
+| fix-git | 203 | 198 | 5 | 0 | 0.9754 |
+| constraints-scheduling | 203 | 194 | 6 | 3 | 0.97 |
+| multi-source-data-merger | 203 | 194 | 8 | 1 | 0.9604 |
+| modernize-scientific-stack | 203 | 191 | 7 | 5 | 0.9598 |
+| nginx-request-logging | 203 | 191 | 10 | 2 | 0.9502 |
+| distribution-search | 203 | 191 | 6 | 6 | 0.9455 |
+| vulnerable-secret | 203 | 191 | 7 | 5 | 0.9455 |
+| log-summary-date-ranges | 203 | 190 | 11 | 2 | 0.9406 |
+| portfolio-optimization | 203 | 186 | 12 | 5 | 0.9394 |
+| custom-memory-heap-crash | 203 | 188 | 7 | 8 | 0.9307 |
+| cobol-modernization | 203 | 188 | 11 | 4 | 0.9261 |
+| prove-plus-comm | 203 | 187 | 15 | 1 | 0.9257 |
+| code-from-image | 203 | 185 | 7 | 11 | 0.9204 |
+| regex-log | 203 | 183 | 16 | 4 | 0.9015 |
 <!--[[[end]]]-->
 
 ## Error Analysis
@@ -324,10 +325,10 @@ order by n desc
 
 | exception_type | n | pct |
 | --- | --- | --- |
-| AgentTimeoutError | 2533 | 91.2 |
-| RuntimeError | 52 | 1.9 |
-| VerifierTimeoutError | 51 | 1.8 |
-| AgentSetupTimeoutError | 43 | 1.5 |
+| AgentTimeoutError | 2533 | 91.0 |
+| RuntimeError | 53 | 1.9 |
+| VerifierTimeoutError | 52 | 1.9 |
+| AgentSetupTimeoutError | 47 | 1.7 |
 | DaytonaError | 31 | 1.1 |
 | EnvironmentStartTimeoutError | 19 | 0.7 |
 | BadRequestError | 9 | 0.3 |
@@ -420,6 +421,7 @@ order by error_pct desc
 | OpenSage__Gemini-3-Pro-Preview | 445 | 25 | 5.6 | 21 |
 | MAYA__Claude-4.5-sonnet | 445 | 14 | 3.1 | 0 |
 | MAYA__Claude-4.6-opus | 445 | 11 | 2.5 | 0 |
+| pilot-real__claude-opus-4-6 | 445 | 6 | 1.3 | 0 |
 | OB-1_GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | 445 | 2 | 0.4 | 0 |
 | OB-1_GPT-5.4-GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | 445 | 1 | 0.2 | 0 |
 <!--[[[end]]]-->
@@ -465,21 +467,21 @@ limit 15
 
 | task_name | n_timeouts | timeout_pct |
 | --- | --- | --- |
-| make-doom-for-mips | 158 | 79.8 |
-| train-fasttext | 139 | 70.2 |
-| gpt2-codegolf | 127 | 64.1 |
-| caffe-cifar-10 | 123 | 62.1 |
-| extract-moves-from-video | 107 | 54.0 |
-| make-mips-interpreter | 84 | 42.4 |
-| qemu-alpine-ssh | 79 | 39.9 |
-| db-wal-recovery | 79 | 39.9 |
-| path-tracing | 77 | 38.9 |
-| tune-mjcf | 69 | 34.8 |
-| write-compressor | 66 | 33.3 |
-| raman-fitting | 59 | 29.8 |
-| torch-pipeline-parallelism | 54 | 27.3 |
-| path-tracing-reverse | 53 | 26.8 |
-| query-optimize | 50 | 25.3 |
+| make-doom-for-mips | 158 | 77.8 |
+| train-fasttext | 139 | 68.5 |
+| gpt2-codegolf | 127 | 62.6 |
+| caffe-cifar-10 | 123 | 60.6 |
+| extract-moves-from-video | 107 | 52.7 |
+| make-mips-interpreter | 84 | 41.4 |
+| qemu-alpine-ssh | 79 | 38.9 |
+| db-wal-recovery | 79 | 38.9 |
+| path-tracing | 77 | 37.9 |
+| tune-mjcf | 69 | 34.0 |
+| write-compressor | 66 | 32.5 |
+| raman-fitting | 59 | 29.1 |
+| torch-pipeline-parallelism | 54 | 26.6 |
+| path-tracing-reverse | 53 | 26.1 |
+| query-optimize | 50 | 24.6 |
 <!--[[[end]]]-->
 
 ## Timing Analysis
@@ -529,9 +531,9 @@ group by status
 
 | status | n | avg_agent_sec | min_sec | max_sec |
 | --- | --- | --- | --- | --- |
-| errored | 2302 | 1519.0 | 0.0 | 12000.1 |
-| failed | 4255 | 560.8 | 0.1 | 9338.2 |
-| passed | 10930 | 443.7 | 1.3 | 6250.0 |
+| errored | 2303 | 1519.9 | 0.0 | 12000.1 |
+| failed | 4329 | 569.0 | 0.1 | 9338.2 |
+| passed | 11295 | 455.8 | 1.3 | 6250.0 |
 <!--[[[end]]]-->
 
 ### Time breakdown: setup vs execution vs verification
@@ -589,6 +591,7 @@ limit 15
 | terminus-2__AfterQuery-GPT-OSS-20B | 2.7 | 20.6 | 1015.9 | 92.2 |
 | Terminus2__Minimax-m2.5 | 17.5 | 18.3 | 965.5 | 93.5 |
 | Terminus2__GLM-4.7 | 14.0 | 20.6 | 886.2 | 90.8 |
+| pilot-real__claude-opus-4-6 | 4.3 | 635.9 | 862.8 | 61.8 |
 | Terminus2__GLM-5 | 10.5 | 17.2 | 822.9 | 63.2 |
 | Judy__Gemini-3.1-Pro-Preview | 9.0 | 46.5 | 793.8 | 73.4 |
 | Judy__Claude-Opus-4.6 | 11.2 | 47.1 | 760.5 | 72.0 |
@@ -599,7 +602,6 @@ limit 15
 | Terminus2__GPT-5.3-Codex | 2.9 | 12.7 | 734.7 | 48.0 |
 | Terminus2__Kimi-k2.5 | 15.1 | 12.4 | 711.6 | 74.5 |
 | Deep-Agents__GPT-5.2-Codex | 3.4 | 0.0 | 704.5 | 45.8 |
-| Terminus2__DeepSeek-V3.2 | 9.5 | 8.7 | 703.4 | 31.1 |
 <!--[[[end]]]-->
 
 ## Cost Analysis
@@ -762,21 +764,21 @@ limit 15
 
 | task_name | top_half | bottom_half | discrimination |
 | --- | --- | --- | --- |
-| sanitize-git-repo | 0.931 | 0.185 | 0.746 |
-| protein-assembly | 0.846 | 0.108 | 0.738 |
-| chess-best-move | 0.792 | 0.092 | 0.7 |
-| break-filter-js-from-html | 0.915 | 0.215 | 0.7 |
-| circuit-fibsqrt | 0.938 | 0.262 | 0.677 |
-| feal-linear-cryptanalysis | 0.912 | 0.246 | 0.665 |
-| overfull-hbox | 0.846 | 0.185 | 0.662 |
-| write-compressor | 0.804 | 0.154 | 0.65 |
-| path-tracing | 0.682 | 0.062 | 0.621 |
-| path-tracing-reverse | 0.692 | 0.077 | 0.615 |
-| polyglot-rust-c | 0.677 | 0.077 | 0.6 |
-| bn-fit-modify | 0.977 | 0.385 | 0.592 |
+| sanitize-git-repo | 0.933 | 0.185 | 0.749 |
+| protein-assembly | 0.852 | 0.108 | 0.744 |
+| chess-best-move | 0.8 | 0.092 | 0.708 |
+| break-filter-js-from-html | 0.919 | 0.215 | 0.703 |
+| circuit-fibsqrt | 0.933 | 0.262 | 0.672 |
+| feal-linear-cryptanalysis | 0.915 | 0.246 | 0.669 |
+| overfull-hbox | 0.852 | 0.185 | 0.667 |
+| write-compressor | 0.811 | 0.154 | 0.657 |
+| path-tracing | 0.694 | 0.062 | 0.632 |
+| bn-fit-modify | 0.978 | 0.385 | 0.593 |
+| path-tracing-reverse | 0.667 | 0.077 | 0.59 |
+| polyglot-rust-c | 0.652 | 0.077 | 0.575 |
 | sqlite-db-truncate | 1.0 | 0.431 | 0.569 |
-| polyglot-c-py | 0.623 | 0.077 | 0.546 |
-| sparql-university | 0.938 | 0.4 | 0.538 |
+| sparql-university | 0.941 | 0.4 | 0.541 |
+| financial-document-processor | 0.83 | 0.292 | 0.537 |
 <!--[[[end]]]-->
 
 ## The Most Inconsistent Tasks
@@ -824,21 +826,21 @@ limit 15
 
 | task_name | mean_reward | worst | best | variance | n_submissions |
 | --- | --- | --- | --- | --- | --- |
-| polyglot-rust-c | 0.443 | 0.0 | 1.0 | 0.2105 | 42 |
-| chess-best-move | 0.543 | 0.0 | 1.0 | 0.2005 | 42 |
-| path-tracing-reverse | 0.5 | 0.0 | 1.0 | 0.1967 | 42 |
-| protein-assembly | 0.557 | 0.0 | 1.0 | 0.1877 | 42 |
-| write-compressor | 0.545 | 0.0 | 1.0 | 0.1876 | 42 |
-| polyglot-c-py | 0.41 | 0.0 | 1.0 | 0.1847 | 42 |
-| feal-linear-cryptanalysis | 0.664 | 0.0 | 1.0 | 0.1809 | 42 |
-| break-filter-js-from-html | 0.673 | 0.0 | 1.0 | 0.179 | 42 |
-| qemu-alpine-ssh | 0.526 | 0.0 | 1.0 | 0.171 | 42 |
-| overfull-hbox | 0.629 | 0.0 | 1.0 | 0.1706 | 42 |
-| path-tracing | 0.441 | 0.0 | 1.0 | 0.1703 | 42 |
-| db-wal-recovery | 0.31 | 0.0 | 1.0 | 0.1699 | 42 |
-| sanitize-git-repo | 0.681 | 0.0 | 1.0 | 0.1639 | 42 |
-| regex-chess | 0.354 | 0.0 | 1.0 | 0.1593 | 42 |
-| financial-document-processor | 0.648 | 0.0 | 1.0 | 0.1577 | 42 |
+| polyglot-rust-c | 0.433 | 0.0 | 1.0 | 0.2101 | 43 |
+| chess-best-move | 0.553 | 0.0 | 1.0 | 0.2006 | 43 |
+| path-tracing-reverse | 0.488 | 0.0 | 1.0 | 0.1978 | 43 |
+| write-compressor | 0.556 | 0.0 | 1.0 | 0.1879 | 43 |
+| protein-assembly | 0.567 | 0.0 | 1.0 | 0.1878 | 43 |
+| polyglot-c-py | 0.4 | 0.0 | 1.0 | 0.1842 | 43 |
+| feal-linear-cryptanalysis | 0.672 | 0.0 | 1.0 | 0.1792 | 43 |
+| break-filter-js-from-html | 0.681 | 0.0 | 1.0 | 0.1773 | 43 |
+| db-wal-recovery | 0.326 | 0.0 | 1.0 | 0.1768 | 43 |
+| path-tracing | 0.454 | 0.0 | 1.0 | 0.1734 | 43 |
+| qemu-alpine-ssh | 0.514 | 0.0 | 1.0 | 0.1733 | 43 |
+| overfull-hbox | 0.637 | 0.0 | 1.0 | 0.1698 | 43 |
+| sanitize-git-repo | 0.688 | 0.0 | 1.0 | 0.1624 | 43 |
+| torch-tensor-parallelism | 0.353 | 0.0 | 1.0 | 0.1616 | 43 |
+| regex-chess | 0.345 | 0.0 | 1.0 | 0.1585 | 43 |
 <!--[[[end]]]-->
 
 ## Submissions That Improved Across Runs
@@ -980,6 +982,7 @@ order by r.submission, r.run_date
 | Terminus2__Minimax-m2.5 | 2026-02-18__13-31-00 | 445 | 188 | 0.4292 |
 | cchuter__minimax-m2.5 | 2026-03-08__22-02-04 | 445 | 188 | 0.4263 |
 | dakou__qwen3-coder-480b | 2025-12-25__23-49-10 | 445 | 121 | 0.275 |
+| pilot-real__claude-opus-4-6 | pilot-cc-v35-k5 | 445 | 365 | 0.8314 |
 | terminus-2__AfterQuery-GPT-OSS-20B | new-s30-k5-dragon | 445 | 75 | 0.1756 |
 <!--[[[end]]]-->
 
@@ -1056,6 +1059,7 @@ order by n desc
 | Terminus2__Minimax-m2.5 | RewardFileNotFoundError | 1 |
 | Terminus2__Minimax-m2.5 | VerifierTimeoutError | 1 |
 | cchuter__minimax-m2.5 | VerifierTimeoutError | 1 |
+| pilot-real__claude-opus-4-6 | VerifierTimeoutError | 1 |
 <!--[[[end]]]-->
 
 ## All 89 Tasks by Failure Rate
@@ -1078,92 +1082,92 @@ order by failure_rate desc
 | task_name | failure_rate_pct |
 | --- | --- |
 | make-doom-for-mips | 100.0 |
-| filter-js-from-html | 96.5 |
-| caffe-cifar-10 | 96.2 |
-| install-windows-3.11 | 93.9 |
-| sam-cell-seg | 93.8 |
-| train-fasttext | 92.9 |
-| raman-fitting | 91.8 |
-| extract-moves-from-video | 91.3 |
-| gpt2-codegolf | 88.9 |
-| video-processing | 80.6 |
-| torch-pipeline-parallelism | 79.8 |
-| dna-assembly | 77.5 |
-| make-mips-interpreter | 75.5 |
-| model-extraction-relu-logits | 72.7 |
-| mteb-retrieve | 72.6 |
-| db-wal-recovery | 71.2 |
-| mteb-leaderboard | 70.7 |
-| dna-insert | 69.7 |
-| torch-tensor-parallelism | 63.8 |
-| regex-chess | 61.9 |
-| gcode-to-text | 60.2 |
-| polyglot-c-py | 56.6 |
-| query-optimize | 53.6 |
-| polyglot-rust-c | 53.0 |
-| path-tracing | 52.6 |
-| adaptive-rejection-sampler | 50.8 |
-| path-tracing-reverse | 50.8 |
-| qemu-alpine-ssh | 47.7 |
-| configure-git-webserver | 46.5 |
-| chess-best-move | 44.4 |
-| write-compressor | 41.5 |
-| protein-assembly | 40.8 |
+| filter-js-from-html | 93.8 |
+| caffe-cifar-10 | 93.7 |
+| train-fasttext | 93.1 |
+| install-windows-3.11 | 92.1 |
+| sam-cell-seg | 91.5 |
+| raman-fitting | 89.5 |
+| extract-moves-from-video | 89.0 |
+| gpt2-codegolf | 86.7 |
+| video-processing | 78.6 |
+| torch-pipeline-parallelism | 77.8 |
+| dna-assembly | 75.6 |
+| make-mips-interpreter | 74.1 |
+| model-extraction-relu-logits | 70.9 |
+| mteb-retrieve | 70.8 |
+| db-wal-recovery | 69.5 |
+| mteb-leaderboard | 68.9 |
+| dna-insert | 68.0 |
+| regex-chess | 62.9 |
+| torch-tensor-parallelism | 62.2 |
+| gcode-to-text | 58.7 |
+| polyglot-c-py | 57.6 |
+| polyglot-rust-c | 54.2 |
+| query-optimize | 52.4 |
+| path-tracing-reverse | 52.0 |
+| path-tracing | 51.3 |
+| adaptive-rejection-sampler | 49.8 |
+| qemu-alpine-ssh | 49.0 |
+| configure-git-webserver | 45.3 |
+| chess-best-move | 43.4 |
+| write-compressor | 40.5 |
+| protein-assembly | 39.8 |
 | winning-avg-corewars | 39.3 |
-| tune-mjcf | 37.8 |
-| extract-elf | 37.4 |
-| overfull-hbox | 36.1 |
-| cancel-async-tasks | 35.9 |
-| financial-document-processor | 35.4 |
-| schemelike-metacircular-eval | 33.0 |
-| compile-compcert | 32.1 |
-| sanitize-git-repo | 31.5 |
-| mailman | 31.3 |
-| feal-linear-cryptanalysis | 30.2 |
-| qemu-startup | 29.9 |
-| break-filter-js-from-html | 28.6 |
-| circuit-fibsqrt | 28.6 |
-| rstan-to-pystan | 26.9 |
-| sparql-university | 24.4 |
-| largest-eigenval | 24.0 |
-| build-pmars | 23.4 |
-| build-cython-ext | 22.8 |
-| large-scale-text-editing | 21.8 |
-| bn-fit-modify | 21.5 |
-| crack-7z-hash | 21.4 |
-| count-dataset-tokens | 20.4 |
-| password-recovery | 20.4 |
-| feal-differential-cryptanalysis | 19.5 |
-| pytorch-model-recovery | 19.3 |
-| llm-inference-batching-scheduler | 19.2 |
-| mcmc-sampling-stan | 18.9 |
-| sqlite-db-truncate | 18.5 |
-| pytorch-model-cli | 18.3 |
-| reshard-c4-data | 17.5 |
-| fix-ocaml-gc | 16.6 |
-| sqlite-with-gcov | 15.8 |
-| openssl-selfsigned-cert | 15.3 |
-| fix-code-vulnerability | 15.2 |
-| build-pov-ray | 14.9 |
-| kv-store-grpc | 14.6 |
-| hf-model-inference | 12.9 |
-| headless-terminal | 11.2 |
-| merge-diff-arc-agi-task | 10.2 |
-| pypi-server | 10.2 |
-| regex-log | 10.1 |
-| code-from-image | 8.2 |
-| git-multibranch | 7.6 |
-| cobol-modernization | 7.6 |
-| custom-memory-heap-crash | 7.1 |
-| portfolio-optimization | 6.2 |
-| log-summary-date-ranges | 6.1 |
-| distribution-search | 5.6 |
-| vulnerable-secret | 5.6 |
-| nginx-request-logging | 5.1 |
-| prove-plus-comm | 5.1 |
-| modernize-scientific-stack | 4.1 |
-| multi-source-data-merger | 4.1 |
-| constraints-scheduling | 3.1 |
+| cancel-async-tasks | 37.0 |
+| tune-mjcf | 36.8 |
+| extract-elf | 36.5 |
+| overfull-hbox | 35.2 |
+| financial-document-processor | 34.5 |
+| schemelike-metacircular-eval | 33.2 |
+| mailman | 32.0 |
+| qemu-startup | 31.3 |
+| compile-compcert | 31.3 |
+| sanitize-git-repo | 30.7 |
+| feal-linear-cryptanalysis | 29.4 |
+| circuit-fibsqrt | 28.4 |
+| break-filter-js-from-html | 27.9 |
+| rstan-to-pystan | 26.3 |
+| sparql-university | 23.8 |
+| largest-eigenval | 23.4 |
+| build-pmars | 22.8 |
+| build-cython-ext | 22.3 |
+| pytorch-model-recovery | 21.3 |
+| large-scale-text-editing | 21.2 |
+| bn-fit-modify | 21.0 |
+| crack-7z-hash | 20.9 |
+| count-dataset-tokens | 19.9 |
+| password-recovery | 19.9 |
+| feal-differential-cryptanalysis | 19.0 |
+| llm-inference-batching-scheduler | 18.7 |
+| mcmc-sampling-stan | 18.4 |
+| sqlite-db-truncate | 18.0 |
+| pytorch-model-cli | 17.8 |
+| reshard-c4-data | 17.1 |
+| fix-ocaml-gc | 16.2 |
+| sqlite-with-gcov | 15.5 |
+| openssl-selfsigned-cert | 15.4 |
+| fix-code-vulnerability | 14.8 |
+| build-pov-ray | 14.6 |
+| kv-store-grpc | 14.3 |
+| headless-terminal | 13.4 |
+| hf-model-inference | 12.6 |
+| git-multibranch | 10.0 |
+| merge-diff-arc-agi-task | 10.0 |
+| pypi-server | 10.0 |
+| regex-log | 9.8 |
+| code-from-image | 8.0 |
+| prove-plus-comm | 7.4 |
+| cobol-modernization | 7.4 |
+| custom-memory-heap-crash | 6.9 |
+| portfolio-optimization | 6.1 |
+| log-summary-date-ranges | 5.9 |
+| distribution-search | 5.5 |
+| vulnerable-secret | 5.5 |
+| nginx-request-logging | 5.0 |
+| modernize-scientific-stack | 4.0 |
+| multi-source-data-merger | 4.0 |
+| constraints-scheduling | 3.0 |
 | fix-git | 2.5 |
 | git-leak-recovery | 2.0 |
 <!--[[[end]]]-->

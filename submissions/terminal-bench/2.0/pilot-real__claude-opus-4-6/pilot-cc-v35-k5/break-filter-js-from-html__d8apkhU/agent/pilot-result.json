@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-78824",
+  "Success": false,
+  "Output": "Test passes. The bypass works by exploiting a parsing difference between Python's `html.parser` (used by BeautifulSoup) and the browser's HTML5 parser:\n\n- **html.parser**: Always treats `\u003cstyle\u003e` content as raw text (CDATA), so the `\u003cimg onerror=alert(1)\u003e` inside it is invisible to the filter\n- **Browser**: Inside `\u003csvg\u003e` foreign content, `\u003cstyle\u003e` does NOT activate RAWTEXT mode, so the `\u003cimg\u003e` is parsed as a real HTML element with its `onerror` handler intact",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 363939445880,
+  "PRUrl": "",
+  "CommitSHA": "075ea7b",
+  "TokensInput": 41,
+  "TokensOutput": 74932,
+  "TokensTotal": 74973,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.41058999999999996,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

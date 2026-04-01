@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-47795",
+  "Success": false,
+  "Output": "All 3 tests pass. The setup:\n\n1. **Postfix**: Configured with `myhostname=local.edu`, `mydestination=local.edu`, delivering local mail to `/var/mail/\u003cuser\u003e` in mbox format\n2. **Mailman3**: Config at `/etc/mailman3/mailman.cfg` with LMTP on `127.0.0.1:8024`, using `mailman.mta.postfix.LMTP`\n3. **Transport maps**: Postfix routes list addresses (`reading-group@`, `-join@`, `-leave@`, `-confirm@`, etc.) to Mailman's LMTP, while regular user addresses get local delivery\n4. **List policy**: `SubscriptionPolicy.confirm` for both join/leave (user confirms, no admin approval), `Action.accept` for member and non-member posting",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 208232976290,
+  "PRUrl": "",
+  "CommitSHA": "90741d0",
+  "TokensInput": 13456,
+  "TokensOutput": 43197,
+  "TokensTotal": 56653,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.16225,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

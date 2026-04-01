@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-8768",
+  "Success": true,
+  "Output": "All 5 tests pass. Here's what I did:\n\n1. **Recovered the secret**: The secret `secret[lost_and_found_in_git]` was in a dangling commit (d6454a8) that had been removed via `git reset HEAD~1`. Wrote it to `/app/secret.txt`.\n\n2. **Cleaned up the repo**: Expired all reflog entries (`git reflog expire --expire=now --all`) and pruned all unreachable objects (`git gc --prune=now --aggressive`), removing the dangling commit and its blobs entirely.\n\n3. **Preserved existing commits**: Both `chore: init` commits remain intact with unchanged content and messages.",
+  "Error": "",
+  "Duration": 64114162176,
+  "PRUrl": "",
+  "CommitSHA": "aef0a19",
+  "TokensInput": 11,
+  "TokensOutput": 1470,
+  "TokensTotal": 1481,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.036805,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 5280697522,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 5280880361,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

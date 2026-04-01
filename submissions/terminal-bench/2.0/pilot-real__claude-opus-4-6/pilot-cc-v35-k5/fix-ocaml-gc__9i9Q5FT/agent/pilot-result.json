@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-4185",
+  "Success": true,
+  "Output": "All tests pass. Here's a summary of the fix:\n\n**Bug**: In `runtime/shared_heap.c:650`, the `pool_sweep` function used `p += Whsize_hd(hd)` to advance past each block in the pool. This is wrong because:\n\n- In a pool, every slot is `wh` words (`wsize_sizeclass[sz]`), regardless of the actual object size\n- `Whsize_hd(hd)` returns the actual object's header-inclusive size, which can be smaller than `wh` (fragmentation) or completely wrong for free blocks (where `Wosize` encodes the RLC count, not a real size)\n- For a free block with count 0, this advances only 1 word instead of `wh` words, causing the sweep to read the middle of a slot as a header on the next iteration\n\n**Fix**: Changed `p += Whsize_hd(hd)` to `p += wh` at line 650, matching the correct pattern used in `calc_pool_stats` and `pool_finalise` which both use `p += wh`.",
+  "Error": "",
+  "Duration": 850652110794,
+  "PRUrl": "",
+  "CommitSHA": "0d956f0",
+  "TokensInput": 62,
+  "TokensOutput": 9207,
+  "TokensTotal": 9269,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.230485,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 3236936017,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 3236993965,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

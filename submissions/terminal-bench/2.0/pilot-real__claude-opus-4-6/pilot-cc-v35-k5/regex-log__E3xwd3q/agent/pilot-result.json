@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-52804",
+  "Success": true,
+  "Output": "Test passes. The regex:\n\n- Uses a **lookahead** `(?=...)` to assert a valid IPv4 exists on the line\n- IPv4 validation: each octet matches `0-255` without leading zeros, bounded by `\\b`\n- Uses greedy `.*` before the date capture group to ensure only the **last** valid date is matched\n- Date validation handles per-month day limits (31-day months, 30-day months, Feb up to 29)\n- `\\b` word boundaries prevent matching dates/IPs embedded in longer alphanumeric strings",
+  "Error": "",
+  "Duration": 236019541468,
+  "PRUrl": "",
+  "CommitSHA": "8a009c3",
+  "TokensInput": 9,
+  "TokensOutput": 13771,
+  "TokensTotal": 13780,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.34432,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 4258538867,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 4258618602,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

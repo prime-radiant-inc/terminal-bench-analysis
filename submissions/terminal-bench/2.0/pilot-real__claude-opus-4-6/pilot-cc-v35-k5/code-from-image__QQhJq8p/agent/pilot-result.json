@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-57982",
+  "Success": true,
+  "Output": "All tests pass. The solution reads `/app/code.png`, computes `sha256` of its bytes to get `h0` (raw digest), then computes `sha256(h0 + h0[:10] + SALT)` where `SALT = b\"0000TBENCH-SALT\"`, producing:\n\n```\nbee26a133f103b9ecda444c70ec22cafef6e31a3de7af6d047974dc90ce3defe\n```",
+  "Error": "",
+  "Duration": 41738724299,
+  "PRUrl": "",
+  "CommitSHA": "ac877a5",
+  "TokensInput": 10,
+  "TokensOutput": 1070,
+  "TokensTotal": 1080,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.0268,
+  "FilesChanged": 1,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 1071533652,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 1071580293,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

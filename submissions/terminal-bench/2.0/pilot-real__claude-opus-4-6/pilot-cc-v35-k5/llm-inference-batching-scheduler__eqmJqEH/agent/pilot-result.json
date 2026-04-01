@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-70163",
+  "Success": true,
+  "Output": "All 6 tests pass. The solution uses `max_gen_diff=20, max_batch_size=6` with 8 shapes `[64, 128, 192, 256, 320, 384, 448, 2048]`:\n\n| Metric | Bucket 1 | Threshold | Bucket 2 | Threshold |\n|--------|----------|-----------|----------|-----------|\n| cost | 2.90e+11 | 3.0e+11 | 4.62e+10 | 4.8e+10 |\n| pad_ratio | 0.0549 | 0.055 | 0.1412 | 0.15 |\n| p95_latency | 2.04e+06 | 2.1e+06 | 1.95e+05 | 2.1e+05 |\n| seq_timecost | 2.22e+08 | 2.7e+08 | 2.92e+07 | 3.2e+07 |",
+  "Error": "",
+  "Duration": 521443407855,
+  "PRUrl": "",
+  "CommitSHA": "d864cfe",
+  "TokensInput": 21,
+  "TokensOutput": 27944,
+  "TokensTotal": 27965,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.698705,
+  "FilesChanged": 2,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 1214021070,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 1214075502,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

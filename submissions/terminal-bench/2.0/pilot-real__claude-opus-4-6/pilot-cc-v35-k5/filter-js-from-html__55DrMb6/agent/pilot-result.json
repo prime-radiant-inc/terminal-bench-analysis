@@ -1,0 +1,22 @@
+{
+  "TaskID": "TASK-53728",
+  "Success": false,
+  "Output": "Both tests pass:\n- **test_filter_blocks_xss**: Successfully blocked all 439 XSS attack vectors (including vectors from the GitHub html-sanitizer-testbed)\n- **test_clean_html_unchanged**: All 12 clean HTML samples preserved without modification\n\nThe filter uses a three-phase approach:\n1. **Pre-processing**: Removes null bytes, HTML comments (handles parser differentials between BS4 and Chrome), and script tags via regex\n2. **BS4 processing**: Removes dangerous tags (`script`, `noscript`, `template`), dangerous URLs in `object`/`embed`/`iframe`, `meta` refresh with javascript, event handler attributes (`on*`), `javascript:`/`vbscript:`/`data:text/html` URLs, and CSS `expression()` attacks\n3. **Post-processing**: Final regex safety net for any script tags that slipped through",
+  "Error": "quality gates failed after 2 auto-retries",
+  "Duration": 1229239057175,
+  "PRUrl": "",
+  "CommitSHA": "235abb97b97c42a5afcf5bbedfd2c4ff106aa3b2",
+  "TokensInput": 15087,
+  "TokensOutput": 62466,
+  "TokensTotal": 77553,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.473095,
+  "FilesChanged": 2,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": null,
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}

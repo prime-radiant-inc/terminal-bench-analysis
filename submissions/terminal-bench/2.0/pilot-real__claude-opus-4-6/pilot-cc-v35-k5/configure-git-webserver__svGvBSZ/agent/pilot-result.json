@@ -1,0 +1,36 @@
+{
+  "TaskID": "TASK-30519",
+  "Success": true,
+  "Output": "All tests pass. Here's what was set up:\n\n1. **SSH server** - openssh-server with a `git` user (password: `password`)\n2. **Bare git repo** at `/git/server` with `master` as default branch\n3. **Post-receive hook** - on push, checks out files to `/var/www/git-server`\n4. **Nginx** - serves `/var/www/git-server` on port 8080",
+  "Error": "",
+  "Duration": 255516958400,
+  "PRUrl": "",
+  "CommitSHA": "6fb0a66",
+  "TokensInput": 53,
+  "TokensOutput": 6156,
+  "TokensTotal": 6209,
+  "ResearchTokens": 0,
+  "EstimatedCostUSD": 0.154165,
+  "FilesChanged": 4,
+  "LinesAdded": 0,
+  "LinesRemoved": 0,
+  "ModelName": "claude-opus-4-6",
+  "QualityGates": {
+    "Enabled": true,
+    "AllPassed": true,
+    "Gates": [
+      {
+        "Name": "test",
+        "Passed": true,
+        "Duration": 14423835576,
+        "RetryCount": 0,
+        "Error": ""
+      }
+    ],
+    "TotalDuration": 14423867577,
+    "TotalRetries": 0
+  },
+  "IsEpic": false,
+  "EpicPlan": null,
+  "IntentWarning": ""
+}
