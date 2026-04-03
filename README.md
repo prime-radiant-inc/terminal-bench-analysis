@@ -44,7 +44,13 @@ def run_sql(sql):
 ]]]-->
 <!--[[[end]]]-->
 
-## Overall Leaderboard
+## Subscribe to the atom feed
+
+Commit messages capturing newly reported results generate [useful commit messages](https://github.com/prime-radiant-inc/terminal-bench-analysis/commits). This means you can subscribe to the Atom feed for commits in this repo to stay up-to-date with the latest runs:
+
+    https://github.com/prime-radiant-inc/terminal-bench-analysis/commits.atom
+
+## Overall leaderboard
 
 Which agent/model combination scores the highest across all tasks?
 
@@ -112,7 +118,7 @@ order by avg_reward desc
 | terminus-2__AfterQuery-GPT-OSS-20B | 445 | 75 | 177 | 193 | 0.1756 |
 <!--[[[end]]]-->
 
-## Best Model per Backbone
+## Best model per backbone
 
 Multiple agents use the same underlying model. Which agent gets the most out of each model?
 
@@ -187,7 +193,7 @@ order by ss.avg_reward desc
 | hosted_vllm/gpt-oss-20b-rl | terminus-2__AfterQuery-GPT-OSS-20B | 0.1756 | 75 | 445 |
 <!--[[[end]]]-->
 
-## The Hardest Tasks
+## The hardest tasks
 
 Which tasks have the highest failure rates across all submissions?
 
@@ -227,7 +233,7 @@ limit 15
 | mteb-retrieve | 214 | 57 | 148 | 9 | 0.722 |
 <!--[[[end]]]-->
 
-## Tasks No One Has Solved
+## Tasks no one has solved
 
 <!--[[[cog
 run_sql("""
@@ -249,7 +255,7 @@ where n_passed = 0
 | make-doom-for-mips | 213 | 48 | 165 |
 <!--[[[end]]]-->
 
-## The Easiest Tasks
+## The easiest tasks
 
 <!--[[[cog
 run_sql("""
@@ -287,7 +293,7 @@ limit 15
 | code-from-image | 213 | 190 | 9 | 14 | 0.9005 |
 <!--[[[end]]]-->
 
-## Error Analysis
+## Error analysis
 
 What kinds of errors do agents hit?
 
@@ -489,7 +495,7 @@ limit 15
 | query-optimize | 55 | 25.8 |
 <!--[[[end]]]-->
 
-## Timing Analysis
+## Timing analysis
 
 How long do agents actually spend on tasks, and does spending more time correlate with success?
 
@@ -609,7 +615,7 @@ limit 15
 | Terminus2__Kimi-k2.5 | 15.1 | 12.4 | 711.6 | 74.5 |
 <!--[[[end]]]-->
 
-## Cost Analysis
+## Cost analysis
 
 Only some submissions report token usage and costs.
 
@@ -664,7 +670,7 @@ order by cost_per_pass asc
 | Terminus-KIRA__Claude-Opus-4.6 | 331 | 713.67 | 1.61 | 2.16 |
 <!--[[[end]]]-->
 
-## Head-to-Head: Claude vs GPT on Individual Tasks
+## Head-to-head: Claude vs GPT on individual tasks
 
 Where does Claude Opus 4.6 (via Judy) beat GPT-5.3-Codex (via Droid), and vice versa?
 
@@ -722,7 +728,7 @@ order by claude_advantage desc
 | regex-chess | 0.0 | 1.0 | -1.0 |
 <!--[[[end]]]-->
 
-## Consistency: Which Tasks Discriminate Strong from Weak Models?
+## Consistency: which tasks discriminate strong from weak models?
 
 Some tasks are too easy (everyone passes) or too hard (everyone fails) to be useful discriminators. Which tasks best separate the top models from the bottom?
 
@@ -786,7 +792,7 @@ limit 15
 | schemelike-metacircular-eval | 0.822 | 0.284 | 0.538 |
 <!--[[[end]]]-->
 
-## The Most Inconsistent Tasks
+## The most inconsistent tasks
 
 Which tasks have the highest variance in performance across submissions? These are tasks where the agent scaffold matters more than the model.
 
@@ -848,7 +854,7 @@ limit 15
 | schemelike-metacircular-eval | 0.655 | 0.0 | 1.0 | 0.1623 | 45 |
 <!--[[[end]]]-->
 
-## Submissions That Improved Across Runs
+## Submissions that improved across runs
 
 Some submissions ran the benchmark multiple times. Did they get better?
 
@@ -994,7 +1000,7 @@ order by r.submission, r.run_date
 | terminus-2__AfterQuery-GPT-OSS-20B | new-s30-k5-dragon | 445 | 75 | 0.1756 |
 <!--[[[end]]]-->
 
-## Infrastructure Errors
+## Infrastructure errors
 
 Some errors aren't the agent's fault — they're infrastructure issues.
 
@@ -1071,7 +1077,7 @@ order by n desc
 | pilot-real__claude-opus-4-6 | VerifierTimeoutError | 1 |
 <!--[[[end]]]-->
 
-## All 89 Tasks by Failure Rate
+## All 89 tasks by failure rate
 
 <!--[[[cog
 run_sql("""
