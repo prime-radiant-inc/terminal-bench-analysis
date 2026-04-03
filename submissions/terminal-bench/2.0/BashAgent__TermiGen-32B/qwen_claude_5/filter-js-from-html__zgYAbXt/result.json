@@ -1,0 +1,90 @@
+{
+    "id": "5c89d984-cb8c-4d69-a022-1927e219d4a0",
+    "task_name": "filter-js-from-html",
+    "trial_name": "filter-js-from-html__zgYAbXt",
+    "trial_uri": "file:///scratch/yuzhou/projects/harbor/jobs/qwen_claude_5/filter-js-from-html__zgYAbXt",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "filter-js-from-html"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "885bb73e2797a54d5de860c25f481b5a60e2b91c0de30acaca9560603e9e1ff8",
+    "config": {
+        "task": {
+            "path": "filter-js-from-html",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "filter-js-from-html__zgYAbXt",
+        "trials_dir": "jobs/qwen_claude_5",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "qwen_agent_harbor:QwenAgent",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "e2b",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "c2023429-8f2a-4cb4-8587-54fa64d859b8"
+    },
+    "agent_info": {
+        "name": "qwen-agent",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": 52353,
+        "n_cache_tokens": null,
+        "n_output_tokens": 5852,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "VerifierTimeoutError",
+        "exception_message": "Verifier execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/scratch/yuzhou/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/scratch/yuzhou/projects/harbor/src/harbor/verifier/verifier.py\", line 105, in verify\n    result = await self._environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<21 lines>...\n    )\n    ^\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 189, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 111, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 153, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/tenacity/_utils.py\", line 99, in inner\n    return call(*args, **kwargs)\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/tenacity/__init__.py\", line 400, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ~~~~~~~~~~~~~~~~~^^\n  File \"/scratch/yuzhou/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ~~~~~~~~~~~~~~~~~^^\n  File \"/scratch/yuzhou/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 114, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/yuzhou/projects/harbor/src/harbor/environments/e2b.py\", line 337, in exec\n    result = await handle.wait()\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/e2b/sandbox_async/commands/command_handle.py\", line 170, in wait\n    await self._wait\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/e2b/sandbox_async/commands/command_handle.py\", line 145, in _handle_events\n    async for stdout, stderr, pty in self._iterate_events():\n    ...<11 lines>...\n                await cb\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/e2b/sandbox_async/commands/command_handle.py\", line 112, in _iterate_events\n    async for event in self._events:\n    ...<17 lines>...\n            )\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/e2b_connect/client.py\", line 388, in acall_server_stream\n    async for chunk in http_resp.aiter_stream():\n        for parsed in parser.parse(chunk):\n            yield parsed\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/httpcore/_models.py\", line 482, in aiter_stream\n    async for chunk in self.stream:\n        yield chunk\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/httpcore/_async/connection_pool.py\", line 407, in __aiter__\n    raise exc from None\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/httpcore/_async/connection_pool.py\", line 403, in __aiter__\n    async for part in self._stream:\n        yield part\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/httpcore/_async/http11.py\", line 342, in __aiter__\n    raise exc\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/httpcore/_async/http11.py\", line 334, in __aiter__\n    async for chunk in self._connection._receive_response_body(**kwargs):\n        yield chunk\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/httpcore/_async/http11.py\", line 203, in _receive_response_body\n    event = await self._receive_event(timeout=timeout)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/httpcore/_async/http11.py\", line 217, in _receive_event\n    data = await self._network_stream.read(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        self.READ_NUM_BYTES, timeout=timeout\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/httpcore/_backends/anyio.py\", line 35, in read\n    return await self._stream.receive(max_bytes=max_bytes)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/anyio/streams/tls.py\", line 237, in receive\n    data = await self._call_sslobject_method(self._ssl_object.read, max_bytes)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/anyio/streams/tls.py\", line 180, in _call_sslobject_method\n    data = await self.transport_stream.receive()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/anyio/_backends/_asyncio.py\", line 1263, in receive\n    await self._protocol.read_event.wait()\n  File \"/scratch/yuzhou/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/asyncio/locks.py\", line 213, in wait\n    await fut\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/scratch/yuzhou/projects/harbor/src/harbor/trial/trial.py\", line 282, in _verify_with_retry\n    self.result.verifier_result = await asyncio.wait_for(\n                                  ^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n    )\n    ^\n  File \"/scratch/yuzhou/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/scratch/yuzhou/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/scratch/yuzhou/projects/harbor/src/harbor/trial/trial.py\", line 374, in run\n    await self._run_verification()\n  File \"/scratch/yuzhou/projects/harbor/src/harbor/trial/trial.py\", line 264, in _run_verification\n    await self._verify_with_retry()\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 189, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 111, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 153, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/tenacity/_utils.py\", line 99, in inner\n    return call(*args, **kwargs)\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/tenacity/__init__.py\", line 420, in exc_check\n    raise retry_exc.reraise()\n          ~~~~~~~~~~~~~~~~~^^\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/tenacity/__init__.py\", line 187, in reraise\n    raise self.last_attempt.result()\n          ~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/scratch/yuzhou/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ~~~~~~~~~~~~~~~~~^^\n  File \"/scratch/yuzhou/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/scratch/yuzhou/projects/harbor/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 114, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scratch/yuzhou/projects/harbor/src/harbor/trial/trial.py\", line 287, in _verify_with_retry\n    raise VerifierTimeoutError(\n    ...<3 lines>...\n    ) from e\nharbor.trial.trial.VerifierTimeoutError: Verifier execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-03-18T10:51:57.612358"
+    },
+    "started_at": "2026-03-18T10:17:52.452934Z",
+    "finished_at": "2026-03-18T10:51:57.791527Z",
+    "environment_setup": {
+        "started_at": "2026-03-18T10:17:52.453590Z",
+        "finished_at": "2026-03-18T10:18:11.180852Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-18T10:18:11.180872Z",
+        "finished_at": "2026-03-18T10:18:11.180923Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-18T10:18:11.180962Z",
+        "finished_at": "2026-03-18T10:21:49.926211Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-18T10:21:49.995678Z",
+        "finished_at": "2026-03-18T10:51:57.606854Z"
+    }
+}
