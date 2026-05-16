@@ -1,0 +1,110 @@
+{
+    "id": "0b5bd6e7-de60-4074-b133-dcb3bc130a53",
+    "task_name": "terminal-bench/polyglot-rust-c",
+    "trial_name": "polyglot-rust-c__6c2aH2T",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/polyglot-rust-c__6c2aH2T",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "polyglot-rust-c",
+        "ref": "sha256:a33dc72e2278d225513c0724abe2e4539653d5ee7e4c2a90ba2d676586ba9f3d"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "aabe829791a3d41a79deb775717a64fab08f286349cb07640e50dcfff6f497be",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/polyglot-rust-c",
+            "ref": "sha256:a33dc72e2278d225513c0724abe2e4539653d5ee7e4c2a90ba2d676586ba9f3d",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "polyglot-rust-c__6c2aH2T",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 127092,
+        "n_cache_tokens": null,
+        "n_output_tokens": 17149,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 6,
+            "verifier_cmd": "cd /app/polyglot && rm -f main cmain && rustc /app/polyglot/main.rs && g++ -x c++ /app/polyglot/main.rs -o /app/polyglot/cmain && test \"$(/app/polyglot/main 0)\" = \"1\" && test \"$(/app/polyglot/main 1)\" = \"1\" && test \"$(/app/polyglot/main 2)\" = \"2\" && test \"$(/app/polyglot/main 10)\" = \"89\" && test \"$(/app/polyglot/cmain 0)\" = \"1\" && test \"$(/app/polyglot/cmain 1)\" = \"1\" && test \"$(/app/polyglot/cmain 2)\" = \"2\" && test \"$(/app/polyglot/cmain 10)\" = \"89\" && echo VERIFIER_PASS",
+            "ledger_written": true,
+            "verifier_ever_run": true
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T12:47:47.249829Z",
+    "finished_at": "2026-05-12T12:55:27.580839Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T12:47:47.250755Z",
+        "finished_at": "2026-05-12T12:48:05.024044Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T12:48:05.024058Z",
+        "finished_at": "2026-05-12T12:48:05.024082Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T12:48:05.024119Z",
+        "finished_at": "2026-05-12T12:55:04.992045Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T12:55:05.072008Z",
+        "finished_at": "2026-05-12T12:55:16.875470Z"
+    },
+    "step_results": null
+}

@@ -1,0 +1,110 @@
+{
+    "id": "e5c09fcc-1a60-4175-97fa-2b1c7841c837",
+    "task_name": "terminal-bench/crack-7z-hash",
+    "trial_name": "crack-7z-hash__w7FwAgP",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/crack-7z-hash__w7FwAgP",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "crack-7z-hash",
+        "ref": "sha256:99cbb2269f6bd112d3387fd01cb6900118fe4aded3f75a8d656580a8296a1ae5"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "22789e2dc5cc9b54c430b61556ac8ad3cddb9052d1c7ef349f25acd6f0d1db28",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/crack-7z-hash",
+            "ref": "sha256:99cbb2269f6bd112d3387fd01cb6900118fe4aded3f75a8d656580a8296a1ae5",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "crack-7z-hash__w7FwAgP",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 26451,
+        "n_cache_tokens": null,
+        "n_output_tokens": 1534,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 5,
+            "verifier_cmd": "test -f /app/solution.txt && cat /app/solution.txt",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T12:49:41.204829Z",
+    "finished_at": "2026-05-12T12:52:55.011525Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T12:49:41.205872Z",
+        "finished_at": "2026-05-12T12:49:55.916430Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T12:49:55.916443Z",
+        "finished_at": "2026-05-12T12:49:55.916467Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T12:49:55.916523Z",
+        "finished_at": "2026-05-12T12:52:37.581378Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T12:52:37.660241Z",
+        "finished_at": "2026-05-12T12:52:44.192816Z"
+    },
+    "step_results": null
+}

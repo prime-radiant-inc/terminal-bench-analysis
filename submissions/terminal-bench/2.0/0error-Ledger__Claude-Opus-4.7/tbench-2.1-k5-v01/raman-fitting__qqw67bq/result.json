@@ -1,0 +1,110 @@
+{
+    "id": "87b1eca2-e1e1-48b5-84ae-609ff92377d4",
+    "task_name": "terminal-bench/raman-fitting",
+    "trial_name": "raman-fitting__qqw67bq",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/raman-fitting__qqw67bq",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "raman-fitting",
+        "ref": "sha256:97ca4025332b20739da553cab0658f2ead925d1b5b3b9b7664dc9eb5e7fbeab7"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "73157911d2f6196d30097f9b7e3388771a0a843500ad23ea31b66ca9ae5b5118",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/raman-fitting",
+            "ref": "sha256:97ca4025332b20739da553cab0658f2ead925d1b5b3b9b7664dc9eb5e7fbeab7",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "raman-fitting__qqw67bq",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 623601,
+        "n_cache_tokens": null,
+        "n_output_tokens": 34987,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 40,
+            "verifier_cmd": "python3 -c \"import json; d=json.load(open('/app/results.json')); assert 1550<d['G']['x0']<1620; assert 2620<d['2D']['x0']<2720; assert d['G']['gamma']>0; assert d['2D']['gamma']>0; print('OK')\"",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T12:03:07.308280Z",
+    "finished_at": "2026-05-12T12:16:39.252021Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T12:03:07.309420Z",
+        "finished_at": "2026-05-12T12:03:09.620638Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T12:03:09.620651Z",
+        "finished_at": "2026-05-12T12:03:09.620675Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T12:03:09.620713Z",
+        "finished_at": "2026-05-12T12:16:23.591362Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T12:16:23.688452Z",
+        "finished_at": "2026-05-12T12:16:28.533260Z"
+    },
+    "step_results": null
+}

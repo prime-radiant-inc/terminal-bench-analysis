@@ -1,0 +1,110 @@
+{
+  "id": "c7beb86e-9039-407b-9c21-4faf650523fa",
+  "task_name": "extract-moves-from-video",
+  "trial_name": "extract-moves-from-video__RiRUz4N",
+  "trial_uri": "file:///home/user/pyenv/projects/tb-eval/jobs/2026-05-04__14-46-15/extract-moves-from-video__RiRUz4N",
+  "task_id": {
+    "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+    "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+    "path": "extract-moves-from-video"
+  },
+  "source": "terminal-bench",
+  "task_checksum": "605fb166c0af666150b184a6ca50f1ca1c2221a5b93e44efd21c7ea40d746d54",
+  "config": {
+    "task": {
+      "path": "extract-moves-from-video",
+      "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+      "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+      "name": null,
+      "ref": null,
+      "overwrite": false,
+      "download_dir": null,
+      "source": "terminal-bench"
+    },
+    "trial_name": "extract-moves-from-video__RiRUz4N",
+    "trials_dir": "jobs/2026-05-04__14-46-15",
+    "timeout_multiplier": 1.0,
+    "agent_timeout_multiplier": null,
+    "verifier_timeout_multiplier": null,
+    "agent_setup_timeout_multiplier": null,
+    "environment_build_timeout_multiplier": null,
+    "agent": {
+      "name": null,
+      "import_path": "jj_agent.harness:JJAgentHarness",
+      "model_name": "Multiple",
+      "override_timeout_sec": null,
+      "override_setup_timeout_sec": null,
+      "max_timeout_sec": null,
+      "kwargs": {},
+      "env": {}
+    },
+    "environment": {
+      "type": "docker",
+      "import_path": null,
+      "force_build": false,
+      "delete": true,
+      "override_cpus": null,
+      "override_memory_mb": null,
+      "override_storage_mb": null,
+      "override_gpus": null,
+      "suppress_override_warnings": false,
+      "mounts_json": null,
+      "env": {},
+      "kwargs": {}
+    },
+    "verifier": {
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "env": {},
+      "disable": false
+    },
+    "artifacts": [],
+    "job_id": "117fabe3-b910-418e-8fab-d3966b0365da"
+  },
+  "agent_info": {
+    "name": "jj-agent-harness",
+    "version": "0.1.0",
+    "model_info": {
+      "name": "Multiple",
+      "provider": "Multiple"
+    }
+  },
+  "agent_result": {
+    "n_input_tokens": 15438832,
+    "n_cache_tokens": 14835328,
+    "n_output_tokens": 34984,
+    "cost_usd": 11.484703999999999,
+    "rollout_details": null,
+    "metadata": null
+  },
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.0
+    }
+  },
+  "exception_info": {
+    "exception_type": "AgentTimeoutError",
+    "exception_message": "Agent execution timed out after 1800.0 seconds",
+    "exception_traceback": "Traceback (most recent call last):\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/user/pyenv/projects/tb-eval/harbor/src/harbor/agents/installed/base.py\", line 42, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/user/pyenv/projects/tb-eval/InentAgent/jj_agent/harbor_agent.py\", line 843, in run\n    await _run_with_deadline(\n  File \"/home/user/pyenv/projects/tb-eval/InentAgent/jj_agent/harbor_agent.py\", line 533, in _run_with_deadline\n    await asyncio.shield(main_task)\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/user/pyenv/projects/tb-eval/harbor/src/harbor/trial/trial.py\", line 370, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n  File \"/usr/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/user/pyenv/projects/tb-eval/harbor/src/harbor/trial/trial.py\", line 961, in run\n    await self._execute_agent()\n  File \"/home/user/pyenv/projects/tb-eval/harbor/src/harbor/trial/trial.py\", line 379, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 1800.0 seconds\n",
+    "occurred_at": "2026-05-06T09:37:04.738319"
+  },
+  "started_at": "2026-05-06T16:06:15.541323Z",
+  "finished_at": "2026-05-06T16:37:20.657400Z",
+  "environment_setup": {
+    "started_at": "2026-05-06T16:06:15.541700Z",
+    "finished_at": "2026-05-06T16:06:16.255557Z"
+  },
+  "agent_setup": {
+    "started_at": "2026-05-06T16:06:16.255568Z",
+    "finished_at": "2026-05-06T16:06:44.588184Z"
+  },
+  "agent_execution": {
+    "started_at": "2026-05-06T16:06:44.588218Z",
+    "finished_at": "2026-05-06T16:37:04.736764Z"
+  },
+  "verifier": {
+    "started_at": "2026-05-06T16:37:04.837064Z",
+    "finished_at": "2026-05-06T16:37:09.795638Z"
+  },
+  "step_results": null
+}

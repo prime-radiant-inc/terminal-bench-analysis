@@ -1,0 +1,110 @@
+{
+    "id": "889bb79e-7c53-411f-9b7b-1dcfea4b553f",
+    "task_name": "terminal-bench/kv-store-grpc",
+    "trial_name": "kv-store-grpc__NS7iE3x",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/kv-store-grpc__NS7iE3x",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "kv-store-grpc",
+        "ref": "sha256:973c5d4c111fb61a344457936f1c36400acd2d9e44389e7b319586fe23a7a307"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "901a4dd5c3078d5155043875a0d07f3583f462c73f919b52855c025e680b1edd",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/kv-store-grpc",
+            "ref": "sha256:973c5d4c111fb61a344457936f1c36400acd2d9e44389e7b319586fe23a7a307",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "kv-store-grpc__NS7iE3x",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1391,
+        "n_cache_tokens": null,
+        "n_output_tokens": 1902,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 1,
+            "verifier_cmd": "python3 -c \"import grpc, sys; sys.path.insert(0,'/app'); import kv_store_pb2, kv_store_pb2_grpc; ch=grpc.insecure_channel('localhost:5328'); st=kv_store_pb2_grpc.KVStoreStub(ch); st.SetVal(kv_store_pb2.SetValRequest(key='a', value=42)); r=st.GetVal(kv_store_pb2.GetValRequest(key='a')); assert r.val==42; print('OK')\"",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T07:37:40.612857Z",
+    "finished_at": "2026-05-12T07:39:00.238542Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T07:37:40.613735Z",
+        "finished_at": "2026-05-12T07:37:50.955423Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T07:37:50.955437Z",
+        "finished_at": "2026-05-12T07:37:50.955461Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T07:37:50.955499Z",
+        "finished_at": "2026-05-12T07:38:46.957603Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T07:38:47.056180Z",
+        "finished_at": "2026-05-12T07:38:49.644600Z"
+    },
+    "step_results": null
+}

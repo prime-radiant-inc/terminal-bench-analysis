@@ -1,0 +1,101 @@
+{
+    "id": "2a90dc43-76b2-4a39-9444-e05d2fe4d214",
+    "task_name": "nginx-request-logging",
+    "trial_name": "nginx-request-logging__vErt8Gi",
+    "trial_uri": "file:///home/dahiy/repos/urban-octo-guacamole/jobs/glm5-high-b-pass-3-20260401-194923/nginx-request-logging__vErt8Gi",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "nginx-request-logging"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "86a8bd681301002456da831adfae62fa7a538e8187d654e11335e92b81b0c2b3",
+    "config": {
+        "task": {
+            "path": "nginx-request-logging",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "nginx-request-logging__vErt8Gi",
+        "trials_dir": "/home/dahiy/repos/urban-octo-guacamole/jobs/glm5-high-b-pass-3-20260401-194923",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "evaluations.harbor.agent:JustAnotherCodingAgentHarborAgent",
+            "model_name": "ollama:glm-5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [
+            "/logs/agent/just-another-coding-agent.txt",
+            "/tmp/just-another-coding-agent-sessions"
+        ],
+        "job_id": "46c69d88-c394-4253-b726-3a76d6169300"
+    },
+    "agent_info": {
+        "name": "just-another-coding-agent",
+        "version": "unknown",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "adapter": "just-another-coding-agent-harbor"
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-02T06:11:33.970412Z",
+    "finished_at": "2026-04-02T06:15:41.052203Z",
+    "environment_setup": {
+        "started_at": "2026-04-02T06:11:33.973298Z",
+        "finished_at": "2026-04-02T06:12:21.293499Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-02T06:12:21.293508Z",
+        "finished_at": "2026-04-02T06:13:02.528597Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-02T06:13:02.528644Z",
+        "finished_at": "2026-04-02T06:15:20.999441Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-02T06:15:20.999519Z",
+        "finished_at": "2026-04-02T06:15:35.565186Z"
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "id": "2e5f9e76-531a-403c-bbe6-0a9007d4327d",
+    "task_name": "terminal-bench/dna-assembly",
+    "trial_name": "dna-assembly__7ARRCcL",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/dna-assembly__7ARRCcL",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "dna-assembly",
+        "ref": "sha256:e41a8e94d86019949b08d3b5f88a85f6d943ba0fd85d5e1d5ebb95cb8f66223f"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "e2acbc34aa5f20bbe3b10d2d297cdec9e6f2086c94a70068f2325e7bb7ab1212",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/dna-assembly",
+            "ref": "sha256:e41a8e94d86019949b08d3b5f88a85f6d943ba0fd85d5e1d5ebb95cb8f66223f",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "dna-assembly__7ARRCcL",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 941100,
+        "n_cache_tokens": null,
+        "n_output_tokens": 44070,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 35,
+            "verifier_cmd": "python3 /tmp/verify.py",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T05:23:40.107559Z",
+    "finished_at": "2026-05-12T05:33:12.738724Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T05:23:40.115254Z",
+        "finished_at": "2026-05-12T05:24:06.239959Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T05:24:06.239974Z",
+        "finished_at": "2026-05-12T05:24:06.239997Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T05:24:06.240034Z",
+        "finished_at": "2026-05-12T05:32:55.291128Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T05:32:55.373593Z",
+        "finished_at": "2026-05-12T05:33:02.041789Z"
+    },
+    "step_results": null
+}

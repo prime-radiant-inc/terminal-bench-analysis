@@ -71,41 +71,68 @@ order by avg_reward desc
 
 | submission | n_trials | n_passed | n_failed | n_errored | avg_reward |
 | --- | --- | --- | --- | --- | --- |
+| vix__claude-opus-4-7 | 445 | 400 | 1 | 44 | 0.9091 |
+| Wecode__GPT-5.5 | 445 | 392 | 39 | 14 | 0.8809 |
+| JJAgent__Multiple | 890 | 775 | 101 | 14 | 0.8708 |
+| NexAU-AHE__gpt-5.5 | 445 | 376 | 61 | 8 | 0.8526 |
+| logos-latest__claude-opus-4.7 | 445 | 372 | 42 | 31 | 0.8513 |
+| LemonHarness_GPT-5.3-CodeX | 445 | 376 | 36 | 33 | 0.8488 |
+| Capy__GPT-5.5 | 445 | 370 | 57 | 18 | 0.8352 |
 | pilot-real__claude-opus-4-6 | 445 | 365 | 74 | 6 | 0.8314 |
 | OB-1_GPT-5.4-GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | 445 | 367 | 77 | 1 | 0.8266 |
+| Polaris__Claude-Opus-4.7-GPT-5.5-Gemini-3.1-Pro | 445 | 365 | 79 | 1 | 0.8221 |
 | Forge__GPT-5.4 | 445 | 364 | 49 | 32 | 0.818 |
 | Forge__Opus-4.6 | 445 | 364 | 49 | 32 | 0.818 |
+| CodeBrain-1.5__GPT-5.3-Codex | 445 | 362 | 54 | 29 | 0.8172 |
 | Judy__Gemini-3.1-Pro-Preview | 445 | 357 | 29 | 59 | 0.8132 |
+| logos-ts__claude-opus-4.7 | 445 | 356 | 33 | 56 | 0.8073 |
+| WOZCODE__Claude-Opus-4-7 | 445 | 357 | 67 | 21 | 0.8022 |
+| LemonCode__GPT-5.3-Codex | 445 | 349 | 78 | 18 | 0.8005 |
 | OpenSage__GPT-5.3-Codex | 445 | 349 | 53 | 43 | 0.795 |
 | Forge__Gemini-3.1-Pro-Preview | 445 | 349 | 60 | 36 | 0.786 |
 | Droid__GPT-5.3-Codex | 445 | 344 | 73 | 28 | 0.773 |
+| Meta-Harness__Claude-Opus-4.6 | 445 | 340 | 75 | 30 | 0.764 |
 | Capy__Claude-Opus-4.6 | 445 | 335 | 58 | 52 | 0.7579 |
+| Codelia__GPT-5.3-Codex | 445 | 337 | 83 | 25 | 0.7573 |
 | Simple-Codex__GPT-5.3-Codex | 445 | 332 | 46 | 67 | 0.7563 |
 | Terminus-KIRA__Gemini-3.1-Pro-Preview | 445 | 333 | 76 | 36 | 0.7517 |
 | Terminus-KIRA__Claude-Opus-4.6 | 445 | 331 | 54 | 60 | 0.7489 |
 | Mux__GPT-5.3-Codex | 445 | 332 | 83 | 30 | 0.7461 |
 | Ante__Gemini-3.1-Pro-Preview | 445 | 328 | 60 | 57 | 0.7455 |
 | MAYA__Claude-4.6-opus | 445 | 320 | 114 | 11 | 0.7373 |
+| 0error-Ledger__Claude-Opus-4.7 | 445 | 177 | 53 | 215 | 0.7344 |
 | OB-1_GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | 445 | 322 | 121 | 2 | 0.7269 |
 | Judy__Claude-Opus-4.6 | 445 | 320 | 65 | 60 | 0.7256 |
+| spoox-o-m__GPT-5.3-Codex | 445 | 318 | 54 | 73 | 0.7211 |
 | Junie_CLI__Gemini-3-Flash-Preview-Gemini-3.1-Pro-Preview-Claude-Opus-4.6-GPT-5.3-Codex | 445 | 316 | 98 | 31 | 0.7117 |
 | Droid__Claude-Opus-4.6 | 445 | 311 | 108 | 26 | 0.7052 |
 | CodeBrain-1__GPT-5.3-Codex | 445 | 313 | 98 | 34 | 0.705 |
+| logos__claude-opus-4.6 | 445 | 295 | 45 | 105 | 0.686 |
 | IndusAGICodingAgent__gpt-5.3-codex | 445 | 261 | 84 | 100 | 0.685 |
+| WozCode__Claude-Opus-4.6 | 445 | 303 | 96 | 46 | 0.684 |
 | Deep-Agents__GPT-5.2-Codex | 445 | 293 | 77 | 75 | 0.6798 |
 | Crux__Claude-Opus-4.6 | 445 | 272 | 99 | 74 | 0.67 |
 | Mux__Claude-Opus-4.6 | 445 | 296 | 113 | 36 | 0.6652 |
+| clnkr__GPT-5.5 | 445 | 294 | 117 | 34 | 0.6622 |
 | OpenSage__Gemini-3-Pro-Preview | 445 | 290 | 131 | 24 | 0.6576 |
 | Terminus2__GPT-5.3-Codex | 445 | 288 | 70 | 87 | 0.6545 |
+| Dirac__Gemini-3-Flash-Preview | 445 | 290 | 100 | 55 | 0.6517 |
 | Ante__Gemini-3-Pro-Preview | 445 | 288 | 129 | 28 | 0.6501 |
 | Terminus2__Claude-Opus-4.6 | 445 | 280 | 92 | 73 | 0.6349 |
 | grok-cli__grok-4.20-0309-reasoning | 496 | 209 | 115 | 172 | 0.6276 |
 | CodeBrain-1__Gemini-3-Pro-Preview | 445 | 277 | 136 | 32 | 0.6225 |
 | Mux__GPT-5.2 | 89 | 54 | 25 | 10 | 0.6207 |
+| hookele__gpt5.1-codex-mini | 445 | 272 | 159 | 14 | 0.614 |
+| Gemini_CLI__Gemini-3.1-Pro-Preview | 445 | 266 | 117 | 62 | 0.6087 |
+| copilot-cli__claude-opus-4.6 | 445 | 269 | 87 | 89 | 0.6072 |
 | Mux__Claude-Opus-4.5 | 89 | 52 | 29 | 8 | 0.5843 |
+| Simplai-Agent__Claude-Sonnet-4.6 | 445 | 232 | 129 | 84 | 0.5421 |
 | Terminus2__GLM-5 | 445 | 231 | 113 | 101 | 0.5397 |
 | OpenCode__Claude-Opus-4.5 | 89 | 46 | 38 | 5 | 0.5227 |
 | Gemini_CLI__Gemini-3-Flash-Preview | 445 | 211 | 178 | 56 | 0.4806 |
+| just-another-coding-agent__GLM-5 | 445 | 211 | 115 | 119 | 0.4806 |
+| IndusAGICodingAgent__MiniMax-M2.7 | 445 | 153 | 92 | 200 | 0.4554 |
+| harness-agent__minimax-m2-7-highspeed | 445 | 189 | 129 | 127 | 0.4458 |
 | MAYA__Claude-4.5-sonnet | 445 | 190 | 241 | 14 | 0.4408 |
 | Terminus2__Kimi-k2.5 | 445 | 189 | 161 | 95 | 0.4385 |
 | Terminus2__Minimax-m2.5 | 445 | 188 | 92 | 165 | 0.4292 |
@@ -114,8 +141,11 @@ order by avg_reward desc
 | Terminus2__GLM-4.7 | 445 | 147 | 139 | 159 | 0.3475 |
 | ClaudeCode__GLM-4.7 | 445 | 148 | 250 | 47 | 0.3348 |
 | dakou__qwen3-coder-480b | 445 | 121 | 232 | 92 | 0.275 |
+| little-coder__qwen3.6-35b-a3b | 445 | 106 | 325 | 14 | 0.2426 |
+| spoox-o-m__GPT-5-Nano | 445 | 97 | 132 | 216 | 0.222 |
 | BashAgent__TermiGen-32B | 445 | 86 | 205 | 154 | 0.1972 |
 | terminus-2__AfterQuery-GPT-OSS-20B | 445 | 75 | 177 | 193 | 0.1756 |
+| little-coder__qwen3.5-9b | 445 | 41 | 397 | 7 | 0.0921 |
 <!--[[[end]]]-->
 
 ## Best model per backbone
@@ -163,25 +193,39 @@ order by ss.avg_reward desc
 
 | model_name | best_submission | avg_reward | n_passed | n_trials |
 | --- | --- | --- | --- | --- |
+| claude-opus-4-7 | vix__claude-opus-4-7 | 0.9091 | 400 | 445 |
+| Multiple | JJAgent__Multiple | 0.8708 | 775 | 890 |
+| gpt-5.5 | NexAU-AHE__gpt-5.5 | 0.8526 | 376 | 445 |
+| openai/gpt5.3-codex | LemonHarness_GPT-5.3-CodeX | 0.8488 | 376 | 445 |
+| openai/gpt-5.5 | Capy__GPT-5.5 | 0.8352 | 370 | 445 |
 | anthropic/claude-opus-4-6 | pilot-real__claude-opus-4-6 | 0.8314 | 365 | 445 |
 | auto | OB-1_GPT-5.4-GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | 0.8266 | 367 | 445 |
-| openai/gpt-5.3-codex | OpenSage__GPT-5.3-Codex | 0.795 | 349 | 445 |
+| openai/gpt-5.3-codex | CodeBrain-1.5__GPT-5.3-Codex | 0.8172 | 362 | 445 |
+| litellm_proxy/sage-gpt-5.3-codex | OpenSage__GPT-5.3-Codex | 0.795 | 349 | 445 |
 | gpt-5.3-codex | Droid__GPT-5.3-Codex | 0.773 | 344 | 445 |
 | vertex_ai/gemini-3.1-pro-preview | Terminus-KIRA__Gemini-3.1-Pro-Preview | 0.7517 | 333 | 445 |
 | vertex_ai/claude-opus-4-6 | Terminus-KIRA__Claude-Opus-4.6 | 0.7489 | 331 | 445 |
 | gemini-3.1-pro-preview | Ante__Gemini-3.1-Pro-Preview | 0.7455 | 328 | 445 |
+| openai/anthropic/claude-opus-4-7 | 0error-Ledger__Claude-Opus-4.7 | 0.7344 | 177 | 445 |
 | aurora-01-21 | Droid__Claude-Opus-4.6 | 0.7052 | 311 | 445 |
 | openai-codex/gpt-5.3-codex | IndusAGICodingAgent__gpt-5.3-codex | 0.685 | 261 | 445 |
+| opus | WozCode__Claude-Opus-4.6 | 0.684 | 303 | 445 |
 | openai:gpt-5.2-codex | Deep-Agents__GPT-5.2-Codex | 0.6798 | 293 | 445 |
 | claude-opus-4-6 | Crux__Claude-Opus-4.6 | 0.67 | 272 | 445 |
 | litellm_proxy/gemini-3-pro-preview | OpenSage__Gemini-3-Pro-Preview | 0.6576 | 290 | 445 |
+| gemini-3-flash-preview | Dirac__Gemini-3-Flash-Preview | 0.6517 | 290 | 445 |
 | gemini-3-pro-preview | Ante__Gemini-3-Pro-Preview | 0.6501 | 288 | 445 |
 | grok-4.20-0309-reasoning | grok-cli__grok-4.20-0309-reasoning | 0.6276 | 209 | 496 |
 | vertex_ai/gemini-3-pro-preview | CodeBrain-1__Gemini-3-Pro-Preview | 0.6225 | 277 | 445 |
 | openai/gpt-5.2 | Mux__GPT-5.2 | 0.6207 | 54 | 89 |
+| google/gemini-3.1-pro-preview | Gemini_CLI__Gemini-3.1-Pro-Preview | 0.6087 | 266 | 445 |
+| claude-opus-4.6 | copilot-cli__claude-opus-4.6 | 0.6072 | 269 | 445 |
 | anthropic/claude-opus-4-5 | Mux__Claude-Opus-4.5 | 0.5843 | 52 | 89 |
+| anthropic/claude-sonnet-4-6 | Simplai-Agent__Claude-Sonnet-4.6 | 0.5421 | 232 | 445 |
 | openai/glm-5 | Terminus2__GLM-5 | 0.5397 | 231 | 445 |
 | google/gemini-3-flash-preview | Gemini_CLI__Gemini-3-Flash-Preview | 0.4806 | 211 | 445 |
+| ollama:glm-5:cloud | just-another-coding-agent__GLM-5 | 0.4806 | 211 | 445 |
+| minimax/MiniMax-M2.7 | IndusAGICodingAgent__MiniMax-M2.7 | 0.4554 | 153 | 445 |
 | openai/kimi-k2.5:cloud | Terminus2__Kimi-k2.5 | 0.4385 | 189 | 445 |
 | openai/minimax-m2.5:cloud | Terminus2__Minimax-m2.5 | 0.4292 | 188 | 445 |
 | minimax/minimax-m2.5 | cchuter__minimax-m2.5 | 0.4263 | 188 | 445 |
@@ -189,7 +233,9 @@ order by ss.avg_reward desc
 | openai/glm-4.7:cloud | Terminus2__GLM-4.7 | 0.3475 | 147 | 445 |
 | GLM-4.7 | ClaudeCode__GLM-4.7 | 0.3348 | 148 | 445 |
 | qwen3-coder-modelscope | dakou__qwen3-coder-480b | 0.275 | 121 | 445 |
+| llamacpp/qwen3.6-35b-a3b | little-coder__qwen3.6-35b-a3b | 0.2426 | 106 | 445 |
 | hosted_vllm/gpt-oss-20b-rl | terminus-2__AfterQuery-GPT-OSS-20B | 0.1756 | 75 | 445 |
+| llamacpp/qwen3.5-9b | little-coder__qwen3.5-9b | 0.0921 | 41 | 445 |
 <!--[[[end]]]-->
 
 ## The hardest tasks
@@ -215,21 +261,21 @@ limit 15
 
 | task_name | n_trials | n_passed | n_failed | n_errored | failure_rate |
 | --- | --- | --- | --- | --- | --- |
-| make-doom-for-mips | 213 | 0 | 48 | 165 | 1.0 |
-| filter-js-from-html | 213 | 11 | 172 | 30 | 0.9409 |
-| caffe-cifar-10 | 214 | 12 | 68 | 134 | 0.9388 |
-| train-fasttext | 213 | 13 | 51 | 149 | 0.9347 |
-| install-windows-3.11 | 213 | 16 | 174 | 23 | 0.9231 |
-| sam-cell-seg | 213 | 17 | 190 | 6 | 0.9187 |
-| raman-fitting | 213 | 21 | 133 | 59 | 0.9005 |
-| extract-moves-from-video | 213 | 22 | 80 | 111 | 0.8937 |
-| gpt2-codegolf | 214 | 27 | 55 | 132 | 0.8714 |
-| video-processing | 213 | 43 | 166 | 4 | 0.7962 |
-| torch-pipeline-parallelism | 213 | 44 | 117 | 52 | 0.7843 |
-| dna-assembly | 214 | 49 | 127 | 38 | 0.7633 |
-| make-mips-interpreter | 213 | 51 | 72 | 90 | 0.7536 |
-| model-extraction-relu-logits | 213 | 58 | 124 | 31 | 0.7225 |
-| mteb-retrieve | 214 | 57 | 148 | 9 | 0.722 |
+| terminal-bench/install-windows-3.11 | 5 | 0 | 2 | 3 | 1.0 |
+| terminal-bench/make-doom-for-mips | 30 | 0 | 6 | 24 | 1.0 |
+| make-doom-for-mips | 338 | 12 | 103 | 223 | 0.9643 |
+| filter-js-from-html | 338 | 17 | 275 | 46 | 0.9431 |
+| train-fasttext | 338 | 23 | 101 | 214 | 0.9286 |
+| install-windows-3.11 | 338 | 27 | 261 | 50 | 0.9184 |
+| raman-fitting | 338 | 37 | 222 | 79 | 0.8896 |
+| sam-cell-seg | 338 | 40 | 291 | 7 | 0.8799 |
+| terminal-bench/extract-moves-from-video | 30 | 3 | 0 | 27 | 0.875 |
+| caffe-cifar-10 | 339 | 40 | 89 | 210 | 0.8738 |
+| terminal-bench/sam-cell-seg | 30 | 4 | 20 | 6 | 0.8571 |
+| extract-moves-from-video | 338 | 50 | 107 | 181 | 0.848 |
+| terminal-bench/install-windows-3-11 | 25 | 4 | 15 | 6 | 0.84 |
+| terminal-bench/model-extraction-relu-logits | 30 | 5 | 18 | 7 | 0.8276 |
+| terminal-bench/raman-fitting | 30 | 5 | 13 | 12 | 0.8214 |
 <!--[[[end]]]-->
 
 ## Tasks no one has solved
@@ -251,7 +297,8 @@ where n_passed = 0
 
 | task_name | n_trials | n_failed | n_errored |
 | --- | --- | --- | --- |
-| make-doom-for-mips | 213 | 48 | 165 |
+| terminal-bench/install-windows-3.11 | 5 | 2 | 3 |
+| terminal-bench/make-doom-for-mips | 30 | 6 | 24 |
 <!--[[[end]]]-->
 
 ## The easiest tasks
@@ -275,21 +322,21 @@ limit 15
 
 | task_name | n_trials | n_passed | n_failed | n_errored | avg_reward |
 | --- | --- | --- | --- | --- | --- |
-| fix-git | 214 | 209 | 5 | 0 | 0.9766 |
-| git-leak-recovery | 213 | 202 | 6 | 5 | 0.9712 |
-| multi-source-data-merger | 214 | 205 | 8 | 1 | 0.9624 |
-| modernize-scientific-stack | 214 | 202 | 7 | 5 | 0.9619 |
-| nginx-request-logging | 213 | 201 | 10 | 2 | 0.9526 |
-| constraints-scheduling | 214 | 196 | 10 | 8 | 0.9515 |
-| vulnerable-secret | 214 | 202 | 7 | 5 | 0.9484 |
-| log-summary-date-ranges | 214 | 200 | 12 | 2 | 0.939 |
-| portfolio-optimization | 214 | 196 | 13 | 5 | 0.9378 |
-| distribution-search | 214 | 197 | 9 | 8 | 0.9249 |
-| cobol-modernization | 214 | 195 | 14 | 5 | 0.9112 |
-| custom-memory-heap-crash | 214 | 190 | 8 | 16 | 0.9091 |
-| prove-plus-comm | 214 | 190 | 17 | 7 | 0.9091 |
-| pypi-server | 214 | 191 | 20 | 3 | 0.9052 |
-| code-from-image | 213 | 190 | 9 | 14 | 0.9005 |
+| terminal-bench/build-cython-ext | 30 | 28 | 0 | 2 | 1.0 |
+| terminal-bench/cobol-modernization | 30 | 28 | 0 | 2 | 1.0 |
+| terminal-bench/code-from-image | 30 | 27 | 0 | 3 | 1.0 |
+| terminal-bench/constraints-scheduling | 30 | 28 | 0 | 2 | 1.0 |
+| terminal-bench/custom-memory-heap-crash | 30 | 27 | 0 | 3 | 1.0 |
+| terminal-bench/distribution-search | 30 | 29 | 0 | 1 | 1.0 |
+| terminal-bench/fix-code-vulnerability | 30 | 28 | 0 | 2 | 1.0 |
+| terminal-bench/git-leak-recovery | 30 | 28 | 0 | 2 | 1.0 |
+| terminal-bench/hf-model-inference | 30 | 28 | 0 | 2 | 1.0 |
+| terminal-bench/llm-inference-batching-scheduler | 30 | 25 | 0 | 5 | 1.0 |
+| terminal-bench/log-summary-date-ranges | 30 | 28 | 0 | 2 | 1.0 |
+| terminal-bench/modernize-scientific-stack | 30 | 28 | 0 | 2 | 1.0 |
+| terminal-bench/multi-source-data-merger | 30 | 28 | 0 | 2 | 1.0 |
+| terminal-bench/nginx-request-logging | 30 | 28 | 0 | 2 | 1.0 |
+| terminal-bench/password-recovery | 30 | 27 | 0 | 3 | 1.0 |
 <!--[[[end]]]-->
 
 ## Error analysis
@@ -333,21 +380,26 @@ order by n desc
 
 | exception_type | n | pct |
 | --- | --- | --- |
-| AgentTimeoutError | 2715 | 86.7 |
-| RuntimeError | 216 | 6.9 |
-| VerifierTimeoutError | 55 | 1.8 |
-| AgentSetupTimeoutError | 47 | 1.5 |
-| DaytonaError | 31 | 1.0 |
-| EnvironmentStartTimeoutError | 19 | 0.6 |
-| BadRequestError | 9 | 0.3 |
-| RewardFileNotFoundError | 9 | 0.3 |
-| NameError | 8 | 0.3 |
-| OSError | 8 | 0.3 |
+| AgentTimeoutError | 4348 | 80.5 |
+| RuntimeError | 484 | 9.0 |
+| NonZeroAgentExitCodeError | 236 | 4.4 |
+| AgentSetupTimeoutError | 116 | 2.1 |
+| VerifierTimeoutError | 91 | 1.7 |
+| EnvironmentStartTimeoutError | 34 | 0.6 |
+| DaytonaError | 33 | 0.6 |
+| BadRequestError | 10 | 0.2 |
+| RewardFileNotFoundError | 10 | 0.2 |
+| NameError | 8 | 0.1 |
+| OSError | 8 | 0.1 |
 | AddTestsDirError | 4 | 0.1 |
 | AttributeError | 4 | 0.1 |
 | DownloadVerifierDirError | 4 | 0.1 |
+| InternalServerError | 3 | 0.1 |
+| CommandExitException | 1 | 0.0 |
+| InfraBootstrapFailure | 1 | 0.0 |
 | KeyError | 1 | 0.0 |
 | NotFoundError | 1 | 0.0 |
+| TimeoutException | 1 | 0.0 |
 <!--[[[end]]]-->
 
 ### Which submissions error the most?
@@ -389,20 +441,31 @@ order by error_pct desc
 
 | submission | n_trials | n_errors | error_pct | n_timeouts |
 | --- | --- | --- | --- | --- |
+| spoox-o-m__GPT-5-Nano | 445 | 235 | 52.8 | 231 |
+| 0error-Ledger__Claude-Opus-4.7 | 445 | 215 | 48.3 | 11 |
+| IndusAGICodingAgent__MiniMax-M2.7 | 445 | 210 | 47.2 | 103 |
+| logos-ts__claude-opus-4.7 | 445 | 200 | 44.9 | 39 |
 | terminus-2__AfterQuery-GPT-OSS-20B | 445 | 200 | 44.9 | 184 |
 | Terminus2__Minimax-m2.5 | 445 | 181 | 40.7 | 179 |
 | cchuter__minimax-m2.5 | 445 | 178 | 40.0 | 174 |
 | grok-cli__grok-4.20-0309-reasoning | 496 | 186 | 37.5 | 23 |
 | BashAgent__TermiGen-32B | 445 | 162 | 36.4 | 159 |
 | Terminus2__GLM-4.7 | 445 | 161 | 36.2 | 143 |
+| logos__claude-opus-4.6 | 445 | 133 | 29.9 | 111 |
+| harness-agent__minimax-m2-7-highspeed | 445 | 130 | 29.2 | 111 |
+| just-another-coding-agent__GLM-5 | 445 | 128 | 28.8 | 123 |
+| spoox-o-m__GPT-5.3-Codex | 445 | 114 | 25.6 | 113 |
 | Terminus2__GLM-5 | 445 | 111 | 24.9 | 108 |
 | IndusAGICodingAgent__gpt-5.3-codex | 445 | 106 | 23.8 | 42 |
 | Terminus2__Kimi-k2.5 | 445 | 101 | 22.7 | 91 |
+| Wecode__GPT-5.5 | 445 | 101 | 22.7 | 92 |
+| copilot-cli__claude-opus-4.6 | 445 | 98 | 22.0 | 94 |
 | dakou__qwen3-coder-480b | 445 | 95 | 21.3 | 92 |
 | Judy__Gemini-3.1-Pro-Preview | 445 | 94 | 21.1 | 90 |
 | Simple-Codex__GPT-5.3-Codex | 445 | 92 | 20.7 | 90 |
 | Terminus2__GPT-5.3-Codex | 445 | 92 | 20.7 | 92 |
 | Terminus2__DeepSeek-V3.2 | 445 | 91 | 20.4 | 90 |
+| Simplai-Agent__Claude-Sonnet-4.6 | 445 | 90 | 20.2 | 73 |
 | Judy__Claude-Opus-4.6 | 445 | 86 | 19.3 | 83 |
 | Ante__Gemini-3.1-Pro-Preview | 445 | 83 | 18.7 | 78 |
 | Deep-Agents__GPT-5.2-Codex | 445 | 82 | 18.4 | 70 |
@@ -410,29 +473,48 @@ order by error_pct desc
 | Terminus2__Claude-Opus-4.6 | 445 | 81 | 18.2 | 81 |
 | Crux__Claude-Opus-4.6 | 445 | 78 | 17.5 | 40 |
 | Capy__Claude-Opus-4.6 | 445 | 70 | 15.7 | 67 |
+| Gemini_CLI__Gemini-3.1-Pro-Preview | 445 | 69 | 15.5 | 54 |
+| Dirac__Gemini-3-Flash-Preview | 445 | 64 | 14.4 | 45 |
 | Forge__Gemini-3.1-Pro-Preview | 445 | 63 | 14.2 | 62 |
 | Mux__GPT-5.2 | 89 | 12 | 13.5 | 11 |
 | Gemini_CLI__Gemini-3-Flash-Preview | 445 | 57 | 12.8 | 51 |
+| vix__claude-opus-4-7 | 445 | 57 | 12.8 | 53 |
 | OpenSage__GPT-5.3-Codex | 445 | 54 | 12.1 | 49 |
 | Forge__Opus-4.6 | 445 | 53 | 11.9 | 53 |
+| WozCode__Claude-Opus-4.6 | 445 | 52 | 11.7 | 50 |
 | ClaudeCode__GLM-4.7 | 445 | 48 | 10.8 | 46 |
 | Mux__Claude-Opus-4.6 | 445 | 46 | 10.3 | 46 |
 | Forge__GPT-5.4 | 445 | 45 | 10.1 | 45 |
 | Terminus-KIRA__Gemini-3.1-Pro-Preview | 445 | 43 | 9.7 | 43 |
+| logos-latest__claude-opus-4.7 | 445 | 43 | 9.7 | 33 |
 | Mux__Claude-Opus-4.5 | 89 | 8 | 9.0 | 8 |
+| LemonHarness_GPT-5.3-CodeX | 445 | 39 | 8.8 | 39 |
+| clnkr__GPT-5.5 | 445 | 39 | 8.8 | 35 |
 | CodeBrain-1__GPT-5.3-Codex | 445 | 36 | 8.1 | 35 |
 | Mux__GPT-5.3-Codex | 445 | 36 | 8.1 | 36 |
+| CodeBrain-1.5__GPT-5.3-Codex | 445 | 35 | 7.9 | 33 |
 | CodeBrain-1__Gemini-3-Pro-Preview | 445 | 35 | 7.9 | 35 |
 | Junie_CLI__Gemini-3-Flash-Preview-Gemini-3.1-Pro-Preview-Claude-Opus-4.6-GPT-5.3-Codex | 445 | 35 | 7.9 | 35 |
+| Meta-Harness__Claude-Opus-4.6 | 445 | 35 | 7.9 | 35 |
+| WOZCODE__Claude-Opus-4-7 | 445 | 35 | 7.9 | 35 |
 | Ante__Gemini-3-Pro-Preview | 445 | 30 | 6.7 | 29 |
 | Droid__GPT-5.3-Codex | 445 | 29 | 6.5 | 29 |
+| Codelia__GPT-5.3-Codex | 445 | 28 | 6.3 | 28 |
+| Capy__GPT-5.5 | 445 | 27 | 6.1 | 25 |
 | Droid__Claude-Opus-4.6 | 445 | 26 | 5.8 | 22 |
 | OpenCode__Claude-Opus-4.5 | 89 | 5 | 5.6 | 5 |
 | OpenSage__Gemini-3-Pro-Preview | 445 | 25 | 5.6 | 21 |
+| LemonCode__GPT-5.3-Codex | 445 | 22 | 4.9 | 13 |
+| little-coder__qwen3.6-35b-a3b | 445 | 15 | 3.4 | 8 |
 | MAYA__Claude-4.5-sonnet | 445 | 14 | 3.1 | 0 |
+| hookele__gpt5.1-codex-mini | 445 | 14 | 3.1 | 12 |
 | MAYA__Claude-4.6-opus | 445 | 11 | 2.5 | 0 |
+| NexAU-AHE__gpt-5.5 | 445 | 10 | 2.2 | 6 |
+| JJAgent__Multiple | 890 | 19 | 2.1 | 19 |
+| little-coder__qwen3.5-9b | 445 | 8 | 1.8 | 8 |
 | pilot-real__claude-opus-4-6 | 445 | 6 | 1.3 | 0 |
 | OB-1_GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | 445 | 2 | 0.4 | 0 |
+| Polaris__Claude-Opus-4.7-GPT-5.5-Gemini-3.1-Pro | 445 | 2 | 0.4 | 1 |
 | OB-1_GPT-5.4-GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | 445 | 1 | 0.2 | 0 |
 <!--[[[end]]]-->
 
@@ -477,21 +559,21 @@ limit 15
 
 | task_name | n_timeouts | timeout_pct |
 | --- | --- | --- |
-| make-doom-for-mips | 163 | 76.5 |
-| train-fasttext | 145 | 68.1 |
-| gpt2-codegolf | 129 | 60.3 |
-| caffe-cifar-10 | 128 | 59.8 |
-| extract-moves-from-video | 109 | 51.2 |
-| make-mips-interpreter | 87 | 40.8 |
-| qemu-alpine-ssh | 84 | 39.4 |
-| db-wal-recovery | 82 | 38.3 |
-| path-tracing | 77 | 36.0 |
-| tune-mjcf | 72 | 33.8 |
-| write-compressor | 70 | 32.7 |
-| raman-fitting | 59 | 27.7 |
-| torch-pipeline-parallelism | 58 | 27.2 |
-| path-tracing-reverse | 57 | 26.6 |
-| query-optimize | 55 | 25.8 |
+| terminal-bench/extract-moves-from-video | 23 | 76.7 |
+| terminal-bench/gpt2-codegolf | 21 | 70.0 |
+| terminal-bench/make-doom-for-mips | 20 | 66.7 |
+| terminal-bench/caffe-cifar-10 | 20 | 66.7 |
+| make-doom-for-mips | 225 | 66.6 |
+| train-fasttext | 211 | 62.4 |
+| caffe-cifar-10 | 198 | 58.4 |
+| gpt2-codegolf | 187 | 55.2 |
+| extract-moves-from-video | 180 | 53.3 |
+| terminal-bench/path-tracing | 14 | 46.7 |
+| terminal-bench/tune-mjcf | 13 | 43.3 |
+| terminal-bench/train-fasttext | 13 | 43.3 |
+| terminal-bench/chess-best-move | 12 | 40.0 |
+| qemu-alpine-ssh | 131 | 38.8 |
+| terminal-bench/protein-assembly | 11 | 36.7 |
 <!--[[[end]]]-->
 
 ## Timing analysis
@@ -541,9 +623,9 @@ group by status
 
 | status | n | avg_agent_sec | min_sec | max_sec |
 | --- | --- | --- | --- | --- |
-| errored | 2466 | 1518.3 | 0.0 | 12001.4 |
-| failed | 4649 | 565.6 | 0.1 | 9338.2 |
-| passed | 11590 | 450.1 | 1.3 | 6250.0 |
+| errored | 3946 | 1504.5 | 0.0 | 12001.4 |
+| failed | 7602 | 548.2 | 0.1 | 29223.9 |
+| passed | 20630 | 438.8 | 1.3 | 29355.5 |
 <!--[[[end]]]-->
 
 ### Time breakdown: setup vs execution vs verification
@@ -597,21 +679,21 @@ limit 15
 
 | submission | env_setup_sec | agent_setup_sec | exec_sec | verify_sec |
 | --- | --- | --- | --- | --- |
+| spoox-o-m__GPT-5-Nano | 24.1 | 28.5 | 1099.0 | 65.6 |
+| just-another-coding-agent__GLM-5 | 70.8 | 54.8 | 1070.5 | 147.7 |
 | cchuter__minimax-m2.5 | 11.1 | 26.4 | 1042.8 | 74.8 |
 | terminus-2__AfterQuery-GPT-OSS-20B | 2.7 | 20.6 | 1015.9 | 92.2 |
 | Terminus2__Minimax-m2.5 | 17.5 | 18.3 | 965.5 | 93.5 |
+| Wecode__GPT-5.5 | 3.2 | 33.1 | 902.2 | 93.1 |
 | Terminus2__GLM-4.7 | 14.0 | 20.6 | 886.2 | 90.8 |
 | BashAgent__TermiGen-32B | 10.3 | 0.0 | 882.5 | 92.0 |
+| spoox-o-m__GPT-5.3-Codex | 23.6 | 28.6 | 877.3 | 91.2 |
 | pilot-real__claude-opus-4-6 | 4.3 | 635.9 | 862.8 | 61.8 |
+| IndusAGICodingAgent__MiniMax-M2.7 | 126.2 | 217.9 | 860.0 | 165.6 |
+| logos__claude-opus-4.6 | 26.1 | 41.9 | 843.4 | 79.0 |
 | Terminus2__GLM-5 | 10.5 | 17.2 | 822.9 | 63.2 |
 | Judy__Gemini-3.1-Pro-Preview | 9.0 | 46.5 | 793.8 | 73.4 |
 | Judy__Claude-Opus-4.6 | 11.2 | 47.1 | 760.5 | 72.0 |
-| Terminus-KIRA__Claude-Opus-4.6 | 39.2 | 17.8 | 753.8 | 46.2 |
-| Ante__Gemini-3.1-Pro-Preview | 9.8 | 6.9 | 748.5 | 70.1 |
-| Simple-Codex__GPT-5.3-Codex | 2.7 | 13.2 | 742.4 | 66.1 |
-| dakou__qwen3-coder-480b | 52.1 | 109.7 | 737.2 | 122.6 |
-| Terminus2__GPT-5.3-Codex | 2.9 | 12.7 | 734.7 | 48.0 |
-| Terminus2__Kimi-k2.5 | 15.1 | 12.4 | 711.6 | 74.5 |
 <!--[[[end]]]-->
 
 ## Cost analysis
@@ -661,12 +743,18 @@ order by cost_per_pass asc
 | --- | --- | --- | --- | --- |
 | Mux__GPT-5.3-Codex | 148 | 0.0 | 0.0 | 0.0 |
 | Terminus2__DeepSeek-V3.2 | 176 | 13.67 | 0.03 | 0.08 |
+| hookele__gpt5.1-codex-mini | 272 | 25.77 | 0.06 | 0.09 |
 | Mux__Claude-Opus-4.6 | 101 | 37.22 | 0.32 | 0.37 |
+| Polaris__Claude-Opus-4.7-GPT-5.5-Gemini-3.1-Pro | 236 | 110.69 | 0.41 | 0.47 |
 | IndusAGICodingAgent__gpt-5.3-codex | 261 | 134.43 | 0.36 | 0.52 |
 | Terminus2__Claude-Opus-4.6 | 280 | 293.61 | 0.66 | 1.05 |
 | Capy__Claude-Opus-4.6 | 316 | 366.66 | 0.99 | 1.16 |
+| IndusAGICodingAgent__MiniMax-M2.7 | 153 | 179.31 | 0.53 | 1.17 |
 | Terminus-KIRA__Gemini-3.1-Pro-Preview | 333 | 406.63 | 0.91 | 1.22 |
+| Capy__GPT-5.5 | 361 | 603.2 | 1.45 | 1.67 |
 | Terminus-KIRA__Claude-Opus-4.6 | 331 | 713.67 | 1.61 | 2.16 |
+| JJAgent__Multiple | 163 | 410.34 | 1.87 | 2.52 |
+| Meta-Harness__Claude-Opus-4.6 | 340 | 915.73 | 2.06 | 2.69 |
 <!--[[[end]]]-->
 
 ## Head-to-head: Claude vs GPT on individual tasks
@@ -774,21 +862,21 @@ limit 15
 
 | task_name | top_half | bottom_half | discrimination |
 | --- | --- | --- | --- |
-| protein-assembly | 0.852 | 0.093 | 0.759 |
-| sanitize-git-repo | 0.933 | 0.193 | 0.74 |
-| chess-best-move | 0.8 | 0.107 | 0.693 |
-| break-filter-js-from-html | 0.919 | 0.253 | 0.665 |
-| overfull-hbox | 0.852 | 0.193 | 0.659 |
-| circuit-fibsqrt | 0.933 | 0.28 | 0.653 |
-| write-compressor | 0.811 | 0.167 | 0.644 |
-| feal-linear-cryptanalysis | 0.915 | 0.28 | 0.635 |
-| path-tracing | 0.694 | 0.087 | 0.607 |
-| polyglot-rust-c | 0.652 | 0.067 | 0.585 |
-| bn-fit-modify | 0.978 | 0.4 | 0.578 |
-| financial-document-processor | 0.83 | 0.253 | 0.576 |
-| sqlite-db-truncate | 1.0 | 0.427 | 0.573 |
-| path-tracing-reverse | 0.667 | 0.113 | 0.553 |
-| schemelike-metacircular-eval | 0.822 | 0.284 | 0.538 |
+| circuit-fibsqrt | 0.956 | 0.248 | 0.708 |
+| write-compressor | 0.851 | 0.156 | 0.695 |
+| chess-best-move | 0.783 | 0.096 | 0.687 |
+| path-tracing-reverse | 0.761 | 0.1 | 0.661 |
+| protein-assembly | 0.746 | 0.096 | 0.65 |
+| sanitize-git-repo | 0.902 | 0.256 | 0.646 |
+| feal-linear-cryptanalysis | 0.929 | 0.307 | 0.623 |
+| schemelike-metacircular-eval | 0.849 | 0.24 | 0.609 |
+| polyglot-rust-c | 0.668 | 0.064 | 0.604 |
+| path-tracing | 0.759 | 0.156 | 0.603 |
+| winning-avg-corewars | 0.827 | 0.232 | 0.595 |
+| polyglot-c-py | 0.673 | 0.08 | 0.593 |
+| financial-document-processor | 0.873 | 0.291 | 0.583 |
+| break-filter-js-from-html | 0.912 | 0.334 | 0.578 |
+| overfull-hbox | 0.817 | 0.275 | 0.542 |
 <!--[[[end]]]-->
 
 ## The most inconsistent tasks
@@ -836,21 +924,21 @@ limit 15
 
 | task_name | mean_reward | worst | best | variance | n_submissions |
 | --- | --- | --- | --- | --- | --- |
-| polyglot-rust-c | 0.413 | 0.0 | 1.0 | 0.2087 | 45 |
-| chess-best-move | 0.538 | 0.0 | 1.0 | 0.1988 | 45 |
-| protein-assembly | 0.542 | 0.0 | 1.0 | 0.1931 | 45 |
-| path-tracing-reverse | 0.482 | 0.0 | 1.0 | 0.1908 | 45 |
-| write-compressor | 0.542 | 0.0 | 1.0 | 0.1863 | 45 |
-| polyglot-c-py | 0.382 | 0.0 | 1.0 | 0.1828 | 45 |
-| break-filter-js-from-html | 0.673 | 0.0 | 1.0 | 0.182 | 45 |
-| qemu-alpine-ssh | 0.509 | 0.0 | 1.0 | 0.1733 | 45 |
-| feal-linear-cryptanalysis | 0.664 | 0.0 | 1.0 | 0.1725 | 45 |
-| db-wal-recovery | 0.322 | 0.0 | 1.0 | 0.172 | 45 |
-| overfull-hbox | 0.62 | 0.0 | 1.0 | 0.1714 | 45 |
-| path-tracing | 0.445 | 0.0 | 1.0 | 0.1703 | 45 |
-| financial-document-processor | 0.627 | 0.0 | 1.0 | 0.1682 | 45 |
-| sanitize-git-repo | 0.669 | 0.0 | 1.0 | 0.1661 | 45 |
-| schemelike-metacircular-eval | 0.655 | 0.0 | 1.0 | 0.1623 | 45 |
+| polyglot-c-py | 0.429 | 0.0 | 1.0 | 0.2032 | 69 |
+| polyglot-rust-c | 0.42 | 0.0 | 1.0 | 0.2007 | 69 |
+| path-tracing-reverse | 0.517 | 0.0 | 1.0 | 0.1985 | 69 |
+| db-wal-recovery | 0.383 | 0.0 | 1.0 | 0.1942 | 69 |
+| write-compressor | 0.562 | 0.0 | 1.0 | 0.1918 | 69 |
+| chess-best-move | 0.514 | 0.0 | 1.0 | 0.1836 | 69 |
+| protein-assembly | 0.478 | 0.0 | 1.0 | 0.1834 | 69 |
+| path-tracing | 0.508 | 0.0 | 1.0 | 0.1756 | 69 |
+| circuit-fibsqrt | 0.701 | 0.0 | 1.0 | 0.1746 | 69 |
+| feal-linear-cryptanalysis | 0.678 | 0.0 | 1.0 | 0.1695 | 69 |
+| regex-chess | 0.39 | 0.0 | 1.0 | 0.1693 | 69 |
+| mteb-retrieve | 0.31 | 0.0 | 1.0 | 0.1662 | 69 |
+| break-filter-js-from-html | 0.688 | 0.0 | 1.0 | 0.1662 | 69 |
+| financial-document-processor | 0.653 | 0.0 | 1.0 | 0.1642 | 69 |
+| schemelike-metacircular-eval | 0.635 | 0.0 | 1.0 | 0.1638 | 69 |
 <!--[[[end]]]-->
 
 ## Submissions that improved across runs
@@ -890,6 +978,7 @@ order by r.submission, r.run_date
 
 | submission | run_date | n_trials | n_passed | avg_reward |
 | --- | --- | --- | --- | --- |
+| 0error-Ledger__Claude-Opus-4.7 | tbench-2.1-k5-v01 | 445 | 177 | 0.7344 |
 | Ante__Gemini-3-Pro-Preview | 2025-12-31__22-36-36 | 445 | 288 | 0.6501 |
 | Ante__Gemini-3.1-Pro-Preview | 2026-02-20__19-31-44 | 445 | 328 | 0.7455 |
 | BashAgent__TermiGen-32B | qwen_claude_5 | 445 | 86 | 0.1972 |
@@ -898,7 +987,17 @@ order by r.submission, r.run_date
 | Capy__Claude-Opus-4.6 | eval-terminal-bench-2-0-anthropic-claude-opus-4-6-b5a5edf0-1773245492872 | 89 | 67 | 0.7614 |
 | Capy__Claude-Opus-4.6 | eval-terminal-bench-2-0-anthropic-claude-opus-4-6-e4c20869-1773208202009 | 89 | 68 | 0.764 |
 | Capy__Claude-Opus-4.6 | eval-terminal-bench-2-0-anthropic-claude-opus-4-6-f67d7dea-1773208226179 | 89 | 66 | 0.7416 |
+| Capy__GPT-5.5 | eval-terminal-bench-2-0-gpt-5-5-7c56da63-1777349417783 | 89 | 73 | 0.8202 |
+| Capy__GPT-5.5 | eval-terminal-bench-2-0-gpt-5-5-8eb9f930-1777342655208 | 89 | 73 | 0.8202 |
+| Capy__GPT-5.5 | eval-terminal-bench-2-0-gpt-5-5-969914d5-1777349417757 | 89 | 77 | 0.8652 |
+| Capy__GPT-5.5 | eval-terminal-bench-2-0-gpt-5-5-a3c01e29-1777400580464 | 89 | 74 | 0.8409 |
+| Capy__GPT-5.5 | eval-terminal-bench-2-0-gpt-5-5-e25dd8c5-1777356131551 | 89 | 73 | 0.8295 |
 | ClaudeCode__GLM-4.7 | 2026-02-06__13-08-08 | 445 | 148 | 0.3348 |
+| CodeBrain-1.5__GPT-5.3-Codex | 2026-03-25__23-09-28 | 89 | 73 | 0.8202 |
+| CodeBrain-1.5__GPT-5.3-Codex | 2026-03-26__09-20-33 | 89 | 71 | 0.8068 |
+| CodeBrain-1.5__GPT-5.3-Codex | 2026-03-26__19-46-49 | 89 | 73 | 0.8202 |
+| CodeBrain-1.5__GPT-5.3-Codex | 2026-03-27__14-46-04 | 89 | 73 | 0.8295 |
+| CodeBrain-1.5__GPT-5.3-Codex | 2026-03-28__12-07-28 | 89 | 72 | 0.809 |
 | CodeBrain-1__GPT-5.3-Codex | 2026-02-08__11-01-20 | 89 | 60 | 0.6742 |
 | CodeBrain-1__GPT-5.3-Codex | 2026-02-08__20-43-33 | 89 | 66 | 0.7416 |
 | CodeBrain-1__GPT-5.3-Codex | 2026-02-09__01-09-07 | 89 | 65 | 0.7303 |
@@ -909,8 +1008,14 @@ order by r.submission, r.run_date
 | CodeBrain-1__Gemini-3-Pro-Preview | 2026-02-01__16-43-15 | 89 | 54 | 0.6067 |
 | CodeBrain-1__Gemini-3-Pro-Preview | 2026-02-05__00-52-21 | 89 | 56 | 0.6292 |
 | CodeBrain-1__Gemini-3-Pro-Preview | 2026-02-05__11-19-55 | 89 | 55 | 0.618 |
+| Codelia__GPT-5.3-Codex | 2026-03-19__13-21-41 | 89 | 69 | 0.7753 |
+| Codelia__GPT-5.3-Codex | 2026-03-20__01-17-35 | 89 | 65 | 0.7303 |
+| Codelia__GPT-5.3-Codex | 2026-03-20__06-21-30 | 89 | 69 | 0.7753 |
+| Codelia__GPT-5.3-Codex | 2026-03-20__16-44-43 | 89 | 66 | 0.7416 |
+| Codelia__GPT-5.3-Codex | 2026-03-21__12-12-19 | 89 | 68 | 0.764 |
 | Crux__Claude-Opus-4.6 | submission-run | 445 | 272 | 0.67 |
 | Deep-Agents__GPT-5.2-Codex | 2026-02-10__12-43-13 | 445 | 293 | 0.6798 |
+| Dirac__Gemini-3-Flash-Preview | 2026-04-18__15-04-03 | 445 | 290 | 0.6517 |
 | Droid__Claude-Opus-4.6 | fudge_2026-01-29__03-21-39 | 89 | 61 | 0.6932 |
 | Droid__Claude-Opus-4.6 | fudge_2026-01-29__06-23-59 | 89 | 64 | 0.7273 |
 | Droid__Claude-Opus-4.6 | fudge_2026-01-29__07-55-11 | 89 | 61 | 0.6932 |
@@ -925,7 +1030,11 @@ order by r.submission, r.run_date
 | Forge__Gemini-3.1-Pro-Preview | 2026-02-26__14-28-30 | 445 | 349 | 0.786 |
 | Forge__Opus-4.6 | 2026-03-11__06-58-11 | 445 | 364 | 0.818 |
 | Gemini_CLI__Gemini-3-Flash-Preview | 2026-03-05__16-55-44 | 445 | 211 | 0.4806 |
+| Gemini_CLI__Gemini-3.1-Pro-Preview | eval-pro-3.1-preview | 445 | 266 | 0.6087 |
+| IndusAGICodingAgent__MiniMax-M2.7 | 2026-03-21__09-39-15 | 445 | 153 | 0.4554 |
 | IndusAGICodingAgent__gpt-5.3-codex | 2026-03-17__07-15-58 | 445 | 261 | 0.685 |
+| JJAgent__Multiple | 2026-05-04__14-46-15 | 445 | 385 | 0.8652 |
+| JJAgent__Multiple | 2026-05-05__18-36-48 | 445 | 390 | 0.8764 |
 | Judy__Claude-Opus-4.6 | 2026-02-10__18-07-36 | 89 | 64 | 0.7273 |
 | Judy__Claude-Opus-4.6 | 2026-02-11__11-58-19 | 89 | 63 | 0.7079 |
 | Judy__Claude-Opus-4.6 | 2026-02-12__11-31-57 | 89 | 62 | 0.7045 |
@@ -937,6 +1046,16 @@ order by r.submission, r.run_date
 | Judy__Gemini-3.1-Pro-Preview | 2026-03-08__16-45-59 | 89 | 69 | 0.7931 |
 | Judy__Gemini-3.1-Pro-Preview | 2026-03-08__16-47-12 | 89 | 71 | 0.8161 |
 | Junie_CLI__Gemini-3-Flash-Preview-Gemini-3.1-Pro-Preview-Claude-Opus-4.6-GPT-5.3-Codex | 2026-03-06__12-25-19 | 445 | 316 | 0.7117 |
+| LemonCode__GPT-5.3-Codex | 2026-04-20__19-24-11 | 89 | 63 | 0.7241 |
+| LemonCode__GPT-5.3-Codex | 2026-04-21__21-02-37 | 89 | 71 | 0.8161 |
+| LemonCode__GPT-5.3-Codex | 2026-04-22__20-13-58 | 89 | 72 | 0.809 |
+| LemonCode__GPT-5.3-Codex | 2026-04-23__21-08-00 | 89 | 72 | 0.8276 |
+| LemonCode__GPT-5.3-Codex | 2026-04-24__20-07-02 | 89 | 71 | 0.8256 |
+| LemonHarness_GPT-5.3-CodeX | 2026-04-25__23-23-13 | 89 | 76 | 0.8636 |
+| LemonHarness_GPT-5.3-CodeX | 2026-04-26__20-40-52 | 89 | 80 | 0.8989 |
+| LemonHarness_GPT-5.3-CodeX | 2026-04-27__20-59-57 | 89 | 72 | 0.809 |
+| LemonHarness_GPT-5.3-CodeX | 2026-04-28__12-03-11 | 89 | 72 | 0.8182 |
+| LemonHarness_GPT-5.3-CodeX | 2026-04-29__10-54-12 | 89 | 76 | 0.8539 |
 | MAYA__Claude-4.5-sonnet | 2025-11-13__09-25-32 | 89 | 38 | 0.4419 |
 | MAYA__Claude-4.5-sonnet | 2025-12-05__06-20-00 | 89 | 38 | 0.4419 |
 | MAYA__Claude-4.5-sonnet | 2025-12-05__16-42-55 | 89 | 38 | 0.4368 |
@@ -947,6 +1066,7 @@ order by r.submission, r.run_date
 | MAYA__Claude-4.6-opus | 2026-03-04__07-44-02 | 89 | 63 | 0.7326 |
 | MAYA__Claude-4.6-opus | 2026-03-05__07-04-22 | 89 | 61 | 0.7011 |
 | MAYA__Claude-4.6-opus | 2026-03-09__08-44-46 | 89 | 65 | 0.7386 |
+| Meta-Harness__Claude-Opus-4.6 | 2026-03-26__meta-harness-v1 | 445 | 340 | 0.764 |
 | Mux__Claude-Opus-4.5 | 2026-01-16__00-15-05 | 89 | 52 | 0.5843 |
 | Mux__Claude-Opus-4.6 | 2026-02-09__01-47-04 | 89 | 59 | 0.6629 |
 | Mux__Claude-Opus-4.6 | 2026-02-09__01-47-09 | 89 | 62 | 0.6966 |
@@ -959,6 +1079,10 @@ order by r.submission, r.run_date
 | Mux__GPT-5.3-Codex | 2026-02-11__17-02-37 | 89 | 66 | 0.7416 |
 | Mux__GPT-5.3-Codex | 2026-02-12__09-49-12 | 89 | 67 | 0.7528 |
 | Mux__GPT-5.3-Codex | 2026-02-12__13-28-42 | 89 | 66 | 0.7416 |
+| NexAU-AHE__gpt-5.5 | run-1 | 89 | 74 | 0.8506 |
+| NexAU-AHE__gpt-5.5 | run-2 | 89 | 76 | 0.8539 |
+| NexAU-AHE__gpt-5.5 | run-3 | 178 | 151 | 0.8531 |
+| NexAU-AHE__gpt-5.5 | run-4 | 89 | 75 | 0.8523 |
 | OB-1_GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | 2026-02-21__12-03-27 | 89 | 65 | 0.7386 |
 | OB-1_GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | 2026-02-22__10-25-31 | 89 | 65 | 0.7303 |
 | OB-1_GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | 2026-02-24__01-21-30 | 89 | 65 | 0.7303 |
@@ -980,6 +1104,8 @@ order by r.submission, r.run_date
 | OpenSage__Gemini-3-Pro-Preview | 2026-01-25__05-43-22 | 89 | 60 | 0.6742 |
 | OpenSage__Gemini-3-Pro-Preview | 2026-01-25__20-11-02 | 89 | 57 | 0.6477 |
 | OpenSage__Gemini-3-Pro-Preview | 2026-02-12__20-47-36 | 89 | 57 | 0.6477 |
+| Polaris__Claude-Opus-4.7-GPT-5.5-Gemini-3.1-Pro | tbench-polaris-api-k5-concurrent8-20260506-193109 | 445 | 365 | 0.8221 |
+| Simplai-Agent__Claude-Sonnet-4.6 | submission-sonnet46-20260417-100503 | 445 | 232 | 0.5421 |
 | Simple-Codex__GPT-5.3-Codex | simple-codex-gpt-5.3-codex-5x-duplicate | 445 | 332 | 0.7563 |
 | Terminus-KIRA__Claude-Opus-4.6 | 2026-02-13__11-48-54 | 445 | 331 | 0.7489 |
 | Terminus-KIRA__Gemini-3.1-Pro-Preview | 2026-02-20__11-30-30 | 445 | 333 | 0.7517 |
@@ -991,12 +1117,27 @@ order by r.submission, r.run_date
 | Terminus2__GPT-5.3-Codex | terminus-gpt-5.3-codex-5x | 445 | 288 | 0.6545 |
 | Terminus2__Kimi-k2.5 | 2026-01-26__22-34-00 | 445 | 189 | 0.4385 |
 | Terminus2__Minimax-m2.5 | 2026-02-18__13-31-00 | 445 | 188 | 0.4292 |
+| WOZCODE__Claude-Opus-4-7 | 2026-04-19__20-07-00 | 445 | 357 | 0.8022 |
+| Wecode__GPT-5.5 | wecode-tb2-4-30-5 | 445 | 392 | 0.8809 |
+| WozCode__Claude-Opus-4.6 | 2026-03-28__16-52-39 | 445 | 303 | 0.684 |
 | cchuter__minimax-m2.5 | 2026-03-08__22-02-04 | 445 | 188 | 0.4263 |
+| clnkr__GPT-5.5 | 2026-05-07__03-15-33 | 445 | 294 | 0.6622 |
+| copilot-cli__claude-opus-4.6 | 2026-04-02__18-13-37 | 445 | 269 | 0.6072 |
 | dakou__qwen3-coder-480b | 2025-12-25__23-49-10 | 445 | 121 | 0.275 |
 | grok-cli__grok-4.20-0309-reasoning | job-part1 | 130 | 81 | 0.6231 |
 | grok-cli__grok-4.20-0309-reasoning | job-part2 | 356 | 124 | 0.6263 |
+| harness-agent__minimax-m2-7-highspeed | 2026-04-27__02-11-40 | 445 | 189 | 0.4458 |
+| hookele__gpt5.1-codex-mini | 2026-02-06__09-44-35 | 95 | 0 | 0.0 |
+| little-coder__qwen3.5-9b | tb2-leaderboard-k5-v0.1.24-9b-2026-04-26__20-32-42 | 445 | 41 | 0.0921 |
+| little-coder__qwen3.6-35b-a3b | tb2-leaderboard-k5-2026-04-24__00-34-46 | 445 | 106 | 0.2426 |
+| logos-latest__claude-opus-4.7 | 2026-04-21 | 445 | 372 | 0.8513 |
+| logos-ts__claude-opus-4.7 | 2026-04-19 | 445 | 356 | 0.8073 |
+| logos__claude-opus-4.6 | 2026-04-09 | 445 | 295 | 0.686 |
 | pilot-real__claude-opus-4-6 | pilot-cc-v35-k5 | 445 | 365 | 0.8314 |
+| spoox-o-m__GPT-5-Nano | 2026-03-22__16-49-45 | 445 | 97 | 0.222 |
+| spoox-o-m__GPT-5.3-Codex | 2026-03-15__21-10-02 | 445 | 318 | 0.7211 |
 | terminus-2__AfterQuery-GPT-OSS-20B | new-s30-k5-dragon | 445 | 75 | 0.1756 |
+| vix__claude-opus-4-7 | 2026-04-30__17-57-22 | 445 | 400 | 0.9091 |
 <!--[[[end]]]-->
 
 ## Infrastructure errors
@@ -1041,14 +1182,20 @@ order by n desc
 | Terminus2__GLM-4.7 | DaytonaError | 17 |
 | MAYA__Claude-4.6-opus | EnvironmentStartTimeoutError | 9 |
 | Terminus2__Kimi-k2.5 | DaytonaError | 9 |
+| harness-agent__minimax-m2-7-highspeed | EnvironmentStartTimeoutError | 8 |
 | Gemini_CLI__Gemini-3-Flash-Preview | VerifierTimeoutError | 6 |
+| IndusAGICodingAgent__MiniMax-M2.7 | EnvironmentStartTimeoutError | 6 |
 | MAYA__Claude-4.5-sonnet | VerifierTimeoutError | 6 |
 | terminus-2__AfterQuery-GPT-OSS-20B | VerifierTimeoutError | 6 |
+| Gemini_CLI__Gemini-3.1-Pro-Preview | VerifierTimeoutError | 5 |
 | OpenSage__GPT-5.3-Codex | VerifierTimeoutError | 5 |
+| Simplai-Agent__Claude-Sonnet-4.6 | VerifierTimeoutError | 5 |
 | Droid__Claude-Opus-4.6 | RewardFileNotFoundError | 4 |
 | IndusAGICodingAgent__gpt-5.3-codex | EnvironmentStartTimeoutError | 4 |
 | Judy__Gemini-3.1-Pro-Preview | VerifierTimeoutError | 4 |
 | OpenSage__Gemini-3-Pro-Preview | VerifierTimeoutError | 4 |
+| harness-agent__minimax-m2-7-highspeed | VerifierTimeoutError | 4 |
+| logos-latest__claude-opus-4.7 | VerifierTimeoutError | 4 |
 | Ante__Gemini-3.1-Pro-Preview | VerifierTimeoutError | 3 |
 | BashAgent__TermiGen-32B | VerifierTimeoutError | 3 |
 | Capy__Claude-Opus-4.6 | VerifierTimeoutError | 3 |
@@ -1058,13 +1205,22 @@ order by n desc
 | Terminus-KIRA__Claude-Opus-4.6 | EnvironmentStartTimeoutError | 3 |
 | Terminus2__GLM-5 | AddTestsDirError | 3 |
 | dakou__qwen3-coder-480b | DownloadVerifierDirError | 3 |
+| spoox-o-m__GPT-5-Nano | VerifierTimeoutError | 3 |
+| Capy__GPT-5.5 | VerifierTimeoutError | 2 |
 | ClaudeCode__GLM-4.7 | VerifierTimeoutError | 2 |
 | Crux__Claude-Opus-4.6 | RewardFileNotFoundError | 2 |
+| IndusAGICodingAgent__MiniMax-M2.7 | VerifierTimeoutError | 2 |
 | MAYA__Claude-4.6-opus | VerifierTimeoutError | 2 |
+| NexAU-AHE__gpt-5.5 | VerifierTimeoutError | 2 |
 | OB-1_GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | VerifierTimeoutError | 2 |
 | Simple-Codex__GPT-5.3-Codex | DaytonaError | 2 |
+| WozCode__Claude-Opus-4.6 | VerifierTimeoutError | 2 |
+| hookele__gpt5.1-codex-mini | DaytonaError | 2 |
+| CodeBrain-1.5__GPT-5.3-Codex | RewardFileNotFoundError | 1 |
+| CodeBrain-1.5__GPT-5.3-Codex | VerifierTimeoutError | 1 |
 | CodeBrain-1__GPT-5.3-Codex | VerifierTimeoutError | 1 |
 | Forge__Gemini-3.1-Pro-Preview | RewardFileNotFoundError | 1 |
+| LemonCode__GPT-5.3-Codex | VerifierTimeoutError | 1 |
 | Mux__GPT-5.2 | VerifierTimeoutError | 1 |
 | OB-1_GPT-5.4-GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | VerifierTimeoutError | 1 |
 | Terminus2__DeepSeek-V3.2 | RewardFileNotFoundError | 1 |
@@ -1073,7 +1229,13 @@ order by n desc
 | Terminus2__Minimax-m2.5 | RewardFileNotFoundError | 1 |
 | Terminus2__Minimax-m2.5 | VerifierTimeoutError | 1 |
 | cchuter__minimax-m2.5 | VerifierTimeoutError | 1 |
+| clnkr__GPT-5.5 | VerifierTimeoutError | 1 |
+| just-another-coding-agent__GLM-5 | EnvironmentStartTimeoutError | 1 |
+| little-coder__qwen3.6-35b-a3b | VerifierTimeoutError | 1 |
+| logos-ts__claude-opus-4.7 | VerifierTimeoutError | 1 |
+| logos__claude-opus-4.6 | VerifierTimeoutError | 1 |
 | pilot-real__claude-opus-4-6 | VerifierTimeoutError | 1 |
+| spoox-o-m__GPT-5.3-Codex | VerifierTimeoutError | 1 |
 <!--[[[end]]]-->
 
 ## All 89 tasks by failure rate
@@ -1095,93 +1257,183 @@ order by failure_rate desc
 
 | task_name | failure_rate_pct |
 | --- | --- |
-| make-doom-for-mips | 100.0 |
-| filter-js-from-html | 94.1 |
-| caffe-cifar-10 | 93.9 |
-| train-fasttext | 93.5 |
-| install-windows-3.11 | 92.3 |
-| sam-cell-seg | 91.9 |
-| raman-fitting | 90.0 |
-| extract-moves-from-video | 89.4 |
-| gpt2-codegolf | 87.1 |
-| video-processing | 79.6 |
-| torch-pipeline-parallelism | 78.4 |
-| dna-assembly | 76.3 |
-| make-mips-interpreter | 75.4 |
-| model-extraction-relu-logits | 72.3 |
-| mteb-retrieve | 72.2 |
-| mteb-leaderboard | 70.4 |
-| db-wal-recovery | 70.0 |
-| dna-insert | 68.9 |
-| torch-tensor-parallelism | 63.0 |
-| regex-chess | 62.4 |
-| gcode-to-text | 60.7 |
-| polyglot-c-py | 58.9 |
-| polyglot-rust-c | 55.7 |
-| query-optimize | 53.2 |
-| path-tracing-reverse | 52.7 |
-| path-tracing | 52.5 |
-| adaptive-rejection-sampler | 50.0 |
-| qemu-alpine-ssh | 49.5 |
-| chess-best-move | 44.3 |
-| configure-git-webserver | 44.3 |
-| protein-assembly | 42.6 |
-| write-compressor | 42.0 |
-| winning-avg-corewars | 39.6 |
+| terminal-bench/install-windows-3.11 | 100.0 |
+| terminal-bench/make-doom-for-mips | 100.0 |
+| make-doom-for-mips | 96.4 |
+| filter-js-from-html | 94.3 |
+| train-fasttext | 92.9 |
+| install-windows-3.11 | 91.8 |
+| raman-fitting | 89.0 |
+| sam-cell-seg | 88.0 |
+| terminal-bench/extract-moves-from-video | 87.5 |
+| caffe-cifar-10 | 87.4 |
+| terminal-bench/sam-cell-seg | 85.7 |
+| extract-moves-from-video | 84.8 |
+| terminal-bench/install-windows-3-11 | 84.0 |
+| terminal-bench/model-extraction-relu-logits | 82.8 |
+| terminal-bench/raman-fitting | 82.1 |
+| gpt2-codegolf | 80.8 |
+| video-processing | 80.2 |
+| dna-assembly | 71.5 |
+| torch-pipeline-parallelism | 69.5 |
+| dna-insert | 68.5 |
+| make-mips-interpreter | 68.2 |
+| terminal-bench/video-processing | 67.9 |
+| model-extraction-relu-logits | 67.2 |
+| mteb-retrieve | 66.5 |
+| torch-tensor-parallelism | 64.6 |
+| terminal-bench/filter-js-from-html | 64.3 |
+| terminal-bench/caffe-cifar-10 | 64.0 |
+| gcode-to-text | 63.8 |
+| mteb-leaderboard | 63.7 |
+| db-wal-recovery | 62.5 |
+| terminal-bench/dna-insert | 60.7 |
+| terminal-bench/gpt2-codegolf | 60.7 |
+| regex-chess | 58.2 |
+| terminal-bench/gcode-to-text | 57.1 |
+| terminal-bench/train-fasttext | 56.0 |
+| terminal-bench/dna-assembly | 55.6 |
+| polyglot-rust-c | 54.9 |
+| polyglot-c-py | 54.0 |
+| terminal-bench/chess-best-move | 53.6 |
+| adaptive-rejection-sampler | 52.0 |
+| qemu-alpine-ssh | 50.1 |
+| protein-assembly | 49.7 |
+| path-tracing-reverse | 47.7 |
+| query-optimize | 47.6 |
+| chess-best-move | 46.6 |
+| terminal-bench/adaptive-rejection-sampler | 46.4 |
+| terminal-bench/mteb-retrieve | 46.4 |
+| terminal-bench/regex-chess | 46.2 |
+| path-tracing | 46.0 |
+| write-compressor | 40.5 |
+| winning-avg-corewars | 39.5 |
+| terminal-bench/protein-assembly | 39.3 |
+| configure-git-webserver | 38.6 |
 | tune-mjcf | 37.9 |
-| extract-elf | 37.9 |
-| cancel-async-tasks | 37.6 |
-| overfull-hbox | 36.9 |
-| financial-document-processor | 36.4 |
-| schemelike-metacircular-eval | 36.2 |
-| compile-compcert | 33.7 |
-| mailman | 33.5 |
-| sanitize-git-repo | 32.9 |
-| qemu-startup | 32.1 |
-| feal-linear-cryptanalysis | 30.4 |
-| circuit-fibsqrt | 29.9 |
-| break-filter-js-from-html | 28.9 |
-| rstan-to-pystan | 28.4 |
-| sparql-university | 25.5 |
-| largest-eigenval | 25.5 |
-| build-cython-ext | 24.5 |
-| crack-7z-hash | 23.1 |
-| bn-fit-modify | 22.8 |
-| large-scale-text-editing | 22.6 |
-| pytorch-model-recovery | 22.2 |
-| count-dataset-tokens | 21.8 |
-| build-pmars | 21.6 |
-| password-recovery | 21.1 |
-| llm-inference-batching-scheduler | 21.0 |
-| feal-differential-cryptanalysis | 20.9 |
-| mcmc-sampling-stan | 20.8 |
-| sqlite-db-truncate | 20.0 |
-| reshard-c4-data | 18.6 |
-| fix-ocaml-gc | 18.1 |
-| openssl-selfsigned-cert | 17.9 |
-| pytorch-model-cli | 17.8 |
-| fix-code-vulnerability | 16.5 |
-| build-pov-ray | 16.5 |
-| sqlite-with-gcov | 15.0 |
-| kv-store-grpc | 14.5 |
-| hf-model-inference | 13.8 |
-| headless-terminal | 13.7 |
-| merge-diff-arc-agi-task | 12.0 |
-| regex-log | 12.0 |
-| git-multibranch | 11.5 |
-| code-from-image | 10.0 |
-| pypi-server | 9.5 |
-| custom-memory-heap-crash | 9.1 |
-| prove-plus-comm | 9.1 |
-| cobol-modernization | 8.9 |
-| distribution-search | 7.5 |
-| portfolio-optimization | 6.2 |
-| log-summary-date-ranges | 6.1 |
-| vulnerable-secret | 5.2 |
-| constraints-scheduling | 4.9 |
-| nginx-request-logging | 4.7 |
-| modernize-scientific-stack | 3.8 |
-| multi-source-data-merger | 3.8 |
-| git-leak-recovery | 2.9 |
-| fix-git | 2.3 |
+| overfull-hbox | 37.2 |
+| terminal-bench/make-mips-interpreter | 37.0 |
+| terminal-bench/polyglot-c-py | 37.0 |
+| schemelike-metacircular-eval | 36.9 |
+| compile-compcert | 36.7 |
+| cancel-async-tasks | 36.2 |
+| terminal-bench/path-tracing-reverse | 35.7 |
+| terminal-bench/mteb-leaderboard | 34.6 |
+| terminal-bench/schemelike-metacircular-eval | 34.5 |
+| financial-document-processor | 33.5 |
+| extract-elf | 33.3 |
+| sanitize-git-repo | 33.3 |
+| terminal-bench/configure-git-webserver | 32.1 |
+| terminal-bench/qemu-alpine-ssh | 31.8 |
+| mailman | 31.6 |
+| circuit-fibsqrt | 30.6 |
+| feal-linear-cryptanalysis | 29.7 |
+| terminal-bench/path-tracing | 29.6 |
+| terminal-bench/break-filter-js-from-html | 28.6 |
+| terminal-bench/db-wal-recovery | 28.6 |
+| terminal-bench/polyglot-rust-c | 28.6 |
+| qemu-startup | 28.4 |
+| break-filter-js-from-html | 28.2 |
+| rstan-to-pystan | 27.3 |
+| terminal-bench/torch-pipeline-parallelism | 25.0 |
+| terminal-bench/tune-mjcf | 25.0 |
+| sparql-university | 24.2 |
+| terminal-bench/build-pmars | 24.1 |
+| largest-eigenval | 23.7 |
+| build-pmars | 23.4 |
+| build-cython-ext | 22.7 |
+| large-scale-text-editing | 22.7 |
+| password-recovery | 22.2 |
+| count-dataset-tokens | 22.1 |
+| crack-7z-hash | 21.8 |
+| mcmc-sampling-stan | 21.6 |
+| feal-differential-cryptanalysis | 21.6 |
+| terminal-bench/cancel-async-tasks | 21.4 |
+| terminal-bench/count-dataset-tokens | 21.4 |
+| terminal-bench/extract-elf | 21.4 |
+| terminal-bench/mailman | 21.4 |
+| bn-fit-modify | 20.6 |
+| llm-inference-batching-scheduler | 20.5 |
+| pytorch-model-cli | 20.4 |
+| terminal-bench/compile-compcert | 20.0 |
+| pytorch-model-recovery | 19.8 |
+| build-pov-ray | 18.6 |
+| terminal-bench/pytorch-model-cli | 18.5 |
+| fix-ocaml-gc | 18.3 |
+| terminal-bench/headless-terminal | 17.9 |
+| sqlite-db-truncate | 17.7 |
+| sqlite-with-gcov | 17.1 |
+| reshard-c4-data | 16.5 |
+| fix-code-vulnerability | 15.2 |
+| terminal-bench/feal-linear-cryptanalysis | 14.8 |
+| terminal-bench/largest-eigenval | 14.8 |
+| kv-store-grpc | 14.8 |
+| terminal-bench/openssl-selfsigned-cert | 14.3 |
+| terminal-bench/winning-avg-corewars | 14.3 |
+| git-multibranch | 13.9 |
+| terminal-bench/financial-document-processor | 13.8 |
+| hf-model-inference | 13.4 |
+| terminal-bench/torch-tensor-parallelism | 13.3 |
+| terminal-bench/write-compressor | 13.3 |
+| regex-log | 13.2 |
+| openssl-selfsigned-cert | 13.1 |
+| code-from-image | 12.3 |
+| terminal-bench/fix-ocaml-gc | 12.0 |
+| custom-memory-heap-crash | 11.8 |
+| pypi-server | 11.7 |
+| terminal-bench/rstan-to-pystan | 11.5 |
+| headless-terminal | 11.4 |
+| terminal-bench/git-multibranch | 10.7 |
+| terminal-bench/overfull-hbox | 10.7 |
+| terminal-bench/sparql-university | 10.7 |
+| merge-diff-arc-agi-task | 10.6 |
+| distribution-search | 8.9 |
+| cobol-modernization | 8.6 |
+| prove-plus-comm | 8.1 |
+| terminal-bench/build-pov-ray | 7.1 |
+| terminal-bench/crack-7z-hash | 7.1 |
+| terminal-bench/feal-differential-cryptanalysis | 7.1 |
+| terminal-bench/fix-git | 7.1 |
+| terminal-bench/large-scale-text-editing | 7.1 |
+| terminal-bench/mcmc-sampling-stan | 7.1 |
+| terminal-bench/query-optimize | 7.1 |
+| log-summary-date-ranges | 7.1 |
+| constraints-scheduling | 7.0 |
+| portfolio-optimization | 6.6 |
+| vulnerable-secret | 5.4 |
+| nginx-request-logging | 5.1 |
+| multi-source-data-merger | 3.9 |
+| terminal-bench/circuit-fibsqrt | 3.7 |
+| modernize-scientific-stack | 3.6 |
+| terminal-bench/merge-diff-arc-agi-task | 3.6 |
+| terminal-bench/prove-plus-comm | 3.6 |
+| terminal-bench/sqlite-with-gcov | 3.6 |
+| terminal-bench/bn-fit-modify | 3.5 |
+| terminal-bench/kv-store-grpc | 3.5 |
+| git-leak-recovery | 3.0 |
+| fix-git | 2.1 |
+| terminal-bench/build-cython-ext | 0.0 |
+| terminal-bench/cobol-modernization | 0.0 |
+| terminal-bench/code-from-image | 0.0 |
+| terminal-bench/constraints-scheduling | 0.0 |
+| terminal-bench/custom-memory-heap-crash | 0.0 |
+| terminal-bench/distribution-search | 0.0 |
+| terminal-bench/fix-code-vulnerability | 0.0 |
+| terminal-bench/git-leak-recovery | 0.0 |
+| terminal-bench/hf-model-inference | 0.0 |
+| terminal-bench/llm-inference-batching-scheduler | 0.0 |
+| terminal-bench/log-summary-date-ranges | 0.0 |
+| terminal-bench/modernize-scientific-stack | 0.0 |
+| terminal-bench/multi-source-data-merger | 0.0 |
+| terminal-bench/nginx-request-logging | 0.0 |
+| terminal-bench/password-recovery | 0.0 |
+| terminal-bench/portfolio-optimization | 0.0 |
+| terminal-bench/pypi-server | 0.0 |
+| terminal-bench/pytorch-model-recovery | 0.0 |
+| terminal-bench/qemu-startup | 0.0 |
+| terminal-bench/regex-log | 0.0 |
+| terminal-bench/reshard-c4-data | 0.0 |
+| terminal-bench/sanitize-git-repo | 0.0 |
+| terminal-bench/sqlite-db-truncate | 0.0 |
+| terminal-bench/vulnerable-secret | 0.0 |
 <!--[[[end]]]-->

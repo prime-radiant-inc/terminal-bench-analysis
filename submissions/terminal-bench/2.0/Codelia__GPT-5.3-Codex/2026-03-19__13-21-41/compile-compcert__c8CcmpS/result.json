@@ -1,0 +1,112 @@
+{
+    "id": "bf54b076-09f9-42e6-815d-b6b45cb7a20f",
+    "task_name": "compile-compcert",
+    "trial_name": "compile-compcert__c8CcmpS",
+    "trial_uri": "file:///home/kousw/cospace/codelia/tmp/terminal-bench/jobs/2026-03-19__13-21-41/compile-compcert__c8CcmpS",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "compile-compcert"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "3c434d30e5ba4180232b09188d6f1e8e15a8e8e8f748fe479175757384a8d39e",
+    "config": {
+        "task": {
+            "path": "compile-compcert",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "compile-compcert__c8CcmpS",
+        "trials_dir": "tmp/terminal-bench/jobs/2026-03-19__13-21-41",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "tools.terminal_bench_python_adapter.codelia_agent:CodeliaInstalledAgent",
+            "model_name": "openai/gpt-5.3-codex",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "approval_mode": "full-access",
+                "reasoning": "high",
+                "auth_file": "~/.codelia/auth.json",
+                "search_mode": "auto",
+                "experimental_openai_websocket_mode": "auto",
+                "prompt_progress_stderr": "on"
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "e46ea88f-39a6-4dff-80dc-abeb395751a4"
+    },
+    "agent_info": {
+        "name": "codelia",
+        "version": "unknown",
+        "model_info": {
+            "name": "gpt-5.3-codex",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "agent": "codelia",
+            "approval_mode": "full-access",
+            "model_name": "openai/gpt-5.3-codex",
+            "reasoning": "high",
+            "experimental_openai_websocket_mode": "auto",
+            "prompt_progress_stderr_enabled": true,
+            "log_timestamp_prefix_enabled": true,
+            "harbor_debug": true,
+            "auth_file_uploaded": true,
+            "system_prompt_file_uploaded": true,
+            "return_code": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-19T05:23:23.356409Z",
+    "finished_at": "2026-03-19T05:36:01.179473Z",
+    "environment_setup": {
+        "started_at": "2026-03-19T05:23:23.359770Z",
+        "finished_at": "2026-03-19T05:23:25.088669Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-19T05:23:25.088688Z",
+        "finished_at": "2026-03-19T05:25:46.143137Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-19T05:25:46.143176Z",
+        "finished_at": "2026-03-19T05:35:47.435475Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-19T05:35:47.435554Z",
+        "finished_at": "2026-03-19T05:35:56.356470Z"
+    }
+}

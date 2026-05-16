@@ -1,0 +1,135 @@
+{
+    "id": "3dfaac9c-4b02-4cc1-bf18-19f2123aebf0",
+    "task_name": "terminal-bench/reshard-c4-data",
+    "trial_name": "reshard-c4-data__tWQDDBa",
+    "trial_uri": "file:///work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa",
+    "task_id": {
+        "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/reshard-c4-data"
+    },
+    "source": "wecode-tb2-4-30-5",
+    "task_checksum": "1ff2780fd34aa3ed067ee33dca25149e528a1a58b6e150c1235af5e308f071fc",
+    "config": {
+        "task": {
+            "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/reshard-c4-data",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "wecode-tb2-4-30-5"
+        },
+        "trial_name": "reshard-c4-data__tWQDDBa",
+        "trials_dir": "/work/terminal-bench/jobs/wecode-tb2-4-30-5",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "harbor_agent.wecode_agent:ThinWecodeInstalledAgent",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+                "auth_path": "/home/gradence/.wecode/auth.json",
+                "config_path": "/home/gradence/.wecode/config.toml"
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "164ac7f1-f71e-410b-9e9f-04c4ca60e3c9"
+    },
+    "agent_info": {
+        "name": "wecode-installed-thin",
+        "version": "wecode-cli 0.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": 1750349,
+        "n_cache_tokens": 1610624,
+        "n_output_tokens": 64843,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "binary_name": "wecode-bookworm",
+            "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+            "trajectory_source": "merged Wecode native rollout jsonl with A2A debug-event index",
+            "artifacts": {
+                "final": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/final.txt",
+                "stdout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/wecode.jsonl",
+                "stderr": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/wecode.stderr.txt",
+                "trajectory": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/trajectory.json",
+                "wecode_home": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/wecode-home",
+                "rollout_files": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/wecode-home/sessions/2026/04/27/rollout-2026-04-27T00-41-02-019dcc61-ea34-79d3-9cab-d46fd4474599.jsonl",
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/wecode-home/sessions/2026/04/27/rollout-2026-04-27T00-42-05-019dcc62-e25f-7c60-b0bf-252f299c7380.jsonl",
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/wecode-home/sessions/2026/04/27/rollout-2026-04-27T00-51-39-019dcc6b-a31d-7b03-aa15-54e82abeeeed.jsonl"
+                ],
+                "latest_rollout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/wecode-home/sessions/2026/04/27/rollout-2026-04-27T00-41-02-019dcc61-ea34-79d3-9cab-d46fd4474599.jsonl",
+                "debug_history": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/wecode-home/debug/019dcc61-ea34-79d3-9cab-d46fd4474599/history.latest.json"
+                ],
+                "debug_metadata": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/wecode-home/debug/019dcc61-ea34-79d3-9cab-d46fd4474599/metadata.json"
+                ]
+            },
+            "artifact_sha256": {
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/wecode-home/sessions/2026/04/27/rollout-2026-04-27T00-41-02-019dcc61-ea34-79d3-9cab-d46fd4474599.jsonl": "1f3f26ca8268f1e3ce122676a3cd60a5670fa64c79cc5c3970775a73b1dd1fb1",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/wecode-home/sessions/2026/04/27/rollout-2026-04-27T00-42-05-019dcc62-e25f-7c60-b0bf-252f299c7380.jsonl": "9d247883d1ab867474d5ab2d34104882867a413170025b0f0c81a4855935936c",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/wecode-home/sessions/2026/04/27/rollout-2026-04-27T00-51-39-019dcc6b-a31d-7b03-aa15-54e82abeeeed.jsonl": "c86f33cbd840bbf7a0d6648e4037f7179e89943c85a540bfda6039b2c39effc7",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/final.txt": "1334b92b5bb59679767b0851dffd98bd0a2fa9936cf187bdcec1012a7ffe9088",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/wecode.jsonl": "98739fae9a7fa8eba00a53947909367b8ccde17cb6f8a2f4e30c02f6225198a4",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/wecode.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__tWQDDBa/agent/trajectory.json": "c4e8ffaae386d580002f2156c1fc1801676e797e96799a2b5796f51e41b83583"
+            },
+            "final_output": "Completed and freshly verified by `Quinn-verifier`.\n\n- Implemented `/app/compress.py:1` for bounded reversible resharding with `<=30` entries per directory and `<=15MB` per file.\n- Implemented `/app/decompress.py:1` for in-place exact restoration of the original tree.\n- Added uv project setup in `/app/pyproject.toml:1` and lockfile `/app/uv.lock:1`.\n- Verified `uv sync`, exact `uv run python /app/compress.py ...` and `uv run python /app/decompress.py ...` entrypoints.\n- Verified `/app/c4_sample` round-trip: `9898` files restored exactly, clean hashes/directory diff, max archive entries `30`, max archive file size `3982648` bytes.\n- Verified edge cases: nested dirs, empty dir, zero-byte file, unicode/spaces filenames, and a `>15MB` file with chunk splitting."
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-27T00:40:53.781377Z",
+    "finished_at": "2026-04-27T01:01:22.383693Z",
+    "environment_setup": {
+        "started_at": "2026-04-27T00:40:53.796718Z",
+        "finished_at": "2026-04-27T00:40:54.899419Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-27T00:40:54.899430Z",
+        "finished_at": "2026-04-27T00:41:01.920339Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-27T00:41:01.920398Z",
+        "finished_at": "2026-04-27T00:58:55.787158Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-27T00:58:55.842553Z",
+        "finished_at": "2026-04-27T01:01:09.409403Z"
+    }
+}

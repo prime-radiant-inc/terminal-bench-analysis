@@ -1,0 +1,128 @@
+{
+    "id": "62912fc1-62cb-4422-b918-d33846da101f",
+    "task_name": "sanitize-git-repo",
+    "trial_name": "sanitize-git-repo__3ND9YLb",
+    "trial_uri": "file://jobs/evo_env_bootstrap_full/sanitize-git-repo__3ND9YLb",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "sanitize-git-repo"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "2193195d0a2d45451b0ff7b8bfe47677e11744f9528f54d6281d01bda76267cc",
+    "config": {
+        "task": {
+            "path": "sanitize-git-repo",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "sanitize-git-repo__3ND9YLb",
+        "trials_dir": "jobs/evo_env_bootstrap_full",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "agents_proposed.evo_env_bootstrap:AgentHarness",
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "runloop",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "0333b055-b8c2-4d18-840b-2d1995c6c418"
+    },
+    "agent_info": {
+        "name": "terminus-kira-env-bootstrap",
+        "version": "1.1.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1757564,
+        "n_cache_tokens": 1677687,
+        "n_output_tokens": 11126,
+        "cost_usd": 1.6135597500000003,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 30,
+            "api_request_times_msec": [
+                5340.684175491333,
+                7264.277458190918,
+                11482.600212097168,
+                13106.32061958313,
+                8628.500699996948,
+                18772.440195083618,
+                8787.20474243164,
+                7876.382350921631,
+                7698.779582977295,
+                5743.2098388671875,
+                7365.739822387695,
+                8713.502407073975,
+                5446.150064468384,
+                7757.774829864502,
+                4033.342123031616,
+                4184.733867645264,
+                5302.62303352356,
+                4224.020004272461,
+                4224.475860595703,
+                7281.347990036011,
+                5077.404975891113,
+                3952.2347450256348,
+                4831.08925819397,
+                4608.933448791504,
+                14329.174518585205,
+                8609.54213142395,
+                8918.207168579102,
+                9205.503463745117,
+                6206.1607837677,
+                7274.792909622192
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-26T09:49:55.089721Z",
+    "finished_at": "2026-03-26T09:55:36.483269Z",
+    "environment_setup": {
+        "started_at": "2026-03-26T09:49:55.099915Z",
+        "finished_at": "2026-03-26T09:50:01.803809Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-26T09:50:01.803815Z",
+        "finished_at": "2026-03-26T09:50:10.203698Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-26T09:50:10.203723Z",
+        "finished_at": "2026-03-26T09:55:30.574051Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-26T09:55:30.875919Z",
+        "finished_at": "2026-03-26T09:55:36.403499Z"
+    }
+}

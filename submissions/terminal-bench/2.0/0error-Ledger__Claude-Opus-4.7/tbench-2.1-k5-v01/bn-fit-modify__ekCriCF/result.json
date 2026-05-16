@@ -1,0 +1,110 @@
+{
+    "id": "978650e2-142a-4af6-bb09-a507e99820f4",
+    "task_name": "terminal-bench/bn-fit-modify",
+    "trial_name": "bn-fit-modify__ekCriCF",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/bn-fit-modify__ekCriCF",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "bn-fit-modify",
+        "ref": "sha256:b5f9644970c17ad9ddb46b7266f7bcd87c761d77d7e6f55d7cfe7284d5ff66e9"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "de87a0c253c75b7dfbc68a2fcf120d5bd77b1df632c7469e3d0a3b74321d26c2",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/bn-fit-modify",
+            "ref": "sha256:b5f9644970c17ad9ddb46b7266f7bcd87c761d77d7e6f55d7cfe7284d5ff66e9",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "bn-fit-modify__ekCriCF",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 62581,
+        "n_cache_tokens": null,
+        "n_output_tokens": 4988,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 9,
+            "verifier_cmd": "test -f /app/learned_dag.csv && test -f /app/intervened_dag.csv && test -f /app/final_bn_sample.csv && python3 -c \"import pandas as pd; d=pd.read_csv('/app/learned_dag.csv'); assert len(d)==6; assert set(d.columns)=={'to','from'}; s=pd.read_csv('/app/final_bn_sample.csv'); assert len(s)==10000; assert set(s.columns)=={'U','Y','R','D','M'}\"",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T13:36:48.803699Z",
+    "finished_at": "2026-05-12T13:39:19.979419Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T13:36:48.804676Z",
+        "finished_at": "2026-05-12T13:37:05.201302Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T13:37:05.201315Z",
+        "finished_at": "2026-05-12T13:37:05.201339Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T13:37:05.201376Z",
+        "finished_at": "2026-05-12T13:38:56.835182Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T13:38:56.912166Z",
+        "finished_at": "2026-05-12T13:39:08.326176Z"
+    },
+    "step_results": null
+}

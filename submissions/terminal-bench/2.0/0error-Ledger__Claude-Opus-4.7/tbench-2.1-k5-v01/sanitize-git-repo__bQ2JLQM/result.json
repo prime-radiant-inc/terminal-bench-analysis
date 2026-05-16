@@ -1,0 +1,110 @@
+{
+    "id": "92939760-7c79-4981-a78b-ebe51bb14840",
+    "task_name": "terminal-bench/sanitize-git-repo",
+    "trial_name": "sanitize-git-repo__bQ2JLQM",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/sanitize-git-repo__bQ2JLQM",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "sanitize-git-repo",
+        "ref": "sha256:6e86297715fae62cd499fbdd27013e11a38d05d7e05b7f661cb50b4ecead128f"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "b2e4391be7422fb3cf8686964979a57704aae85a36bccd2df40e22c049f58e13",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/sanitize-git-repo",
+            "ref": "sha256:6e86297715fae62cd499fbdd27013e11a38d05d7e05b7f661cb50b4ecead128f",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "sanitize-git-repo__bQ2JLQM",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 189976,
+        "n_cache_tokens": null,
+        "n_output_tokens": 6721,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 2,
+            "verifier_cmd": "! grep -rEn \"AKIA[0-9A-Z]{16}|hf_[A-Za-z0-9]{30,}|ghp_[A-Za-z0-9]{30,}|D4w8z9wKN1aVeT3BpQj6kIuN7wH8X0M9KfV5OqzF\" /app/dclm --exclude-dir=.git",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T06:32:13.258054Z",
+    "finished_at": "2026-05-12T06:33:46.103757Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T06:32:13.267241Z",
+        "finished_at": "2026-05-12T06:32:19.681200Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T06:32:19.681214Z",
+        "finished_at": "2026-05-12T06:32:19.681237Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T06:32:19.681276Z",
+        "finished_at": "2026-05-12T06:33:30.352800Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T06:33:30.439958Z",
+        "finished_at": "2026-05-12T06:33:35.490906Z"
+    },
+    "step_results": null
+}

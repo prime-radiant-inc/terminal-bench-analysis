@@ -1,0 +1,110 @@
+{
+    "id": "12d57c42-27a9-4992-95f2-4281400946d0",
+    "task_name": "terminal-bench/adaptive-rejection-sampler",
+    "trial_name": "adaptive-rejection-sampler__vcwfvjP",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/adaptive-rejection-sampler__vcwfvjP",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "adaptive-rejection-sampler",
+        "ref": "sha256:bcaa2399985cd57666018025846289ab25e193ae0dd8fb7f0ffab2410c24d4de"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "a4726253ad23c3fc46b5cb9c3d21025874e367b18643a3920f636a1fa89e1207",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/adaptive-rejection-sampler",
+            "ref": "sha256:bcaa2399985cd57666018025846289ab25e193ae0dd8fb7f0ffab2410c24d4de",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "adaptive-rejection-sampler__vcwfvjP",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 122614,
+        "n_cache_tokens": null,
+        "n_output_tokens": 23543,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 7,
+            "verifier_cmd": "Rscript -e 'source(\"/app/ars.R\"); s <- ars(dnorm, c(-Inf,Inf), n=2000); stopifnot(abs(mean(s))<0.15, abs(sd(s)-1)<0.15); e <- ars(function(x) dexp(x, rate=1), c(0,Inf), n=2000); stopifnot(abs(mean(e)-1)<0.2); test(); stopifnot(file.exists(\"/app/normal_samples.txt\") || file.exists(\"/app/exponential_samples.txt\"))'",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T11:42:05.585943Z",
+    "finished_at": "2026-05-12T11:50:48.288011Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T11:42:05.586885Z",
+        "finished_at": "2026-05-12T11:42:07.874306Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T11:42:07.874319Z",
+        "finished_at": "2026-05-12T11:42:07.874341Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T11:42:07.874376Z",
+        "finished_at": "2026-05-12T11:50:28.311628Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T11:50:28.397697Z",
+        "finished_at": "2026-05-12T11:50:36.547362Z"
+    },
+    "step_results": null
+}

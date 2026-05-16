@@ -1,0 +1,131 @@
+{
+    "id": "877713c9-b1d1-49c7-976a-b2d0c1712d6b",
+    "task_name": "terminal-bench/mteb-leaderboard",
+    "trial_name": "mteb-leaderboard__gpfMAGG",
+    "trial_uri": "file:///work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gpfMAGG",
+    "task_id": {
+        "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/mteb-leaderboard"
+    },
+    "source": "wecode-tb2-4-30-5",
+    "task_checksum": "10231d94827c016e593b56d128471c3e98e03560c0af11554a0ef3595aef1b42",
+    "config": {
+        "task": {
+            "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/mteb-leaderboard",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "wecode-tb2-4-30-5"
+        },
+        "trial_name": "mteb-leaderboard__gpfMAGG",
+        "trials_dir": "/work/terminal-bench/jobs/wecode-tb2-4-30-5",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "harbor_agent.wecode_agent:ThinWecodeInstalledAgent",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+                "auth_path": "/home/gradence/.wecode/auth.json",
+                "config_path": "/home/gradence/.wecode/config.toml"
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "164ac7f1-f71e-410b-9e9f-04c4ca60e3c9"
+    },
+    "agent_info": {
+        "name": "wecode-installed-thin",
+        "version": "wecode-cli 0.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": 4719863,
+        "n_cache_tokens": 4368640,
+        "n_output_tokens": 30120,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "binary_name": "wecode-bookworm",
+            "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+            "trajectory_source": "merged Wecode native rollout jsonl with A2A debug-event index",
+            "artifacts": {
+                "final": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gpfMAGG/agent/final.txt",
+                "stdout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gpfMAGG/agent/wecode.jsonl",
+                "stderr": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gpfMAGG/agent/wecode.stderr.txt",
+                "trajectory": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gpfMAGG/agent/trajectory.json",
+                "wecode_home": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gpfMAGG/agent/wecode-home",
+                "rollout_files": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gpfMAGG/agent/wecode-home/sessions/2026/04/29/rollout-2026-04-29T14-37-40-019dd9ac-9884-70a2-aa8d-95fca572966d.jsonl"
+                ],
+                "latest_rollout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gpfMAGG/agent/wecode-home/sessions/2026/04/29/rollout-2026-04-29T14-37-40-019dd9ac-9884-70a2-aa8d-95fca572966d.jsonl",
+                "debug_history": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gpfMAGG/agent/wecode-home/debug/019dd9ac-9884-70a2-aa8d-95fca572966d/history.latest.json"
+                ],
+                "debug_metadata": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gpfMAGG/agent/wecode-home/debug/019dd9ac-9884-70a2-aa8d-95fca572966d/metadata.json"
+                ]
+            },
+            "artifact_sha256": {
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gpfMAGG/agent/wecode-home/sessions/2026/04/29/rollout-2026-04-29T14-37-40-019dd9ac-9884-70a2-aa8d-95fca572966d.jsonl": "9dd174c7cb7d8406a81e31df9949bb2aec35e7a6a9ea497963d47c71986cd9ea",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gpfMAGG/agent/final.txt": "c82eeb93d98298fe5ba5d5dff674e73426d7e17f3362f753dbd14645a526aa92",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gpfMAGG/agent/wecode.jsonl": "cf6221d2a57c8275ffa87b73980f7746578a35d68cda7b4e413a946184d39279",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gpfMAGG/agent/wecode.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gpfMAGG/agent/trajectory.json": "f61b883707ba58e9107b5edef2f2a73438b97e7795ae71cbf5161e7ad1b78a05"
+            },
+            "final_output": "Done — wrote `GritLM/GritLM-7B` to `/app/result.txt` and verified the file contents."
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-29T14:34:36.306533Z",
+    "finished_at": "2026-04-29T15:19:48.558088Z",
+    "environment_setup": {
+        "started_at": "2026-04-29T14:34:36.307071Z",
+        "finished_at": "2026-04-29T14:34:51.098896Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-29T14:34:51.098899Z",
+        "finished_at": "2026-04-29T14:37:39.632944Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-29T14:37:39.632974Z",
+        "finished_at": "2026-04-29T15:18:45.424459Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-29T15:19:24.266152Z",
+        "finished_at": "2026-04-29T15:19:37.795112Z"
+    }
+}

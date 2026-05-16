@@ -1,0 +1,103 @@
+{
+    "id": "c02d05fd-cdd6-4d69-bcf1-2a68c6e75dbf",
+    "task_name": "terminal-bench/reshard-c4-data",
+    "trial_name": "reshard-c4-data__TvJkaaR",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/reshard-c4-data__TvJkaaR",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "reshard-c4-data",
+        "ref": "sha256:a402bbfede73dd04168d697de9b9146026f69e14c8cd333b6a91fc87e44ecd4b"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "89d8d86b48c2619328d2eb1a86c33a93d1f641fbfb59c4e0626535e246715b65",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/reshard-c4-data",
+            "ref": "sha256:a402bbfede73dd04168d697de9b9146026f69e14c8cd333b6a91fc87e44ecd4b",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "reshard-c4-data__TvJkaaR",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "BadRequestError",
+        "exception_message": "litellm.BadRequestError: OpenAIException - Provider returned error",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/llms/openai/openai.py\", line 930, in acompletion\n    headers, response = await self.make_openai_chat_completion_request(\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/litellm_core_utils/logging_utils.py\", line 297, in async_wrapper\n    result = await func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/llms/openai/openai.py\", line 461, in make_openai_chat_completion_request\n    raise e\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/llms/openai/openai.py\", line 438, in make_openai_chat_completion_request\n    await openai_aclient.chat.completions.with_raw_response.create(\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/openai/_legacy_response.py\", line 384, in wrapped\n    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/openai/resources/chat/completions/completions.py\", line 2700, in create\n    return await self._post(\n           ^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/openai/_base_client.py\", line 1884, in post\n    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/openai/_base_client.py\", line 1669, in request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.BadRequestError: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{\"message\":\"prompt is too long: 1043197 tokens > 1000000 maximum\"}', 'provider_name': 'Amazon Bedrock', 'is_byok': False}}, 'user_id': 'user_3BHDATvxrs1XVClaffvDsU2rmuX'}\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/main.py\", line 622, in acompletion\n    response = await init_response\n               ^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/llms/openai/openai.py\", line 990, in acompletion\n    raise OpenAIError(\nlitellm.llms.openai.common_utils.OpenAIError: Error code: 400 - {'error': {'message': 'Provider returned error', 'code': 400, 'metadata': {'raw': '{\"message\":\"prompt is too long: 1043197 tokens > 1000000 maximum\"}', 'provider_name': 'Amazon Bedrock', 'is_byok': False}}, 'user_id': 'user_3BHDATvxrs1XVClaffvDsU2rmuX'}\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 961, in run\n    await self._execute_agent()\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 370, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/ubuntu/terminal-bench/agent/scaffold_agent.py\", line 174, in run\n    response = await litellm.acompletion(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/utils.py\", line 2097, in wrapper_async\n    raise e\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/utils.py\", line 1896, in wrapper_async\n    result = await original_function(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/main.py\", line 641, in acompletion\n    raise exception_type(\n          ^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py\", line 2456, in exception_type\n    raise e\n  File \"/home/ubuntu/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py\", line 534, in exception_type\n    raise BadRequestError(\nlitellm.exceptions.BadRequestError: litellm.BadRequestError: OpenAIException - Provider returned error\n",
+        "occurred_at": "2026-05-12T12:17:00.183071"
+    },
+    "started_at": "2026-05-12T12:14:31.054165Z",
+    "finished_at": "2026-05-12T12:17:11.445901Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T12:14:31.055959Z",
+        "finished_at": "2026-05-12T12:15:54.114089Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T12:15:54.114106Z",
+        "finished_at": "2026-05-12T12:15:54.114139Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T12:15:54.114191Z",
+        "finished_at": "2026-05-12T12:17:00.092391Z"
+    },
+    "verifier": null,
+    "step_results": null
+}

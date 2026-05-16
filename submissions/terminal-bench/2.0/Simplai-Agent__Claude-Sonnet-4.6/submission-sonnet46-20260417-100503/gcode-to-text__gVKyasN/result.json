@@ -1,0 +1,108 @@
+{
+    "id": "f030e889-6fd6-41e4-b4a7-88d82d604276",
+    "task_name": "gcode-to-text",
+    "trial_name": "gcode-to-text__gVKyasN",
+    "trial_uri": "file:///workspace/terminal-bench-custom-agent/jobs/submission-sonnet46-20260417-100503/gcode-to-text__gVKyasN",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "gcode-to-text"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "5531de29b9b445e4cd67b66231d34cb9e7bddcf15f4c2574b7376a19f0e4c339",
+    "config": {
+        "task": {
+            "path": "gcode-to-text",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "gcode-to-text__gVKyasN",
+        "trials_dir": "jobs/submission-sonnet46-20260417-100503",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_agent.harbor_agent:HarborTerminalAgent",
+            "model_name": "anthropic/claude-sonnet-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "3404d55b-0769-42d2-adfa-b2e42ecfbb81"
+    },
+    "agent_info": {
+        "name": "terminal-agent",
+        "version": "0.3.0",
+        "model_info": {
+            "name": "claude-sonnet-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/workspace/terminal-bench-custom-agent/terminal_agent/harbor_agent.py\", line 472, in run\n    commands, is_complete, feedback = await asyncio.get_event_loop().run_in_executor(\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/workspace/terminal-bench-custom-agent/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 285, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n  File \"/usr/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/workspace/terminal-bench-custom-agent/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 538, in run\n    await self._execute_agent()\n  File \"/workspace/terminal-bench-custom-agent/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 294, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-04-17T17:05:57.952196"
+    },
+    "started_at": "2026-04-17T16:50:53.225976Z",
+    "finished_at": "2026-04-17T17:06:16.808699Z",
+    "environment_setup": {
+        "started_at": "2026-04-17T16:50:53.228042Z",
+        "finished_at": "2026-04-17T16:50:57.162501Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-17T16:50:57.162516Z",
+        "finished_at": "2026-04-17T16:50:57.950841Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-17T16:50:57.950910Z",
+        "finished_at": "2026-04-17T17:05:57.951429Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-17T17:05:57.953340Z",
+        "finished_at": "2026-04-17T17:06:06.019838Z"
+    }
+}

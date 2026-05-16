@@ -1,0 +1,101 @@
+{
+    "id": "d0c5f95c-0c81-4267-9da3-62f0ffd30834",
+    "task_name": "git-leak-recovery",
+    "trial_name": "git-leak-recovery__kPFNFKr",
+    "trial_uri": "file:///home/dahiy/repos/urban-octo-guacamole/jobs/glm5-high-b-pass-4-20260403-202327/git-leak-recovery__kPFNFKr",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "git-leak-recovery"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "ceb70c5174fe2cccd2ca712684884acc67c8b1a56822fbc7b4d00cd18fce18bb",
+    "config": {
+        "task": {
+            "path": "git-leak-recovery",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "git-leak-recovery__kPFNFKr",
+        "trials_dir": "/home/dahiy/repos/urban-octo-guacamole/jobs/glm5-high-b-pass-4-20260403-202327",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "evaluations.harbor.agent:JustAnotherCodingAgentHarborAgent",
+            "model_name": "ollama:glm-5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [
+            "/logs/agent/just-another-coding-agent.txt",
+            "/tmp/just-another-coding-agent-sessions"
+        ],
+        "job_id": "f582f352-0805-4f55-b547-fab5eb2f9ce6"
+    },
+    "agent_info": {
+        "name": "just-another-coding-agent",
+        "version": "unknown",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "adapter": "just-another-coding-agent-harbor"
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-04T04:42:25.936337Z",
+    "finished_at": "2026-04-04T04:48:39.107121Z",
+    "environment_setup": {
+        "started_at": "2026-04-04T04:42:25.950774Z",
+        "finished_at": "2026-04-04T04:43:13.679512Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-04T04:43:13.679521Z",
+        "finished_at": "2026-04-04T04:44:01.879258Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-04T04:44:01.879322Z",
+        "finished_at": "2026-04-04T04:48:03.737245Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-04T04:48:03.737384Z",
+        "finished_at": "2026-04-04T04:48:30.151933Z"
+    }
+}

@@ -1,0 +1,115 @@
+{
+    "id": "5a712fdf-9941-4ea1-98c7-1bcc516cf09d",
+    "task_name": "llm-inference-batching-scheduler",
+    "trial_name": "llm-inference-batching-scheduler__u4aghgv",
+    "trial_uri": "file://jobs/evo_env_bootstrap_full/llm-inference-batching-scheduler__u4aghgv",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "llm-inference-batching-scheduler"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "3a08e63e0643ea5914eedeecb08cb93a1f0a10b9dc7d19d1f570004af84531c8",
+    "config": {
+        "task": {
+            "path": "llm-inference-batching-scheduler",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "llm-inference-batching-scheduler__u4aghgv",
+        "trials_dir": "jobs/evo_env_bootstrap_full",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "agents_proposed.evo_env_bootstrap:AgentHarness",
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "runloop",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "0333b055-b8c2-4d18-840b-2d1995c6c418"
+    },
+    "agent_info": {
+        "name": "terminus-kira-env-bootstrap",
+        "version": "1.1.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 606190,
+        "n_cache_tokens": 547891,
+        "n_output_tokens": 18459,
+        "cost_usd": 1.0957142499999997,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 17,
+            "api_request_times_msec": [
+                6295.609712600708,
+                7100.658416748047,
+                9967.376470565796,
+                82901.70240402222,
+                4709.683179855347,
+                69553.86757850647,
+                4832.421541213989,
+                4086.3606929779053,
+                7836.684226989746,
+                23643.507480621338,
+                8422.206401824951,
+                4392.33922958374,
+                7595.337867736816,
+                16687.484741210938,
+                4953.838586807251,
+                7720.525503158569,
+                7439.208984375
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-26T06:48:49.928879Z",
+    "finished_at": "2026-03-26T06:54:18.128912Z",
+    "environment_setup": {
+        "started_at": "2026-03-26T06:48:49.946636Z",
+        "finished_at": "2026-03-26T06:48:54.990860Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-26T06:48:54.990865Z",
+        "finished_at": "2026-03-26T06:49:02.765726Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-26T06:49:02.765750Z",
+        "finished_at": "2026-03-26T06:54:12.776592Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-26T06:54:13.053689Z",
+        "finished_at": "2026-03-26T06:54:18.050695Z"
+    }
+}

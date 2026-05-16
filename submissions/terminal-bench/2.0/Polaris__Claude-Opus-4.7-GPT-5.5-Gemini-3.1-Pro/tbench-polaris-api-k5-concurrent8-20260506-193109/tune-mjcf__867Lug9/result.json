@@ -1,0 +1,165 @@
+{
+    "id": "c52e4cd3-5988-4aec-b9b1-2b4d0cf489ea",
+    "task_name": "tune-mjcf",
+    "trial_name": "tune-mjcf__867Lug9",
+    "trial_uri": "file:///home/bryan/projects/polaris/benchmark_runs/tbench-polaris-api-k5-concurrent8-20260506-193109/tune-mjcf__867Lug9",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "tune-mjcf"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "0014600ed83c316bbc3b495879f147f234d06578281af02817c9955794d4ebef",
+    "config": {
+        "task": {
+            "path": "tune-mjcf",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "tune-mjcf__867Lug9",
+        "trials_dir": "/home/bryan/projects/polaris/benchmark_runs/tbench-polaris-api-k5-concurrent8-20260506-193109",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "tbench_polaris_agent:PolarisAgent",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "4954af75-42d9-4e2e-b010-4d6f681f0d38"
+    },
+    "agent_info": {
+        "name": "polaris",
+        "version": "2.2.0 (Polaris)",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "polaris_session_id": "2cbbbd95-de14-4b3c-9a86-0e4ba4d9929b",
+            "polaris_num_turns": null,
+            "polaris_duration_ms": null,
+            "polaris_duration_api_ms": null,
+            "polaris_model_usage": null,
+            "polaris_tbench_adapter_mode": "neutral",
+            "polaris_tbench_main_model": "claude-opus-4-7",
+            "polaris_tbench_tools": "Bash,Read,Write,Edit,Glob,Grep,FuzzyFind,Skill,browser__open,browser__close,browser__status,browser__navigate,browser__fill,browser__click,browser__press_key,browser__wait_for,browser__capture_start,browser__capture_stop,browser__capture_query,browser__screenshot,browser__eval_js",
+            "polaris_tbench_thinking": "enabled",
+            "polaris_tbench_effort": "high",
+            "polaris_tbench_bash_default_timeout_ms": "120000",
+            "polaris_tbench_bash_max_timeout_ms": "1200000",
+            "polaris_tbench_max_turns": "60",
+            "polaris_tbench_lead_timeout_s": "1800",
+            "polaris_tbench_effective_agent_timeout_s": 900,
+            "polaris_tbench_final_reserve_s": 180,
+            "polaris_tbench_worker_post_reserve_s": 45,
+            "polaris_tbench_visible_check_post_reserve_s": 20,
+            "polaris_tbench_rescue_post_reserve_s": 20,
+            "polaris_tbench_lead_idle_timeout_s": "1500",
+            "polaris_tbench_rescue_timeout_s": "1800",
+            "polaris_tbench_install_system_deps": true,
+            "polaris_tbench_obscura_binary": "/home/bryan/.polaris/bin/obscura",
+            "polaris_tbench_obscura_available": true,
+            "polaris_tbench_uv_binary": "/home/bryan/.local/bin/uv",
+            "polaris_tbench_uv_available": true,
+            "polaris_claude_credential_ttl_warning": null,
+            "polaris_claude_auth_source": "ANTHROPIC_API_KEY",
+            "polaris_claude_auth_primary": "api_key",
+            "polaris_claude_auth_fallback_source": null,
+            "polaris_claude_oauth_preflight_warning": null,
+            "polaris_codex_model": "gpt-5.5",
+            "polaris_codex_reasoning_effort": "high",
+            "polaris_gemini_model": "gemini-3.1-pro-preview",
+            "polaris_kimi_route_enabled": true,
+            "polaris_codex_worker_timeout_s": "900",
+            "polaris_gemini_worker_timeout_s": "300",
+            "polaris_kimi_worker_timeout_s": "300",
+            "polaris_workers_seen": [
+                "codex"
+            ],
+            "polaris_worker_events": [
+                {
+                    "ts": "2026-05-07T04:00:19Z",
+                    "model": "codex",
+                    "event": "start"
+                },
+                {
+                    "ts": "2026-05-07T04:09:32Z",
+                    "model": "codex",
+                    "event": "end",
+                    "rc": 0
+                }
+            ],
+            "polaris_ml_events_path": "/home/bryan/projects/polaris/benchmark_runs/tbench-polaris-api-k5-concurrent8-20260506-193109/tune-mjcf__867Lug9/agent/polaris-ml-events.jsonl",
+            "polaris_ml_event_count": 5,
+            "polaris_ml_active_policy_versions": {}
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/bryan/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/bryan/.cache/uv/archive-v0/KvoTrRgs47hECnIrB-Uc5/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 42, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/bryan/projects/polaris/tbench_polaris_agent.py\", line 9444, in run\n    await self.exec_as_agent(\n    ...<2 lines>...\n    )\n  File \"/home/bryan/.cache/uv/archive-v0/KvoTrRgs47hECnIrB-Uc5/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 366, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n        environment, command, env=env, cwd=cwd, timeout_sec=timeout_sec\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/bryan/.cache/uv/archive-v0/KvoTrRgs47hECnIrB-Uc5/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 313, in _exec\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n    )\n    ^\n  File \"/home/bryan/.cache/uv/archive-v0/KvoTrRgs47hECnIrB-Uc5/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 599, in exec\n    return await self._run_docker_compose_command(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        exec_command, check=False, timeout_sec=timeout_sec\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/bryan/.cache/uv/archive-v0/KvoTrRgs47hECnIrB-Uc5/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 360, in _run_docker_compose_command\n    stdout_bytes, stderr_bytes = await process.communicate()\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/bryan/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/asyncio/subprocess.py\", line 201, in communicate\n    stdin, stdout, stderr = await tasks.gather(stdin, stdout, stderr)\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/bryan/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/asyncio/subprocess.py\", line 181, in _read_stream\n    output = await stream.read()\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/home/bryan/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/asyncio/streams.py\", line 723, in read\n    block = await self.read(self._limit)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/bryan/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/asyncio/streams.py\", line 730, in read\n    await self._wait_for_data('read')\n  File \"/home/bryan/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/asyncio/streams.py\", line 539, in _wait_for_data\n    await self._waiter\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/bryan/.cache/uv/archive-v0/KvoTrRgs47hECnIrB-Uc5/lib/python3.13/site-packages/harbor/trial/trial.py\", line 370, in _execute_agent\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/home/bryan/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/home/bryan/.local/share/uv/python/cpython-3.13.11-linux-x86_64-gnu/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/bryan/.cache/uv/archive-v0/KvoTrRgs47hECnIrB-Uc5/lib/python3.13/site-packages/harbor/trial/trial.py\", line 961, in run\n    await self._execute_agent()\n  File \"/home/bryan/.cache/uv/archive-v0/KvoTrRgs47hECnIrB-Uc5/lib/python3.13/site-packages/harbor/trial/trial.py\", line 379, in _execute_agent\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {self._agent_timeout_sec} seconds\"\n    ) from e\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-05-06T23:11:18.597091"
+    },
+    "started_at": "2026-05-07T03:55:22.235991Z",
+    "finished_at": "2026-05-07T04:11:50.921491Z",
+    "environment_setup": {
+        "started_at": "2026-05-07T03:55:22.236809Z",
+        "finished_at": "2026-05-07T03:55:26.451582Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-07T03:55:26.451606Z",
+        "finished_at": "2026-05-07T03:56:18.590251Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-07T03:56:18.590300Z",
+        "finished_at": "2026-05-07T04:11:18.591269Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-07T04:11:18.648827Z",
+        "finished_at": "2026-05-07T04:11:39.883300Z"
+    },
+    "step_results": null
+}

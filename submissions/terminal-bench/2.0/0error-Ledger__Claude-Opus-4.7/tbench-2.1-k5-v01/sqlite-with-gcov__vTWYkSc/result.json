@@ -1,0 +1,110 @@
+{
+    "id": "57ce25a9-bc85-4bf1-9532-58fff9bb8bdb",
+    "task_name": "terminal-bench/sqlite-with-gcov",
+    "trial_name": "sqlite-with-gcov__vTWYkSc",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/sqlite-with-gcov__vTWYkSc",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "sqlite-with-gcov",
+        "ref": "sha256:9f9bd57fbf9f4831e9031755e83aea6b9d60d2b2d54e8a12d48cff4dca3c231d"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "243352f9b742b39a4a21fe51a1d88c04cc45ede977e83cc968c9becfaf3f1de2",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/sqlite-with-gcov",
+            "ref": "sha256:9f9bd57fbf9f4831e9031755e83aea6b9d60d2b2d54e8a12d48cff4dca3c231d",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "sqlite-with-gcov__vTWYkSc",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 67468,
+        "n_cache_tokens": null,
+        "n_output_tokens": 1459,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 13,
+            "verifier_cmd": "bash -c 'which sqlite3 && sqlite3 :memory: \"select sqlite_version();\" && ls /app/sqlite/*.gcno | head -3'",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T12:47:24.477941Z",
+    "finished_at": "2026-05-12T12:49:40.935441Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T12:47:24.487793Z",
+        "finished_at": "2026-05-12T12:47:26.965201Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T12:47:26.965210Z",
+        "finished_at": "2026-05-12T12:47:26.965232Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T12:47:26.965267Z",
+        "finished_at": "2026-05-12T12:49:20.744061Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T12:49:20.839120Z",
+        "finished_at": "2026-05-12T12:49:29.105886Z"
+    },
+    "step_results": null
+}

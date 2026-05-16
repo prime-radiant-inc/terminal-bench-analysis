@@ -1,0 +1,101 @@
+{
+    "id": "593d3570-6cc3-4e78-a82f-09372d02f6c8",
+    "task_name": "torch-tensor-parallelism",
+    "trial_name": "torch-tensor-parallelism__sfyLdRW",
+    "trial_uri": "file:///workspace/terminal-bench-custom-agent/jobs/submission-sonnet46-20260417-100503/torch-tensor-parallelism__sfyLdRW",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "torch-tensor-parallelism"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "2637b586b22a779d1a4f01508f5f2caeea21d0b126b53d938e06ae8e717b8d19",
+    "config": {
+        "task": {
+            "path": "torch-tensor-parallelism",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "torch-tensor-parallelism__sfyLdRW",
+        "trials_dir": "jobs/submission-sonnet46-20260417-100503",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_agent.harbor_agent:HarborTerminalAgent",
+            "model_name": "anthropic/claude-sonnet-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "3404d55b-0769-42d2-adfa-b2e42ecfbb81"
+    },
+    "agent_info": {
+        "name": "terminal-agent",
+        "version": "0.3.0",
+        "model_info": {
+            "name": "claude-sonnet-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RuntimeError",
+        "exception_message": "torch-tensor-parallelism__sfyLdRW: failed to send non-blocking keys: None",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/workspace/terminal-bench-custom-agent/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 538, in run\n    await self._execute_agent()\n  File \"/workspace/terminal-bench-custom-agent/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 285, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/workspace/terminal-bench-custom-agent/terminal_agent/harbor_agent.py\", line 489, in run\n    timeout_occurred, terminal_output = await self._execute_commands(commands)\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/terminal-bench-custom-agent/terminal_agent/harbor_agent.py\", line 360, in _execute_commands\n    await self._session.send_keys(\n  File \"/workspace/terminal-bench-custom-agent/.venv/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 656, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/workspace/terminal-bench-custom-agent/.venv/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 609, in _send_non_blocking_keys\n    raise RuntimeError(\nRuntimeError: torch-tensor-parallelism__sfyLdRW: failed to send non-blocking keys: None\n",
+        "occurred_at": "2026-04-17T10:17:59.364465"
+    },
+    "started_at": "2026-04-17T10:14:58.082775Z",
+    "finished_at": "2026-04-17T10:18:00.210540Z",
+    "environment_setup": {
+        "started_at": "2026-04-17T10:14:58.084579Z",
+        "finished_at": "2026-04-17T10:15:01.724941Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-17T10:15:01.724957Z",
+        "finished_at": "2026-04-17T10:15:02.523352Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-17T10:15:02.523423Z",
+        "finished_at": "2026-04-17T10:17:59.361525Z"
+    },
+    "verifier": null
+}

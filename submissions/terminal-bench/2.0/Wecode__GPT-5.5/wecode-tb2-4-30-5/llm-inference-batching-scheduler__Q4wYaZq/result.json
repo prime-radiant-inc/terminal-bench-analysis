@@ -1,0 +1,135 @@
+{
+    "id": "ce521385-fb7f-4d22-a7a2-b7e9d9e33cb1",
+    "task_name": "terminal-bench/llm-inference-batching-scheduler",
+    "trial_name": "llm-inference-batching-scheduler__Q4wYaZq",
+    "trial_uri": "file:///work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq",
+    "task_id": {
+        "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/llm-inference-batching-scheduler"
+    },
+    "source": "wecode-tb2-4-30-5",
+    "task_checksum": "a122f939f3cfff25ee2e1803f2b251178fdbdd0f2baa8a6c758dc70960bc3e2a",
+    "config": {
+        "task": {
+            "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/llm-inference-batching-scheduler",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "wecode-tb2-4-30-5"
+        },
+        "trial_name": "llm-inference-batching-scheduler__Q4wYaZq",
+        "trials_dir": "/work/terminal-bench/jobs/wecode-tb2-4-30-5",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "harbor_agent.wecode_agent:ThinWecodeInstalledAgent",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+                "auth_path": "/home/gradence/.wecode/auth.json",
+                "config_path": "/home/gradence/.wecode/config.toml"
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "164ac7f1-f71e-410b-9e9f-04c4ca60e3c9"
+    },
+    "agent_info": {
+        "name": "wecode-installed-thin",
+        "version": "wecode-cli 0.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": 1540241,
+        "n_cache_tokens": 1358208,
+        "n_output_tokens": 50094,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "binary_name": "wecode-bookworm",
+            "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+            "trajectory_source": "merged Wecode native rollout jsonl with A2A debug-event index",
+            "artifacts": {
+                "final": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/final.txt",
+                "stdout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/wecode.jsonl",
+                "stderr": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/wecode.stderr.txt",
+                "trajectory": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/trajectory.json",
+                "wecode_home": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/wecode-home",
+                "rollout_files": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T05-08-38-019dc830-8ee2-7053-a5b7-56f6b333d3fb.jsonl",
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T05-09-37-019dc831-7297-7c72-a0e0-2bddc0b4fab6.jsonl",
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T05-17-40-019dc838-d150-7372-98c8-2d1187a75d7d.jsonl"
+                ],
+                "latest_rollout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T05-08-38-019dc830-8ee2-7053-a5b7-56f6b333d3fb.jsonl",
+                "debug_history": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/wecode-home/debug/019dc830-8ee2-7053-a5b7-56f6b333d3fb/history.latest.json"
+                ],
+                "debug_metadata": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/wecode-home/debug/019dc830-8ee2-7053-a5b7-56f6b333d3fb/metadata.json"
+                ]
+            },
+            "artifact_sha256": {
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T05-08-38-019dc830-8ee2-7053-a5b7-56f6b333d3fb.jsonl": "42003a6b8d94e82892f7276b3faf2fced84e54e1fd1a62fd85787e4d2d32aefe",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T05-09-37-019dc831-7297-7c72-a0e0-2bddc0b4fab6.jsonl": "432195326d74ed11ad0f4d196f187cb16847a3381e572e99b659737124e9a96b",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T05-17-40-019dc838-d150-7372-98c8-2d1187a75d7d.jsonl": "158f656600d247209ef4bad15b2c68df7ed068c0c2d28541b6b239e3ef87c886",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/final.txt": "2f2d4c707c973072946b0f0cf2a8186617d5f6dcaa98367bc2e8492902103a09",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/wecode.jsonl": "99634a05cba254ed7dc5863f64079fc39d57b95a111f4b33f3411d8f7197125d",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/wecode.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/llm-inference-batching-scheduler__Q4wYaZq/agent/trajectory.json": "796dae814b3f7013338a7d8142ae9af27be76b0cfedb24ea4728ac5dd0d86d99"
+            },
+            "final_output": "**Completed**\n- Generated optimized plans at `/app/task_file/output_data/plan_b1.jsonl` and `/app/task_file/output_data/plan_b2.jsonl`.\n- Used 2 global shapes total: `(2048, 32, 4096)` for bucket 1 and `(704, 32, 4096)` for bucket 2.\n- Preserved input files unchanged.\n\n**Verified Metrics**\n- `plan_b1.jsonl`: cost `2.89906404343e11`, pad ratio `0.0538055163`, p95 `2043383.534 ms`, sequential `222018710.512`.\n- `plan_b2.jsonl`: cost `4.4950413058e10`, pad ratio `0.1432328556`, p95 `195344.2552 ms`, sequential `27497595.6712`.\n\n**Validation**\n- Fresh verifier confirmed JSONL schema, exact request coverage, no duplicates/missing IDs, batch shape consistency, shape validity, and `<=8` global shapes.\n- Current artifact hashes verified: `plan_b1.jsonl` `91856d7f...a12895`, `plan_b2.jsonl` `c2b90425...cf4878`."
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-26T05:08:23.424819Z",
+    "finished_at": "2026-04-26T05:21:26.471704Z",
+    "environment_setup": {
+        "started_at": "2026-04-26T05:08:23.425683Z",
+        "finished_at": "2026-04-26T05:08:26.175886Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-26T05:08:26.175892Z",
+        "finished_at": "2026-04-26T05:08:38.638769Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-26T05:08:38.638795Z",
+        "finished_at": "2026-04-26T05:20:56.174593Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-26T05:20:56.204793Z",
+        "finished_at": "2026-04-26T05:21:15.960203Z"
+    }
+}

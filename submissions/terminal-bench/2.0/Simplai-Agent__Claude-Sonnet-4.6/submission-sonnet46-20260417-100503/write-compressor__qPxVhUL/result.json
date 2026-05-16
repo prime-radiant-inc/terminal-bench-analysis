@@ -1,0 +1,103 @@
+{
+    "id": "d36da0cf-fd58-40c2-98e5-d9779970f8c0",
+    "task_name": "write-compressor",
+    "trial_name": "write-compressor__qPxVhUL",
+    "trial_uri": "file:///workspace/terminal-bench-custom-agent/jobs/submission-sonnet46-20260417-100503/write-compressor__qPxVhUL",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "write-compressor"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "1b2f5f4e1df7950c0bfc0f9e1c2cc75072a0d6fe22b74755469d87bfeb3a57c0",
+    "config": {
+        "task": {
+            "path": "write-compressor",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "write-compressor__qPxVhUL",
+        "trials_dir": "jobs/submission-sonnet46-20260417-100503",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_agent.harbor_agent:HarborTerminalAgent",
+            "model_name": "anthropic/claude-sonnet-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "3404d55b-0769-42d2-adfa-b2e42ecfbb81"
+    },
+    "agent_info": {
+        "name": "terminal-agent",
+        "version": "0.3.0",
+        "model_info": {
+            "name": "claude-sonnet-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 317121,
+        "n_cache_tokens": null,
+        "n_output_tokens": 28066,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-17T14:03:24.104363Z",
+    "finished_at": "2026-04-17T14:15:45.280119Z",
+    "environment_setup": {
+        "started_at": "2026-04-17T14:03:24.105566Z",
+        "finished_at": "2026-04-17T14:03:36.416192Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-17T14:03:36.416208Z",
+        "finished_at": "2026-04-17T14:03:37.341236Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-17T14:03:37.341438Z",
+        "finished_at": "2026-04-17T14:15:16.136030Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-17T14:15:16.136356Z",
+        "finished_at": "2026-04-17T14:15:34.104261Z"
+    }
+}

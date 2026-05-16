@@ -1,0 +1,135 @@
+{
+    "id": "8ecace5c-14e2-49ec-a977-aa365107d8f0",
+    "task_name": "terminal-bench/reshard-c4-data",
+    "trial_name": "reshard-c4-data__8VXxmpC",
+    "trial_uri": "file:///work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC",
+    "task_id": {
+        "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/reshard-c4-data"
+    },
+    "source": "wecode-tb2-4-30-5",
+    "task_checksum": "1ff2780fd34aa3ed067ee33dca25149e528a1a58b6e150c1235af5e308f071fc",
+    "config": {
+        "task": {
+            "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/reshard-c4-data",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "wecode-tb2-4-30-5"
+        },
+        "trial_name": "reshard-c4-data__8VXxmpC",
+        "trials_dir": "/work/terminal-bench/jobs/wecode-tb2-4-30-5",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "harbor_agent.wecode_agent:ThinWecodeInstalledAgent",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+                "auth_path": "/home/gradence/.wecode/auth.json",
+                "config_path": "/home/gradence/.wecode/config.toml"
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "164ac7f1-f71e-410b-9e9f-04c4ca60e3c9"
+    },
+    "agent_info": {
+        "name": "wecode-installed-thin",
+        "version": "wecode-cli 0.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": 1318359,
+        "n_cache_tokens": 1184256,
+        "n_output_tokens": 49309,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "binary_name": "wecode-bookworm",
+            "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+            "trajectory_source": "merged Wecode native rollout jsonl with A2A debug-event index",
+            "artifacts": {
+                "final": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/final.txt",
+                "stdout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/wecode.jsonl",
+                "stderr": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/wecode.stderr.txt",
+                "trajectory": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/trajectory.json",
+                "wecode_home": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/wecode-home",
+                "rollout_files": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T23-44-27-019dcc2e-1eec-7533-8fe8-ed22f0c58bc1.jsonl",
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T23-45-15-019dcc2e-da85-77b3-a1d6-c5b5a9fda83f.jsonl",
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T23-54-09-019dcc37-0066-7f20-beb7-6c9b5976a4bd.jsonl"
+                ],
+                "latest_rollout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T23-44-27-019dcc2e-1eec-7533-8fe8-ed22f0c58bc1.jsonl",
+                "debug_history": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/wecode-home/debug/019dcc2e-1eec-7533-8fe8-ed22f0c58bc1/history.latest.json"
+                ],
+                "debug_metadata": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/wecode-home/debug/019dcc2e-1eec-7533-8fe8-ed22f0c58bc1/metadata.json"
+                ]
+            },
+            "artifact_sha256": {
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T23-44-27-019dcc2e-1eec-7533-8fe8-ed22f0c58bc1.jsonl": "d52f9af80575597e8692196c138b96b7c63e7450116627814d6982a8b80ada66",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T23-45-15-019dcc2e-da85-77b3-a1d6-c5b5a9fda83f.jsonl": "29b5b0fb293caf63e769d3cba06ded9c93374dafcac417a86e0939a599527fdf",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T23-54-09-019dcc37-0066-7f20-beb7-6c9b5976a4bd.jsonl": "da2822433ca891590319ba965673bdd468afd80efb245067c4aef4787ba552f8",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/final.txt": "a41f7c4179830a0bde8a45219f4dfcedf34dd3d5fb1ca91d8f3ad91c182df379",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/wecode.jsonl": "954dce34f813c33dd0e566e2021c8ef53dfcef1cd383354bdfabebb8a53894d0",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/wecode.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/reshard-c4-data__8VXxmpC/agent/trajectory.json": "80cb1e942efec5016d9f613195e18a72f69299e1d4499ddc56340f9f7951fb18"
+            },
+            "final_output": "Acknowledged. The collaboration context confirms the task is complete: both scripts are in `/app`, uv setup is present, and Logan’s fresh verifier gate passed on the current artifact state. No further action is needed unless you want changes to the shard capacity or format."
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-26T23:44:16.959942Z",
+    "finished_at": "2026-04-27T00:01:28.430297Z",
+    "environment_setup": {
+        "started_at": "2026-04-26T23:44:16.963818Z",
+        "finished_at": "2026-04-26T23:44:17.939183Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-26T23:44:17.939190Z",
+        "finished_at": "2026-04-26T23:44:27.604488Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-26T23:44:27.604513Z",
+        "finished_at": "2026-04-26T23:58:57.713105Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-26T23:58:57.763094Z",
+        "finished_at": "2026-04-27T00:01:15.969176Z"
+    }
+}

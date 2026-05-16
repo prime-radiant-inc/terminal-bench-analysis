@@ -1,0 +1,135 @@
+{
+    "id": "d1fafbf0-42c6-40b3-b911-e527448c805c",
+    "task_name": "terminal-bench/compile-compcert",
+    "trial_name": "compile-compcert__tB9SRUv",
+    "trial_uri": "file:///work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv",
+    "task_id": {
+        "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/compile-compcert"
+    },
+    "source": "wecode-tb2-4-30-5",
+    "task_checksum": "a8ba9a451f4ac2925effd40a25c49c620084b878af0a31ff4995a5e2db0c0f62",
+    "config": {
+        "task": {
+            "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/compile-compcert",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "wecode-tb2-4-30-5"
+        },
+        "trial_name": "compile-compcert__tB9SRUv",
+        "trials_dir": "/work/terminal-bench/jobs/wecode-tb2-4-30-5",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "harbor_agent.wecode_agent:ThinWecodeInstalledAgent",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+                "auth_path": "/home/gradence/.wecode/auth.json",
+                "config_path": "/home/gradence/.wecode/config.toml"
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "164ac7f1-f71e-410b-9e9f-04c4ca60e3c9"
+    },
+    "agent_info": {
+        "name": "wecode-installed-thin",
+        "version": "wecode-cli 0.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": 5093643,
+        "n_cache_tokens": 4733312,
+        "n_output_tokens": 73426,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "binary_name": "wecode-bookworm",
+            "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+            "trajectory_source": "merged Wecode native rollout jsonl with A2A debug-event index",
+            "artifacts": {
+                "final": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/final.txt",
+                "stdout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/wecode.jsonl",
+                "stderr": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/wecode.stderr.txt",
+                "trajectory": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/trajectory.json",
+                "wecode_home": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/wecode-home",
+                "rollout_files": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/wecode-home/sessions/2026/04/29/rollout-2026-04-29T05-31-05-019dd7b8-2ea8-7441-8d80-a982065bbcdd.jsonl",
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/wecode-home/sessions/2026/04/29/rollout-2026-04-29T05-31-42-019dd7b8-c1bf-7793-9031-72d05b7fcac0.jsonl",
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/wecode-home/sessions/2026/04/29/rollout-2026-04-29T05-39-18-019dd7bf-b6ec-70a2-a719-53ed57cd5121.jsonl"
+                ],
+                "latest_rollout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/wecode-home/sessions/2026/04/29/rollout-2026-04-29T05-31-05-019dd7b8-2ea8-7441-8d80-a982065bbcdd.jsonl",
+                "debug_history": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/wecode-home/debug/019dd7b8-2ea8-7441-8d80-a982065bbcdd/history.latest.json"
+                ],
+                "debug_metadata": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/wecode-home/debug/019dd7b8-2ea8-7441-8d80-a982065bbcdd/metadata.json"
+                ]
+            },
+            "artifact_sha256": {
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/wecode-home/sessions/2026/04/29/rollout-2026-04-29T05-31-05-019dd7b8-2ea8-7441-8d80-a982065bbcdd.jsonl": "59248c6f8983e22acdf96e21439cc6bce8368ae57f6ff8b260f7e1f8b05264b4",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/wecode-home/sessions/2026/04/29/rollout-2026-04-29T05-31-42-019dd7b8-c1bf-7793-9031-72d05b7fcac0.jsonl": "30ea41548d35d8f2d5f78d94898f097378b3bfcb514bdfda001f877376c0df0d",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/wecode-home/sessions/2026/04/29/rollout-2026-04-29T05-39-18-019dd7bf-b6ec-70a2-a719-53ed57cd5121.jsonl": "3393163766908c868b7fa9a7ddea342633cfb151cff9791a877aa3527607903a",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/final.txt": "9c746ee61f96c9a7d57364e6859fd4c52356060e0ab897ff96d98327e8cdb932",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/wecode.jsonl": "bac566c4ac13b4e9d0bc4100f4af793608de319070ce172c29a7a9320752135d",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/wecode.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/compile-compcert__tB9SRUv/agent/trajectory.json": "ffdd319621cdfc7dc6666a17192182f5493fd5c2f5b5f1eead789d849e50b02c"
+            },
+            "final_output": "Built and verified CompCert under `/tmp/CompCert`.\n\n**Status**\n- `/tmp/CompCert/ccomp` exists and is executable.\n- Built from CompCert `v3.13.1` source for Ubuntu/Linux `x86_64`.\n- Configured local runtime/header lookup via `/tmp/CompCert/compcert.ini`, with `stdlib_path=/tmp/CompCert/runtime`.\n- Fresh verifier result: `verified`.\n\n**Validation**\n- `/tmp/CompCert/ccomp -version` reports `The CompCert C verified compiler, version 3.13`.\n- Smoke tests compiled a small C source from `/tmp` to both linked executable and object file.\n- Linked executable ran successfully with exit code `0`.\n- Verifier confirmed runtime/header lookup uses `/tmp/CompCert/runtime`, not `/usr/local`.\n\nYou can invoke it directly with:\n\n`/tmp/CompCert/ccomp`"
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-29T05:30:42.772197Z",
+    "finished_at": "2026-04-29T06:02:55.870295Z",
+    "environment_setup": {
+        "started_at": "2026-04-29T05:30:42.773085Z",
+        "finished_at": "2026-04-29T05:30:43.579683Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-29T05:30:43.579693Z",
+        "finished_at": "2026-04-29T05:31:04.825259Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-29T05:31:04.825298Z",
+        "finished_at": "2026-04-29T06:02:33.034547Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-29T06:02:33.075180Z",
+        "finished_at": "2026-04-29T06:02:44.239190Z"
+    }
+}

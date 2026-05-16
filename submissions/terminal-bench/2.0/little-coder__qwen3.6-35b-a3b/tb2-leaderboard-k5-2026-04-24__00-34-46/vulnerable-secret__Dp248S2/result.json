@@ -1,0 +1,111 @@
+{
+    "id": "7d1cc4e8-dfc8-40b8-9628-172e9c38d329",
+    "task_name": "vulnerable-secret",
+    "trial_name": "vulnerable-secret__Dp248S2",
+    "trial_uri": "file:///home/itay-inbar/Documents/local-coder/benchmarks/harbor_runs/tb2-leaderboard-k5-2026-04-24__00-34-46/vulnerable-secret__Dp248S2",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "vulnerable-secret"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "568760a9b221bd2efc27dc592833c1d2d99949b20995ba1321a3aa1567e6ba20",
+    "config": {
+        "task": {
+            "path": "vulnerable-secret",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "vulnerable-secret__Dp248S2",
+        "trials_dir": "/home/itay-inbar/Documents/local-coder/benchmarks/harbor_runs/tb2-leaderboard-k5-2026-04-24__00-34-46",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "benchmarks.harbor_adapter.little_coder_agent:LittleCoderAgent",
+            "model_name": "llamacpp/qwen3.6-35b-a3b",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "2433aea4-1cc7-4cc8-a6dd-70e5f72a0ec0"
+    },
+    "agent_info": {
+        "name": "little-coder",
+        "version": "0.1.13",
+        "model_info": {
+            "name": "qwen3.6-35b-a3b",
+            "provider": "llamacpp"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "n_tool_calls": 16,
+            "n_turns": 17,
+            "n_compactions": 0,
+            "n_notifications": 1,
+            "little_coder_version": "0.1.13",
+            "benchmark": "terminal_bench_2.0"
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-24T06:47:03.669711Z",
+    "finished_at": "2026-04-24T06:50:29.559865Z",
+    "environment_setup": {
+        "started_at": "2026-04-24T06:47:03.670345Z",
+        "finished_at": "2026-04-24T06:47:11.365439Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-24T06:47:11.365453Z",
+        "finished_at": "2026-04-24T06:47:11.365480Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-24T06:47:11.365521Z",
+        "finished_at": "2026-04-24T06:50:05.652855Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-24T06:50:05.726361Z",
+        "finished_at": "2026-04-24T06:50:18.731468Z"
+    }
+}

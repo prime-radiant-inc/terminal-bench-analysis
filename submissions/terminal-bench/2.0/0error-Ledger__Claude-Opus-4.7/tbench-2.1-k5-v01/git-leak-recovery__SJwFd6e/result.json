@@ -1,0 +1,110 @@
+{
+    "id": "7e3623dd-bdd3-4f16-8d2b-c852f1255f53",
+    "task_name": "terminal-bench/git-leak-recovery",
+    "trial_name": "git-leak-recovery__SJwFd6e",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/git-leak-recovery__SJwFd6e",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "git-leak-recovery",
+        "ref": "sha256:22a9ec10dbd4cd8b99477b70e1944103775ca41de9b9e0025ec4898cd17bd334"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "45308cc1d3e5c665486621c50d95a4789861f41066e85e572eb7ccddb7932720",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/git-leak-recovery",
+            "ref": "sha256:22a9ec10dbd4cd8b99477b70e1944103775ca41de9b9e0025ec4898cd17bd334",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "git-leak-recovery__SJwFd6e",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 11585,
+        "n_cache_tokens": null,
+        "n_output_tokens": 1018,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 5,
+            "verifier_cmd": "test \"$(cat /app/secret.txt)\" = \"secret[lost_and_found_in_git]\" && cd /app/repo && ! git rev-list --all --objects | awk '{print $1}' | xargs -I{} git cat-file -p {} 2>/dev/null | grep -q \"secret\\[\"  && ! grep -rq \"secret\\[\" .",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T12:58:49.506016Z",
+    "finished_at": "2026-05-12T12:59:57.791579Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T12:58:49.506979Z",
+        "finished_at": "2026-05-12T12:58:55.074637Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T12:58:55.074649Z",
+        "finished_at": "2026-05-12T12:58:55.074672Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T12:58:55.074708Z",
+        "finished_at": "2026-05-12T12:59:39.360336Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T12:59:39.451497Z",
+        "finished_at": "2026-05-12T12:59:46.486198Z"
+    },
+    "step_results": null
+}

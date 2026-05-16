@@ -1,0 +1,107 @@
+{
+    "id": "90439ea2-1a62-4f0b-a80f-cd63b8cd2ebf",
+    "task_name": "vulnerable-secret",
+    "trial_name": "vulnerable-secret__u8wL9WA",
+    "trial_uri": "file://jobs/evo_env_bootstrap_full/vulnerable-secret__u8wL9WA",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "vulnerable-secret"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "568760a9b221bd2efc27dc592833c1d2d99949b20995ba1321a3aa1567e6ba20",
+    "config": {
+        "task": {
+            "path": "vulnerable-secret",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "vulnerable-secret__u8wL9WA",
+        "trials_dir": "jobs/evo_env_bootstrap_full",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "agents_proposed.evo_env_bootstrap:AgentHarness",
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "runloop",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "0333b055-b8c2-4d18-840b-2d1995c6c418"
+    },
+    "agent_info": {
+        "name": "terminus-kira-env-bootstrap",
+        "version": "1.1.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 81488,
+        "n_cache_tokens": 64261,
+        "n_output_tokens": 2639,
+        "cost_usd": 0.19985925000000002,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 9,
+            "api_request_times_msec": [
+                6654.986619949341,
+                8301.055669784546,
+                16313.664674758911,
+                5083.698987960815,
+                4415.769815444946,
+                6800.29296875,
+                4484.397411346436,
+                4902.679920196533,
+                5507.168292999268
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-26T07:33:25.868288Z",
+    "finished_at": "2026-03-26T07:35:03.798763Z",
+    "environment_setup": {
+        "started_at": "2026-03-26T07:33:25.878411Z",
+        "finished_at": "2026-03-26T07:33:32.422979Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-26T07:33:32.422986Z",
+        "finished_at": "2026-03-26T07:33:42.481914Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-26T07:33:42.481938Z",
+        "finished_at": "2026-03-26T07:34:58.865748Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-26T07:34:59.144893Z",
+        "finished_at": "2026-03-26T07:35:03.719707Z"
+    }
+}

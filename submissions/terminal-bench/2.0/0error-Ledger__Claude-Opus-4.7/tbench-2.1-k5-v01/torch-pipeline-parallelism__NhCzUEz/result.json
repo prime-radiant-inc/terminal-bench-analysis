@@ -1,0 +1,110 @@
+{
+    "id": "3cf70193-0219-4589-abb0-cf0b2d974eea",
+    "task_name": "terminal-bench/torch-pipeline-parallelism",
+    "trial_name": "torch-pipeline-parallelism__NhCzUEz",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/torch-pipeline-parallelism__NhCzUEz",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "torch-pipeline-parallelism",
+        "ref": "sha256:db605337c749a872cea7b5b413429b3915bb4c3efe0f7875f0c46ce81bd8c4fb"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "31e565558cd22598a3c2069f771d9d0eee26fb843b77f7b03e00ad4c336fbce9",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/torch-pipeline-parallelism",
+            "ref": "sha256:db605337c749a872cea7b5b413429b3915bb4c3efe0f7875f0c46ce81bd8c4fb",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "torch-pipeline-parallelism__NhCzUEz",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 46595,
+        "n_cache_tokens": null,
+        "n_output_tokens": 12620,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 5,
+            "verifier_cmd": "test -s /app/pipeline_parallel.py && grep -q \"def train_step_pipeline_afab\" /app/pipeline_parallel.py",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T05:25:48.461128Z",
+    "finished_at": "2026-05-12T05:29:31.683691Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T05:25:48.465093Z",
+        "finished_at": "2026-05-12T05:25:50.699807Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T05:25:50.699820Z",
+        "finished_at": "2026-05-12T05:25:50.699843Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T05:25:50.699881Z",
+        "finished_at": "2026-05-12T05:27:40.544662Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T05:27:40.627941Z",
+        "finished_at": "2026-05-12T05:29:19.041844Z"
+    },
+    "step_results": null
+}

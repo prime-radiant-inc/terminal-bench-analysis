@@ -1,0 +1,108 @@
+{
+    "id": "bb8c56d1-8401-4ae1-9305-6e8b2e2c0588",
+    "task_name": "git-leak-recovery",
+    "trial_name": "git-leak-recovery__LaM3CB5",
+    "trial_uri": "file://jobs/evo_env_bootstrap_full/git-leak-recovery__LaM3CB5",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "git-leak-recovery"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "6e313b191485295fc042ddfdc4d1184dc9588de1fa57f7513685fec67a7d7d9d",
+    "config": {
+        "task": {
+            "path": "git-leak-recovery",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "git-leak-recovery__LaM3CB5",
+        "trials_dir": "jobs/evo_env_bootstrap_full",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "agents_proposed.evo_env_bootstrap:AgentHarness",
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "runloop",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "0333b055-b8c2-4d18-840b-2d1995c6c418"
+    },
+    "agent_info": {
+        "name": "terminus-kira-env-bootstrap",
+        "version": "1.1.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 53195,
+        "n_cache_tokens": 36287,
+        "n_output_tokens": 3160,
+        "cost_usd": 0.19251225,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 10,
+            "api_request_times_msec": [
+                6686.1419677734375,
+                6669.5802211761475,
+                7319.766998291016,
+                7644.251108169556,
+                7270.457744598389,
+                7681.494951248169,
+                7439.152002334595,
+                6805.7355880737305,
+                5387.300252914429,
+                4294.623851776123
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-26T08:09:51.950389Z",
+    "finished_at": "2026-03-26T08:11:48.959316Z",
+    "environment_setup": {
+        "started_at": "2026-03-26T08:09:51.957190Z",
+        "finished_at": "2026-03-26T08:09:58.145350Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-26T08:09:58.145355Z",
+        "finished_at": "2026-03-26T08:10:09.795808Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-26T08:10:09.795832Z",
+        "finished_at": "2026-03-26T08:11:40.085694Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-26T08:11:40.350743Z",
+        "finished_at": "2026-03-26T08:11:48.877854Z"
+    }
+}

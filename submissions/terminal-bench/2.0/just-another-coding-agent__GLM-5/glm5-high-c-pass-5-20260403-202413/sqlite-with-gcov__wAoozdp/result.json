@@ -1,0 +1,101 @@
+{
+    "id": "b4353c25-fb26-4399-8624-fb350e453f6d",
+    "task_name": "sqlite-with-gcov",
+    "trial_name": "sqlite-with-gcov__wAoozdp",
+    "trial_uri": "file:///home/dahiy/repos/urban-octo-guacamole/jobs/glm5-high-c-pass-5-20260403-202413/sqlite-with-gcov__wAoozdp",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "sqlite-with-gcov"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "5901f1d2fc3b9b97ab1b215461175a59f0568e224b67caa6f4cbbc38f6f33a04",
+    "config": {
+        "task": {
+            "path": "sqlite-with-gcov",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "sqlite-with-gcov__wAoozdp",
+        "trials_dir": "/home/dahiy/repos/urban-octo-guacamole/jobs/glm5-high-c-pass-5-20260403-202413",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "evaluations.harbor.agent:JustAnotherCodingAgentHarborAgent",
+            "model_name": "ollama:glm-5:cloud",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [
+            "/logs/agent/just-another-coding-agent.txt",
+            "/tmp/just-another-coding-agent-sessions"
+        ],
+        "job_id": "0e6d4d70-f3c9-4c7c-aa35-2a314f862e8b"
+    },
+    "agent_info": {
+        "name": "just-another-coding-agent",
+        "version": "unknown",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "adapter": "just-another-coding-agent-harbor"
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-04T05:02:49.169145Z",
+    "finished_at": "2026-04-04T05:12:56.857711Z",
+    "environment_setup": {
+        "started_at": "2026-04-04T05:02:49.240092Z",
+        "finished_at": "2026-04-04T05:03:32.486560Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-04T05:03:32.486572Z",
+        "finished_at": "2026-04-04T05:04:34.710998Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-04T05:04:34.711084Z",
+        "finished_at": "2026-04-04T05:12:26.425840Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-04T05:12:26.425927Z",
+        "finished_at": "2026-04-04T05:12:49.465251Z"
+    }
+}

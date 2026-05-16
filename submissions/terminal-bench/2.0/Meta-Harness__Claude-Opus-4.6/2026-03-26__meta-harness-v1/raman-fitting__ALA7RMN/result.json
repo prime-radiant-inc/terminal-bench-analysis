@@ -1,0 +1,152 @@
+{
+    "id": "01abd257-4328-4738-ab05-7ce50b9400ca",
+    "task_name": "raman-fitting",
+    "trial_name": "raman-fitting__ALA7RMN",
+    "trial_uri": "file://jobs/evo_env_bootstrap_full/raman-fitting__ALA7RMN",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "raman-fitting"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "732d69b125ace5638478701cfdfa709836b7f9e48b1d24f5ffdbdc19ea538c36",
+    "config": {
+        "task": {
+            "path": "raman-fitting",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "raman-fitting__ALA7RMN",
+        "trials_dir": "jobs/evo_env_bootstrap_full",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "agents_proposed.evo_env_bootstrap:AgentHarness",
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "runloop",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "0333b055-b8c2-4d18-840b-2d1995c6c418"
+    },
+    "agent_info": {
+        "name": "terminus-kira-env-bootstrap",
+        "version": "1.1.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1857769,
+        "n_cache_tokens": 1747101,
+        "n_output_tokens": 45222,
+        "cost_usd": 2.5676842499999997,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                4535.541296005249,
+                5923.87580871582,
+                3076.5140056610107,
+                2946.934461593628,
+                21424.6346950531,
+                3793.7674522399902,
+                14376.471042633057,
+                13278.136730194092,
+                3028.7270545959473,
+                18051.99408531189,
+                3232.8341007232666,
+                25876.127243041992,
+                3020.456552505493,
+                30282.47094154358,
+                15696.226596832275,
+                3207.014560699463,
+                12061.029434204102,
+                3141.0911083221436,
+                6322.324752807617,
+                4028.5017490386963,
+                18243.70288848877,
+                3193.4890747070312,
+                36215.60978889465,
+                10870.353698730469,
+                3386.6987228393555,
+                8348.076105117798,
+                31274.52778816223,
+                2933.368682861328,
+                36004.09007072449,
+                3745.687484741211,
+                20969.18249130249,
+                2699.8772621154785,
+                7572.995901107788,
+                43982.32078552246,
+                3100.0611782073975,
+                26954.015970230103,
+                2845.6382751464844,
+                34836.12418174744,
+                27766.947984695435,
+                3249.7143745422363,
+                29901.700735092163,
+                3049.133777618408,
+                28317.056894302368,
+                27350.19040107727,
+                3337.562084197998,
+                43020.570278167725,
+                26865.919589996338,
+                37091.60876274109,
+                4109.740972518921
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/iris/u/yoonho/.local/share/uv/python/cpython-3.13.2-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/iris/u/yoonho/research/src/terminal-bench-kira/agents_proposed/evo_env_bootstrap.py\", line 302, in run\n    await super().run(instruction, environment, context)\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1472, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/iris/u/yoonho/research/src/terminal-bench-kira/agents_proposed/evo_env_bootstrap.py\", line 1034, in _run_agent_loop\n    ) = await self._handle_llm_interaction(\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        chat, prompt, logging_paths, original_instruction, self._session\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/iris/u/yoonho/research/src/terminal-bench-kira/agents_proposed/evo_env_bootstrap.py\", line 691, in _handle_llm_interaction\n    tool_response = await self._call_llm_with_tools(messages)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 193, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 112, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 157, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/tenacity/_utils.py\", line 111, in inner\n    return call(*args, **kwargs)\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/tenacity/__init__.py\", line 393, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ~~~~~~~~~~~~~~~~~^^\n  File \"/iris/u/yoonho/.local/share/uv/python/cpython-3.13.2-linux-x86_64-gnu/lib/python3.13/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ~~~~~~~~~~~~~~~~~^^\n  File \"/iris/u/yoonho/.local/share/uv/python/cpython-3.13.2-linux-x86_64-gnu/lib/python3.13/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 116, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/iris/u/yoonho/research/src/terminal-bench-kira/agents_proposed/evo_env_bootstrap.py\", line 635, in _call_llm_with_tools\n    response = await litellm.acompletion(**completion_kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/litellm/utils.py\", line 1862, in wrapper_async\n    result = await original_function(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/litellm/main.py\", line 613, in acompletion\n    response = await init_response\n               ^^^^^^^^^^^^^^^^^^^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/litellm/llms/anthropic/chat/handler.py\", line 261, in acompletion_function\n    response = await async_handler.post(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n        api_base, headers=headers, json=data, timeout=timeout\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/litellm/litellm_core_utils/logging_utils.py\", line 297, in async_wrapper\n    result = await func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/litellm/llms/custom_httpx/http_handler.py\", line 466, in post\n    response = await self.client.send(req, stream=stream)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/httpx/_client.py\", line 1629, in send\n    response = await self._send_handling_auth(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/httpx/_client.py\", line 1657, in _send_handling_auth\n    response = await self._send_handling_redirects(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n    )\n    ^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/httpx/_client.py\", line 1694, in _send_handling_redirects\n    response = await self._send_single_request(request)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/httpx/_client.py\", line 1730, in _send_single_request\n    response = await transport.handle_async_request(request)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/litellm/llms/custom_httpx/aiohttp_transport.py\", line 297, in handle_async_request\n    response = await self._make_aiohttp_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<6 lines>...\n    )\n    ^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/litellm/llms/custom_httpx/aiohttp_transport.py\", line 275, in _make_aiohttp_request\n    response = await client_session.request(**request_kwargs).__aenter__()\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/aiohttp/client.py\", line 1510, in __aenter__\n    self._resp: _RetType = await self._coro\n                           ^^^^^^^^^^^^^^^^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/aiohttp/client.py\", line 779, in _request\n    resp = await handler(req)\n           ^^^^^^^^^^^^^^^^^^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/aiohttp/client.py\", line 757, in _connect_and_send_request\n    await resp.start(conn)\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/aiohttp/client_reqrep.py\", line 539, in start\n    message, payload = await protocol.read()  # type: ignore[union-attr]\n                       ^^^^^^^^^^^^^^^^^^^^^\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/aiohttp/streams.py\", line 703, in read\n    await self._waiter\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/harbor/trial/trial.py\", line 249, in _execute_agent\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/iris/u/yoonho/.local/share/uv/python/cpython-3.13.2-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/iris/u/yoonho/.local/share/uv/python/cpython-3.13.2-linux-x86_64-gnu/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/harbor/trial/trial.py\", line 360, in run\n    await self._execute_agent()\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/harbor/trial/trial.py\", line 258, in _execute_agent\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {self._agent_timeout_sec} seconds\"\n    ) from e\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-03-25T23:44:47.783995"
+    },
+    "started_at": "2026-03-26T06:29:33.140427Z",
+    "finished_at": "2026-03-26T06:44:52.395989Z",
+    "environment_setup": {
+        "started_at": "2026-03-26T06:29:33.216023Z",
+        "finished_at": "2026-03-26T06:29:40.515426Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-26T06:29:40.515434Z",
+        "finished_at": "2026-03-26T06:29:47.767048Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-26T06:29:47.767076Z",
+        "finished_at": "2026-03-26T06:44:47.775702Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-26T06:44:48.371979Z",
+        "finished_at": "2026-03-26T06:44:52.315976Z"
+    }
+}

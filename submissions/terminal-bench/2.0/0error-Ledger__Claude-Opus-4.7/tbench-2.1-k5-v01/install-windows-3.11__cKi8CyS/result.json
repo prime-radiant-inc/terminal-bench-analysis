@@ -1,0 +1,110 @@
+{
+    "id": "bf75f1f6-d209-42ee-9d53-35df1aa8febf",
+    "task_name": "terminal-bench/install-windows-3.11",
+    "trial_name": "install-windows-3.11__cKi8CyS",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/install-windows-3.11__cKi8CyS",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "install-windows-3.11",
+        "ref": "sha256:1f1361b0012e1ad24054e7cfc039829459e8ab0631b3573d9b93499bf6b3563e"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "202b47d242c769a8c68fe4e8fba8bf918a22226b61929ccd36120ee5a4241a85",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/install-windows-3.11",
+            "ref": "sha256:1f1361b0012e1ad24054e7cfc039829459e8ab0631b3573d9b93499bf6b3563e",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "install-windows-3.11__cKi8CyS",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 11757,
+        "n_cache_tokens": null,
+        "n_output_tokens": 3926,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 2,
+            "verifier_cmd": "bash -c 'ss -tlnp | grep -E \":80\\b|:5901\\b\" && [ -S /tmp/qemu-monitor.sock ] && pgrep -a qemu | grep snapshot'",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T06:51:17.038124Z",
+    "finished_at": "2026-05-12T06:56:42.311257Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T06:51:17.050431Z",
+        "finished_at": "2026-05-12T06:51:58.147174Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T06:51:58.147188Z",
+        "finished_at": "2026-05-12T06:51:58.147212Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T06:51:58.147251Z",
+        "finished_at": "2026-05-12T06:55:52.559759Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T06:55:52.647879Z",
+        "finished_at": "2026-05-12T06:56:21.012399Z"
+    },
+    "step_results": null
+}

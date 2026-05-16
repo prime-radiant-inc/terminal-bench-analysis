@@ -1,0 +1,110 @@
+{
+    "id": "ce24a047-5d77-47bd-9889-8f5fb61dbceb",
+    "task_name": "terminal-bench/gpt2-codegolf",
+    "trial_name": "gpt2-codegolf__vueGCdT",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/gpt2-codegolf__vueGCdT",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "gpt2-codegolf",
+        "ref": "sha256:fe42af8e9c5aa927c3b680acd08e43032c84088fa9d770b03ce63dbc66fea4e7"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "d3ac734dba0344c290f521377e65f68e5005a96d6c76c2ca49a9f06ffa8ed0d5",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/gpt2-codegolf",
+            "ref": "sha256:fe42af8e9c5aa927c3b680acd08e43032c84088fa9d770b03ce63dbc66fea4e7",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "gpt2-codegolf__vueGCdT",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 595605,
+        "n_cache_tokens": null,
+        "n_output_tokens": 30784,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 39,
+            "verifier_cmd": "gcc -O3 /app/gpt2.c -lm -o /app/a.out && [ $(wc -c < /app/gpt2.c) -lt 5000 ] && /app/a.out /app/gpt2-124M.ckpt /app/vocab.bpe \"Hello, my name is\" | head -c 200",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T05:51:15.452599Z",
+    "finished_at": "2026-05-12T05:58:18.166252Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T05:51:15.456844Z",
+        "finished_at": "2026-05-12T05:51:35.935706Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T05:51:35.935723Z",
+        "finished_at": "2026-05-12T05:51:35.935754Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T05:51:35.935802Z",
+        "finished_at": "2026-05-12T05:57:59.284660Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T05:57:59.377791Z",
+        "finished_at": "2026-05-12T05:58:06.509982Z"
+    },
+    "step_results": null
+}

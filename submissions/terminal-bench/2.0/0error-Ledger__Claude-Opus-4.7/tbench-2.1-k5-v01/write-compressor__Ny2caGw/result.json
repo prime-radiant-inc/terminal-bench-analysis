@@ -1,0 +1,110 @@
+{
+    "id": "7101a89e-c67e-47ac-8c38-f1b9870b76c4",
+    "task_name": "terminal-bench/write-compressor",
+    "trial_name": "write-compressor__Ny2caGw",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/write-compressor__Ny2caGw",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "write-compressor",
+        "ref": "sha256:d9ddd9a8e925e2c566b37b2492cbf995afecefe58874e4043ef78d7f3c892c7e"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "17ff45a3beaa04e5f08eb4f3c6136f4b56602bdcca52ade0896cfd341f374e99",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/write-compressor",
+            "ref": "sha256:d9ddd9a8e925e2c566b37b2492cbf995afecefe58874e4043ef78d7f3c892c7e",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "write-compressor__Ny2caGw",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 201360,
+        "n_cache_tokens": null,
+        "n_output_tokens": 16689,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 11,
+            "verifier_cmd": "[ $(stat -c%s /app/data.comp) -le 2500 ] && diff <(cat /app/data.comp | /app/decomp) /app/data.txt",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T05:22:15.767086Z",
+    "finished_at": "2026-05-12T05:25:48.160119Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T05:22:15.815686Z",
+        "finished_at": "2026-05-12T05:22:32.604094Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T05:22:32.604107Z",
+        "finished_at": "2026-05-12T05:22:32.604128Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T05:22:32.604166Z",
+        "finished_at": "2026-05-12T05:25:16.257989Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T05:25:16.339609Z",
+        "finished_at": "2026-05-12T05:25:29.605111Z"
+    },
+    "step_results": null
+}

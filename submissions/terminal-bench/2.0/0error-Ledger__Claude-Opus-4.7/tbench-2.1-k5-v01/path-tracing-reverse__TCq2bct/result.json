@@ -1,0 +1,110 @@
+{
+    "id": "e155f466-c39b-4355-ba44-60bc27347d68",
+    "task_name": "terminal-bench/path-tracing-reverse",
+    "trial_name": "path-tracing-reverse__TCq2bct",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/path-tracing-reverse__TCq2bct",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "path-tracing-reverse",
+        "ref": "sha256:035880d7ef5554b217e53a75ce5e87e43193b7a44c30ad17226a6ab10fc11a6c"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "0cd6d81623fa783c2f3de9aae84c270b85968dc920dc95d0ecd4ec3a890dc679",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/path-tracing-reverse",
+            "ref": "sha256:035880d7ef5554b217e53a75ce5e87e43193b7a44c30ad17226a6ab10fc11a6c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "path-tracing-reverse__TCq2bct",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1154234,
+        "n_cache_tokens": null,
+        "n_output_tokens": 15820,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 40,
+            "verifier_cmd": "compiles, runs, image.ppm exists with right header. All requirements met:",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T10:07:19.755901Z",
+    "finished_at": "2026-05-12T10:23:16.719681Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T10:07:19.756861Z",
+        "finished_at": "2026-05-12T10:07:29.105811Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T10:07:29.105825Z",
+        "finished_at": "2026-05-12T10:07:29.105849Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T10:07:29.105887Z",
+        "finished_at": "2026-05-12T10:22:57.356056Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T10:22:57.441916Z",
+        "finished_at": "2026-05-12T10:23:05.930889Z"
+    },
+    "step_results": null
+}

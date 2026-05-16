@@ -1,0 +1,84 @@
+{
+    "id": "12b2a053-518b-4c8e-b517-00894adae692",
+    "task_name": "dna-assembly",
+    "trial_name": "dna-assembly__Ue5zWbd",
+    "trial_uri": "file:///Users/heinzsa/Documents/Heinz_Privat/Linus/MA/spoox/jobs/2026-03-22__16-49-45/dna-assembly__Ue5zWbd",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "dna-assembly"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "7bf6f42ea794b180079f40bfae015198142dd763242c16e58e817950aac53e6d",
+    "config": {
+        "task": {
+            "path": "dna-assembly",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "dna-assembly__Ue5zWbd",
+        "trials_dir": "jobs/2026-03-22__16-49-45",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "benchmarks.harbor.spoox:Spoox",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "ba737d2b-cdfb-4428-9c3d-a14ff1abd413"
+    },
+    "agent_info": {
+        "name": "spoox-m",
+        "version": "unknown",
+        "model_info": null
+    },
+    "agent_result": null,
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RuntimeError",
+        "exception_message": "Agent setup failed with exit code 1. See logs in jobs/2026-03-22__16-49-45/dna-assembly__Ue5zWbd/agent/setup",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/heinzsa/miniconda3/envs/spoox/lib/python3.13/site-packages/harbor/trial/trial.py\", line 480, in run\n    await self._setup_agent()\n  File \"/Users/heinzsa/miniconda3/envs/spoox/lib/python3.13/site-packages/harbor/trial/trial.py\", line 240, in _setup_agent\n    await asyncio.wait_for(\n    ...<2 lines>...\n    )\n  File \"/Users/heinzsa/miniconda3/envs/spoox/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/heinzsa/miniconda3/envs/spoox/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 124, in setup\n    raise RuntimeError(\n    ...<2 lines>...\n    )\nRuntimeError: Agent setup failed with exit code 1. See logs in jobs/2026-03-22__16-49-45/dna-assembly__Ue5zWbd/agent/setup\n",
+        "occurred_at": "2026-03-23T23:05:44.724776"
+    },
+    "started_at": "2026-03-23T22:04:05.979607Z",
+    "finished_at": "2026-03-23T22:05:46.849946Z",
+    "environment_setup": {
+        "started_at": "2026-03-23T22:04:05.983405Z",
+        "finished_at": "2026-03-23T22:04:09.483232Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-23T22:04:09.483277Z",
+        "finished_at": "2026-03-23T22:05:44.722199Z"
+    },
+    "agent_execution": null,
+    "verifier": null
+}

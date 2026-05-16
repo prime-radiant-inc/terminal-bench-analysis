@@ -1,0 +1,137 @@
+{
+    "id": "364ae786-89a5-4a24-9377-1f3bf6e02937",
+    "task_name": "terminal-bench/mteb-leaderboard",
+    "trial_name": "mteb-leaderboard__gfkaFMe",
+    "trial_uri": "file:///work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe",
+    "task_id": {
+        "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/mteb-leaderboard"
+    },
+    "source": "wecode-tb2-4-30-5",
+    "task_checksum": "10231d94827c016e593b56d128471c3e98e03560c0af11554a0ef3595aef1b42",
+    "config": {
+        "task": {
+            "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/mteb-leaderboard",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "wecode-tb2-4-30-5"
+        },
+        "trial_name": "mteb-leaderboard__gfkaFMe",
+        "trials_dir": "/work/terminal-bench/jobs/wecode-tb2-4-30-5",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "harbor_agent.wecode_agent:ThinWecodeInstalledAgent",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+                "auth_path": "/home/gradence/.wecode/auth.json",
+                "config_path": "/home/gradence/.wecode/config.toml"
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "164ac7f1-f71e-410b-9e9f-04c4ca60e3c9"
+    },
+    "agent_info": {
+        "name": "wecode-installed-thin",
+        "version": "wecode-cli 0.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": 12723245,
+        "n_cache_tokens": 11372800,
+        "n_output_tokens": 177233,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "binary_name": "wecode-bookworm",
+            "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+            "trajectory_source": "merged Wecode native rollout jsonl with A2A debug-event index",
+            "artifacts": {
+                "final": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/final.txt",
+                "stdout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode.jsonl",
+                "stderr": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode.stderr.txt",
+                "trajectory": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/trajectory.json",
+                "wecode_home": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode-home",
+                "rollout_files": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T05-08-33-019dc830-7b2f-7c92-a4ef-32687da2e702.jsonl",
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T05-09-09-019dc831-05dd-75d3-9fa9-58700ff90f51.jsonl",
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T05-30-06-019dc844-3687-7cf0-904f-9745e9fe7a4a.jsonl",
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T06-04-08-019dc863-5db5-73d0-984f-201660a3c30b.jsonl"
+                ],
+                "latest_rollout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T05-08-33-019dc830-7b2f-7c92-a4ef-32687da2e702.jsonl",
+                "debug_history": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode-home/debug/019dc830-7b2f-7c92-a4ef-32687da2e702/history.latest.json"
+                ],
+                "debug_metadata": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode-home/debug/019dc830-7b2f-7c92-a4ef-32687da2e702/metadata.json"
+                ]
+            },
+            "artifact_sha256": {
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T05-08-33-019dc830-7b2f-7c92-a4ef-32687da2e702.jsonl": "22379f4d30b98c7f9964a698a6a5efacd89f8c3b87474f633173aebb7bbfffec",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T05-09-09-019dc831-05dd-75d3-9fa9-58700ff90f51.jsonl": "e0af809defc349b3e6a866845a77311485b81cf9d8153e74cc7f213ddd27da72",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T05-30-06-019dc844-3687-7cf0-904f-9745e9fe7a4a.jsonl": "a0f5a1962b4190ee1a38d3037940ea584bd9e0091e5ec71579480a27b6366797",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T06-04-08-019dc863-5db5-73d0-984f-201660a3c30b.jsonl": "1c0bb005956a171a89f5a8318966ce5a9215c071fc2c64b8c01f7c74d39e9c9e",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/final.txt": "8dbc9d8cede06a84973f278ece1c9f67613f5796ee01e8c0135d6511112461ff",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode.jsonl": "1d363f10a01ce6eeb912b218446587fa7654223b3a9eaee58d48ed15c66180b9",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/wecode.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/mteb-leaderboard__gfkaFMe/agent/trajectory.json": "d7bd9c5c404bb5ccbfd302538fec1fa8bb9da203d3d51a80b36f8d2e04fe23cf"
+            },
+            "final_output": "Done. `/app/result.txt:1` contains exactly:\n\n`GritLM/GritLM-7B`\n\nFresh verification passed via `Elliot-verifier`, and a final direct check confirmed one line, 17 bytes, no extra text.\n\nUnresolved reply: `wmj-hayden-verify-result`. It no longer affects acceptance because Hayden remained running after repeated waits, while the artifact was already verified by Elliot and rechecked directly at `/app/result.txt:1`."
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-26T05:08:18.038208Z",
+    "finished_at": "2026-04-26T06:08:23.027078Z",
+    "environment_setup": {
+        "started_at": "2026-04-26T05:08:18.038766Z",
+        "finished_at": "2026-04-26T05:08:19.159747Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-26T05:08:19.159753Z",
+        "finished_at": "2026-04-26T05:08:33.575037Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-26T05:08:33.575062Z",
+        "finished_at": "2026-04-26T06:07:55.992043Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-26T06:07:56.229676Z",
+        "finished_at": "2026-04-26T06:08:11.597408Z"
+    }
+}

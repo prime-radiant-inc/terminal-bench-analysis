@@ -1,0 +1,122 @@
+{
+    "id": "76960076-e766-47d1-9585-8481315018c2",
+    "task_name": "hf-model-inference",
+    "trial_name": "hf-model-inference__8D2vnPG",
+    "trial_uri": "file://jobs/evo_env_bootstrap_full/hf-model-inference__8D2vnPG",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "hf-model-inference"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "b96307ee0e1a454b667fb19da4b08116252525a2897250a9d7f8825fa0b86088",
+    "config": {
+        "task": {
+            "path": "hf-model-inference",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "hf-model-inference__8D2vnPG",
+        "trials_dir": "jobs/evo_env_bootstrap_full",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "agents_proposed.evo_env_bootstrap:AgentHarness",
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "runloop",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "0333b055-b8c2-4d18-840b-2d1995c6c418"
+    },
+    "agent_info": {
+        "name": "terminus-kira-env-bootstrap",
+        "version": "1.1.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 222256,
+        "n_cache_tokens": 185108,
+        "n_output_tokens": 7815,
+        "cost_usd": 0.4969852499999999,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 24,
+            "api_request_times_msec": [
+                5009.75489616394,
+                3804.039716720581,
+                6617.129564285278,
+                3491.7891025543213,
+                3758.606195449829,
+                3431.4756393432617,
+                9269.360065460205,
+                4974.878311157227,
+                5160.288333892822,
+                5515.633106231689,
+                5897.674798965454,
+                6975.725412368774,
+                6879.699230194092,
+                7563.814163208008,
+                6943.53175163269,
+                9772.167444229126,
+                10454.30302619934,
+                5207.079172134399,
+                4344.384431838989,
+                7070.724248886108,
+                6519.097566604614,
+                7917.585372924805,
+                6209.9714279174805,
+                6714.470863342285
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-26T09:19:56.485846Z",
+    "finished_at": "2026-03-26T09:23:34.618745Z",
+    "environment_setup": {
+        "started_at": "2026-03-26T09:19:56.494961Z",
+        "finished_at": "2026-03-26T09:20:00.880812Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-26T09:20:00.880817Z",
+        "finished_at": "2026-03-26T09:20:08.720973Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-26T09:20:08.720998Z",
+        "finished_at": "2026-03-26T09:23:23.886773Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-26T09:23:24.151635Z",
+        "finished_at": "2026-03-26T09:23:34.533728Z"
+    }
+}

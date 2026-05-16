@@ -1,0 +1,110 @@
+{
+    "id": "2162b133-a53c-432d-b5c7-3c7fa8bc0320",
+    "task_name": "terminal-bench/sqlite-db-truncate",
+    "trial_name": "sqlite-db-truncate__fT7M2EZ",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/sqlite-db-truncate__fT7M2EZ",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "sqlite-db-truncate",
+        "ref": "sha256:956f038b479cc3b9b493553b57a60a8ff4154526386c3914c0b99e93e1ab6e87"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "673cdff46735ca0b8d83c6c82c0a4e252149d31629e80da9d8439a05d771351c",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/sqlite-db-truncate",
+            "ref": "sha256:956f038b479cc3b9b493553b57a60a8ff4154526386c3914c0b99e93e1ab6e87",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "sqlite-db-truncate__fT7M2EZ",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 40652,
+        "n_cache_tokens": null,
+        "n_output_tokens": 3883,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 7,
+            "verifier_cmd": "python3 -c \"import json; d=json.load(open('/app/recover.json')); assert isinstance(d,list) and len(d)>=1; [(_:=(isinstance(x['word'],str),isinstance(x['value'],int))) for x in d]; print(d)\"",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T12:20:49.080696Z",
+    "finished_at": "2026-05-12T12:23:21.712402Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T12:20:49.081920Z",
+        "finished_at": "2026-05-12T12:20:51.583819Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T12:20:51.583834Z",
+        "finished_at": "2026-05-12T12:20:51.583858Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T12:20:51.583898Z",
+        "finished_at": "2026-05-12T12:23:04.318276Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T12:23:04.416533Z",
+        "finished_at": "2026-05-12T12:23:11.133179Z"
+    },
+    "step_results": null
+}

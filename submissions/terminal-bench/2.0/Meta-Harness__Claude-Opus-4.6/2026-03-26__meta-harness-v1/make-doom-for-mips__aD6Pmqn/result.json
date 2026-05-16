@@ -1,0 +1,186 @@
+{
+    "id": "1146cd11-aa7d-40ef-a879-518b2f5868cf",
+    "task_name": "make-doom-for-mips",
+    "trial_name": "make-doom-for-mips__aD6Pmqn",
+    "trial_uri": "file://jobs/evo_env_bootstrap_full/make-doom-for-mips__aD6Pmqn",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "make-doom-for-mips"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "48c24358a58435a97de86cc88255b6faf1cd3cb28bd27ff6a918e01655095981",
+    "config": {
+        "task": {
+            "path": "make-doom-for-mips",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "make-doom-for-mips__aD6Pmqn",
+        "trials_dir": "jobs/evo_env_bootstrap_full",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "agents_proposed.evo_env_bootstrap:AgentHarness",
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "runloop",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "0333b055-b8c2-4d18-840b-2d1995c6c418"
+    },
+    "agent_info": {
+        "name": "terminus-kira-env-bootstrap",
+        "version": "1.1.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 5272196,
+        "n_cache_tokens": 5169662,
+        "n_output_tokens": 42497,
+        "cost_usd": 4.285330999999999,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 0,
+            "api_request_times_msec": [
+                4044.612407684326,
+                5240.873336791992,
+                5922.3198890686035,
+                8401.42273902893,
+                5699.551582336426,
+                6152.271270751953,
+                6127.938747406006,
+                12274.425268173218,
+                7347.1009731292725,
+                10986.11855506897,
+                4043.318748474121,
+                5424.49951171875,
+                13475.600242614746,
+                7977.205753326416,
+                12182.444095611572,
+                10035.512447357178,
+                4373.533725738525,
+                3085.5393409729004,
+                8944.22459602356,
+                3663.135051727295,
+                4135.869264602661,
+                4948.141098022461,
+                11897.214889526367,
+                5034.445524215698,
+                37172.11365699768,
+                35583.16159248352,
+                23895.289182662964,
+                47118.335008621216,
+                10677.361965179443,
+                5698.888063430786,
+                6721.913576126099,
+                8211.085557937622,
+                4157.477140426636,
+                5528.861045837402,
+                5821.033000946045,
+                11443.277835845947,
+                3930.6461811065674,
+                3109.623432159424,
+                9727.700233459473,
+                6103.30605506897,
+                14607.765674591064,
+                4395.021200180054,
+                13700.25634765625,
+                3593.212127685547,
+                2903.5866260528564,
+                4515.911340713501,
+                4127.535820007324,
+                7405.677318572998,
+                9990.839719772339,
+                18746.94514274597,
+                4123.491525650024,
+                7611.641883850098,
+                4785.773515701294,
+                8939.68939781189,
+                12394.619703292847,
+                3612.995386123657,
+                12239.609241485596,
+                8857.681274414062,
+                12899.893283843994,
+                13737.972021102905,
+                4495.866775512695,
+                4199.132680892944,
+                6807.552337646484,
+                6566.474437713623,
+                5639.925718307495,
+                10079.251527786255,
+                3527.829170227051,
+                5440.606117248535,
+                4456.094026565552,
+                4043.789863586426,
+                9384.932279586792,
+                7264.861583709717,
+                24169.567584991455,
+                6716.942310333252,
+                5599.090814590454,
+                5706.171751022339,
+                4034.254550933838,
+                5035.1457595825195,
+                6506.744384765625,
+                3856.8246364593506,
+                4931.525230407715,
+                7417.428255081177,
+                4926.934480667114
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/iris/u/yoonho/.local/share/uv/python/cpython-3.13.2-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/iris/u/yoonho/research/src/terminal-bench-kira/agents_proposed/evo_env_bootstrap.py\", line 302, in run\n    await super().run(instruction, environment, context)\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1472, in run\n    actual_episodes = await self._run_agent_loop(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/iris/u/yoonho/research/src/terminal-bench-kira/agents_proposed/evo_env_bootstrap.py\", line 1218, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._with_block_timeout(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/iris/u/yoonho/research/src/terminal-bench-kira/agents_proposed/evo_env_bootstrap.py\", line 232, in _with_block_timeout\n    return await asyncio.wait_for(coro, timeout=timeout_sec)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/iris/u/yoonho/.local/share/uv/python/cpython-3.13.2-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/iris/u/yoonho/research/src/terminal-bench-kira/agents_proposed/evo_env_bootstrap.py\", line 266, in _execute_commands\n    await asyncio.sleep(min(0.3, command.duration_sec))\n  File \"/iris/u/yoonho/.local/share/uv/python/cpython-3.13.2-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 718, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/harbor/trial/trial.py\", line 249, in _execute_agent\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/iris/u/yoonho/.local/share/uv/python/cpython-3.13.2-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/iris/u/yoonho/.local/share/uv/python/cpython-3.13.2-linux-x86_64-gnu/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/harbor/trial/trial.py\", line 360, in run\n    await self._execute_agent()\n  File \"/scr/yoonho/cache/uv/.venv_2189083365/lib/python3.13/site-packages/harbor/trial/trial.py\", line 258, in _execute_agent\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {self._agent_timeout_sec} seconds\"\n    ) from e\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-03-25T23:39:59.285214"
+    },
+    "started_at": "2026-03-26T06:24:40.526879Z",
+    "finished_at": "2026-03-26T06:40:09.324918Z",
+    "environment_setup": {
+        "started_at": "2026-03-26T06:24:40.642469Z",
+        "finished_at": "2026-03-26T06:24:49.117411Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-26T06:24:49.117416Z",
+        "finished_at": "2026-03-26T06:24:59.271789Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-26T06:24:59.271815Z",
+        "finished_at": "2026-03-26T06:39:59.280495Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-26T06:39:59.587170Z",
+        "finished_at": "2026-03-26T06:40:09.247281Z"
+    }
+}

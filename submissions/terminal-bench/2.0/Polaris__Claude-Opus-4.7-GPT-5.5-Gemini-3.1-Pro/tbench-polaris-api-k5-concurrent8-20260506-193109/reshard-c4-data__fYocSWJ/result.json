@@ -1,0 +1,160 @@
+{
+    "id": "62c739c9-83d0-452d-bc62-0eb14f950290",
+    "task_name": "reshard-c4-data",
+    "trial_name": "reshard-c4-data__fYocSWJ",
+    "trial_uri": "file:///home/bryan/projects/polaris/benchmark_runs/tbench-polaris-api-k5-concurrent8-20260506-193109/reshard-c4-data__fYocSWJ",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "reshard-c4-data"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "19f99d7567f3e6e6ebe453523d76a69c2196bc34b0aa668abfb997d797cc6bd5",
+    "config": {
+        "task": {
+            "path": "reshard-c4-data",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "reshard-c4-data__fYocSWJ",
+        "trials_dir": "/home/bryan/projects/polaris/benchmark_runs/tbench-polaris-api-k5-concurrent8-20260506-193109",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "tbench_polaris_agent:PolarisAgent",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "4954af75-42d9-4e2e-b010-4d6f681f0d38"
+    },
+    "agent_info": {
+        "name": "polaris",
+        "version": "2.2.0 (Polaris)",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "polaris_session_id": "a46a32e3-b8b2-4aef-ad7b-cd03006b77ac",
+            "polaris_num_turns": null,
+            "polaris_duration_ms": null,
+            "polaris_duration_api_ms": null,
+            "polaris_model_usage": null,
+            "polaris_tbench_adapter_mode": "neutral",
+            "polaris_tbench_main_model": "claude-opus-4-7",
+            "polaris_tbench_tools": "Bash,Read,Write,Edit,Glob,Grep,FuzzyFind,Skill,browser__open,browser__close,browser__status,browser__navigate,browser__fill,browser__click,browser__press_key,browser__wait_for,browser__capture_start,browser__capture_stop,browser__capture_query,browser__screenshot,browser__eval_js",
+            "polaris_tbench_thinking": "enabled",
+            "polaris_tbench_effort": "high",
+            "polaris_tbench_bash_default_timeout_ms": "120000",
+            "polaris_tbench_bash_max_timeout_ms": "1200000",
+            "polaris_tbench_max_turns": "60",
+            "polaris_tbench_lead_timeout_s": "1800",
+            "polaris_tbench_effective_agent_timeout_s": 3600,
+            "polaris_tbench_final_reserve_s": 180,
+            "polaris_tbench_worker_post_reserve_s": 45,
+            "polaris_tbench_visible_check_post_reserve_s": 20,
+            "polaris_tbench_rescue_post_reserve_s": 20,
+            "polaris_tbench_lead_idle_timeout_s": "1500",
+            "polaris_tbench_rescue_timeout_s": "1800",
+            "polaris_tbench_install_system_deps": true,
+            "polaris_tbench_obscura_binary": "/home/bryan/.polaris/bin/obscura",
+            "polaris_tbench_obscura_available": true,
+            "polaris_tbench_uv_binary": "/home/bryan/.local/bin/uv",
+            "polaris_tbench_uv_available": true,
+            "polaris_claude_credential_ttl_warning": null,
+            "polaris_claude_auth_source": "ANTHROPIC_API_KEY",
+            "polaris_claude_auth_primary": "api_key",
+            "polaris_claude_auth_fallback_source": null,
+            "polaris_claude_oauth_preflight_warning": null,
+            "polaris_codex_model": "gpt-5.5",
+            "polaris_codex_reasoning_effort": "high",
+            "polaris_gemini_model": "gemini-3.1-pro-preview",
+            "polaris_kimi_route_enabled": true,
+            "polaris_codex_worker_timeout_s": "900",
+            "polaris_gemini_worker_timeout_s": "300",
+            "polaris_kimi_worker_timeout_s": "300",
+            "polaris_workers_seen": [
+                "codex"
+            ],
+            "polaris_worker_events": [
+                {
+                    "ts": "2026-05-07T06:07:54Z",
+                    "model": "codex",
+                    "event": "start"
+                },
+                {
+                    "ts": "2026-05-07T06:12:28Z",
+                    "model": "codex",
+                    "event": "end",
+                    "rc": 0
+                }
+            ],
+            "polaris_ml_events_path": "/home/bryan/projects/polaris/benchmark_runs/tbench-polaris-api-k5-concurrent8-20260506-193109/reshard-c4-data__fYocSWJ/agent/polaris-ml-events.jsonl",
+            "polaris_ml_event_count": 5,
+            "polaris_ml_active_policy_versions": {}
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-07T06:00:31.747322Z",
+    "finished_at": "2026-05-07T06:14:32.205940Z",
+    "environment_setup": {
+        "started_at": "2026-05-07T06:00:31.748468Z",
+        "finished_at": "2026-05-07T06:01:03.300815Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-07T06:01:03.300833Z",
+        "finished_at": "2026-05-07T06:01:42.653849Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-07T06:01:42.653903Z",
+        "finished_at": "2026-05-07T06:12:29.500977Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-07T06:12:29.553568Z",
+        "finished_at": "2026-05-07T06:14:20.647848Z"
+    },
+    "step_results": null
+}

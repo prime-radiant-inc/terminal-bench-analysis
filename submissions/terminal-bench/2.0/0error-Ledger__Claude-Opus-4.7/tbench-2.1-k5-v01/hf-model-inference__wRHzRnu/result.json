@@ -1,0 +1,110 @@
+{
+    "id": "c9312433-55ec-4908-a445-7288b1f0b24f",
+    "task_name": "terminal-bench/hf-model-inference",
+    "trial_name": "hf-model-inference__wRHzRnu",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/hf-model-inference__wRHzRnu",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "hf-model-inference",
+        "ref": "sha256:01370f37e61286f920dfca1e471496640ebcc8d06e1cc48d874c790715dbd4ad"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "66ef04e259d5846b2106181c2a22bc1bbc391421a9fd9bf070e7320b022ae256",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/hf-model-inference",
+            "ref": "sha256:01370f37e61286f920dfca1e471496640ebcc8d06e1cc48d874c790715dbd4ad",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "hf-model-inference__wRHzRnu",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 21927,
+        "n_cache_tokens": null,
+        "n_output_tokens": 3272,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 3,
+            "verifier_cmd": "curl -s -X POST -H 'Content-Type: application/json' -d '{\"text\":\"I love this!\"}' http://localhost:5000/sentiment | python3 -c \"import json,sys; d=json.load(sys.stdin); assert d['sentiment']=='positive'; assert 'positive' in d['confidence'] and 'negative' in d['confidence']; print('OK')\"",
+            "ledger_written": true,
+            "verifier_ever_run": true
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T09:23:40.306038Z",
+    "finished_at": "2026-05-12T09:26:39.151120Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T09:23:40.306957Z",
+        "finished_at": "2026-05-12T09:24:08.584767Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T09:24:08.584781Z",
+        "finished_at": "2026-05-12T09:24:08.584806Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T09:24:08.584845Z",
+        "finished_at": "2026-05-12T09:26:21.045103Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T09:26:21.145272Z",
+        "finished_at": "2026-05-12T09:26:27.706204Z"
+    },
+    "step_results": null
+}

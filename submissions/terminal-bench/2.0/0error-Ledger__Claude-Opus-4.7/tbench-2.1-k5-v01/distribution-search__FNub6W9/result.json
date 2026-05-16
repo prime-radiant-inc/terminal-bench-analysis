@@ -1,0 +1,110 @@
+{
+    "id": "f109fd0b-8b27-4deb-8f16-44cf133157f1",
+    "task_name": "terminal-bench/distribution-search",
+    "trial_name": "distribution-search__FNub6W9",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/distribution-search__FNub6W9",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "distribution-search",
+        "ref": "sha256:8787d3004ac4dd9d78f0c14f5b5ef94a4ad3e69d8828d7d35b9fbd7828a69ed1"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "b92a6ca622e24a97dce2720f090562d729f8423aa03b8e77875c1a217c71ea4c",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/distribution-search",
+            "ref": "sha256:8787d3004ac4dd9d78f0c14f5b5ef94a4ad3e69d8828d7d35b9fbd7828a69ed1",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "distribution-search__FNub6W9",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 29442,
+        "n_cache_tokens": null,
+        "n_output_tokens": 8571,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 3,
+            "verifier_cmd": "python3 -c \"import numpy as np; p=np.load('/app/dist.npy'); assert len(p)==150000; assert abs(p.sum()-1)<1e-6; assert (p>=0).all(); N=150000; U=1/N; fkl=(p*np.log(p/U)).sum(); bkl=(U*np.log(U/p)).sum(); print(fkl,bkl); assert abs(fkl-10)<=0.001 and abs(bkl-10)<=0.001\"",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T12:59:58.037964Z",
+    "finished_at": "2026-05-12T13:02:24.693332Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T12:59:58.038910Z",
+        "finished_at": "2026-05-12T13:00:08.372128Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T13:00:08.372141Z",
+        "finished_at": "2026-05-12T13:00:08.372164Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T13:00:08.372203Z",
+        "finished_at": "2026-05-12T13:02:08.208006Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T13:02:08.286997Z",
+        "finished_at": "2026-05-12T13:02:13.899888Z"
+    },
+    "step_results": null
+}

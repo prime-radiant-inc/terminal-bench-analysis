@@ -1,0 +1,110 @@
+{
+    "id": "e7703298-1148-4708-b979-69e519605083",
+    "task_name": "terminal-bench/polyglot-c-py",
+    "trial_name": "polyglot-c-py__Q8wrWwR",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/polyglot-c-py__Q8wrWwR",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "polyglot-c-py",
+        "ref": "sha256:25570ccacf63f573a252eaa2a9c62ee8b55f5aa228cc803b5beb39dd6d8afeb7"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "d1e52e6139c57528762bbb163dc3f89edb967511d897ac5e7859398d3f44eb3c",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/polyglot-c-py",
+            "ref": "sha256:25570ccacf63f573a252eaa2a9c62ee8b55f5aa228cc803b5beb39dd6d8afeb7",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "polyglot-c-py__Q8wrWwR",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 30874,
+        "n_cache_tokens": null,
+        "n_output_tokens": 4927,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 4,
+            "verifier_cmd": "for n in 0 1 2 10 20; do py=$(python3 /app/polyglot/main.py.c $n); gcc /app/polyglot/main.py.c -o /tmp/cmain && c=$(/tmp/cmain $n); echo \"n=$n py=$py c=$c\"; [ \"$py\" = \"$c\" ] || exit 1; done",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T09:53:01.350374Z",
+    "finished_at": "2026-05-12T09:55:29.247256Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T09:53:01.351317Z",
+        "finished_at": "2026-05-12T09:53:07.499518Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T09:53:07.499535Z",
+        "finished_at": "2026-05-12T09:53:07.499561Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T09:53:07.499601Z",
+        "finished_at": "2026-05-12T09:55:10.550598Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T09:55:10.635195Z",
+        "finished_at": "2026-05-12T09:55:17.827309Z"
+    },
+    "step_results": null
+}

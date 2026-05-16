@@ -1,0 +1,116 @@
+{
+    "id": "d19ff699-e424-4b6e-b084-bfd29d4930e3",
+    "task_name": "llm-inference-batching-scheduler",
+    "trial_name": "llm-inference-batching-scheduler__PWH4reT",
+    "trial_uri": "file://jobs/evo_env_bootstrap_full/llm-inference-batching-scheduler__PWH4reT",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "llm-inference-batching-scheduler"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "3a08e63e0643ea5914eedeecb08cb93a1f0a10b9dc7d19d1f570004af84531c8",
+    "config": {
+        "task": {
+            "path": "llm-inference-batching-scheduler",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "llm-inference-batching-scheduler__PWH4reT",
+        "trials_dir": "jobs/evo_env_bootstrap_full",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "agents_proposed.evo_env_bootstrap:AgentHarness",
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "runloop",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "0333b055-b8c2-4d18-840b-2d1995c6c418"
+    },
+    "agent_info": {
+        "name": "terminus-kira-env-bootstrap",
+        "version": "1.1.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 557674,
+        "n_cache_tokens": 503818,
+        "n_output_tokens": 19262,
+        "cost_usd": 1.065984,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 18,
+            "api_request_times_msec": [
+                5514.125347137451,
+                6711.6100788116455,
+                9671.295404434204,
+                84167.20795631409,
+                4780.029535293579,
+                22637.35818862915,
+                55712.07499504089,
+                4682.026624679565,
+                3247.817277908325,
+                6888.16499710083,
+                18564.15605545044,
+                10493.571996688843,
+                4320.910453796387,
+                7957.22508430481,
+                22313.650131225586,
+                5089.986085891724,
+                8436.715602874756,
+                8222.423315048218
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-26T06:08:45.818569Z",
+    "finished_at": "2026-03-26T06:14:30.142360Z",
+    "environment_setup": {
+        "started_at": "2026-03-26T06:08:46.117458Z",
+        "finished_at": "2026-03-26T06:08:57.773016Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-26T06:08:57.773023Z",
+        "finished_at": "2026-03-26T06:09:05.192162Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-26T06:09:05.192195Z",
+        "finished_at": "2026-03-26T06:14:25.267714Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-26T06:14:25.555094Z",
+        "finished_at": "2026-03-26T06:14:30.062690Z"
+    }
+}

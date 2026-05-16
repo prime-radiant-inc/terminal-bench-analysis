@@ -1,0 +1,96 @@
+{
+    "id": "95304396-a0d5-45ad-98fc-7574bff1671c",
+    "task_name": "gcode-to-text",
+    "trial_name": "gcode-to-text__wrKjk2Z",
+    "trial_uri": "file:///root/terminal-bench-submit/test_jobs/05061314/run-1/jobs/2026-05-06__14-26-13/gcode-to-text__wrKjk2Z",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "gcode-to-text"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "5531de29b9b445e4cd67b66231d34cb9e7bddcf15f4c2574b7376a19f0e4c339",
+    "config": {
+        "task": {
+            "path": "gcode-to-text",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "gcode-to-text__wrKjk2Z",
+        "trials_dir": "jobs/2026-05-06__14-26-13",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "nexau",
+            "import_path": null,
+            "model_name": "gpt-5.5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "config_path": "/root/agentic-harness-engineering/experiments/2026-04-30__12-14-11__gpt55-new-adb/runs/iteration_010/input/workspace/code_agent.yaml"
+            }
+        },
+        "environment": {
+            "type": "e2b",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "bff4c480-abef-44d5-a92d-b8788a62d467"
+    },
+    "agent_info": {
+        "name": "nexau",
+        "version": "unknown",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 900.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/root/.local/share/uv/python/cpython-3.13.12-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/root/harbor-LJH/src/harbor/agents/installed/nexau.py\", line 720, in run\n    await super().run(instruction, environment, context)\n  File \"/root/harbor-LJH/src/harbor/agents/installed/base.py\", line 141, in run\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n    )\n    ^\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 189, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 111, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 153, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/tenacity/_utils.py\", line 99, in inner\n    return call(*args, **kwargs)\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/tenacity/__init__.py\", line 400, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ~~~~~~~~~~~~~~~~~^^\n  File \"/root/.local/share/uv/python/cpython-3.13.12-linux-x86_64-gnu/lib/python3.13/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ~~~~~~~~~~~~~~~~~^^\n  File \"/root/.local/share/uv/python/cpython-3.13.12-linux-x86_64-gnu/lib/python3.13/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py\", line 114, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/harbor-LJH/src/harbor/environments/e2b.py\", line 335, in exec\n    result = await handle.wait()\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/e2b/sandbox_async/commands/command_handle.py\", line 170, in wait\n    await self._wait\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/e2b/sandbox_async/commands/command_handle.py\", line 145, in _handle_events\n    async for stdout, stderr, pty in self._iterate_events():\n    ...<11 lines>...\n                await cb\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/e2b/sandbox_async/commands/command_handle.py\", line 112, in _iterate_events\n    async for event in self._events:\n    ...<17 lines>...\n            )\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/e2b_connect/client.py\", line 388, in acall_server_stream\n    async for chunk in http_resp.aiter_stream():\n        for parsed in parser.parse(chunk):\n            yield parsed\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/httpcore/_models.py\", line 482, in aiter_stream\n    async for chunk in self.stream:\n        yield chunk\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/httpcore/_async/connection_pool.py\", line 407, in __aiter__\n    raise exc from None\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/httpcore/_async/connection_pool.py\", line 403, in __aiter__\n    async for part in self._stream:\n        yield part\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/httpcore/_async/http11.py\", line 342, in __aiter__\n    raise exc\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/httpcore/_async/http11.py\", line 334, in __aiter__\n    async for chunk in self._connection._receive_response_body(**kwargs):\n        yield chunk\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/httpcore/_async/http11.py\", line 203, in _receive_response_body\n    event = await self._receive_event(timeout=timeout)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/httpcore/_async/http11.py\", line 217, in _receive_event\n    data = await self._network_stream.read(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        self.READ_NUM_BYTES, timeout=timeout\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/httpcore/_backends/anyio.py\", line 35, in read\n    return await self._stream.receive(max_bytes=max_bytes)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/anyio/streams/tls.py\", line 244, in receive\n    data = await self._call_sslobject_method(self._ssl_object.read, max_bytes)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/anyio/streams/tls.py\", line 187, in _call_sslobject_method\n    data = await self.transport_stream.receive()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/harbor-LJH/.venv/lib/python3.13/site-packages/anyio/_backends/_asyncio.py\", line 1269, in receive\n    await self._protocol.read_event.wait()\n  File \"/root/.local/share/uv/python/cpython-3.13.12-linux-x86_64-gnu/lib/python3.13/asyncio/locks.py\", line 213, in wait\n    await fut\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/root/harbor-LJH/src/harbor/trial/trial.py\", line 253, in _execute_agent\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/root/.local/share/uv/python/cpython-3.13.12-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 506, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/root/.local/share/uv/python/cpython-3.13.12-linux-x86_64-gnu/lib/python3.13/asyncio/timeouts.py\", line 116, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/root/harbor-LJH/src/harbor/trial/trial.py\", line 427, in run\n    await self._execute_agent()\n  File \"/root/harbor-LJH/src/harbor/trial/trial.py\", line 262, in _execute_agent\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {self._agent_timeout_sec} seconds\"\n    ) from e\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 900.0 seconds\n",
+        "occurred_at": "2026-05-06T14:41:24.412514"
+    },
+    "started_at": "2026-05-06T06:26:14.863073Z",
+    "finished_at": "2026-05-06T06:41:34.033515Z",
+    "environment_setup": {
+        "started_at": "2026-05-06T06:26:14.863837Z",
+        "finished_at": "2026-05-06T06:26:17.620602Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-06T06:26:17.620608Z",
+        "finished_at": "2026-05-06T06:26:24.406011Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-06T06:26:24.406123Z",
+        "finished_at": "2026-05-06T06:41:24.407967Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-06T06:41:24.438527Z",
+        "finished_at": "2026-05-06T06:41:33.911623Z"
+    }
+}

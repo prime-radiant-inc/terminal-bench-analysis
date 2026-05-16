@@ -1,0 +1,111 @@
+{
+    "id": "36eafac0-fd32-419f-b4c1-aad2a89b6eb6",
+    "task_name": "pypi-server",
+    "trial_name": "pypi-server__75PTFbk",
+    "trial_uri": "file:///home/itay-inbar/Documents/local-coder/benchmarks/harbor_runs/tb2-leaderboard-k5-v0.1.24-9b-2026-04-26__20-32-42/pypi-server__75PTFbk",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "pypi-server"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "5c5f465d60305289c69ece744afc1064deef83b0ae79743fbc6e74428ab51d63",
+    "config": {
+        "task": {
+            "path": "pypi-server",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "pypi-server__75PTFbk",
+        "trials_dir": "benchmarks/harbor_runs/tb2-leaderboard-k5-v0.1.24-9b-2026-04-26__20-32-42",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "benchmarks.harbor_adapter.little_coder_agent:LittleCoderAgent",
+            "model_name": "llamacpp/qwen3.5-9b",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "77913865-b97d-46e6-8023-2b1002088e11"
+    },
+    "agent_info": {
+        "name": "little-coder",
+        "version": "0.1.24",
+        "model_info": {
+            "name": "qwen3.5-9b",
+            "provider": "llamacpp"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "n_tool_calls": 40,
+            "n_turns": 41,
+            "n_compactions": 0,
+            "n_notifications": 5,
+            "little_coder_version": "0.1.24",
+            "benchmark": "terminal_bench_2.0"
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-27T03:23:11.347060Z",
+    "finished_at": "2026-04-27T03:28:34.415424Z",
+    "environment_setup": {
+        "started_at": "2026-04-27T03:23:11.347296Z",
+        "finished_at": "2026-04-27T03:23:15.851089Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-27T03:23:15.851097Z",
+        "finished_at": "2026-04-27T03:23:15.851112Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-27T03:23:15.851133Z",
+        "finished_at": "2026-04-27T03:28:11.226675Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-27T03:28:11.315958Z",
+        "finished_at": "2026-04-27T03:28:23.902492Z"
+    }
+}

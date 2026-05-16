@@ -1,0 +1,110 @@
+{
+    "id": "f7365e4f-617e-453b-886b-f50188dfb244",
+    "task_name": "terminal-bench/db-wal-recovery",
+    "trial_name": "db-wal-recovery__82mXi8k",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/db-wal-recovery__82mXi8k",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "db-wal-recovery",
+        "ref": "sha256:07e9193513bfce038b9f9d84962ecc85683eee0a642d14ee6fb7104b086ddab4"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "c18abdc4fdc3a01bf374c55a9700708fe6a9662077d29db81abb692f0a3c5f6f",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/db-wal-recovery",
+            "ref": "sha256:07e9193513bfce038b9f9d84962ecc85683eee0a642d14ee6fb7104b086ddab4",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "db-wal-recovery__82mXi8k",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 22216,
+        "n_cache_tokens": null,
+        "n_output_tokens": 1002,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 7,
+            "verifier_cmd": "python3 -c \"import json; d=json.load(open('/app/recovered.json')); assert len(d)==11 and d==sorted(d,key=lambda x:x['id']); print('OK')\"",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T12:32:58.869515Z",
+    "finished_at": "2026-05-12T12:34:51.951093Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T12:32:58.870530Z",
+        "finished_at": "2026-05-12T12:33:12.927794Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T12:33:12.927808Z",
+        "finished_at": "2026-05-12T12:33:12.927832Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T12:33:12.927867Z",
+        "finished_at": "2026-05-12T12:34:15.791006Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T12:34:15.875036Z",
+        "finished_at": "2026-05-12T12:34:33.734338Z"
+    },
+    "step_results": null
+}

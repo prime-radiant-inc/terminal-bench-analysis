@@ -1,0 +1,135 @@
+{
+    "id": "4e5fcaba-709a-4cc2-aad5-43f91360cb01",
+    "task_name": "terminal-bench/tune-mjcf",
+    "trial_name": "tune-mjcf__L8RXtrA",
+    "trial_uri": "file:///work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA",
+    "task_id": {
+        "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/tune-mjcf"
+    },
+    "source": "wecode-tb2-4-30-5",
+    "task_checksum": "5074b42e1ab196382e75942a5bebdd67ef5d9ad5879691f1ae0813f24ba97e30",
+    "config": {
+        "task": {
+            "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/tune-mjcf",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "wecode-tb2-4-30-5"
+        },
+        "trial_name": "tune-mjcf__L8RXtrA",
+        "trials_dir": "/work/terminal-bench/jobs/wecode-tb2-4-30-5",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "harbor_agent.wecode_agent:ThinWecodeInstalledAgent",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+                "auth_path": "/home/gradence/.wecode/auth.json",
+                "config_path": "/home/gradence/.wecode/config.toml"
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "164ac7f1-f71e-410b-9e9f-04c4ca60e3c9"
+    },
+    "agent_info": {
+        "name": "wecode-installed-thin",
+        "version": "wecode-cli 0.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": 1787095,
+        "n_cache_tokens": 1585536,
+        "n_output_tokens": 46788,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "binary_name": "wecode-bookworm",
+            "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+            "trajectory_source": "merged Wecode native rollout jsonl with A2A debug-event index",
+            "artifacts": {
+                "final": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/final.txt",
+                "stdout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/wecode.jsonl",
+                "stderr": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/wecode.stderr.txt",
+                "trajectory": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/trajectory.json",
+                "wecode_home": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/wecode-home",
+                "rollout_files": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T07-00-22-019dc896-d910-7e21-b1a1-a4fb0e15abd5.jsonl",
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T07-00-57-019dc897-60e7-7360-8122-2d16d3df40cb.jsonl",
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T07-07-35-019dc89d-76a8-79c0-92c2-ba5fb272bb73.jsonl"
+                ],
+                "latest_rollout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T07-00-22-019dc896-d910-7e21-b1a1-a4fb0e15abd5.jsonl",
+                "debug_history": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/wecode-home/debug/019dc896-d910-7e21-b1a1-a4fb0e15abd5/history.latest.json"
+                ],
+                "debug_metadata": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/wecode-home/debug/019dc896-d910-7e21-b1a1-a4fb0e15abd5/metadata.json"
+                ]
+            },
+            "artifact_sha256": {
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T07-00-22-019dc896-d910-7e21-b1a1-a4fb0e15abd5.jsonl": "1edb170bcf46ed4e4452e88e72d3069b428fb89303cc519a92893d7785ecd52d",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T07-00-57-019dc897-60e7-7360-8122-2d16d3df40cb.jsonl": "dcef114e52e5e0b40891430652ae3a4fd1f453545f359dad95d63f2236acc47b",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T07-07-35-019dc89d-76a8-79c0-92c2-ba5fb272bb73.jsonl": "5cce43f9a4108a8592551fb174197edcd69702230358679fc3ddea5f1206273c",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/final.txt": "3f03111f85c7c824f7e4924038491f38c8521a48f40bb86ed9d523d6093805e4",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/wecode.jsonl": "13353095325978b79ca14b68002aa57633e23ac7934f77c41574b7c231f26216",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/wecode.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/tune-mjcf__L8RXtrA/agent/trajectory.json": "9b0c66528f14d5abe539547de0d22f858d3e292af7b21d55fcdabf9e262c48c7"
+            },
+            "final_output": "**Done**\n- Tuned MJCF saved at `/app/model.xml`; `/app/model_ref.xml` was left unchanged.\n- The only semantic change is solver selection: `<option solver=\"PGS\"/>` at `model.xml:15`.\n- This keeps bodies, geoms, joints, equality constraints, actuator, timestep, and cable plugin properties unchanged.\n\n**Verification**\n- `python eval.py` exited 0 in `/app`.\n- Fresh verifier result: `Time pctg: 0.52`, meeting the `<= 0.60` target.\n- Correctness passed with finite `mjSTATE_FULLPHYSICS`; independent max abs diff stayed below `1e-5`."
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-26T07:00:16.548119Z",
+    "finished_at": "2026-04-26T07:12:52.715642Z",
+    "environment_setup": {
+        "started_at": "2026-04-26T07:00:16.549799Z",
+        "finished_at": "2026-04-26T07:00:17.680180Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-26T07:00:17.680188Z",
+        "finished_at": "2026-04-26T07:00:22.225763Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-26T07:00:22.225795Z",
+        "finished_at": "2026-04-26T07:12:18.058273Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-26T07:12:18.084598Z",
+        "finished_at": "2026-04-26T07:12:41.211527Z"
+    }
+}

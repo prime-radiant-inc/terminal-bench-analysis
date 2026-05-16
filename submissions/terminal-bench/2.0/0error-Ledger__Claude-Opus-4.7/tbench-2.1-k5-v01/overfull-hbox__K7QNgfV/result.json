@@ -1,0 +1,110 @@
+{
+    "id": "7aa2fdab-fde9-4251-932e-ab565bfe9853",
+    "task_name": "terminal-bench/overfull-hbox",
+    "trial_name": "overfull-hbox__K7QNgfV",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/overfull-hbox__K7QNgfV",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "overfull-hbox",
+        "ref": "sha256:3c3b16e4b2de5fea90ca98db242b155a6843f9cc4dfd00be3479985a34bab4f7"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "e615e59bebd52c82c6143c646aec4df7e57d2349665320295c2802532e2d283e",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/overfull-hbox",
+            "ref": "sha256:3c3b16e4b2de5fea90ca98db242b155a6843f9cc4dfd00be3479985a34bab4f7",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "overfull-hbox__K7QNgfV",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 279190,
+        "n_cache_tokens": null,
+        "n_output_tokens": 5802,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 25,
+            "verifier_cmd": "cd /app && pdflatex -interaction=nonstopmode main.tex 2>&1 | grep -i \"overfull\" && echo FAIL || echo OK",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T12:04:56.406069Z",
+    "finished_at": "2026-05-12T12:09:41.398660Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T12:04:56.407208Z",
+        "finished_at": "2026-05-12T12:05:04.336106Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T12:05:04.336120Z",
+        "finished_at": "2026-05-12T12:05:04.336142Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T12:05:04.336180Z",
+        "finished_at": "2026-05-12T12:08:57.008340Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T12:08:57.091550Z",
+        "finished_at": "2026-05-12T12:09:30.539170Z"
+    },
+    "step_results": null
+}

@@ -1,0 +1,138 @@
+{
+    "id": "6a933daa-6beb-40f0-a9c3-2124dafac385",
+    "task_name": "hf-model-inference",
+    "trial_name": "hf-model-inference__Vmb6LJ7",
+    "trial_uri": "file://jobs/evo_env_bootstrap_full/hf-model-inference__Vmb6LJ7",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "hf-model-inference"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "b96307ee0e1a454b667fb19da4b08116252525a2897250a9d7f8825fa0b86088",
+    "config": {
+        "task": {
+            "path": "hf-model-inference",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "hf-model-inference__Vmb6LJ7",
+        "trials_dir": "jobs/evo_env_bootstrap_full",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "agents_proposed.evo_env_bootstrap:AgentHarness",
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "runloop",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "0333b055-b8c2-4d18-840b-2d1995c6c418"
+    },
+    "agent_info": {
+        "name": "terminus-kira-env-bootstrap",
+        "version": "1.1.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 394187,
+        "n_cache_tokens": 345948,
+        "n_output_tokens": 10154,
+        "cost_usd": 0.6954765,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 40,
+            "api_request_times_msec": [
+                7318.044185638428,
+                3571.6676712036133,
+                7000.576496124268,
+                3267.813205718994,
+                3276.7534255981445,
+                3063.2312297821045,
+                2985.623359680176,
+                3999.1965293884277,
+                3054.7220706939697,
+                3678.5778999328613,
+                3938.0340576171875,
+                3124.204397201538,
+                4592.602252960205,
+                4520.022869110107,
+                3796.147108078003,
+                9100.212335586548,
+                4266.382932662964,
+                6582.699775695801,
+                3130.9752464294434,
+                3225.1834869384766,
+                3586.0836505889893,
+                5927.306413650513,
+                4963.487148284912,
+                6404.2205810546875,
+                6319.761514663696,
+                6202.880859375,
+                5039.565324783325,
+                7810.146808624268,
+                11240.205764770508,
+                4342.056751251221,
+                4105.179786682129,
+                3121.401309967041,
+                3413.254976272583,
+                3277.1801948547363,
+                3731.5280437469482,
+                6632.483959197998,
+                7647.535800933838,
+                12637.308359146118,
+                6941.799879074097,
+                5738.99245262146
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-26T06:16:41.453478Z",
+    "finished_at": "2026-03-26T06:21:28.866855Z",
+    "environment_setup": {
+        "started_at": "2026-03-26T06:16:41.507947Z",
+        "finished_at": "2026-03-26T06:16:47.607398Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-26T06:16:47.607403Z",
+        "finished_at": "2026-03-26T06:16:54.945914Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-26T06:16:54.945937Z",
+        "finished_at": "2026-03-26T06:21:20.076446Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-26T06:21:20.373105Z",
+        "finished_at": "2026-03-26T06:21:28.776307Z"
+    }
+}

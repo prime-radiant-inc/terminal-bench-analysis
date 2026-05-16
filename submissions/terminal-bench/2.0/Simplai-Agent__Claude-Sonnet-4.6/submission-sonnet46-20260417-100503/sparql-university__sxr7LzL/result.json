@@ -1,0 +1,101 @@
+{
+    "id": "824a1c7f-2cdd-4ca2-95fe-b11b9051f353",
+    "task_name": "sparql-university",
+    "trial_name": "sparql-university__sxr7LzL",
+    "trial_uri": "file:///workspace/terminal-bench-custom-agent/jobs/submission-sonnet46-20260417-100503/sparql-university__sxr7LzL",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "sparql-university"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "5f84ab8191b8b921e3adeae2fa11f7a1f5fc2549627cce7218ae0046f66d450b",
+    "config": {
+        "task": {
+            "path": "sparql-university",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "sparql-university__sxr7LzL",
+        "trials_dir": "jobs/submission-sonnet46-20260417-100503",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_agent.harbor_agent:HarborTerminalAgent",
+            "model_name": "anthropic/claude-sonnet-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "3404d55b-0769-42d2-adfa-b2e42ecfbb81"
+    },
+    "agent_info": {
+        "name": "terminal-agent",
+        "version": "0.3.0",
+        "model_info": {
+            "name": "claude-sonnet-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RuntimeError",
+        "exception_message": "sparql-university__sxr7LzL: failed to send non-blocking keys: None",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/workspace/terminal-bench-custom-agent/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 538, in run\n    await self._execute_agent()\n  File \"/workspace/terminal-bench-custom-agent/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 285, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/workspace/terminal-bench-custom-agent/terminal_agent/harbor_agent.py\", line 489, in run\n    timeout_occurred, terminal_output = await self._execute_commands(commands)\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/terminal-bench-custom-agent/terminal_agent/harbor_agent.py\", line 360, in _execute_commands\n    await self._session.send_keys(\n  File \"/workspace/terminal-bench-custom-agent/.venv/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 656, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/workspace/terminal-bench-custom-agent/.venv/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 609, in _send_non_blocking_keys\n    raise RuntimeError(\nRuntimeError: sparql-university__sxr7LzL: failed to send non-blocking keys: None\n",
+        "occurred_at": "2026-04-17T11:56:33.171480"
+    },
+    "started_at": "2026-04-17T11:50:52.864987Z",
+    "finished_at": "2026-04-17T11:56:34.186690Z",
+    "environment_setup": {
+        "started_at": "2026-04-17T11:50:52.866896Z",
+        "finished_at": "2026-04-17T11:50:56.594678Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-17T11:50:56.594694Z",
+        "finished_at": "2026-04-17T11:50:57.450722Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-17T11:50:57.450791Z",
+        "finished_at": "2026-04-17T11:56:33.170413Z"
+    },
+    "verifier": null
+}

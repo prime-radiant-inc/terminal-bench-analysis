@@ -1,0 +1,178 @@
+{
+    "id": "ae8868f7-2e5e-481d-94f8-cb9bbf59071d",
+    "task_name": "qemu-alpine-ssh",
+    "trial_name": "qemu-alpine-ssh__Yy789K4",
+    "trial_uri": "file://jobs/evo_env_bootstrap_full/qemu-alpine-ssh__Yy789K4",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "qemu-alpine-ssh"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "a6cd0bf0752902f3e284a6a9672d801de83fb9d0cf769c95f09fed2fd213548c",
+    "config": {
+        "task": {
+            "path": "qemu-alpine-ssh",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "qemu-alpine-ssh__Yy789K4",
+        "trials_dir": "jobs/evo_env_bootstrap_full",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "agents_proposed.evo_env_bootstrap:AgentHarness",
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "runloop",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "0333b055-b8c2-4d18-840b-2d1995c6c418"
+    },
+    "agent_info": {
+        "name": "terminus-kira-env-bootstrap",
+        "version": "1.1.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1497271,
+        "n_cache_tokens": 1438476,
+        "n_output_tokens": 21665,
+        "cost_usd": 1.4275392500000004,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 80,
+            "api_request_times_msec": [
+                7241.124153137207,
+                8575.538158416748,
+                4700.9687423706055,
+                7561.4471435546875,
+                5668.972015380859,
+                4533.073663711548,
+                3670.997381210327,
+                4203.146457672119,
+                5133.830547332764,
+                5769.826650619507,
+                9663.681507110596,
+                10454.230785369873,
+                4167.0026779174805,
+                15864.806175231934,
+                5547.19614982605,
+                5449.1541385650635,
+                7910.23850440979,
+                7798.60258102417,
+                6214.914798736572,
+                5237.067937850952,
+                3859.9274158477783,
+                3883.270263671875,
+                4333.631277084351,
+                6546.920537948608,
+                4336.60364151001,
+                2908.34379196167,
+                3380.5835247039795,
+                5965.070962905884,
+                4504.30965423584,
+                3044.485569000244,
+                3237.562894821167,
+                6881.208658218384,
+                6387.637615203857,
+                3581.479549407959,
+                3870.158910751343,
+                2878.584146499634,
+                3295.3693866729736,
+                4711.244583129883,
+                5503.236293792725,
+                3058.993101119995,
+                3605.7093143463135,
+                4574.680805206299,
+                3816.056966781616,
+                3287.5492572784424,
+                3904.957056045532,
+                4466.719627380371,
+                4113.104820251465,
+                4864.26568031311,
+                4186.544895172119,
+                5082.932472229004,
+                2993.307113647461,
+                4397.774934768677,
+                2994.7469234466553,
+                3344.85125541687,
+                3204.6401500701904,
+                5372.0598220825195,
+                5064.826011657715,
+                4519.587278366089,
+                3446.6168880462646,
+                4799.714803695679,
+                5181.183338165283,
+                4377.646207809448,
+                3530.9195518493652,
+                4050.9610176086426,
+                2895.18141746521,
+                3084.4385623931885,
+                5242.811679840088,
+                5775.151014328003,
+                4486.885786056519,
+                8719.135284423828,
+                5206.279516220093,
+                8188.171625137329,
+                6422.5754737854,
+                9192.85273551941,
+                5576.482534408569,
+                4180.3624629974365,
+                5924.561023712158,
+                5315.500259399414,
+                5816.999912261963,
+                4983.302593231201
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-26T07:06:10.815846Z",
+    "finished_at": "2026-03-26T07:17:16.876212Z",
+    "environment_setup": {
+        "started_at": "2026-03-26T07:06:10.822186Z",
+        "finished_at": "2026-03-26T07:06:16.978931Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-26T07:06:16.978937Z",
+        "finished_at": "2026-03-26T07:06:20.128734Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-26T07:06:20.128760Z",
+        "finished_at": "2026-03-26T07:17:10.134261Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-26T07:17:10.405053Z",
+        "finished_at": "2026-03-26T07:17:16.795831Z"
+    }
+}

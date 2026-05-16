@@ -1,0 +1,88 @@
+{
+    "id": "61289afb-f155-4506-88c7-344d51d85ac1",
+    "task_name": "terminal-bench/qemu-startup",
+    "trial_name": "qemu-startup__Dsvzw8F",
+    "trial_uri": "file:///home/menci/Projects/kairos-bench/jobs/2026-04-07__09-23-31/qemu-startup__Dsvzw8F",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "qemu-startup",
+        "ref": "sha256:e9796833ca178d98500b4146d107d947226485065f5a79a1dff2cdf7430f4f95"
+    },
+    "source": "terminal-bench/terminal-bench-2",
+    "task_checksum": "a0ad5ae76248295fb7174c716a1bfb07567ecba4af534614197c2199f855cf4f",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/qemu-startup",
+            "ref": "sha256:e9796833ca178d98500b4146d107d947226485065f5a79a1dff2cdf7430f4f95",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2"
+        },
+        "trial_name": "qemu-startup__Dsvzw8F",
+        "trials_dir": "jobs/2026-04-07__09-23-31",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "terminal_bench.logos_agent:LogosAgent",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "fd0dfb7e-ffb7-4c36-acc8-bb26bca41d9e"
+    },
+    "agent_info": {
+        "name": "logos",
+        "version": "unknown",
+        "model_info": null
+    },
+    "agent_result": null,
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "NonZeroAgentExitCodeError",
+        "exception_message": "Command failed (exit 1): mkdir -p /opt/logos/state/sandbox /opt/logos/state/entities /opt/logos/state/memory   /opt/logos/state/proc-store /opt/logos/state/svc-store && rm -f /opt/logos/state/sandbox/logos.sock && VFS_SANDBOX_ROOT=/opt/logos/state/sandbox VFS_SYSTEM_DB=/opt/logos/state/system.db VFS_USERS_ROOT=/opt/logos/state/entities VFS_MEMORY_ROOT=/opt/logos/state/memory VFS_PROC_STORE_ROOT=/opt/logos/state/proc-store VFS_SVC_STORE_ROOT=/opt/logos/state/svc-store SANDBOX_MODE=host nohup /opt/logos/logos-kernel > /tmp/logos-kernel.log 2>&1 & echo \"[logos-agent] waiting for kernel socket...\" && for i in $(seq 1 30); do   [ -S /opt/logos/state/sandbox/logos.sock ] && break;   sleep 1; done && if [ -S /opt/logos/state/sandbox/logos.sock ]; then   echo '[logos-agent] kernel ready'; else   echo '[logos-agent] ERROR: kernel failed to start:' &&   cat /tmp/logos-kernel.log &&   exit 1; fi\nstdout: [logos-agent] waiting for kernel socket...\n[logos-agent] ERROR: kernel failed to start:\n/opt/logos/logos-kernel: error while loading shared libraries: libssl.so.3: cannot open shared object file: No such file or directory\n\nstderr: None",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/menci/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 533, in run\n    await self._setup_agent()\n  File \"/home/menci/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 266, in _setup_agent\n    await asyncio.wait_for(\n    ...<2 lines>...\n    )\n  File \"/home/menci/.local/share/uv/python/cpython-3.13.12-linux-x86_64-gnu/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/menci/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 384, in setup\n    await self.install(environment)\n  File \"/home/menci/Projects/kairos-bench/src/terminal_bench/logos_agent.py\", line 175, in install\n    await self.exec_as_agent(\n    ...<26 lines>...\n    )\n  File \"/home/menci/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 358, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n        environment, command, env=env, cwd=cwd, timeout_sec=timeout_sec\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/menci/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/agents/installed/base.py\", line 321, in _exec\n    raise NonZeroAgentExitCodeError(\n    ...<3 lines>...\n    )\nharbor.agents.installed.base.NonZeroAgentExitCodeError: Command failed (exit 1): mkdir -p /opt/logos/state/sandbox /opt/logos/state/entities /opt/logos/state/memory   /opt/logos/state/proc-store /opt/logos/state/svc-store && rm -f /opt/logos/state/sandbox/logos.sock && VFS_SANDBOX_ROOT=/opt/logos/state/sandbox VFS_SYSTEM_DB=/opt/logos/state/system.db VFS_USERS_ROOT=/opt/logos/state/entities VFS_MEMORY_ROOT=/opt/logos/state/memory VFS_PROC_STORE_ROOT=/opt/logos/state/proc-store VFS_SVC_STORE_ROOT=/opt/logos/state/svc-store SANDBOX_MODE=host nohup /opt/logos/logos-kernel > /tmp/logos-kernel.log 2>&1 & echo \"[logos-agent] waiting for kernel socket...\" && for i in $(seq 1 30); do   [ -S /opt/logos/state/sandbox/logos.sock ] && break;   sleep 1; done && if [ -S /opt/logos/state/sandbox/logos.sock ]; then   echo '[logos-agent] kernel ready'; else   echo '[logos-agent] ERROR: kernel failed to start:' &&   cat /tmp/logos-kernel.log &&   exit 1; fi\nstdout: [logos-agent] waiting for kernel socket...\n[logos-agent] ERROR: kernel failed to start:\n/opt/logos/logos-kernel: error while loading shared libraries: libssl.so.3: cannot open shared object file: No such file or directory\n\nstderr: None\n",
+        "occurred_at": "2026-04-07T15:10:25.082402"
+    },
+    "started_at": "2026-04-07T15:08:38.888381Z",
+    "finished_at": "2026-04-07T15:10:38.849497Z",
+    "environment_setup": {
+        "started_at": "2026-04-07T15:08:38.903030Z",
+        "finished_at": "2026-04-07T15:09:23.651805Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-07T15:09:23.651889Z",
+        "finished_at": "2026-04-07T15:10:25.078233Z"
+    },
+    "agent_execution": null,
+    "verifier": null
+}

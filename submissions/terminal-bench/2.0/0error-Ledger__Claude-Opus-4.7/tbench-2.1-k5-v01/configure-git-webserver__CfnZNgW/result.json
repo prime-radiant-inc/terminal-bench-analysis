@@ -1,0 +1,110 @@
+{
+    "id": "eb733e32-90b6-43b5-9139-1abcf7b44dd3",
+    "task_name": "terminal-bench/configure-git-webserver",
+    "trial_name": "configure-git-webserver__CfnZNgW",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/configure-git-webserver__CfnZNgW",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "configure-git-webserver",
+        "ref": "sha256:e3dc712acfecdb1338a889f86c97b37422c3778351253f9aca4236e895fdb36e"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "84d7c2fd653dad4307c7d2e9dd4f937ecbcd7ad4d1acf5d2b74c35166634178e",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/configure-git-webserver",
+            "ref": "sha256:e3dc712acfecdb1338a889f86c97b37422c3778351253f9aca4236e895fdb36e",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "configure-git-webserver__CfnZNgW",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 48158,
+        "n_cache_tokens": null,
+        "n_output_tokens": 5372,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 5,
+            "verifier_cmd": "cd /tmp && rm -rf testclone && git clone /git/server testclone && cd testclone && echo \"hello world\" > hello.html && git add hello.html && git commit -m \"add\" && git push origin master && sleep 1 && curl -s http://localhost:8080/hello.html | grep \"hello world\"",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T08:52:36.435893Z",
+    "finished_at": "2026-05-12T08:55:19.529947Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T08:52:36.436814Z",
+        "finished_at": "2026-05-12T08:52:39.656258Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T08:52:39.656270Z",
+        "finished_at": "2026-05-12T08:52:39.656293Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T08:52:39.656331Z",
+        "finished_at": "2026-05-12T08:55:01.093352Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T08:55:01.181037Z",
+        "finished_at": "2026-05-12T08:55:08.774376Z"
+    },
+    "step_results": null
+}

@@ -1,0 +1,110 @@
+{
+    "id": "d470329a-e7dc-4b41-b4c5-95ed6d929d9d",
+    "task_name": "terminal-bench/winning-avg-corewars",
+    "trial_name": "winning-avg-corewars__VzsMHVU",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/winning-avg-corewars__VzsMHVU",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "winning-avg-corewars",
+        "ref": "sha256:a9f2c630fb7d656e96f3a42ade600a8abcb500631d153d62d5ceb2df073bc256"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "ef26211fb0bfc03ae2fddb937acce4df425861a40090d627a267edb3fb15e356",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/winning-avg-corewars",
+            "ref": "sha256:a9f2c630fb7d656e96f3a42ade600a8abcb500631d153d62d5ceb2df073bc256",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "winning-avg-corewars__VzsMHVU",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 555385,
+        "n_cache_tokens": null,
+        "n_output_tokens": 15201,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 40,
+            "verifier_cmd": "bash -c 'cd /app && for op in stone paper vampire snake g2-clear; do",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T07:21:57.445013Z",
+    "finished_at": "2026-05-12T07:30:47.519869Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T07:21:57.455250Z",
+        "finished_at": "2026-05-12T07:22:22.439475Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T07:22:22.439490Z",
+        "finished_at": "2026-05-12T07:22:22.439540Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T07:22:22.439593Z",
+        "finished_at": "2026-05-12T07:30:29.508311Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T07:30:29.584210Z",
+        "finished_at": "2026-05-12T07:30:36.444425Z"
+    },
+    "step_results": null
+}

@@ -1,0 +1,121 @@
+{
+    "id": "faba610b-136d-4dad-a7d3-398a4bbda47e",
+    "task_name": "fix-git",
+    "trial_name": "fix-git__HjUT3Ua",
+    "trial_uri": "file://jobs/evo_env_bootstrap_full/fix-git__HjUT3Ua",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "fix-git"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "7fa0a681f751d73f290d862522a82a5e448fa529834987ee1b80e5665c51aa7e",
+    "config": {
+        "task": {
+            "path": "fix-git",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "fix-git__HjUT3Ua",
+        "trials_dir": "jobs/evo_env_bootstrap_full",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "agents_proposed.evo_env_bootstrap:AgentHarness",
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "runloop",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "0333b055-b8c2-4d18-840b-2d1995c6c418"
+    },
+    "agent_info": {
+        "name": "terminus-kira-env-bootstrap",
+        "version": "1.1.0",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 217187,
+        "n_cache_tokens": 188527,
+        "n_output_tokens": 5294,
+        "cost_usd": 0.3909535,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 23,
+            "api_request_times_msec": [
+                6820.259094238281,
+                6873.815298080444,
+                5815.4966831207275,
+                5410.419225692749,
+                6234.290361404419,
+                4064.058780670166,
+                4353.0285358428955,
+                5503.949880599976,
+                5814.873933792114,
+                5237.456560134888,
+                4453.309059143066,
+                5904.071092605591,
+                3688.817024230957,
+                4543.493747711182,
+                3336.0774517059326,
+                5086.21883392334,
+                5351.725339889526,
+                4801.931381225586,
+                5479.003667831421,
+                5725.769519805908,
+                5373.080253601074,
+                7117.805004119873,
+                5045.293569564819
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-26T07:04:04.259631Z",
+    "finished_at": "2026-03-26T07:07:16.440706Z",
+    "environment_setup": {
+        "started_at": "2026-03-26T07:04:04.271156Z",
+        "finished_at": "2026-03-26T07:04:11.940660Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-26T07:04:11.940668Z",
+        "finished_at": "2026-03-26T07:04:20.440586Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-26T07:04:20.440616Z",
+        "finished_at": "2026-03-26T07:07:11.195309Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-26T07:07:11.479975Z",
+        "finished_at": "2026-03-26T07:07:16.358463Z"
+    }
+}

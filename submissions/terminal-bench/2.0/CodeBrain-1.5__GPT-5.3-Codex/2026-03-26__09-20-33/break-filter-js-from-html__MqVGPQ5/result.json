@@ -1,0 +1,93 @@
+{
+    "id": "2838a807-ff1f-4780-a8d7-e7ad43b383c6",
+    "task_name": "break-filter-js-from-html",
+    "trial_name": "break-filter-js-from-html__MqVGPQ5",
+    "trial_uri": "file:///home/[REDACTED_USER]/[REDACTED_PATH]",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "break-filter-js-from-html"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "b33421492e86b07de2a01bc2205f7e7d2fdc36446a84787265d99e5e138fdaaa",
+    "config": {
+        "task": {
+            "path": "break-filter-js-from-html",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "break-filter-js-from-html__MqVGPQ5",
+        "trials_dir": "jobs/2026-03-26__09-20-33",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "ruley.lib.harbor.installed_agent:RuleyAgent",
+            "model_name": "openai/gpt-5.3-codex",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "0324b83f-146b-4a39-b173-1bda677ef0aa"
+    },
+    "agent_info": {
+        "name": "ruley",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "agent_executed": true,
+            "success": true
+        }
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RewardFileNotFoundError",
+        "exception_message": "No reward file found at jobs/2026-03-26__09-20-33/break-filter-js-from-html__MqVGPQ5/verifier/reward.txt or jobs/2026-03-26__09-20-33/break-filter-js-from-html__MqVGPQ5/verifier/reward.json",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/[REDACTED_USER]/[REDACTED_PATH]\", line 382, in run\n    await self._run_verification()\n  File \"/home/[REDACTED_USER]/[REDACTED_PATH]\", line 272, in _run_verification\n    await self._verify_with_retry()\n  File \"/home/[REDACTED_USER]/[REDACTED_PATH]\", line 189, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/[REDACTED_USER]/[REDACTED_PATH]\", line 111, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/[REDACTED_USER]/[REDACTED_PATH]\", line 153, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/[REDACTED_USER]/[REDACTED_PATH]\", line 99, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/[REDACTED_USER]/[REDACTED_PATH]\", line 400, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/home/[REDACTED_USER]/[REDACTED_PATH]\", line 114, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/[REDACTED_USER]/[REDACTED_PATH]\", line 290, in _verify_with_retry\n    self.result.verifier_result = await asyncio.wait_for(\n                                  ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/[REDACTED_USER]/[REDACTED_PATH]\", line 157, in verify\n    raise RewardFileNotFoundError(\nharbor.verifier.verifier.RewardFileNotFoundError: No reward file found at jobs/2026-03-26__09-20-33/break-filter-js-from-html__MqVGPQ5/verifier/reward.txt or jobs/2026-03-26__09-20-33/break-filter-js-from-html__MqVGPQ5/verifier/reward.json\n",
+        "occurred_at": "2026-03-26T09:23:11.164904"
+    },
+    "started_at": "2026-03-26T01:20:35.628306Z",
+    "finished_at": "2026-03-26T01:23:21.905573Z",
+    "environment_setup": {
+        "started_at": "2026-03-26T01:20:35.628614Z",
+        "finished_at": "2026-03-26T01:20:35.783601Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-26T01:20:35.783610Z",
+        "finished_at": "2026-03-26T01:21:21.928896Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-26T01:21:21.928929Z",
+        "finished_at": "2026-03-26T01:23:11.055424Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-26T01:23:11.055484Z",
+        "finished_at": "2026-03-26T01:23:11.164026Z"
+    }
+}

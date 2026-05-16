@@ -1,0 +1,103 @@
+{
+    "id": "9d0279f0-ed22-4da8-8bf4-e1afddf65153",
+    "task_name": "model-extraction-relu-logits",
+    "trial_name": "model-extraction-relu-logits__VzFkjKV",
+    "trial_uri": "file:///Users/dmitrybarakhov/Projects/hookele/jobs/2026-01-28__10-01-15/model-extraction-relu-logits__VzFkjKV",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "model-extraction-relu-logits"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "d0dd8f420350bee97f2d47a2b0c74996be0146aa7bd6f8a1871d9629200dc359",
+    "config": {
+        "task": {
+            "path": "model-extraction-relu-logits",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "model-extraction-relu-logits__VzFkjKV",
+        "trials_dir": "jobs/2026-01-28__10-01-15",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": null,
+            "import_path": "adapters.harbor.agent:HookeleAgent",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "67466e72-4a78-42b6-a930-c730ef466227"
+    },
+    "agent_info": {
+        "name": "hookele",
+        "version": "0.0.1",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": 84996,
+        "n_cache_tokens": 76800,
+        "n_output_tokens": 1480,
+        "cost_usd": 0.006929,
+        "rollout_details": null,
+        "metadata": {
+            "status": "completed",
+            "iterations": 11,
+            "duration_seconds": 35.635,
+            "token_usage": {
+                "input_tokens": 84996,
+                "output_tokens": 1480,
+                "total_tokens": 86476,
+                "cached_tokens": 76800,
+                "reasoning_tokens": 128
+            },
+            "n_input_tokens": 84996,
+            "n_output_tokens": 1480,
+            "n_cache_tokens": 76800
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-01-28T08:08:10.372494Z",
+    "finished_at": "2026-01-28T08:10:05.190227Z",
+    "environment_setup": {
+        "started_at": "2026-01-28T08:08:10.373173Z",
+        "finished_at": "2026-01-28T08:08:29.438892Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-01-28T08:08:29.438960Z",
+        "finished_at": "2026-01-28T08:08:29.439921Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-01-28T08:08:29.440011Z",
+        "finished_at": "2026-01-28T08:09:05.078319Z"
+    },
+    "verifier": {
+        "started_at": "2026-01-28T08:09:05.078588Z",
+        "finished_at": "2026-01-28T08:10:03.803135Z"
+    }
+}

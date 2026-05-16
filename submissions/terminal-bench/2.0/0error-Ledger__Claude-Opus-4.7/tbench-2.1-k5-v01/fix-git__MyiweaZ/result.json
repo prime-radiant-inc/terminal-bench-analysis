@@ -1,0 +1,110 @@
+{
+    "id": "3ba30dd9-0d77-4371-9ac3-3ae0e13e307b",
+    "task_name": "terminal-bench/fix-git",
+    "trial_name": "fix-git__MyiweaZ",
+    "trial_uri": "file:///home/ubuntu/terminal-bench/runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01/fix-git__MyiweaZ",
+    "task_id": {
+        "org": "terminal-bench",
+        "name": "fix-git",
+        "ref": "sha256:16948b980df9d96de616a205f5acca1c5d395de83ff4f8ffabcafacb93226f2e"
+    },
+    "source": "terminal-bench/terminal-bench-2-1",
+    "task_checksum": "d3220d70bc668ec6f4034fab51e62873dff724a61f824d764fd201d6f5e7a88a",
+    "config": {
+        "task": {
+            "path": null,
+            "git_url": null,
+            "git_commit_id": null,
+            "name": "terminal-bench/fix-git",
+            "ref": "sha256:16948b980df9d96de616a205f5acca1c5d395de83ff4f8ffabcafacb93226f2e",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench/terminal-bench-2-1"
+        },
+        "trial_name": "fix-git__MyiweaZ",
+        "trials_dir": "runs/tbench-2.1-k5-v01/tbench-2.1-k5-v01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "agent.scaffold_agent:ScaffoldAgent",
+            "model_name": "openai/anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83acc512-80a2-4a0d-9d51-88193f2c45f4"
+    },
+    "agent_info": {
+        "name": "scaffold-agent",
+        "version": "0.4.1",
+        "model_info": {
+            "name": "anthropic/claude-opus-4-7",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 17644,
+        "n_cache_tokens": null,
+        "n_output_tokens": 1026,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "turns": 7,
+            "verifier_cmd": "cd /app/personal-site && git rev-parse HEAD~0 && git branch --show-current | grep -q '^master$' && git log master --oneline | grep -q \"Move to Stanford\"",
+            "ledger_written": true,
+            "verifier_ever_run": false
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T07:21:12.587861Z",
+    "finished_at": "2026-05-12T07:22:29.823035Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T07:21:12.588908Z",
+        "finished_at": "2026-05-12T07:21:18.541647Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T07:21:18.541662Z",
+        "finished_at": "2026-05-12T07:21:18.541687Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T07:21:18.541725Z",
+        "finished_at": "2026-05-12T07:22:10.501847Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T07:22:10.589330Z",
+        "finished_at": "2026-05-12T07:22:18.472549Z"
+    },
+    "step_results": null
+}

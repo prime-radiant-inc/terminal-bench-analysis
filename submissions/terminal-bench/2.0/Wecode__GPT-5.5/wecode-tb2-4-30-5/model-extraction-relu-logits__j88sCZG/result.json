@@ -1,0 +1,133 @@
+{
+    "id": "6a720e72-6ba7-404e-b2b8-6d4fb7f42d4b",
+    "task_name": "terminal-bench/model-extraction-relu-logits",
+    "trial_name": "model-extraction-relu-logits__j88sCZG",
+    "trial_uri": "file:///work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG",
+    "task_id": {
+        "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/model-extraction-relu-logits"
+    },
+    "source": "wecode-tb2-4-30-5",
+    "task_checksum": "2b00b238c95deb1fa68c403f789e4cb06d5d9b3ec9ad938980396f2d7e988fa4",
+    "config": {
+        "task": {
+            "path": "/work/terminal-bench/.cache/harbor-local-datasets/wecode-tb2-4-30-5/model-extraction-relu-logits",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "wecode-tb2-4-30-5"
+        },
+        "trial_name": "model-extraction-relu-logits__j88sCZG",
+        "trials_dir": "/work/terminal-bench/jobs/wecode-tb2-4-30-5",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "harbor_agent.wecode_agent:ThinWecodeInstalledAgent",
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+                "auth_path": "/home/gradence/.wecode/auth.json",
+                "config_path": "/home/gradence/.wecode/config.toml"
+            },
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "164ac7f1-f71e-410b-9e9f-04c4ca60e3c9"
+    },
+    "agent_info": {
+        "name": "wecode-installed-thin",
+        "version": "wecode-cli 0.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": 598896,
+        "n_cache_tokens": 493824,
+        "n_output_tokens": 26969,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "binary_name": "wecode-bookworm",
+            "binary_path": "/work/tmp/bookworm-wecode-out/wecode-bookworm",
+            "trajectory_source": "merged Wecode native rollout jsonl with A2A debug-event index",
+            "artifacts": {
+                "final": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/final.txt",
+                "stdout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/wecode.jsonl",
+                "stderr": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/wecode.stderr.txt",
+                "trajectory": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/trajectory.json",
+                "wecode_home": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/wecode-home",
+                "rollout_files": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T23-50-42-019dcc33-d665-7c10-9634-f22215659cd4.jsonl",
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T23-51-28-019dcc34-8a47-78e2-a32f-e9d03c755e3e.jsonl"
+                ],
+                "latest_rollout": "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T23-50-42-019dcc33-d665-7c10-9634-f22215659cd4.jsonl",
+                "debug_history": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/wecode-home/debug/019dcc33-d665-7c10-9634-f22215659cd4/history.latest.json"
+                ],
+                "debug_metadata": [
+                    "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/wecode-home/debug/019dcc33-d665-7c10-9634-f22215659cd4/metadata.json"
+                ]
+            },
+            "artifact_sha256": {
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T23-50-42-019dcc33-d665-7c10-9634-f22215659cd4.jsonl": "70213e95e75b2d9c371d3634d4659100db64bfe612fee4380a46d26c6ca23f24",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/wecode-home/sessions/2026/04/26/rollout-2026-04-26T23-51-28-019dcc34-8a47-78e2-a32f-e9d03c755e3e.jsonl": "c84ae11caf79b1a99da0a5d0b27ab60bb3d2afe65022ebd3a13c1665a5b5fff3",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/final.txt": "c90c736bf9a307663b26f43bbd511423a1681bfd123a876e469aeb0a2235e382",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/wecode.jsonl": "8ad2e0bee93578e9e736618818215e4b37d6e91bf7977b5b09aa7950f6c0930f",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/wecode.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "/work/terminal-bench/jobs/wecode-tb2-4-30-5/model-extraction-relu-logits__j88sCZG/agent/trajectory.json": "0f89e76ef77684369cf510f9e2c31c729a253618cdf00361e07884876ffb8aec"
+            },
+            "final_output": "Done.\n\n- Created `/app/steal.py:1` with a query-based ReLU extraction algorithm using kink detection and finite-difference gradient jumps.\n- Generated `/app/stolen_A1.npy` with shape `(20, 10)`.\n- Local numerical check passed: every recovered row matches `forward.A1` up to permutation and scaling/sign with worst cosine `0.9999999999999998`.\n- Independent verifier confirmed the fresh artifacts after deleting and regenerating `/app/stolen_A1.npy`.\n\nFinal verifier status: `verified`; no repair requested."
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-26T23:50:36.812411Z",
+    "finished_at": "2026-04-27T00:01:35.177078Z",
+    "environment_setup": {
+        "started_at": "2026-04-26T23:50:36.813972Z",
+        "finished_at": "2026-04-26T23:50:37.640988Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-26T23:50:37.640995Z",
+        "finished_at": "2026-04-26T23:50:42.278172Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-26T23:50:42.278202Z",
+        "finished_at": "2026-04-27T00:00:56.404566Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-27T00:00:56.444944Z",
+        "finished_at": "2026-04-27T00:01:24.463831Z"
+    }
+}
