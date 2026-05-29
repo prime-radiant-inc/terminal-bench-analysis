@@ -211,7 +211,7 @@ order by ss.avg_reward desc
 | openai-codex/gpt-5.3-codex | IndusAGICodingAgent__gpt-5.3-codex | 0.685 | 261 | 445 |
 | opus | WozCode__Claude-Opus-4.6 | 0.684 | 303 | 445 |
 | openai:gpt-5.2-codex | Deep-Agents__GPT-5.2-Codex | 0.6798 | 293 | 445 |
-| claude-opus-4-6 | Crux__Claude-Opus-4.6 | 0.67 | 272 | 445 |
+| claude-sonnet-4-20250514 | Crux__Claude-Opus-4.6 | 0.67 | 272 | 445 |
 | litellm_proxy/gemini-3-pro-preview | OpenSage__Gemini-3-Pro-Preview | 0.6576 | 290 | 445 |
 | gemini-3-flash-preview | Dirac__Gemini-3-Flash-Preview | 0.6517 | 290 | 445 |
 | gemini-3-pro-preview | Ante__Gemini-3-Pro-Preview | 0.6501 | 288 | 445 |
