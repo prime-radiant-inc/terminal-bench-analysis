@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: terminal-bench-analysis
+  description: "Fetches Terminal Bench 2 leaderboard JSON results into SQLite and publishes queryable analysis via Datasette."
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    prime-radiant.com/repo-map-rev: "240ed3a2712a12f5cbc0cfcf66cc8cb03e1cec75"
+  tags: [python, evals, benchmarks, datasette, sqlite]
+spec:
+  type: tool
+  lifecycle: production
+  owner: user:simonw
+  system: eval-labs
