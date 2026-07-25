@@ -201,6 +201,7 @@ order by ss.avg_reward desc
 | anthropic/claude-opus-4-6 | pilot-real__claude-opus-4-6 | 0.8314 | 365 | 445 |
 | auto | OB-1_GPT-5.4-GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | 0.8266 | 367 | 445 |
 | openai/gpt-5.3-codex | CodeBrain-1.5__GPT-5.3-Codex | 0.8172 | 362 | 445 |
+| litellm_proxy/sage-gpt-5.3-codex | OpenSage__GPT-5.3-Codex | 0.795 | 349 | 445 |
 | gpt-5.3-codex | Droid__GPT-5.3-Codex | 0.773 | 344 | 445 |
 | vertex_ai/gemini-3.1-pro-preview | Terminus-KIRA__Gemini-3.1-Pro-Preview | 0.7517 | 333 | 445 |
 | vertex_ai/claude-opus-4-6 | Terminus-KIRA__Claude-Opus-4.6 | 0.7489 | 331 | 445 |
@@ -210,7 +211,7 @@ order by ss.avg_reward desc
 | openai-codex/gpt-5.3-codex | IndusAGICodingAgent__gpt-5.3-codex | 0.685 | 261 | 445 |
 | opus | WozCode__Claude-Opus-4.6 | 0.684 | 303 | 445 |
 | openai:gpt-5.2-codex | Deep-Agents__GPT-5.2-Codex | 0.6798 | 293 | 445 |
-| claude-sonnet-4-20250514 | Crux__Claude-Opus-4.6 | 0.67 | 272 | 445 |
+| claude-opus-4-6 | Crux__Claude-Opus-4.6 | 0.67 | 272 | 445 |
 | litellm_proxy/gemini-3-pro-preview | OpenSage__Gemini-3-Pro-Preview | 0.6576 | 290 | 445 |
 | gemini-3-flash-preview | Dirac__Gemini-3-Flash-Preview | 0.6517 | 290 | 445 |
 | gemini-3-pro-preview | Ante__Gemini-3-Pro-Preview | 0.6501 | 288 | 445 |
@@ -740,7 +741,6 @@ order by cost_per_pass asc
 
 | submission | n_passed | total_cost | avg_cost_per_trial | cost_per_pass |
 | --- | --- | --- | --- | --- |
-| Mux__GPT-5.3-Codex | 148 | 0.0 | 0.0 | 0.0 |
 | Terminus2__DeepSeek-V3.2 | 176 | 13.67 | 0.03 | 0.08 |
 | hookele__gpt5.1-codex-mini | 272 | 25.77 | 0.06 | 0.09 |
 | Mux__Claude-Opus-4.6 | 101 | 37.22 | 0.32 | 0.37 |
