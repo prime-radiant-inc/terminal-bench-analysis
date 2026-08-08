@@ -201,6 +201,7 @@ order by ss.avg_reward desc
 | anthropic/claude-opus-4-6 | pilot-real__claude-opus-4-6 | 0.8314 | 365 | 445 |
 | auto | OB-1_GPT-5.4-GPT-5.3-Codex-Claude-Opus-4.5-Claude-Opus-4.6 | 0.8266 | 367 | 445 |
 | openai/gpt-5.3-codex | CodeBrain-1.5__GPT-5.3-Codex | 0.8172 | 362 | 445 |
+| litellm_proxy/sage-gpt-5.3-codex | OpenSage__GPT-5.3-Codex | 0.795 | 349 | 445 |
 | gpt-5.3-codex | Droid__GPT-5.3-Codex | 0.773 | 344 | 445 |
 | vertex_ai/gemini-3.1-pro-preview | Terminus-KIRA__Gemini-3.1-Pro-Preview | 0.7517 | 333 | 445 |
 | vertex_ai/claude-opus-4-6 | Terminus-KIRA__Claude-Opus-4.6 | 0.7489 | 331 | 445 |
