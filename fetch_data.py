@@ -16,6 +16,28 @@ API_URL = f"https://huggingface.co/api/datasets/{REPO_ID}"
 RAW_BASE = f"https://huggingface.co/datasets/{REPO_ID}/resolve/main"
 LAST_SHA_FILE = Path("last_fetch_sha.txt")
 
+# Secret-shaped values we've seen an upstream harness accidentally dump into
+# result.json's config.agent.env (e.g. a Claude Code OAuth token, PRI-3130).
+# The root cause is upstream (the harness that produces these files and
+# uploads them to the HF dataset) and out of this repo's control, so this is
+# a defense-in-depth backstop: scrub anything secret-shaped before it ever
+# touches disk here, so a future upstream leak doesn't also land in this
+# repo's own (unrewritten) commit history.
+_SECRET_PATTERNS = [
+    (re.compile(rb"sk-ant-oat01-[A-Za-z0-9_-]{20,}"), b"sk-ant-oat01-REDACTED"),
+    (re.compile(rb"sk-ant-api\d{2}-[A-Za-z0-9_-]{20,}"), b"sk-ant-api-REDACTED"),
+    (re.compile(rb"sk-ant-admin01-[A-Za-z0-9_-]{20,}"), b"sk-ant-admin01-REDACTED"),
+    (re.compile(rb"sk-[A-Za-z0-9]{32,}"), b"sk-REDACTED"),  # generic OpenAI-style
+]
+
+
+def scrub_secrets(content: bytes) -> bytes:
+    """Redact known secret-shaped values from a downloaded result.json
+    before it's written to disk (and later committed)."""
+    for pattern, replacement in _SECRET_PATTERNS:
+        content = pattern.sub(replacement, content)
+    return content
+
 # Lock + event used to pause all requests when rate-limited.
 # Only the first task to hit a 429 sleeps; others wait on the event.
 _rate_limit_lock = asyncio.Lock()
@@ -141,7 +163,10 @@ async def download_worker(
         dest.parent.mkdir(parents=True, exist_ok=True)
         async with sem:
             resp = await _rate_limited_get(client, url)
-            dest.write_bytes(resp.content)
+            content = scrub_secrets(resp.content)
+            if content != resp.content:
+                print(f"  scrubbed secret-shaped value from {path}")
+            dest.write_bytes(content)
         downloaded.append(path)
         queue.task_done()
 
