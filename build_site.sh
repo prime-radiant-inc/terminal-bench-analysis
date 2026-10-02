@@ -28,3 +28,4 @@ sed -i.bak '/window.plausible = window.plausible/d' _site/datasette-lite.html
 
 # Clean up .bak files from sed
 rm -f _site/*.bak
+cp _site/datasette-lite.html _site/index.html
