@@ -17,10 +17,10 @@ cp /tmp/datasette-lite/webworker.js _site/
 cp /tmp/datasette-lite/app.css _site/
 
 # Modify index.html to hard-code the database URL
-sed -i.bak "s|const sqliteUrl = fixUrl(urlParams.get('url'));|const sqliteUrl = '/terminal-bench-analysis/terminal-bench.db';|" _site/datasette-lite.html
+sed -i.bak "s|const sqliteUrls = urlParams.getAll('url').map(fixUrl);|const sqliteUrls = ['/terminal-bench-analysis/terminal-bench.db'];|" _site/datasette-lite.html
 
-# Remove the "Load custom" buttons form since this is a dedicated instance
-sed -i.bak '/<form id="load-custom">/,/<\/form>/d' _site/datasette-lite.html
+# Hide custom loading while keeping the elements required by its event handlers
+sed -i.bak 's/<form id="load-custom">/<form id="load-custom" hidden>/' _site/datasette-lite.html
 
 # Remove Plausible analytics
 sed -i.bak '/<script defer data-domain="lite.datasette.io"/d' _site/datasette-lite.html
@@ -28,3 +28,4 @@ sed -i.bak '/window.plausible = window.plausible/d' _site/datasette-lite.html
 
 # Clean up .bak files from sed
 rm -f _site/*.bak
+cp _site/datasette-lite.html _site/index.html

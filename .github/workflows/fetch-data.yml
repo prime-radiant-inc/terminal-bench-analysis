@@ -52,6 +52,7 @@ jobs:
         enable-cache: true
         cache-dependency-glob: "build_db.py"
     - run: bash build_site.sh
+    - run: python3 -m unittest -v
     - uses: actions/configure-pages@v6
     - uses: actions/upload-pages-artifact@v4
     - uses: actions/deploy-pages@v5
