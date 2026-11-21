@@ -741,6 +741,7 @@ order by cost_per_pass asc
 
 | submission | n_passed | total_cost | avg_cost_per_trial | cost_per_pass |
 | --- | --- | --- | --- | --- |
+| Mux__GPT-5.3-Codex | 148 | 0.0 | 0.0 | 0.0 |
 | Terminus2__DeepSeek-V3.2 | 176 | 13.67 | 0.03 | 0.08 |
 | hookele__gpt5.1-codex-mini | 272 | 25.77 | 0.06 | 0.09 |
 | Mux__Claude-Opus-4.6 | 101 | 37.22 | 0.32 | 0.37 |
